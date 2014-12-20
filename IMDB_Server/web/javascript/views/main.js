@@ -7,8 +7,7 @@ define(
             className: "Container",
             tpl:template,
             initialize: function() {
-                this.collection.on('change', this.render, this);//MODEL SEEM TO OBEY TO CHANGE
-                this.render();
+                this.collection.on('reset', this.render, this);//MODEL SEEM TO OBEY TO CHANGE
             },
             render: function() {
                 var Result = this.collection.toJSON();

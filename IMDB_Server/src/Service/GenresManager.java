@@ -27,5 +27,4 @@ public class GenresManager extends Connection{
         return this.PerformQuery(String.format(queryGetGenreByMovieId, id));
     }
 
-
 }

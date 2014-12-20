@@ -15,18 +15,22 @@ define(
             },
 
             index: function () {
+                var self = this;
+
+                $("#BackBoneContainer").html($("#SpinnerContainer").html());
 
                 if(!this.ViewIndex){
                     var viewClass = require('views/main');
                     var collectionClass = require('collections/movies');
 
                     this.ViewIndex = new viewClass({collection:new collectionClass()});
+                    this.ViewIndex.collection.url= "http://localhost:8080/rest/Movies/GetRecent/";
                 }
 
-                this.ViewMovies.collection.fetch({
+                this.ViewIndex.collection.fetch({
                     reset: true, type: 'GET',
                     success: function () {
-                        $("#BackBoneContainer").html(this.ViewIndex.$el.html());
+                        $("#BackBoneContainer").html(self.ViewIndex.$el.html());
                         console.log("success");
                     },
                     error: function () {
@@ -39,6 +43,9 @@ define(
 
             movie: function (id) {
                 var self = this;
+
+                $("#BackBoneContainer").html($("#SpinnerContainer").html());
+
                 if(!this.ViewMovie){
                     var viewClass = require('views/movie');
                     var modelClass = require('models/movie');
@@ -61,10 +68,15 @@ define(
             },
 
             person: function (id) {
+
+                $("#BackBoneContainer").html($("#SpinnerContainer").html());
+
                 console.log("person: " + id);
                 //$("#BackBoneContainer").html(PersonViewer.$el.html());
             },
             search: function () {
+
+                $("#BackBoneContainer").html($("#SpinnerContainer").html());
 
                 var self = this;
                 if(!this.ViewMovies){

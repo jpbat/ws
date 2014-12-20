@@ -59,4 +59,9 @@ public class Movie {
         return  AddInfo(json).toString();
     }
 
+    @GET
+    @Path("GetRecent")
+    public String GetRecent(){
+        return Service.GetMostRecent().toString();
+    }
 }
