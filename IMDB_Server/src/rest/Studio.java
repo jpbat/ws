@@ -1,6 +1,5 @@
 package rest;
 
-import Service.PersonManager;
 import Service.StudiosManager;
 
 import javax.ws.rs.GET;

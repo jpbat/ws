@@ -22,7 +22,19 @@ define(
 
                     this.ViewIndex = new viewClass({collection:new collectionClass()});
                 }
-                $("#BackBoneContainer").html(this.ViewIndex.$el.html());
+
+                this.ViewMovies.collection.fetch({
+                    reset: true, type: 'GET',
+                    success: function () {
+                        $("#BackBoneContainer").html(this.ViewIndex.$el.html());
+                        console.log("success");
+                    },
+                    error: function () {
+                        //TODO ADICIONAR UMA ERROR VIEW
+                        console.log("fail");
+                        window.location.hash = '';
+                    }
+                });
             },
 
             movie: function (id) {
@@ -61,7 +73,6 @@ define(
 
                     this.ViewMovies = new viewClass({collection:new collectionClass()});
                 }
-
 
                 this.ViewMovies.collection.fetch({
                     reset: true, type: 'GET',
