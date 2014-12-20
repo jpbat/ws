@@ -1,0 +1,37 @@
+
+<div class="row">
+	<div class="col-md-3">
+		<img class="poster" src="<%= model.Poster %>" alt="poster">
+		<p class="information"><span class="field">Score:</span>  <%= model.classification %> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </p>
+		<p class="information"><span class="field">Duration:</span> <%= model.duration %> </p>
+	</div>
+	<div class="col-md-9">
+		<p class="name"><%= model.Name %></p>
+		<p class="information"><span class="field">Launched:</span> <%= model.launched %></p>
+		<p class="information"><span class="field">Genres:</span>
+			<% _.each(model.Genres, function(genre) { %>
+			<%= genre.genre %>
+			<% }); %>
+
+		</p>
+		<p class="information"><span class="field">Director:</span>
+			<% _.each(model.Directors, function(director) { %>
+			<a href="/#person/<%=director.id %>"><%= director.name %></a>
+			<% }); %>
+			</p>
+		<p class="information"><span class="field">Stars:</span>
+			<% _.each(model.Actors, function(actor) { %>
+			<a href="/#person/<%=actor.id %>"><%= actor.name %></a>
+			<% }); %>
+		</p>
+
+		</p>
+		<p class="information"><span class="field">Studios:</span>
+			<% _.each(model.Studios, function(studio) { %>
+			<%= studio.name %>
+			<% }); %>
+		</p>
+		<p class="information"><span class="field">Description: </span> <%= model.description %> </p>
+	</div>
+</div>
+

@@ -1,0 +1,22 @@
+
+<div class="row">
+    <% _.each(collection, function(element) { %>
+    <a href="/#movie/<%= element.id %>" class="item col-md-12">
+        <div class="col-md-2">
+            <img class="poster-preview" src="<%= element.Poster %>" alt="picture">
+        </div>
+        <div class="col-md-8">
+            <p class="information"><span class="field">Title: </span><%= element.Name %></p>
+            <p class="information"><span class="field">Launch Date: </span><%= element.launched %></p>
+            <p class="information"><span class="field">Score: </span><%= element.score %> </p>
+            <p class="information"><span class="field">Director: </span>
+                <% _.each(element.Directors, function(director) { %>
+                <%= director.name %>
+                <% }); %>
+            </p>
+        </div>
+        <div class="col-md-3 filter">
+        </div>
+    </a>
+    <% }); %>
+</div>
