@@ -248,10 +248,10 @@
                                    :Talk-Show
                                    :Drama
                                    :Adventure
-                                   :Adult
                                    :News
-                                   :Horror
+                                   :Adult
                                    :Action
+                                   :Horror
                                    :Sport
                                    :Crime
                                    :History
@@ -275,14 +275,6 @@
                          :someValuesFrom xsd:int
                        ] ,
                        [ rdf:type :Restriction ;
-                         :onProperty :hasMovieDescription ;
-                         :someValuesFrom xsd:string
-                       ] ,
-                       [ rdf:type :Restriction ;
-                         :onProperty :hasMovieName ;
-                         :someValuesFrom xsd:string
-                       ] ,
-                       [ rdf:type :Restriction ;
                          :onProperty :hasMovieLaunchDate ;
                          :someValuesFrom xsd:dateTime
                        ] ,
@@ -291,13 +283,21 @@
                          :someValuesFrom xsd:double
                        ] ,
                        [ rdf:type :Restriction ;
-                         :onProperty :hasMovieId ;
-                         :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         :onDataRange xsd:string
+                         :onProperty :hasMovieDescription ;
+                         :someValuesFrom xsd:string
                        ] ,
                        [ rdf:type :Restriction ;
                          :onProperty :hasMoviePoster ;
                          :someValuesFrom xsd:string
+                       ] ,
+                       [ rdf:type :Restriction ;
+                         :onProperty :hasMovieName ;
+                         :someValuesFrom xsd:string
+                       ] ,
+                       [ rdf:type :Restriction ;
+                         :onProperty :hasMovieId ;
+                         :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         :onDataRange xsd:string
                        ] .
 
 
@@ -307,11 +307,15 @@
 :Person rdf:type :Class ;
         
         rdfs:subClassOf [ rdf:type :Restriction ;
-                          :onProperty :hasPersonName ;
+                          :onProperty :hasPersonPicture ;
                           :someValuesFrom xsd:string
                         ] ,
                         [ rdf:type :Restriction ;
                           :onProperty :hasPersonBirthPlace ;
+                          :someValuesFrom xsd:string
+                        ] ,
+                        [ rdf:type :Restriction ;
+                          :onProperty :hasPersonMiniBio ;
                           :someValuesFrom xsd:string
                         ] ,
                         [ rdf:type :Restriction ;
@@ -320,16 +324,12 @@
                           :onDataRange xsd:string
                         ] ,
                         [ rdf:type :Restriction ;
+                          :onProperty :hasPersonName ;
+                          :someValuesFrom xsd:string
+                        ] ,
+                        [ rdf:type :Restriction ;
                           :onProperty :hasPersonBirth ;
                           :someValuesFrom xsd:dateTime
-                        ] ,
-                        [ rdf:type :Restriction ;
-                          :onProperty :hasPersonMiniBio ;
-                          :someValuesFrom xsd:string
-                        ] ,
-                        [ rdf:type :Restriction ;
-                          :onProperty :hasPersonPicture ;
-                          :someValuesFrom xsd:string
                         ] .
 
 
@@ -339,13 +339,13 @@
 :Studio rdf:type :Class ;
         
         rdfs:subClassOf [ rdf:type :Restriction ;
+                          :onProperty :hasStudioName ;
+                          :someValuesFrom xsd:string
+                        ] ,
+                        [ rdf:type :Restriction ;
                           :onProperty :hasStudioId ;
                           :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                           :onDataRange xsd:string
-                        ] ,
-                        [ rdf:type :Restriction ;
-                          :onProperty :hasStudioName ;
-                          :someValuesFrom xsd:string
                         ] .
 
 
