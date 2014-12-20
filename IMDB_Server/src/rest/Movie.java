@@ -51,13 +51,30 @@ public class Movie {
         return elements.toString();
     }
 
-    @GET
+/*    @GET
     @Path("GetAll")
     public String GetAll(){
         JSONArray json = Service.GetAll();
 
         return  AddInfo(json).toString();
+    }*/
+
+    @GET
+    @Path("GetAll")
+    public String GetAllf(@QueryParam("offset") int offset,@QueryParam("limit") int limit){
+        JSONArray json;
+        if(limit==0){
+            json = Service.GetAll();
+
+        }else{
+            json = Service.GetAll(offset,limit);
+        }
+
+
+        return  AddInfo(json).toString();
     }
+
+
 
     @GET
     @Path("GetRecent")

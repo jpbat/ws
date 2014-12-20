@@ -6,19 +6,44 @@ define(
             id: "",
             tpl:template,
             className: "Container",
-            events:{
+
+
+            initialize: function() {
+                this.isLoading = false;
+                this.limit = 5;
+                this.offset = 0;
+                this.collection.on('reset', this.clear, this);
+                this.collection.on('add change', this.render, this);
 
             },
-            initialize: function() {
-                this.collection.on('reset', this.render, this);//MODEL SEEM TO OBEY TO CHANGE
+
+            clear:function(){
+                this.limit = 5;
+                this.offset = 0;
+                this.$el.html(" ");
+                console.log("clear");
+                this.render();
             },
+
             render: function() {
+                var self = this;
                 var Result = this.collection.toJSON();
 
                 var templateHTML = this.tpl({collection: Result});
-                this.$el.html(templateHTML);
-                console.log(templateHTML);
+                this.$el.append(templateHTML);
+
                 return this;
+            },
+            events: {
+                'scroll': 'checkScroll'
+            },
+            checkScroll: function () {
+                console.log("scroll");
+                var triggerPoint = 100; // 100px from the bottom
+                if( !this.isLoading && this.el.scrollTop + this.el.clientHeight + triggerPoint > this.el.scrollHeight ) {
+                    this.isLoading = true;
+                    console.log("!scroll");
+                }
             }
         });
         return View;

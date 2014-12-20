@@ -6,7 +6,7 @@ define(
             initialize: function () {
                 console.log('new person');
             },
-            url: 'http://localhost:8080/rest/Person/Get/'
+            url: 'http://localhost:8080/rest/Persons/Get/'
         });
         return model;
     }

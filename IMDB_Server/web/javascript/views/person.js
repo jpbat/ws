@@ -10,12 +10,12 @@ define(
 
             },
             initialize: function() {
-                this.collection.on('change', this.render, this);//MODEL SEEM TO OBEY TO CHANGE
+                this.model.on('change', this.render, this);//MODEL SEEM TO OBEY TO CHANGE
             },
             render: function() {
-                var Result = this.collection.toJSON();
-
-                var templateHTML = this.tpl({collection: Result});
+                var Result = this.model.toJSON();
+                console.log(Result);
+                var templateHTML = this.tpl({model: Result});
                 this.$el.html(templateHTML);
 
                 return this;

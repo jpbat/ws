@@ -68,11 +68,29 @@ define(
             },
 
             person: function (id) {
+                var self = this;
 
                 $("#BackBoneContainer").html($("#SpinnerContainer").html());
 
-                console.log("person: " + id);
-                //$("#BackBoneContainer").html(PersonViewer.$el.html());
+                if(!this.ViewPerson){
+                    var viewClass = require('views/person');
+                    var modelClass = require('models/person');
+
+                    this.ViewPerson = new viewClass({model:new modelClass()});
+
+                }
+                console.log("Person: " + id);
+                this.ViewPerson.model.fetch({reset: true, type: 'GET', data: {id: id},
+                    success: function () {
+                        $("#BackBoneContainer").html(self.ViewPerson.$el.html());
+                        console.log("success");
+                    },
+                    error: function () {
+                        //TODO ADICIONAR UMA ERROR VIEW
+                        console.log("fail");
+                        window.location.hash = '';
+                    }
+                });
             },
             search: function () {
 
@@ -86,9 +104,10 @@ define(
                     this.ViewMovies = new viewClass({collection:new collectionClass()});
                 }
 
-                this.ViewMovies.collection.fetch({
+                this.ViewMovies.collection.fetch({data:{limit:self.ViewMovies.limit,offset:self.ViewMovies.offset},
                     reset: true, type: 'GET',
                     success: function () {
+                        self.ViewMovies.offset+=self.ViewMovies.limit;
                         $("#BackBoneContainer").html(self.ViewMovies.$el.html());
                         console.log("success");
                     },

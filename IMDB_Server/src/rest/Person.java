@@ -2,10 +2,13 @@ package rest;
 
 import Service.MoviesManager;
 import Service.PersonManager;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.QueryParam;
 
 @Path("Persons")
 public class Person {
@@ -15,9 +18,20 @@ public class Person {
     @GET
     @Path("Get/{id}")
     public String Get(@PathParam("id") String id){
-        return Service.Get(id).toString();
+        JSONArray json = Service.Get(id);
+        JSONObject elements= (JSONObject) json.get(0);
+
+        return elements.toString();
     }
 
+    @GET
+    @Path("Get")
+    public String GetbyId(@QueryParam("id") String id) {
+        JSONArray json = Service.Get(id);
+        JSONObject elements= (JSONObject) json.get(0);
+
+        return elements.toString();
+    }
     @GET
     @Path("GetDirectorByMovie/{id}")
     public String GetDirectorByMovie(@PathParam("id") String id){

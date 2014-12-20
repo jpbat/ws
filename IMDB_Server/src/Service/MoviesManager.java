@@ -35,9 +35,14 @@ public class MoviesManager extends Connection{
                     "ORDER BY ?launched "+
                     "LIMIT 6";
 
+    public JSONArray GetAll(int offset,int limit){
+        return this.PerformQuery(queryGetAll+" LIMIT "+limit+" OFFSET "+offset);
+    }
+
     public JSONArray GetAll(){
         return this.PerformQuery(queryGetAll);
     }
+
 
     public JSONArray GetMostRecent(){
         return this.PerformQuery(queryGetMostRecent);
