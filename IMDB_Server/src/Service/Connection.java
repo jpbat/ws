@@ -7,18 +7,22 @@ import com.hp.hpl.jena.util.FileManager;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Connection {
 
-    String source = "C:\\Users\\Joao\\Documents\\GitHub\\ws\\RDF_Populate\\output1.ttl";
-    String TDBdirectory = "C:\\tdb";
+    String configFile = "/Users/macbook/ws/IMDB_Server/config/connection.txt";
+    String source, TDBdirectory;
 
     protected Dataset dataset;
 
     public Connection(){
+
+        if (!this.readConfig()) {
+            return;
+        }
 
         if(!(new File(TDBdirectory).exists())) {
             dataset = TDBFactory.createDataset(TDBdirectory);
@@ -31,6 +35,26 @@ public class Connection {
         }else{
             dataset = TDBFactory.createDataset(TDBdirectory);
         }
+    }
+
+    private boolean readConfig() {
+        BufferedReader br = null;
+        ArrayList<String> info = new ArrayList<String>();
+        try {
+            br = new BufferedReader(new FileReader(this.configFile));
+            String line;
+            while ((line = br.readLine()) != null) {
+                info.add(line);
+            }
+            br.close();
+        } catch (Exception e) {
+            return false;
+        }
+
+        this.source = info.get(0);
+        this.TDBdirectory = info.get(1);
+
+        return true;
     }
 
     protected JSONArray PerformQuery(String queryString){
@@ -91,7 +115,4 @@ public class Connection {
         }
         return null;
     }
-
-
-
 }
