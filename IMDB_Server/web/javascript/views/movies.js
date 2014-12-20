@@ -3,7 +3,7 @@ define(
     function(_,Backbone,template) {
         var View = Backbone.View.extend({
             tagName: "div",
-            id: "",
+            id: "MoviesCont",
             tpl:template,
             className: "Container",
 

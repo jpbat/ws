@@ -30,7 +30,7 @@ define(
                 this.ViewIndex.collection.fetch({
                     reset: true, type: 'GET',
                     success: function () {
-                        $("#BackBoneContainer").html(self.ViewIndex.$el.html());
+                        $("#BackBoneContainer").html(self.ViewIndex.el);
                         console.log("success");
                     },
                     error: function () {
@@ -56,7 +56,7 @@ define(
                 console.log("movie: " + id);
                 this.ViewMovie.model.fetch({reset: true, type: 'GET', data: {id: id},
                     success: function () {
-                        $("#BackBoneContainer").html(self.ViewMovie.$el.html());
+                        $("#BackBoneContainer").html(self.ViewMovie.$el);
                         console.log("success");
                     },
                     error: function () {
@@ -82,7 +82,7 @@ define(
                 console.log("Person: " + id);
                 this.ViewPerson.model.fetch({reset: true, type: 'GET', data: {id: id},
                     success: function () {
-                        $("#BackBoneContainer").html(self.ViewPerson.$el.html());
+                        $("#BackBoneContainer").html(self.ViewPerson.$el);
                         console.log("success");
                     },
                     error: function () {
@@ -108,7 +108,7 @@ define(
                     reset: true, type: 'GET',
                     success: function () {
                         self.ViewMovies.offset+=self.ViewMovies.limit;
-                        $("#BackBoneContainer").html(self.ViewMovies.$el.html());
+                        $("#BackBoneContainer").html(self.ViewMovies.$el);
                         console.log("success");
                     },
                     error: function () {
