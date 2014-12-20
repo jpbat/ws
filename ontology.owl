@@ -1,0 +1,491 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.movierecomendation.pt/ontology/movierecomendation.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.movierecomendation.pt/ontology/movierecomendation.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Movie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Studio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDirector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStudio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isKnownFor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMovieClassification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMovieDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMovieDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMovieId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMovieLaunchDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMovieName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMoviePoster"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPersonBirth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPersonBirthPlace"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPersonId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPersonMiniBio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPersonName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPersonPicture"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStudioId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStudioName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adult"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adventure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Animation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Biography"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comedy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Documentary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Drama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Family"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fantasy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Film-Noir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Game-Show"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#History"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Horror"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Music"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Musical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mystery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#News"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reality-TV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Romance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sci-Fi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Short"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Talk-Show"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thriller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#War"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Western"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Genre"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Family"/>
+            <NamedIndividual IRI="#Sci-Fi"/>
+            <NamedIndividual IRI="#Animation"/>
+            <NamedIndividual IRI="#Biography"/>
+            <NamedIndividual IRI="#Musical"/>
+            <NamedIndividual IRI="#Reality-TV"/>
+            <NamedIndividual IRI="#Comedy"/>
+            <NamedIndividual IRI="#Thriller"/>
+            <NamedIndividual IRI="#Music"/>
+            <NamedIndividual IRI="#Film-Noir"/>
+            <NamedIndividual IRI="#Short"/>
+            <NamedIndividual IRI="#Game-Show"/>
+            <NamedIndividual IRI="#Talk-Show"/>
+            <NamedIndividual IRI="#Drama"/>
+            <NamedIndividual IRI="#Adventure"/>
+            <NamedIndividual IRI="#Adult"/>
+            <NamedIndividual IRI="#News"/>
+            <NamedIndividual IRI="#Horror"/>
+            <NamedIndividual IRI="#Action"/>
+            <NamedIndividual IRI="#Sport"/>
+            <NamedIndividual IRI="#Crime"/>
+            <NamedIndividual IRI="#History"/>
+            <NamedIndividual IRI="#Documentary"/>
+            <NamedIndividual IRI="#Romance"/>
+            <NamedIndividual IRI="#War"/>
+            <NamedIndividual IRI="#Mystery"/>
+            <NamedIndividual IRI="#Western"/>
+            <NamedIndividual IRI="#Fantasy"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasMovieClassification"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasMovieDescription"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasMovieDuration"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasMovieLaunchDate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasMovieName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasMoviePoster"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasMovieId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasPersonBirth"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasPersonBirthPlace"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasPersonMiniBio"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasPersonName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasPersonPicture"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasPersonId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Studio"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasStudioName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Studio"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasStudioId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Action"/>
+        <NamedIndividual IRI="#Adult"/>
+        <NamedIndividual IRI="#Adventure"/>
+        <NamedIndividual IRI="#Animation"/>
+        <NamedIndividual IRI="#Biography"/>
+        <NamedIndividual IRI="#Comedy"/>
+        <NamedIndividual IRI="#Crime"/>
+        <NamedIndividual IRI="#Documentary"/>
+        <NamedIndividual IRI="#Drama"/>
+        <NamedIndividual IRI="#Family"/>
+        <NamedIndividual IRI="#Fantasy"/>
+        <NamedIndividual IRI="#Film-Noir"/>
+        <NamedIndividual IRI="#Game-Show"/>
+        <NamedIndividual IRI="#History"/>
+        <NamedIndividual IRI="#Horror"/>
+        <NamedIndividual IRI="#Music"/>
+        <NamedIndividual IRI="#Musical"/>
+        <NamedIndividual IRI="#Mystery"/>
+        <NamedIndividual IRI="#News"/>
+        <NamedIndividual IRI="#Reality-TV"/>
+        <NamedIndividual IRI="#Romance"/>
+        <NamedIndividual IRI="#Sci-Fi"/>
+        <NamedIndividual IRI="#Short"/>
+        <NamedIndividual IRI="#Sport"/>
+        <NamedIndividual IRI="#Talk-Show"/>
+        <NamedIndividual IRI="#Thriller"/>
+        <NamedIndividual IRI="#War"/>
+        <NamedIndividual IRI="#Western"/>
+    </DifferentIndividuals>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActor"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDirector"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStudio"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isKnownFor"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActor"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDirector"/>
+        <Class IRI="#Director"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Genre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStudio"/>
+        <Class IRI="#Studio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isKnownFor"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMovieClassification"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMovieDescription"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMovieDuration"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMovieLaunchDate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMovieName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMoviePoster"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasPersonBirth"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasPersonName"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMovieClassification"/>
+        <Class IRI="#Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMovieDescription"/>
+        <Class IRI="#Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMovieDuration"/>
+        <Class IRI="#Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMovieId"/>
+        <Class IRI="#Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMovieLaunchDate"/>
+        <Class IRI="#Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMovieName"/>
+        <Class IRI="#Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMoviePoster"/>
+        <Class IRI="#Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPersonBirth"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPersonBirthPlace"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPersonId"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPersonMiniBio"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPersonName"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPersonPicture"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStudioId"/>
+        <Class IRI="#Studio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStudioName"/>
+        <Class IRI="#Studio"/>
+    </DataPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
