@@ -13,18 +13,27 @@ import java.util.Iterator;
 
 public class Connection {
 
-    String configFile = "/Users/macbook/ws/IMDB_Server/config/connection.txt";
+    String configFile = "connection.txt";
     String source, TDBdirectory;
 
     protected Dataset dataset;
 
+
+
     public Connection(){
 
+        String Location = getClass().getSuperclass().getProtectionDomain().getCodeSource().getLocation().toString().replace("file:/","").replace("Connection.class","");
+        this.configFile = Location+configFile;
         if (!this.readConfig()) {
             return;
         }
 
+
         if(!(new File(TDBdirectory).exists())) {
+
+
+
+
             dataset = TDBFactory.createDataset(TDBdirectory);
             dataset.begin(ReadWrite.WRITE);
             Model tdb = dataset.getDefaultModel();
