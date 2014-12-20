@@ -40,7 +40,7 @@ public class MoviesManager extends Connection{
     }
 
     public JSONArray GetMostRecent(){
-        return this.PerformQuery(queryGetAll);
+        return this.PerformQuery(queryGetMostRecent);
     }
 
     public JSONArray Get(String id){
