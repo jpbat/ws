@@ -1,0 +1,53 @@
+body {
+      	background-color: #ccc;
+        font-family: Ubuntu, sans-serif;
+}
+
+.search-logo {
+	padding-top: 50px;
+        font-size: 400%;
+        text-align: center;
+        color: green;
+        padding-bottom: 100px;
+}
+.name {
+       	font-size: 400%;
+        text-align: center;
+        color: green;
+}
+
+.top-rated {
+	font-size: 200%;
+}
+
+.poster{
+        border: 3px solid;
+        border-radius: 8px;
+        border-color: black;
+}
+
+.poster-preview{
+        border: 3px solid;
+        border-radius: 8px;
+        border-color: black;
+        height: 175px;
+}
+
+.information {
+	padding-top: 10px;
+}
+
+.field {
+        font-weight: bold;
+        font-size: 125%;
+}
+
+.container {
+	padding-top: 50px;
+}
+
+.item {
+    padding-top: 10px;
+    color: black;
+}
+
