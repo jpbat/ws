@@ -5,7 +5,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTE5OTYzMzc0MV5BMl5BanBnXkFtZTcwNjQ0NTI1MQ@@._V1_SY317_CR9,0,214,317_AL_.jpg",
     "score": 5.4,
     "duration": "89",
-    "launchDate": "Fri Nov 22 00:00:00 WET 1996",
+    "launchDate": "1996-11-22",
     "genres": {
       "genre": [
         "Comedy",
@@ -38,7 +38,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTMwODY3NzQzNF5BMl5BanBnXkFtZTcwNzUxNjc0MQ@@._V1_SY317_CR6,0,214,317_AL_.jpg",
     "score": 6.9,
     "duration": "145",
-    "launchDate": "Wed Jul 03 00:00:00 WEST 1996",
+    "launchDate": "1996-7-3",
     "genres": {
       "genre": [
         "Action",
@@ -72,7 +72,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTgxNzY3MzUxOV5BMl5BanBnXkFtZTcwMDA0NjMyNA@@._V1_SX214_AL_.jpg",
     "score": 8.1,
     "duration": "98",
-    "launchDate": "Fri Apr 05 00:00:00 WEST 1996",
+    "launchDate": "1996-4-5",
     "genres": {
       "genre": [
         "Crime",
@@ -107,7 +107,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTI2ODc3NDI4OV5BMl5BanBnXkFtZTYwMTY1MjQ5._V1._CR1,1,341,448_SY317_CR13,0,214,317_AL_.jpg",
     "score": 6.9,
     "duration": "120",
-    "launchDate": "Fri Nov 01 00:00:00 WET 1996",
+    "launchDate": "1996-11-1",
     "genres": {
       "genre": [
         "Drama",
@@ -140,7 +140,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BNTYxNDEyMDQ1MF5BMl5BanBnXkFtZTcwODcxMDYyMQ@@._V1_SY317_CR6,0,214,317_AL_.jpg",
     "score": 6.8,
     "duration": "102",
-    "launchDate": "Fri Aug 02 00:00:00 WEST 1996",
+    "launchDate": "1996-8-2",
     "genres": {
       "genre": [
         "Comedy",
@@ -173,7 +173,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTczMzM2MTM0NF5BMl5BanBnXkFtZTcwMTIwMDQ0MQ@@._V1_SY317_CR9,0,214,317_AL_.jpg",
     "score": 6.8,
     "duration": "108",
-    "launchDate": "Fri Oct 04 00:00:00 WEST 1996",
+    "launchDate": "1996-10-4",
     "genres": {
       "genre": [
         "Comedy",
@@ -208,7 +208,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTg2MzcxNTY3NV5BMl5BanBnXkFtZTgwOTQ5NDQxMDE@._V1_SX214_AL_.jpg",
     "score": 8.1,
     "duration": "94",
-    "launchDate": "Fri Jul 19 00:00:00 WEST 1996",
+    "launchDate": "1996-7-19",
     "genres": {
       "genre": [
         "Drama"
@@ -241,7 +241,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMjA4NjUxODg3Ml5BMl5BanBnXkFtZTcwNzcyODc5Mw@@._V1_SX214_AL_.jpg",
     "score": 7.0,
     "duration": "92",
-    "launchDate": "Fri Feb 16 00:00:00 WET 1996",
+    "launchDate": "1996-2-16",
     "genres": {
       "genre": [
         "Comedy",
@@ -275,7 +275,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTkxNjQwMjM4OF5BMl5BanBnXkFtZTcwMTU5NDMyMQ@@._V1_SY317_CR7,0,214,317_AL_.jpg",
     "score": 5.5,
     "duration": "103",
-    "launchDate": "Wed Nov 27 00:00:00 WET 1996",
+    "launchDate": "1996-11-27",
     "genres": {
       "genre": [
         "Adventure",
@@ -309,7 +309,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_SX214_AL_.jpg",
     "score": 7.0,
     "duration": "110",
-    "launchDate": "Wed May 22 00:00:00 WEST 1996",
+    "launchDate": "1996-5-22",
     "genres": {
       "genre": [
         "Action",

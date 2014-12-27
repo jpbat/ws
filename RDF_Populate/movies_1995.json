@@ -5,7 +5,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTQwNTU3MTE4NF5BMl5BanBnXkFtZTcwOTgxNDM2Mg@@._V1_SX214_AL_.jpg",
     "score": 8.6,
     "duration": "127",
-    "launchDate": "Fri Sep 22 00:00:00 WEST 1995",
+    "launchDate": "1995-9-22",
     "genres": {
       "genre": [
         "Drama",
@@ -39,7 +39,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMzI1MjI5MDQyOV5BMl5BanBnXkFtZTcwNzE4Mjg3NA@@._V1_SX214_AL_.jpg",
     "score": 8.6,
     "duration": "106",
-    "launchDate": "Fri Sep 15 00:00:00 WEST 1995",
+    "launchDate": "1995-9-15",
     "genres": {
       "genre": [
         "Crime",
@@ -74,7 +74,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BNjA4ODYxMDU3Nl5BMl5BanBnXkFtZTcwMzkzMTk3OA@@._V1_SX214_AL_.jpg",
     "score": 8.3,
     "duration": "177",
-    "launchDate": "Wed May 24 00:00:00 WEST 1995",
+    "launchDate": "1995-5-24",
     "genres": {
       "genre": [
         "Action",
@@ -109,7 +109,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMjAwOTEyNjg0M15BMl5BanBnXkFtZTYwODQyMTI5._V1_SY317_CR10,0,214,317_AL_.jpg",
     "score": 5.4,
     "duration": "121",
-    "launchDate": "Fri Jun 16 00:00:00 WEST 1995",
+    "launchDate": "1995-6-16",
     "genres": {
       "genre": [
         "Action",
@@ -143,7 +143,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTgxODIxODE2MF5BMl5BanBnXkFtZTgwOTA4NjQxMTE@._V1_SY317_CR0,0,214,317_AL_.jpg",
     "score": 6.6,
     "duration": "97",
-    "launchDate": "Wed Jul 19 00:00:00 WEST 1995",
+    "launchDate": "1995-7-19",
     "genres": {
       "genre": [
         "Comedy",
@@ -175,7 +175,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTgwMjI4MzU5N15BMl5BanBnXkFtZTcwMTMyNTk3OA@@._V1_SY317_CR12,0,214,317_AL_.jpg",
     "score": 8.3,
     "duration": "81",
-    "launchDate": "Wed Nov 22 00:00:00 WET 1995",
+    "launchDate": "1995-11-22",
     "genres": {
       "genre": [
         "Animation",
@@ -209,7 +209,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTM1NDc4ODkxNV5BMl5BanBnXkFtZTcwNTI4ODE3MQ@@._V1_SY317_CR2,0,214,317_AL_.jpg",
     "score": 8.3,
     "duration": "170",
-    "launchDate": "Fri Dec 15 00:00:00 WET 1995",
+    "launchDate": "1995-12-15",
     "genres": {
       "genre": [
         "Action",
@@ -244,7 +244,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMjI4MDIxNjk2Ml5BMl5BanBnXkFtZTcwMTA3Njk3OA@@._V1_SY317_CR12,0,214,317_AL_.jpg",
     "score": 8.1,
     "duration": "129",
-    "launchDate": "Fri Jan 05 00:00:00 WET 1996",
+    "launchDate": "1996-1-5",
     "genres": {
       "genre": [
         "Mystery",
@@ -279,7 +279,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTM2Njg2NjU5NF5BMl5BanBnXkFtZTYwODI5MDc4._V1_.jpg",
     "score": 7.5,
     "duration": "140",
-    "launchDate": "Fri Jun 30 00:00:00 WEST 1995",
+    "launchDate": "1995-6-30",
     "genres": {
       "genre": [
         "Adventure",
@@ -313,7 +313,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTA2Nzk3MTgzMTVeQTJeQWpwZ15BbWU3MDgyNTgxNjk@._V1_SY317_CR12,0,214,317_AL_.jpg",
     "score": 6.0,
     "duration": "135",
-    "launchDate": "Fri Jul 28 00:00:00 WEST 1995",
+    "launchDate": "1995-7-28",
     "genres": {
       "genre": [
         "Action",
