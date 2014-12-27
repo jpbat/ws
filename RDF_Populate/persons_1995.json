@@ -1,0 +1,733 @@
+[
+  {
+    "name": "David Fincher",
+    "birthDate": "1962-8-28",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTc1NDkwMTQ2MF5BMl5BanBnXkFtZTcwMzY0ODkyMg@@._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0000399",
+    "miniBio": "David Fincher was born in 1962 in Denver, Colorado, and was raised in Marin County, California. When he was 18 years old he went to work for John Korty at Korty Films in Mill Valley. He subsequently worked at ILM (Industrial Light and Magic) from 1981-1983. Fincher left ILM to direct TV commercials and music videos after signing with N. Lee Lacy in Hollywood. He went on to found Propaganda in 1987 with fellow directors Dominic Sena, Greg Gold and Nigel Dick. Fincher has directed TV commercials for clients that include Nike, Coca-Cola, Budweiser, Heineken, Pepsi, Levi\u0027s, Converse, AT\u0026T and Chanel. He has directed music videos for Madonna, Sting, The Rolling Stones, Michael Jackson, Aerosmith, George Michael, Iggy Pop, The Wallflowers, Billy Idol, Steve Winwood, The Motels and, most recently, A Perfect Circle. As a film director, he has achieved huge success with Se7en (1995), Fight Club (1999) and, Panic Room (2002).",
+    "birthPlace": "Denver, Colorado, USA",
+    "director": false,
+    "actor": true,
+    "jobCategories": [
+      "Producer",
+      "Director",
+      "Actor"
+    ],
+    "knownFor": [
+      "tt0137523",
+      "tt0114369",
+      "tt0421715",
+      "tt1285016"
+    ]
+  },
+  {
+    "name": "Bryan Singer",
+    "birthDate": "1965-9-17",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTMwMzQ0OTgzNF5BMl5BanBnXkFtZTcwMjExNzAyMg@@._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0001741",
+    "miniBio": "Bryan Singer was born on September 17, 1965 in New York City, New York, USA as Bryan Jay Singer. He is a producer and director, known for The Usual Suspects (1995), House M.D. (2004) and X-Men 2 (2003).",
+    "birthPlace": "New York City, New York, USA",
+    "director": false,
+    "actor": true,
+    "jobCategories": [
+      "Producer",
+      "Director",
+      "Writer"
+    ],
+    "knownFor": [
+      "tt0114814",
+      "tt0412142",
+      "tt0290334",
+      "tt1877832"
+    ]
+  },
+  {
+    "name": "Mel Gibson",
+    "birthDate": "1956-1-3",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BNTUzOTMwNTM0OV5BMl5BanBnXkFtZTcwNDQwMTUxMw@@._V1_SY317_CR8,0,214,317_AL_.jpg",
+    "id": "nm0000154",
+    "miniBio": "Mel Columcille Gerard Gibson was born on January 3, 1956, in Peekskill, New York, USA as the sixth of eleven children to parents Hutton Gibson, a railroad brakeman, and Anne Patricia (Reilly) Gibson (who died in December of 1990). His mother was Irish, and his father had Irish-Australian ancestry. Though born in the US, Mel and his family moved to New South Wales, Australia. After high school, Mel studied at the University of New South Wales in Sydney, performing at the National Institute of Dramatic Arts alongside future film thespians Judy Davis and Geoffrey Rush. After college, Mel had a few stints on stage and starred in a few TV shows. Eventually, he was chosen to star in Mad Max - As Motos da Morte (1979) and in a movie called Tim - Anjos de Aço (1979), co-starring Piper Laurie. The small budgeted movie Mad Max - As Motos da Morte (1979) made him known worldwide, while Tim - Anjos de Aço (1979) garnered him an award for Best Actor from the Australian Film Institute (equivalent to the Oscar). Later, he went on to star in Gallipoli (1981), which earned him a second award for Best Actor from the AFI. In 1980, he married Robyn Moore and had seven children. In 1984, Mel made his American debut in The Bounty (1984), which co-starred Anthony Hopkins. Then in 1987, Mel starred in what would become his signature series, Lethal Weapon (1987), in which he played \"Martin Riggs\". In 1990, he took on the interesting starring role in Hamlet (1990), which garnered him some critical praise. He also made the more endearing Forever Young (1992) and the somewhat disturbing The Man Without a Face (1993). 1995 brought his most famous role as \"Sir William Wallace\" in Braveheart (1995), for which he won two Oscars for Best Picture and Best Director. From there, he made such box office hits as The Patriot (2000), Ransom (1996), and Payback (1999). Today, Mel remains an international superstar mogul, continuously topping the Hollywood power lists as well as the Most Beautiful and Sexiest lists.",
+    "birthPlace": "Peekskill, New York, USA",
+    "director": false,
+    "actor": true,
+    "jobCategories": [
+      "Actor",
+      "Producer",
+      "Director"
+    ],
+    "knownFor": [
+      "tt0112573",
+      "tt0286106",
+      "tt0093409",
+      "tt0187393"
+    ]
+  },
+  {
+    "name": "Joel Schumacher",
+    "birthDate": "1939-8-29",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTk2OTc1ODgzNV5BMl5BanBnXkFtZTYwNjMxMTY1._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "id": "nm0001708",
+    "miniBio": "Joel Schumacher was born on August 29, 1939 in New York City, New York, USA as Joel T. Schumacher. He is a director and writer, known for The Phantom of the Opera (2004), Batman Forever (1995) and Phone Booth (2002).",
+    "birthPlace": "New York City, New York, USA",
+    "director": false,
+    "actor": true,
+    "jobCategories": [
+      "Director",
+      "Writer",
+      "Producer"
+    ],
+    "knownFor": [
+      "tt0293508",
+      "tt0112462",
+      "tt0183649",
+      "tt0118688"
+    ]
+  },
+  {
+    "name": "Amy Heckerling",
+    "birthDate": "1952-5-7",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTI3MjAyMzUyMV5BMl5BanBnXkFtZTYwNTI0MTM0._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0002132",
+    "miniBio": "Amy Heckerling studied Film and TV at New York University and got a Masters Degree in Film from The American Film Institute. Despite this education she couldn\u0027t get a break in Hollywood. However, in 1982, she made Fast Times at Ridgemont High (1982), and people started to take notice. In 1987, while Amy was pregnant, she got the idea for Look Who\u0027s Talking (1989). In 1994, Amy wrote Clueless (1995). Amy is a liberal and also an environmentalist and helps environmental charities whenever she can.",
+    "birthPlace": "The Bronx, New York City, New York, USA",
+    "director": false,
+    "actor": true,
+    "jobCategories": [
+      "Writer",
+      "Director",
+      "Producer"
+    ],
+    "knownFor": [
+      "tt0112697",
+      "tt0100050",
+      "tt0097778",
+      "tt0217630"
+    ]
+  },
+  {
+    "name": "John Lasseter",
+    "birthDate": "1957-1-12",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTQ5NTczNjE5MV5BMl5BanBnXkFtZTcwMTA1MTQ3Mg@@._V1_SY317_CR16,0,214,317_AL_.jpg",
+    "id": "nm0005124",
+    "miniBio": "John Lasseter was born on January 12, 1957 in Hollywood, Los Angeles, California, USA as John Alan Lasseter. He is a producer and director, known for Toy Story (1995), Cars (2006) and Toy Story 3 (2010). He is married to Nancy Lasseter. They have five children.",
+    "birthPlace": "Hollywood, Los Angeles, California, USA",
+    "director": false,
+    "actor": true,
+    "jobCategories": [
+      "Producer",
+      "Director",
+      "Writer"
+    ],
+    "knownFor": [
+      "tt0114709",
+      "tt0317219",
+      "tt0435761",
+      "tt0120363"
+    ]
+  },
+  {
+    "name": "Michael Mann",
+    "birthDate": "1943-2-5",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTU2MjMzODY3Ml5BMl5BanBnXkFtZTYwNjE0OTMz._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0000520",
+    "miniBio": "A student of London\u0027s International Film School, Michael Mann began his career in the late 70s, writing for TV shows like Starsky and Hutch (1975). He directed his first film, the award-winning prison drama The Jericho Mile (1979), in 1979. He followed that in 1981 with his first theatrical release, Thief (1981) starring James Caan as a safe-cracker who falls under the spell of the mob. He followed with The Keep (1983), an adaptation of F. Paul Wilson\u0027s novel about a mysterious force within a Nazi fortress. He hit it big in 1984, when he produced and created the long-running TV series Miami Vice (1984), which made Don Johnson a household name. He followed that up in 1986 with the underrated, lesser-known TV series, Crime Story (1986), and the thriller Manhunter (1986) a precursor of The Silence of the Lambs (1991). He spent the next few years involved in television, directing films like L.A. Takedown (1989) and producing films like the Emmy-winning Drug Wars: The Camarena Story (1990). In 1992, he returned to feature film with the box-office hit The Last of the Mohicans (1992), which starred Daniel Day-Lewis and Madeleine Stowe.",
+    "birthPlace": "Chicago, Illinois, USA",
+    "director": false,
+    "actor": true,
+    "jobCategories": [
+      "Producer",
+      "Writer",
+      "Director"
+    ],
+    "knownFor": [
+      "tt0113277",
+      "tt1152836",
+      "tt0140352",
+      "tt0104691"
+    ]
+  },
+  {
+    "name": "Terry Gilliam",
+    "birthDate": "1940-11-22",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BODAyMDM0NjEwOF5BMl5BanBnXkFtZTcwMTUyMDY5Mg@@._V1_SY317_CR13,0,214,317_AL_.jpg",
+    "id": "nm0000416",
+    "miniBio": "Terry Gilliam was born in Minnesota near Medicine Lake. When he was 12 his family moved to Los Angeles where he became a fan of Mad magazine. In his early 20\u0027s he was often stopped by the police who often suspected him of being a drug addict and Gilliam had to explain that he worked in advertisement. Gilliam said these experiences made him understand how it was like to be Black or Mexican and gave him sympathy for the poor. In the political turmoil in the 60\u0027s, Gilliam feared he might develop into a terrorist and decided to leave the USA. After moving to England he landed a job on the children\u0027s television show Do Not Adjust Your Set as an animator. There he would meet his future collaborators in Monty Python: Terry Jones, Eric Idle and Michael Palin. In 2006 he renounced his American citizenship.",
+    "birthPlace": "Minneapolis, Minnesota, USA",
+    "director": false,
+    "actor": true,
+    "jobCategories": [
+      "Writer",
+      "Actor",
+      "Animation Department"
+    ],
+    "knownFor": [
+      "tt0071853",
+      "tt0079470",
+      "tt0120669",
+      "tt0088846"
+    ]
+  },
+  {
+    "name": "Ron Howard",
+    "birthDate": "1954-3-1",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTkzMDczMjUxNF5BMl5BanBnXkFtZTcwODY1Njk5Mg@@._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0000165",
+    "miniBio": "Ron was born in Oklahoma, into an acting family - his father, Rance Howard, had realized a boyhood dream of acting by attending the University of Oklahoma and majoring in drama, and his mother, Jean Speegle Howard, went through acting school in New York. The family surname had been changed from \"Beckenholdt\" to \"Howard\" several years before Ron was born. Ron was in his first movie at 18 months, Frontier Woman (1956), although his first real part was at the age of 4. Soon a regular on Playhouse 90 (1956), he was cast as Opie on The Andy Griffith Show (1960), and later moved from a child in Mayberry to America\u0027s teenager as Richie Cunningham in Happy Days (1974). The life of a child star is certainly not routine, but Ron\u0027s parents wanted his life to be as normal as possible - he attended public schools and at age 15 even took nine months off to play a basketball season. The transition from child actor to adult actor is always difficult, but for Ron the real transition was from child actor to adult director. There were some film roles, such as The Shootist (1976) for which he received a Golden Globe nomination, but his dream and now his focus was directing. He had begun shooting films at age 15 with a Super-8 camera, and after high school spent two years in a film program at the University of Southern California, but then left, feeling he could learn more from actual experience. That first film was the hardest to finance, but he struck a deal with Roger Corman - he would star in Eat My Dust (1976) and Corman would produce Grand Theft Auto (1977) which Howard would direct (he also wrote the script and starred). It was a success, and his directorial career was jump-started. Married since 1975 to his high school sweetheart, he, in 1997, is enjoying a life of telling stories as one of Hollywood\u0027s top directors.",
+    "birthPlace": "Duncan, Oklahoma, USA",
+    "director": false,
+    "actor": true,
+    "jobCategories": [
+      "Actor",
+      "Producer",
+      "Director"
+    ],
+    "knownFor": [
+      "tt0053479",
+      "tt0070992",
+      "tt0069704",
+      "tt0268978"
+    ]
+  },
+  {
+    "name": "Kevin Reynolds",
+    "birthDate": "1952-1-17",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTI3Mjg4NzMwNl5BMl5BanBnXkFtZTcwMTIzNzgwMw@@._V1_SY317_CR125,0,214,317_AL_.jpg",
+    "id": "nm0721817",
+    "miniBio": "Describing his childhood as that of a typical Air Force brat and the oldest of 2 brothers and a sister, Kevin Reynolds graduated from Baylor University in Waco, Texas with a B.A. and then a J.D. (law degree) in the early 1970s. His father was a tenured psychology professor and University vice-president, who later became the school\u0027s president and present (as of February 2000) chancellor. After law school, Reynolds practiced law in Austin for a couple of years but decided that his love for movies was too strong to allow him to continue be a lawyer. He packed all of his belongings in his car, drove to Los Angeles, and enrolled in USC film school, where he was later recognized for a student film (which later became Fandango (1985)) and befriended future actor-director Kevin Costner. When Steven Spielberg happened to run across Reynold\u0027s student film on one occasion, he gave Reynolds a shot at directing a full-length version of the film, which was the mildly cultish road comedy, Fandango (1985), which is an embellishment on some true stories of Reynolds and his closest college friends at Baylor.",
+    "birthPlace": "San Antonio, Texas, USA",
+    "director": false,
+    "actor": true,
+    "jobCategories": [
+      "Director",
+      "Writer",
+      "Assistant Director"
+    ],
+    "knownFor": [
+      "tt0102798",
+      "tt0114898",
+      "tt0245844",
+      "tt1234719"
+    ]
+  },
+  {
+    "name": "Morgan Freeman",
+    "birthDate": "1937-6-1",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTc0MDMyMzI2OF5BMl5BanBnXkFtZTcwMzM2OTk1MQ@@._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0000151",
+    "miniBio": "With an authoritative voice and calm demeanor, this ever popular American actor has grown into one of the most respected figures in modern US cinema. Morgan was born in June 1937 in Memphis, Tennessee, to Mayme Edna (Revere), a teacher, and Morgan Porterfield Freeman, a barber. The young Freeman attended Los Angeles City College before serving several years in the US Air Force as a mechanic between 1955 and 1959. His first dramatic arts exposure was on the stage including appearing in an all-African American production of the exuberant musical Hello, Dolly!. Throughout the 1970s, he continued his work on stage, winning Drama Desk and Clarence Derwent Awards and receiving a Tony Award nomination for his performance in The Mighty Gents in 1978. In 1980, he won two Obie Awards, for his portrayal of Shakespearean anti-hero Coriolanus at the New York Shakespeare Festival and for his work in Mother Courage and Her Children. Freeman won another Obie in 1984 for his performance as The Messenger in the acclaimed Brooklyn Academy of Music production of Lee Breuer\u0027s The Gospel at Colonus and, in 1985, won the Drama-Logue Award for the same role. In 1987, Freeman created the role of Hoke Coleburn in Alfred Uhry\u0027s Pulitzer Prize-winning play Driving Miss Daisy, which brought him his fourth Obie Award. In 1990, Freeman starred as Petruchio in the New York Shakespeare Festival\u0027s The Taming of the Shrew, opposite Tracey Ullman. Returning to the Broadway stage in 2008, Freeman starred with Frances McDormand and Peter Gallagher in Clifford Odets\u0027 drama The Country Girl, directed by Mike Nichols. Freeman first appeared on TV screens as several characters including \"Easy Reader\", \"Mel Mounds\" and \"Count Dracula\" on the Children\u0027s Television Workshop (now Sesame Workshop) show The Electric Company (1971). He then moved into feature film with another children\u0027s adventure, Who Says I Can\u0027t Ride a Rainbow! (1971). Next, there was a small role in the thriller Blade (1973); then he played Casca in Julius Caesar (1979) and the title role in Coriolanus (1979). Regular work was coming in for the talented Freeman and he appeared in the prison dramas Attica (1980) and Brubaker (1980), Eyewitness (1981), and portrayed the final 24 hours of slain Malcolm X in Death of a Prophet (1981). For most of the 1980s, Freeman continued to contribute decent enough performances in films that fluctuated in their quality. However, he really stood out, scoring an Oscar nomination as a merciless hoodlum in Street Smart (1987) and, then, he dazzled audiences and pulled a second Oscar nomination in the film version of Driving Miss Daisy (1989) opposite Jessica Tandy. The same year, Freeman teamed up with youthful Matthew Broderick and fiery Denzel Washington in the epic Civil War drama Glory (1989) about freed slaves being recruited to form the first all-African American fighting brigade. His star continued to rise, and the 1990s kicked off strongly with roles in The Bonfire of the Vanities (1990), Robin Hood: Prince of Thieves (1991), and O Poder de um Jovem (1992). Freeman\u0027s next role was as gunman Ned Logan, wooed out of retirement by friend William Munny to avenge several prostitutes in the wild west town of Big Whiskey in Clint Eastwood\u0027s de-mythologized western Unforgiven (1992). The film was a sh and scored an acting Oscar for Gene Hackman, a directing Oscar for Eastwood, and the Oscar for best picture. In 1993, Freeman made his directorial debut on Bopha! (1993) and soon after formed his production company, Revelations Entertainment. More strong scripts came in, and Freeman was back behind bars depicting a knowledgeable inmate (and obtaining his third Oscar nomination), befriending falsely accused banker Tim Robbins in The Shawshank Redemption (1994). He was then back out hunting a religious serial killer in Se7en (1995), starred alongside Keanu Reeves in Chain Reaction (1996), and was pursuing another serial murderer in Kiss the Girls (1997). Further praise followed for his role in the slave tale of Amistad (1997), he was a worried US President facing Armageddon from above in Deep Impact (1998), appeared in Neil LaBute\u0027s black comedy Betty (2000), and reprised his role as Alex Cross in Along Came a Spider (2001). Now highly popular, he was much in demand with cinema audiences, and he co-starred in the terrorist drama The Sum of All Fears (2002), was a military officer in the Stephen King-inspired Dreamcatcher (2003), gave divine guidance as God to Jim Carrey in Bruce Almighty (2003), and played a minor role in the comedy The Big Bounce (2004). 2005 was a huge year for Freeman. First, he he teamed up with good friend Clint Eastwood to appear in the drama, Million Dollar Baby (2004). Freeman\u0027s on-screen performance is simply world-class as ex-prize fighter Eddie \"Scrap Iron\" Dupris, who works in a run-down boxing gym alongside grizzled trainer Frankie Dunn, as the two work together to hone the skills of never-say-die female boxer Hilary Swank. Freeman received his fourth Oscar nomination and, finally, impressed the Academy\u0027s judges enough to win the Best Supporting Actor Oscar for his performance. He also narrated Steven Spielberg\u0027s War of the Worlds (2005) and appeared in Batman Begins (2005) as Lucius Fox, a valuable ally of Christian Bale\u0027s Bruce Wayne/Batman for director Christopher Nolan. Freeman would reprise his role in the two sequels of the record-breaking, genre-redefining trilogy. Roles in tentpoles and indies followed; highlights include his role as a crime boss in Há Dias de Azar (2006), a second go-round as God in Evan Almighty (2007) with Steve Carell taking over for Jim Carrey, and a supporting role in Ben Affleck\u0027s directorial debut, Gone Baby Gone (2007). He co-starred with Jack Nicholson in the breakout hit The Bucket List (2007) in 2007, and followed that up with another box-office success, Wanted (2008), then segued into the second Batman film, The Dark Knight (2008). In 2009, he reunited with Eastwood to star in the director\u0027s true-life drama Invictus (2009), on which Freeman also served as an executive producer. For his portrayal of Nelson Mandela in the film, Freeman garnered Oscar, Golden Globe and Critics\u0027 Choice Award nominations, and won the National Board of Review Award for Best Actor. Recently, Freeman appeared in RED (2010), a surprise box-office hit; he narrated the Conan the Barbarian (2011) remake, starred in Rob Reiner\u0027s The Magic of Belle Isle (2012); and capped the Batman trilogy with The Dark Knight Rises (2012). Freeman has several films upcoming, including the thriller Mestres da Ilusão (2013), under the direction of Louis Leterrier, and the science fiction actioner Oblivion (2013), in which he stars with Tom Cruise.",
+    "birthPlace": "Memphis, Tennessee, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Producer",
+      "Soundtrack"
+    ],
+    "knownFor": [
+      "tt0111161",
+      "tt0114369",
+      "tt0097239",
+      "tt0405159"
+    ]
+  },
+  {
+    "name": "Brad Pitt",
+    "birthDate": "1963-12-18",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMjA1MjE2MTQ2MV5BMl5BanBnXkFtZTcwMjE5MDY0Nw@@._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0000093",
+    "miniBio": "An actor and producer known as much for his versatility as he is for his handsome face, Golden Globe-winning actor Brad Pitt\u0027s most widely recognized role may be Tyler Durden in Fight Club (1999). But his portrayals of Billy Beane in Moneyball (2011), and Rusty Ryan in the remake of Ocean\u0027s Eleven (2001) and its sequels, also loom large in his filmography. Pitt was born William Bradley Pitt on December 18th, 1963, in Shawnee, Oklahoma, and was raised in Springfield, Missouri. He is the son of Jane Etta (Hillhouse), a school counselor, and William Alvin Pitt, a truck company manager. He has a younger brother, Douglas (Doug) Pitt, and a younger sister, Julie Neal Pitt. At Kickapoo High School, Pitt was involved in sports, debating, student government and school musicals. Pitt attended the University of Missouri, where he majored in journalism with a focus on advertising. He occasionally acted in fraternity shows. He left college two credits short of graduating to move to California. Before he became successful at acting, Pitt supported himself by driving strippers in limos, moving refrigerators and dressing as a giant chicken while working for \"el Pollo Loco\". Pitt\u0027s earliest credited roles were in television, starting on the daytime soap opera Another World (1964) before appearing in the recurring role of Randy on the legendary prime time soap opera Dallas (1978). Following a string of guest appearances on various television series through the 1980s, Pitt gained widespread attention with a small part in Thelma \u0026 Louise (1991), in which he played a sexy criminal who romanced and conned Geena Davis. This lead to starring roles in badly received films such as Johnny Suede (1991) and Cool World (1992). But Pitt\u0027s career hit an upswing with his casting in A River Runs Through It (1992), which cemented his status as an multi-layered actor as opposed to just a pretty face. Pitt\u0027s subsequent projects were as quirky and varied in tone as his performances, ranging from his unforgettably comic cameo as stoner roommate Floyd in True Romance (1993) to romantic roles in such visually lavish films as Interview with the Vampire: The Vampire Chronicles (1994) and Legends of the Fall (1994), to an emotionally tortured detective in the horror-thriller Se7en (1995). His portrayal of frenetic oddball Jeffrey Goines in Twelve Monkeys (1995) won him a Globe for Best Performance by an Actor in a Supporting Role. Pitt\u0027s portrayal of Achilles in the big-budget period drama Troy (2004) helped establish his appeal as action star and was closely followed by a co-starring role in the stylish spy-versus-spy flick Mr. \u0026 Mrs. Smith (2005). It was on the set of Mr. \u0026 Mrs. Smith that Pitt, who married Jennifer Aniston in a highly publicized ceremony in 2000, met his current partner Angelina Jolie. Pitt left Aniston for Jolie in 2005, a break-up that continues to fuel tabloid stories years after its occurrence. He continues to wildly vary his film choices, appearing in everything from high-concept popcorn flicks such as Megamind (2010) to adventurous critic-bait like Inglourious Basterds (2009) and The Tree of Life (2011). He has received two Best Actor Oscar nominations, for The Curious Case of Benjamin Button (2008) and Moneyball (2011). In 2014, he starred in the war film Fury (2014), opposite Shia LaBeouf, Logan Lerman, Jon Bernthal, and Michael Peña. Pitt and Jolie have six children, including two sons and a daughter who were adopted.",
+    "birthPlace": "Shawnee, Oklahoma, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Producer",
+      "Soundtrack"
+    ],
+    "knownFor": [
+      "tt0361748",
+      "tt0137523",
+      "tt0816711",
+      "tt0421715"
+    ]
+  },
+  {
+    "name": "Kevin Spacey",
+    "birthDate": "1959-7-26",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTUwMjQ3NDA0Ml5BMl5BanBnXkFtZTcwMjU2MDk3OQ@@._V1_SY317_CR11,0,214,317_AL_.jpg",
+    "id": "nm0000228",
+    "miniBio": "As enigmatic as he is talented, Kevin Spacey has always kept the details of his private life closely guarded. As he explained in a 1998 interview with the London Evening Standard, \"the less you know about me, the easier it is to convince you that I am that character on screen. It allows an audience to come into a movie theatre and believe I am that person\". There are, however, certain biographical facts to be had - for starters, Kevin Spacey Fowler was the youngest of three children born to Kathleen Ann (Knutson) and Thomas Geoffrey Fowler, in South Orange, New Jersey. His ancestry includes Swedish (from his maternal grandfather) and English. His mother was a personal secretary, his father a technical writer whose irregular job prospects led the family all over the country. The family eventually settled in southern California, where young Kevin developed into quite a little hellion - after he set his sister\u0027s tree house on fire, he was shipped off to the Northridge Military Academy, only to be thrown out a few months later for pinging a classmate on the head with a tire. Spacey then found his way to Chatsworth High School in the San Fernando Valley, where he managed to channel his dramatic tendencies into a successful amateur acting career. In his senior year, he played \"Captain von Trapp\" opposite classmate Mare Winningham\u0027s \"Maria\" in \"The Sound of Music\" (the pair later graduated as co-valedictorians). Spacey claims that his interest in acting - and his nearly encyclopedic accumulation of film knowledge - began at an early age, when he would sneak downstairs to watch the late late show on TV. Later, in high school, he and his friends cut class to catch revival films at the NuArt Theater. The adolescent Spacey worked up celebrity impersonations (James Stewart and Johnny Carson were two of his favorites) to try out on the amateur comedy club circuit. He briefly attended Los Angeles Valley College, then left (on the advice of another Chatsworth classmate, Val Kilmer) to join the drama program at Juilliard. After two years of training he was anxious to work, so he quit Juilliard sans diploma and signed up with the New York Shakespeare Festival. His first professional stage appearance was as a messenger in the 1981 production of \"Henry VI\". Festival head Joseph Papp ushered the young actor out into the \"real world\" of theater, and the next year Spacey made his Broadway debut in Henrik Ibsen\u0027s \"Ghosts\". He quickly proved himself as an energetic and versatile performer (at one point, he rotated through all the parts in David Rabe\u0027s \"Hurlyburly\"). In 1986, he had the chance to work with his idol and future mentor, Jack Lemmon, on a production of Eugene O\u0027Neill\u0027s \"Long Day\u0027s Journey Into Night\". While his interest soon turned to film, Spacey would remain active in the theater community - in 1991, he won a Tony Award for his turn as \"Uncle Louie\" in Neil Simon\u0027s Broadway hit \"Lost in Yonkers\" and, in 1999, he returned to the boards for a revival of O\u0027Neill\u0027s \"The Iceman Cometh\". Spacey\u0027s film career began modestly, with a small part as a subway thief in Heartburn (1986). Deemed more of a \"character actor\" than a \"leading man\", he stayed on the periphery in his next few films, but attracted attention for his turn as beady-eyed villain \"Mel Profitt\" on the TV series Wiseguy (1987). Profitt was the first in a long line of dark, manipulative characters that would eventually make Kevin Spacey a household name: he went on to play a sinister office manager in Glengarry Glen Ross (1992), a sadistic Hollywood exec in Swimming with Sharks (1994), and, most famously, creepy, smooth-talking eyewitness Verbal Kint in The Usual Suspects (1995). The \"Suspects\" role earned Spacey an Oscar for Best Supporting Actor and catapulted him into the limelight. That same year, he turned in another complex, eerie performance in David Fincher\u0027s thriller Se7en (1995) (Spacey refused billing on the film, fearing that it might compromise the ending if audiences were waiting for him to appear). By now, the scripts were pouring in. After appearing in Al Pacino\u0027s Looking for Richard (1996), Spacey made his own directorial debut with Albino Alligator (1996), a low-key but well received hostage drama. He then jumped back into acting, winning critical accolades for his turns as flashy detective Jack Vincennes in L.A. Confidential (1997) and genteel, closeted murder suspect Jim Williams in Midnight in the Garden of Good and Evil (1997). In October 1999, just four days after the dark suburban satire American Beauty (1999) opened in US theaters, Spacey received a star on the Hollywood Walk of Fame. Little did organizers know that his role in Beauty would turn out to be his biggest success yet - as Lester Burnham, a middle-aged corporate cog on the brink of psychological meltdown, he tapped into a funny, savage character that captured audiences\u0027 imaginations and earned him a Best Actor Oscar. No longer relegated to offbeat supporting parts, Spacey seems poised to redefine himself as a Hollywood headliner. He says he\u0027s finished exploring the dark side - but, given his attraction to complex characters, that mischievous twinkle will never be too far from his eyes. In February 2003 Spacey made a major move back to the theatre. He was appointed Artistic Director of the new company set up to save the famous Old Vic theatre, The Old Vic Theatre Company. Although he did not undertake to stop appearing in movies altogether, he undertook to remain in this leading post for ten years, and to act in as well as to direct plays during that time. His first production, of which he was the director, was the September 2004 British premiere of the play Cloaca by Maria Goos (made into a film, Cloaca (2003)). Spacey made his UK Shakespearean debut in the title role in Richard II in 2005. In 2006 he got movie director Robert Altman to direct for the stage the little-known Arthur Miller play Resurrection Blues, but that was a dismal failure. However Spacey remained optimistic, and insisted that a few mistakes are part of the learning process. He starred thereafter with great success in Eugene O\u0027Neill\u0027s A Moon for the Misbegotten along with Colm Meaney and Eve Best, and in 2007 that show transferred to Broadway. In February 2008 Spacey put on a revival of the David Mamet 1988 play Speed-the-Plow in which he took one of the three roles, the others being taken by Jeff Goldblum and Laura Michelle Kelly. In 2013, Spacey took on the lead role in an original Netflix series, House of Cards. Based upon a British show of the same name, House of Cards is an American political drama. The show\u0027s first season received a Primetime Emmy Award nomination to include outstanding lead actor in a drama series.",
+    "birthPlace": "South Orange, New Jersey, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Producer",
+      "Soundtrack"
+    ],
+    "knownFor": [
+      "tt0169547",
+      "tt0119488",
+      "tt0114814",
+      "tt1182345"
+    ]
+  },
+  {
+    "name": "Gabriel Byrne",
+    "birthDate": "1950-5-12",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMjAxMzE1ODA1Ml5BMl5BanBnXkFtZTcwODY3MjU5MQ@@._V1_SY317_CR19,0,214,317_AL_.jpg",
+    "id": "nm0000321",
+    "miniBio": "Byrne was the first of six children, born in Dublin, Ireland. His father was a cooper and his mother a hospital worker. He was raised Catholic and educated by the Irish Christian Brothers. He spent five years of his childhood in a seminary training to be a Catholic priest. He later said, \"I spent five years in the seminary and I suppose it was assumed that you had a vocation. I have realized subsequently that I didn\u0027t have one at all. I don\u0027t believe in God. But I did believe at the time in this notion that you were being called.\" He attended University College Dublin, where he studied archeology and linguistics, and became proficient in Irish. He played football (soccer) in Dublin with the Stella Maris Football Club. Byrne worked in archeology after he left UCD but maintained his love of his language, writing Draíocht (Magic), the first drama in Irish on Ireland\u0027s national Irish television station, TG4, in 1996. He discovered his acting ability as a young adult. Before that he worked at several occupations which included being an archaeologist, a cook, a bullfighter, and a Spanish schoolteacher. He begin acting when he was 29. He began on stage at the Focus Theatre and the Abbey Theatre in Dublin, later he joined the Royal Court Theatre and the Royal National Theatre in London. Byrne came to prominence on the final season of the Irish television show The Riordans, later starring in the spin-off series, Bracken. He made his film début in 1981 as Lord Uther Pendragon in John Boorman\u0027s King Arthur epic, Excalibur. Byrne is featured as therapist Dr. Paul Weston in the critically acclaimed HBO series In Treatment (2008). In his return to theater in 2008, he appeared as King Arthur in Lerner and Loewe\u0027s Camelot with the New York Philharmonic which was featured in a PBS broadcast in the Live From Lincoln Center series in May of 2008. Byrne did not visit America until he was 37. In 1988, Byrne married actress Ellen Barkin with whom he has two children. The couple separated amicably in 1993 and divorced in 1999. Byrne resides in Brooklyn, New York. In November 2004, Byrne was appointed a UNICEF Ireland Ambassador. In 2007 Byrne was presented with the first of the newly created Volta awards at the 5th Jameson Dublin International Film Festival. This was for lifetime achievement in acting. He also received the Honorary Patronage of the University Philosophical Society, of Trinity College, Dublin on February 20, 2007. He was awarded an honorary degree in late 2007 by the National University of Ireland, Galway, in recognition of Byrne\u0027s \"outstanding contribution to Irish and international film\".",
+    "birthPlace": "Dublin, Ireland",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Producer",
+      "Writer"
+    ],
+    "knownFor": [
+      "tt0114814",
+      "tt0835434",
+      "tt0100150",
+      "tt0110367"
+    ]
+  },
+  {
+    "name": "Chazz Palminteri",
+    "birthDate": "1952-5-15",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMjExNjU4NTUzOV5BMl5BanBnXkFtZTgwMTY3MDMzMTE@._V1_SY317_CR17,0,214,317_AL_.jpg",
+    "id": "nm0001590",
+    "miniBio": "Bronx-born and raised Chazz Palminteri was a natural choice to continue the Italianate torch in film. In the tradition set forth in the 1970s by such icons as director Martin Scorsese and actors Robert De Niro, Al Pacino, John Cazale and Joe Pesci, Palminteri has brought grit, muscle and an evocative realism to the sidewalks of his New York neighborhood, violent as they are and were. Born in 1952, Palmintieri grew up in a tough area of the Bronx and it gave young Calogero (Palminteri\u0027s given first name) the life lessons that would later prove very useful to his career. He graduated from Theodore Roosevelt High School and started out pursuing his craft in 1973 studying at the Actor\u0027s Studio. He appeared off-Broadway in the early 1980s while paying his dues as a bouncer and doorman in nightclubs, among other jobs. In 1986 he headed west and found that his ethnic qualifications was well-suited for getting tough-talker parts. Slick attorneys, unflinching hoods and hard-nosed cops were all part of his ethnic streetwise persona in such TV shows as Wiseguy (1987), Matlock (1986) and Hill Street Blues (1981). In films he started off playing a 1930s-style gangster in Sylvester Stallone\u0027s Oscar (1991). Although his roles were sharp, well-acted and with a distinct edge to them, there was nothing in them to show that he was capable of stronger leading parts. In 1988 he wrote for himself a play entitled \"A Bronx Tale,\" a powerful one-man stage commentary in which he depicted his bruising childhood in great detail, which included witnessing gangland slayings. Palminteri brought each and every character to life (18 in all) in this autobiographical piece -- his friends, enemies, even his own family. He showcased for years in both Los Angeles and New York, finally sparking the interest of his film idol, Robert De Niro. DeNiro, wanting to direct for the first time, saw the potential of this project and brought both it and the actor/writer to the screen. Palminteri played one of the flashier roles, Sonny, a gangster, in the movie version. An unknown film commodity at the time, Chazz had stubbornly refused to sell his stage property (the offers went into the seven figures) unless he was part of the package as both actor and screenwriter. DeNiro, who became his mentor, backed him up all the way, and the rest is history. A Bronx Tale (1993) earned strong reviews. At age 41 Palminteri had become an \"overnight\" star. Other important projects quickly fell his way. He received a well-deserved Oscar nomination the following year for his portrayal of a Runyonesque hit man in Woody Allen\u0027s hilarious jazz-era comedy Bullets Over Broadway (1994). He was on the right side of the law in both The Perez Family (1995), his first romantic lead, and then the classic crimer The Usual Suspects (1995). He played the ill-fated brute in Diabolique (1996) and wrote a second screenplay, Faithful (1996), in which he again plays a hit man, terrorizing both Cher and Ryan O\u0027Neal. Though Palminteri was invariably drawn into a rather tight-fitting, often violent typecast, it has been a secure and flashy one that continues to run strong into the millennium. Surprisingly, the one obvious show he missed out on was HBO\u0027s The Sopranos (1999). True to form he has been more recently spotted in gritty urban settings playing a \"Hell\u0027s Kitchen\" cop in One Eyed King (2001) starring actor/producer Armand Assante; a pool hustler and mentor in Poolhall Junkies (2002); a mob boss in In the Fix (2005); a dirty cop in Running Scared (2006); the titular scam artist as Yonkers Joe (2008); a karaoke-loving Italian psychiatrist in Once More with Feeling (2009); and an abusive husband and father in Mighty Fine (2012). Occasionally he has lightened up a bit as in his recurring role as Shorty on Modern Family (2009)",
+    "birthPlace": "New York City, New York, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Writer",
+      "Director"
+    ],
+    "knownFor": [
+      "tt0114814",
+      "tt0106489",
+      "tt0122933",
+      "tt0404390"
+    ]
+  },
+  {
+    "name": "Sophie Marceau",
+    "birthDate": "1966-11-17",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTc5NjA5OTk4Ml5BMl5BanBnXkFtZTYwNzkyNzYz._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0000521",
+    "miniBio": "Sophie Marceau was born Sophie Danièle Sylvie Maupu in Paris, France, to Simone (Morisset), a shop assistant, and Benoît Maupu, a truck driver. She grew up far from the studio spotlights. When she was 14 she was living in the Paris suburb of Gentilly with her father. She learned from friends that director Claude Pinoteau was looking for new faces for a movie about teenagers called The Party (1980). She auditioned for the role, got it, and the film was a success. She played in La Boum 2 - Depois da Festa (1982), then bought back her contract with Gaumont when she was 16 years old for one million French francs. She is a critically acclaimed actress, having received the Cesar for Best Feminine Hope for \"La Boum 2\" in 1983. She was elected Romantic actress for Uma Família na Revolução (1988) at the Festival International du Film Romantique (International Festival of Romantic Movie) of Cabourg in 1988, and was awarded the Moliere of the Best Theatrical Revelation for \"Eurydice et Pygmalion\" in 1994.",
+    "birthPlace": "Paris, France",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actress",
+      "Writer",
+      "Director"
+    ],
+    "knownFor": [
+      "tt0143145",
+      "tt0112573",
+      "tt1194616",
+      "tt0119125"
+    ]
+  },
+  {
+    "name": "Patrick McGoohan",
+    "birthDate": "1928-3-19",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTY3MTAzMTExOF5BMl5BanBnXkFtZTcwNzEwNjUyMg@@._V1_SY317_CR14,0,214,317_AL_.jpg",
+    "id": "nm0001526",
+    "miniBio": "Though born in America, Irish actor Patrick McGoohan rose to become the number-one British TV star in the 1950s to 1960s era. His parents moved to Ireland when he was very young and McGoohan acquired a neutral accent that sounds at home in British or American dialogue. He was an avid stage actor and performed hundreds of times in small and large productions before landing his first TV and film roles. McGoohan is one of few actors who has successfully switched between theater, TV, and films many times during his career. He was often cast in the role of Angry Young Man. In 1959, he was named Best TV Actor of the Year in Britain. Shortly thereafter, he was chosen for the starring role in the \"Secret Agent\" TV series (AKA Danger Man (1960)), which proved to be an immense success for three years and allowed the British to break into the burgeoning American TV market for the first time. McGoohan became bored with the limiting role of spy and turned in his resignation right after the first episode of the fourth year had been filmed (\"Koroshi\"). McGoohan set up his own production company and collaborated with noted author and script editor George Markstein to sell a brand new concept to ITV\u0027s president, Lew Grade. McGoohan starred in, directed, produced, and wrote many of the episodes, sometimes taking a pseudonym to reduce the sheer number of credits to his name. Thus, the TV series The Prisoner (1967) came to revolve around the efforts of a secret agent, who resigned early in his career, to clear his name. His aim was to escape from a fancifully beautiful but psychologically brutal prison for people who know too much. The series was as popular as it was surreal and allegorical and its mysterious final episode cause such an uproar that McGoohan was to desert England for more than 20 years to seek relative anonymity in LA, where celebrities are \"a dime a dozen.\" During the 1970s, he appeared in four episodes of the TV detective series \"Columbo,\" for which he won an Emmy Award. His film roles lapsed from prominence until his powerful performance as King Edward I (Longshanks) in Mel Gibson\u0027s production of Braveheart (1995). As such, he has solidified his casting in the role of Angry Old Man.",
+    "birthPlace": "Santa Monica, California, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Producer",
+      "Director"
+    ],
+    "knownFor": [
+      "tt0112573",
+      "tt0079116",
+      "tt0058846",
+      "tt0081455"
+    ]
+  },
+  {
+    "name": "Val Kilmer",
+    "birthDate": "1959-12-31",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTk3ODIzMDA5Ml5BMl5BanBnXkFtZTcwNDY0NTU4Ng@@._V1_SY317_CR4,0,214,317_AL_.jpg",
+    "id": "nm0000174",
+    "miniBio": "Val Kilmer was born in Los Angeles, to Gladys (Ekstadt) and Eugene Kilmer, a real estate developer and aerospace equipment distributor. His mother, born in Indiana, was from a Swedish family, and his father was from Texas. Val studied at Hollywood\u0027s Professional\u0027s School and, in his teens, entered Juilliard\u0027s drama program. His professional acting career began on stage, and he still participates in theater; he played Hamlet at the 1988 Colorado Shakespeare Festival. His film debut was in the 1984 spoof Top Secret! (1984), wherein he starred as blond rock idol Nick Rivers. He was in a number of films throughout the 1980s, including the 1986 smash Top Gun (1986). Despite his obvious talent and range, it wasn\u0027t until his astonishingly believable performance as Jim Morrison in Oliver Stone\u0027s The Doors (1991) that the world sat up and took notice. Kilmer again put his good baritone to use in the movie, performing all of the concert pieces. Since then, he has played two more American legends, Elvis Presley in True Romance (1993) and Doc Holliday in Tombstone (1993). In July 1994, it was announced that Kilmer would be taking over the role of Batman/Bruce Wayne from Michael Keaton.",
+    "birthPlace": "Los Angeles, California, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Soundtrack",
+      "Producer"
+    ],
+    "knownFor": [
+      "tt0113277",
+      "tt0112462",
+      "tt0092099",
+      "tt0120794"
+    ]
+  },
+  {
+    "name": "Tommy Lee Jones",
+    "birthDate": "1946-9-15",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTkyNjc4MDc0OV5BMl5BanBnXkFtZTcwOTc5OTUwOQ@@._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0000169",
+    "miniBio": "Tommy Lee Jones was born in San Saba, Texas, the son of Lucille Marie (Scott), a police officer and beauty shop owner, and Clyde C. Jones, who worked on oil fields. Tommy himself worked in underwater construction and on an oil rig. He attended St. Mark\u0027s School of Texas, a prestigious prep school for boys in Dallas, on a scholarship, and went to Harvard on another scholarship. He roomed with future Vice President Al Gore and played offensive guard in the famous 29-29 Harvard-Yale football game of \u002768 known as \"The Tie.\" He received a B.A. in English literature and graduated cum laude from Harvard in 1969. Following college, he moved to New York and began his theatrical career on Broadway in \"A Patriot for Me\" (1969). In 1970, he made his film debut in Love Story (1970). While living in New York, he continued to appear in various plays, both on- and off-Broadway: \"Fortune and Men\u0027s Eyes\" (1969); \"Four on a Garden\" (1971); \"Blue Boys\" (1972); \"Ulysses in Nighttown\" (1974). During this time, he also appeared on a daytime soap opera, One Life to Live (1968) as Dr. Mark Toland from 1971-75. He moved with wife Kate Lardner, granddaughter of short-story writer/columnist Ring Lardner, and her two children from a previous marriage, to Los Angeles. There he began to get some roles on television: Charlie\u0027s Angels (1976) (pilot episode); Smash-Up on Interstate 5 (1976); and The Amazing Howard Hughes (1977). While working on the movie Back Roads (1981), he met and fell in love with Kimberlea Cloughley, whom he later married. More roles in television--both on network and cable--stage and film garnered him a reputation as a strong, explosive, thoughtful actor who could handle supporting as well as leading roles. He made his directorial debut in The Good Old Boys (1995) on TNT. In addition to directing and starring in the film, he co-wrote the teleplay (with J.T. Allen). The film, based on Elmer Kelton\u0027s novel, is set in west Texas where Jones has strong family ties. Consequently, this story of a cowboy facing the end of an era has special meaning for him.",
+    "birthPlace": "San Saba, Texas, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Director",
+      "Writer"
+    ],
+    "knownFor": [
+      "tt0477348",
+      "tt0119654",
+      "tt0120912",
+      "tt0106977"
+    ]
+  },
+  {
+    "name": "Jim Carrey",
+    "birthDate": "1962-1-17",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTQwMjAwNzI0M15BMl5BanBnXkFtZTcwOTY1MTMyOQ@@._V1_SY317_CR22,0,214,317_AL_.jpg",
+    "id": "nm0000120",
+    "miniBio": "Jim Carrey, Canadian-born and a U.S. citizen since 2004, is an actor and producer famous for his rubbery body movements and flexible facial expressions. The two-time Golden Globe-winner rose to fame as a cast member of the Fox sketch comedy In Living Color (1990) but leading roles in Ace Ventura: Pet Detective (1994), Dumb \u0026 Dumber (1994) and The Mask (1994) established him as a bankable comedy actor. James Eugene Carrey was born on January 17, 1962, in Ontario, Canada, and is the youngest of four children of Kathleen (Oram), a homemaker, and Percy Carrey, an accountant and jazz musician. The family surname was originally \"Carré\", and he has French-Canadian, Scottish, and Irish ancestry. Carrey was an incurable extrovert from day one. As a child, he performed constantly, for anyone who would watch, and even mailed his résumé to The Carol Burnett Show (1967) at age 10. In junior high, he was granted a few precious minutes at the end of each school day to do stand-up routines for his classmates (provided, of course, that he kept a lid on it the rest of the day). Carrey\u0027s early adolescence took a turn for the tragic, however, when the family was forced to relocate from their cozy town of Newmarket to Scarborough (a Toronto suburb). They all took security and janitorial jobs in the Titan Wheels factory, Jim working 8-hour shifts after school let out (not surprisingly, his grades and morale both suffered). When they finally deserted the factory, the family lived out of a Volkswagen camper van until they could return to Toronto. Carrey made his stand-up debut in Toronto after his parents and siblings got back on their feet. He made his (reportedly awful) professional stand-up debut at Yuk-Yuk\u0027s, one of the many local clubs that would serve as his training ground in the years to come. He dropped out of high school, worked on his celebrity impersonations (among them Michael Landon and James Stewart), and in 1979 worked up the nerve to move to Los Angeles. He finessed his way into a regular gig at The Comedy Store, where he impressed Rodney Dangerfield so much that the veteran comic signed him as an opening act for an entire season. During this period Carrey met and married waitress Melissa Womer, with whom he had a daughter (Jane). The couple would later go through a very messy divorce, freeing Carrey up for a brief second marriage to actress Lauren Holly. Wary of falling into the lounge act lifestyle, Carrey began to look around for other performance outlets. He landed a part as a novice cartoonist in the short-lived sitcom The Duck Factory (1984); while the show fell flat, the experience gave Carrey the confidence to pursue acting more vigorously. Carrey also worked on breaking into film around this time. He scored the male lead in the ill-received Lauren Hutton vehicle Once Bitten (1985), and had a supporting role in Peggy Sue Got Married (1986), before making a modest splash with his appearance as the alien Wiploc in Earth Girls Are Easy (1988). Impressed with Carrey\u0027s lunacy, fellow extraterrestrial Damon Wayans made a call to his brother, Keenen Ivory Wayans, who was in the process of putting together the sketch comedy show In Living Color (1990). Carrey joined the cast and quickly made a name for himself with outrageous acts (one of his most popular characters, psychotic Fire Marshall Bill, was attacked by watchdog groups for dispensing ill- advised safety tips). Following his time on In Living Color (1990), Carrey\u0027s transformation from TV goofball to marquee headliner happened within the course of a single year. He opened 1994 with a starring turn in Ace Ventura: Pet Detective (1994), a film that cashed in on his extremely physical brand of humor (the character\u0027s trademark was talking out his derrière). Next up was the manic superhero movie The Mask (1994), which had audiences wondering just how far Carrey\u0027s features could stretch. Finally, in December 1994, he hit theaters as a loveable dolt in the Farrelly brothers\u0027 Dumb \u0026 Dumber (1994) (his first multi-million dollar payday). Now a box-office staple, Carrey brought his manic antics onto the set of Batman Forever (1995), replacing Robin Williams as The Riddler. He also filmed the follow-up to his breakthrough, Ace Ventura: When Nature Calls (1995), and inked a deal with Sony to star in The Cable Guy (1996) (replacing Chris Farley) for a cool $20 million--at the time, that was the biggest up-front sum that had been offered to any comic actor. The movie turned out to be a disappointment, both critically and financially, but Carrey bounced back the next year with the energetic hit Liar Liar (1997). Worried that his comic shtick would soon wear thin, Carrey decided to change course. In 1998, he traded in the megabucks and silly grins to star in Peter Weir\u0027s The Truman Show (1998) playing a naive salesman who discovers that his entire life is the subject of a TV show, Carrey demonstrated an uncharacteristic sincerity that took moviegoers by surprise. He won a Golden Globe for the performance, and fans anticipated an Oscar nomination as well--when it didn\u0027t materialize, Carrey lashed out at Academy members for their narrow-minded selection process. Perhaps inspired by the snub, Carrey threw himself into his next role with abandon. After edging out a handful of other hopefuls (including Edward Norton) to play eccentric funnyman Andy Kaufman in Man on the Moon (1999), Carrey disappeared into the role, living as Kaufman -- and his blustery alter-ego Tony Clifton -- for months (Carrey even owned Kaufman\u0027s bongo drums, which he\u0027d used during his audition for director Milos Forman). His sometimes uncanny impersonation was rewarded with another Golden Globe, but once again the Academy kept quiet. An indignant Carrey next reprised his bankable mania for the Farrelly brothers in Me, Myself \u0026 Irene (2000), playing a state trooper whose Jekyll and Hyde personalities both fall in love with the same woman (Renée Zellweger). Carrey\u0027s real-life persona wound up falling for her too--a few months after the film wrapped, the pair announced they were officially a couple. By then, Carrey had already slipped into a furry green suit to play the stingy antihero of Ron Howard\u0027s How the Grinch Stole Christmas (2000). Although Carrey maintains a foothold in the comedy world with films such as Bruce Almighty (2003) and Mr. Popper\u0027s Penguins (2011), he is also capable of turning in nuanced dramatic performances, as demonstrated in films like Eternal Sunshine of the Spotless Mind (2004) and the drama/comedy Yes Man (2008). In 2013, he costars with Steve Carell in The Incredible Burt Wonderstone (2013). Carrey has one child with his first wife, Melissa Carrey, whom he divorced in 1995. He married actress Lauren Holly in 1996, but they split less than a year later.",
+    "birthPlace": "Newmarket, Ontario, Canada",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Writer",
+      "Soundtrack"
+    ],
+    "knownFor": [
+      "tt0338013",
+      "tt0120382",
+      "tt0109040",
+      "tt0109686"
+    ]
+  },
+  {
+    "name": "Alicia Silverstone",
+    "birthDate": "1976-10-4",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMjA3MTkwOTMyNV5BMl5BanBnXkFtZTcwNzU1MDI2Mg@@._V1_SY317_CR16,0,214,317_AL_.jpg",
+    "id": "nm0000224",
+    "miniBio": "Alicia Silverstone was born on October 4, 1976 in San Francisco, California, the youngest of three children. She is the daughter of Didi (Radford), a former flight attendant, and Monty Silverstone, a real-estate investor. Her English-born father is of Ashkenazi Jewish descent, while her Scottish-born mother converted to Judaism. Alicia\u0027s career began at the tender age of six, when her father took some photos of his young daughter, which eventually led to her getting several television commercials. After a guest spot on The Wonder Years (1988) as a literal \"dream girl\", she moved on to movies. She landed a role in The Crush (1993), a sort of Fatal Attraction (1987) for teenagers in which she portrayed a disturbed young girl obsessed with an older man. The nasty little role did not impress the critical establishment but it wowed its target audience: teenagers. In fact, the role won her the 1994 MTV Movie Award for \"Best Villain\" and \"Breakthrough Performance\". It is interesting to note that during the filming of the movie, Alicia became an emancipated minor in order to get around child labor laws which would have interfered with her working hours. She was a dedicated actress from early on. The film also caught the attention of Aerosmith, who hired her to appear in a string of their music videos. The first of them, \"Cryin\u0027\", was voted the #1 video of all time on MTV. Silverstone was definitely a hit with the MTV crowd, but larger commercial success still eluded her. That all changed when she landed the role of Cher in Amy Heckerling\u0027s Clueless (1995). Cher was the antithesis of Alicia\u0027s role in The Crush; this time around, she was a rich, naive yet endearing girl from Beverly Hills in search of love in the 1990s. The film was a huge box-office hit and wowed both audiences and critics alike and demonstrated Alicia\u0027s strength and bankability. She was hailed as the woman of the hour, and branded the spokeswoman for an emerging young generation. She signed a deal with Columbia TriStar worth $10 million and got the coveted role of Batgirl in the Batman franchise. Also, as part of the package, she got a three-year first-look deal for her own production company, First Kiss Productions. The first film released by First Kiss was Excess Baggage (1997).",
+    "birthPlace": "San Francisco, California, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actress",
+      "Producer",
+      "Soundtrack"
+    ],
+    "knownFor": [
+      "tt0112697",
+      "tt0118688",
+      "tt0124298",
+      "tt0119086"
+    ]
+  },
+  {
+    "name": "Stacey Dash",
+    "birthDate": "1967-1-20",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BOTMwNzY2MTQ4Ml5BMl5BanBnXkFtZTgwMzQ3NTgyMTE@._V1_SY317_CR131,0,214,317_AL_.jpg",
+    "id": "nm0001107",
+    "miniBio": "Stacey Dash was born in the Bronx, New York. Stacy knew that she wanted to act, and from an early age began to act professionally. She made regular appearances on The Cosby Show (1984), The Fresh Prince of Bel-Air (1990), and also St. Elsewhere (1982). At 21 she made her feature film debut in Enemy Territory (1987), which was quickly followed by Moving (1988), in which she played Richard Pryor\u0027s teenage daughter. Four years later she was in Mo\u0027 Money (1992), with Damon Wayans. In 1994 she starred with Mark Wahlberg in Renaissance Man (1994). In 1995 she did the provocative erotic thriller Illegal in Blue (1995) and later that year got her big break when was cast as Dionne in the hit comedy Clueless (1995). She went on to star in the UPN sitcom Clueless (1996) that was based on the movie, and which lasted for two years. During that time she completed Oliver Stone\u0027s Cold Around the Heart (1997) and also the independent film Personals (1999). After leaving \"Clueless\" in 1999, Stacey seems to be moving along nicely. She has recently appeared in The Painting (2001) and Paper Soldiers (2002).",
+    "birthPlace": "The Bronx, New York City, New York, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actress"
+    ],
+    "knownFor": [
+      "tt0112697",
+      "tt0115137",
+      "tt0104897",
+      "tt0466839"
+    ]
+  },
+  {
+    "name": "Brittany Murphy",
+    "birthDate": "1977-11-10",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTQ3MzIyOTAxOF5BMl5BanBnXkFtZTYwNDU0MjUz._V1_SY317_CR30,0,214,317_AL_.jpg",
+    "id": "nm0005261",
+    "miniBio": "Brittany Murphy was born Brittany Anne Bertolotti on November 10, 1977 in Atlanta, Georgia, to Sharon Kathleen Murphy and Angelo Joseph Bertolotti. Her father\u0027s ancestry is Italian, and her mother is of Irish and Slovak descent. Her father moved the family back to Edison, New Jersey as a native New Yorker and to be closer to other siblings from previous marriages. While dining out one night in the presence of Hollywood royalty, Brittany at the age of 5 approached an adjoining table when Academy Award nominee Burt Reynolds and George Segal were seated. Brittany introduced herself to the Hollywood legends and confidently told them that someday she too would be a star. She comes from a long line of international musicians and performers with three half-brothers and a sister. Angelo Bertolotti was torn from their tight-knit family as a made-man with the Italian Mafia. The Senior Bertolotti, who coined the nickname of \"Britt\" for his daughter, was also an entrepreneur and diplomat for organized crime families and one of the first to be subjected to a RICO prosecution. Brittany\u0027s interests and well-being were always her father\u0027s first goal and objective. To distance his talented daughter from his infamous past, Angelo allowed Sharon to use her maiden for Brittany\u0027s, so that her shining star would not be overshadowed by a father\u0027s past, with the couple divorcing thereafter. Brittany began receiving accolades and applause in regional theater at the early age of 9. At the age of 13, Brittany landed several national commercials. She appeared on television and caught the attention of a personal manager and an agent. Soon, Brittany\u0027s mother Sharon turned full-time to being a \"Stage Mom\" where Angelo provided financial support throughout and their relationship is memorialized with a long and close history in pictures. The hopeful daughter and mother moved to Burbank, CA, where Brittany landed her first television role on \"Blossom\" (1990). Hearts and doors opened up for a starring role on \"Drexell\u0027s Class\" (1991), a short lived TV series. Brittany\u0027s big screen movie debut started with \"Clueless\" (1995), where she was co-starring with Alicia Silverstone. Britt soared, demonstrating her musical and artistic talents with dramatic and comedic roles landing a nomination for best leading female performance in the Young Artist Awards for her role in the television film \"David and Lisa\" (1998). Brittany garnered tremendous attention for her role in \"Girl Interrupted\" with Academy Award winner Angelina Jolie. Brittany\u0027s band, \"Blessed Soul\" was growing with her as lead singer and Britt lent her vocal talents to the TV hit, cartoon sensation, \"King of the Hill\" (1997) as the voice of Luanne. Brittany is alleged to have been a witness in the case of the former Department of Homeland Security employee Julia Davis. According to Davis, Brittany and her fiancée Simon Monjack were then targeted for retaliation that included land and aerial surveillance and a threatened prosecution. Monjack was arrested and detained by the Bureau of Immigration and Customs Enforcement (ICE). Brittany and Simon confided in Alex Ben Block of the Hollywood Reporter, telling him in an interview that they were under surveillance by helicopters and their telephones have been wiretapped. This information was published by THR posthumously, in an article entitled \"The Last Difficult Days of Brittany Murphy.\" On December 20, 2009, Brittany Murphy died an untimely death. The LAPD and Los Angeles County Coroner closed the case within one hour, attributing her death to pneumonia and anemia. Five months after Brittany\u0027s unexpected demise, her husband Simon Monjack was found dead in the house he shared with Brittany. The chief/spokesperson at the Los Angeles County Dept of Coroner, Craig Harvey, stated that Simon also died from the same exact causes as his wife, namely pneumonia and anemia. Neither Brittany, nor Simon, were given a thorough and complete forensic autopsy for poisons. Brittany\u0027s father, Angelo \"AJ\" Bertolotti, is pursuing the investigation of the true reasons behind Brittany\u0027s and Simon\u0027s sudden demise, as he believes that the two were murdered. Abnormally high levels of heavy metals and poisons were discovered in Brittany\u0027s hair, tested by two other independent forensic labs with famed Pathologist, attorney Cyril Wecht concluded from the appearances, Brittany could have been murdered and should be exhumed. Her father Angelo is preparing court actions to insure Brittany obtains justice.",
+    "birthPlace": "Los Angeles, California, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actress",
+      "Soundtrack",
+      "Producer"
+    ],
+    "knownFor": [
+      "tt0118375",
+      "tt0112697",
+      "tt0298203",
+      "tt0172493"
+    ]
+  },
+  {
+    "name": "Tom Hanks",
+    "birthDate": "1956-7-9",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTQ2MjMwNDA3Nl5BMl5BanBnXkFtZTcwMTA2NDY3NQ@@._V1_SY317_CR2,0,214,317_AL_.jpg",
+    "id": "nm0000158",
+    "miniBio": "Thomas Jeffrey Hanks was born in Concord, California, to Janet Marylyn (Frager), a hospital worker, and Amos Mefford Hanks, an itinerant cook. His father had English, and some German, ancestry, while his mother\u0027s family, originally surnamed \"Fraga\", was entirely Portuguese. Tom grew up in what he has called a \"fractured\" family. He moved around a lot after his parents\u0027 divorce, living with a succession of step-families. No problems, no abuse, no alcoholism - just a confused childhood. He had no acting experience in college and, in fact, credits the fact that he couldn\u0027t get cast in a college play with actually starting his career. He went downtown, auditioned for a community theater play, was invited by the director of that play to go to Cleveland, and there his acting career started. He met his second wife, actress Rita Wilson on the set of his television show Bosom Buddies (1980) - she appeared in one episode in the second season (1981), Bosom Buddies: All You Need Is Love (1981). They have two children, and Tom has another son and daughter by his first wife, Samantha Lewes. In 1996, he made his first step behind the camera, directing and writing as well as starring in the film, That Thing You Do! (1996).",
+    "birthPlace": "Concord, California, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Producer",
+      "Actor",
+      "Soundtrack"
+    ],
+    "knownFor": [
+      "tt0382625",
+      "tt0109830",
+      "tt0120815",
+      "tt0120689"
+    ]
+  },
+  {
+    "name": "Tim Allen",
+    "birthDate": "1953-6-13",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTI5ODY0NTAwOF5BMl5BanBnXkFtZTcwOTI3NjQxMw@@._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0000741",
+    "miniBio": "Timothy Allen Dick was born on June 13, 1953, in Denver, Colorado, USA, to Martha Katherine (Fox) and Gerald M. Dick. His father, a real-estate salesman, was killed in a collision with a drunk driver while driving his family home from a University of Colorado football game, when Tim was 11 years-old. His mother, a community-service worker, remarried her high-school sweetheart, an Episcopalian deacon, two years after Tim\u0027s father\u0027s death. Tim has a total of eight siblings. His ancestry includes English, German, Irish, and Scottish. When Tim was young, his family moved to Birmingham, Michigan. In high school, his favorite subject was shop, of course, and after high school, he attended Western Michigan University and graduated with a degree in Television Production in 1975. In 1978, he was arrested on drug charges and spent two years in jail. Upon his release, he had a new outlook on life and on a dare from a friend, started his comedy career at the Comedy Castle in Detroit. Later, he went on to do several cable specials, including, Comedy\u0027s Dirtiest Dozen (1988) and Tim Allen: Men Are Pigs (1990). In 1991, he became the star of his own hit television series on ABC called Home Improvement (1991). While continuing to film his television series throughout most of the 1990s, he starred in a string of blockbuster movies including The Santa Clause (1994), Toy Story (1995), Toy Story 2 (1999) and Galaxy Quest (1999). In August 1996, he developed and unveiled his own signature line of power tools, manufactured by Ryobi. On top of all that, he has his own racing team, Tim Allen/Saleen RRRRacing. In May 1999, he ended his series Home Improvement (1991) after eight seasons and in 2001, he filmed such movies as Big Trouble (2002) and Joe Somebody (2001).",
+    "birthPlace": "Denver, Colorado, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Producer",
+      "Miscellaneous Crew"
+    ],
+    "knownFor": [
+      "tt0101120",
+      "tt0114709",
+      "tt0435761",
+      "tt0120363"
+    ]
+  },
+  {
+    "name": "Don Rickles",
+    "birthDate": "1926-5-8",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTY0NTk1NzY1M15BMl5BanBnXkFtZTcwNjk4NDMwNA@@._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0725543",
+    "miniBio": "After the Golden Era of Hollywood ended, Don Rickles is one man still living to tell his tales. One of the most respected talents in entertainment, Rickles got his start in the night clubs, toiling for over 20 years, until 1958, when Don made his film debut in Run Silent Run Deep (1958). The movie was a big hit. Afterward, Rickles continued acting, starring in films like X: The Man with the X-Ray Eyes (1963), Bikini Beach (1964), Enter Laughing (1967), and Heróis por Conta Própria (1970). In 1973, Don became a regular on Dean Martin\u0027s Celebrity Roasts. From 1973 until 1984, Don appeared frequently on Dean\u0027s show, paying tribute to some of his friends, like Bob Hope, Frank Sinatra, Lucille Ball, and was even the roast master on the roast for Dean Martin himself. In 1976, Don his own TV series CPO Sharkey (1976), which enjoyed a two year run. After 1984, Don began taking it easy, appearing in a few minor film roles. But in 1995, Don made a big comeback, appearing with Tom Hanks and Tim Allen in Toy Story (1995) in the role of the grouchy Mr. Potato Head. In 1999, he returned as Mr. Potato Head in Toy Story 2 (1999).",
+    "birthPlace": "New York City, New York, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Soundtrack"
+    ],
+    "knownFor": [
+      "tt0114709",
+      "tt0435761",
+      "tt0120363",
+      "tt0112641"
+    ]
+  },
+  {
+    "name": "Al Pacino",
+    "birthDate": "1940-4-25",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTQzMzg1ODAyNl5BMl5BanBnXkFtZTYwMjAxODQ1._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0000199",
+    "miniBio": "One of the greatest actors in all of film history, Al Pacino established himself during one of film\u0027s greatest decades, the 1970s, and has become an enduring and iconic figure in the world of American movies. Pacino was born on April 25, 1940, in the Bronx, New York, to an Italian-American family. His parents, Rose (Gerardi) and Salvatore Pacino. divorced when he was young. His mother moved them into his grandparents\u0027 house. Pacino found himself often repeating the plots and voices of characters he had seen in the movies, one of his favorite activities. Bored and unmotivated in school, the young Al Pacino found a haven in school plays, and his interest soon blossomed into a full-time career. Starting on the stage, he went through a lengthy period of depression and poverty, sometimes having to borrow bus fare to make it to auditions. He made it into the prestigious Actors Studio in 1966, studying under legendary acting coach Lee Strasberg, creator of the Method Approach that would become the trademark of many \u002770s-era actors. After appearing in a string of plays in supporting roles, he finally hit it big with \"The Indian Wants the Bronx\", winning an Obie award for the 1966-67 season. That was followed by a Tony Award for \"Does the Tiger Wear a Necktie?\". His first feature films made little departure from the gritty realistic stage performances that earned him respect: he played a junkie in The Panic in Needle Park (1971) after his film debut in Me, Natalie (1969). What came next would change his life forever. The role of Michael Corleone in The Godfather (1972) was one of the most sought-after of the time: Robert Redford, Warren Beatty, Jack Nicholson, Ryan O\u0027Neal, Robert De Niro and a host of others either wanted it or were mentioned for it, but director Francis Ford Coppola had his heart set on the unknown Italian Pacino for the role, although pretty much everyone else--from the studio to the producers to some of the cast members--didn\u0027t want him. Though Coppola won out through slick persuasion, Pacino was in constant fear of being fired during the hellish shoot. Much to his (and Coppola\u0027s) relief, the film was a monster hit that did wonders for everyone\u0027s career, including Pacino\u0027s, and earned him his first Academy Award nomination for Best Supporting Actor. Instead of taking on easier projects for the big money he could now command, however, Pacino threw his support behind what he considered tough but important films, such as the true-life crime drama Serpico (1973) and the tragic real-life bank robbery film Dog Day Afternoon (1975). He opened eyes around the film world for his brave choice of roles, and he was nominated three consecutive years for the \"Best Actor\" Academy Award. He faltered slightly with Bobby Deerfield (1977), but regained his stride with ...And Justice for All. (1979), for which he received another Academy Award nomination for Best Actor. This would, unfortunately, signal the beginning of a decline in his career, which produced such critical and commercial flops as Cruising (1980) and Author! Author! (1982). He took on another vicious gangster role and cemented his legendary status in the ultra-violent cult hit Scarface (1983), but a monumental mistake was about to follow. Revolution (1985) endured an endless and seemingly cursed shoot in which equipment was destroyed, weather was terrible, and Pacino became terribly ill with pneumonia. Constant changes in the script also further derailed a project that seemed doomed from the start anyway. The Revolutionary War film is considered one of the worst films ever, not to mention one of the worst of his career, resulted in his first truly awful reviews and kept him off the screen for the next four years. Returning to the stage, Pacino has done much to give back and contribute to the theatre, which he considers his first love. He directed a film, The Local Stigmatic (1990), but it remains unreleased. He lifted his self-imposed exile with the striking Sea of Love (1989) as a hard-drinking cop. It marked the second phase of Pacino\u0027s career, being the first to feature his now famous dark, owl eyes and hoarse, gravelly voice. Returning to the Corleones, he made The Godfather: Part III (1990) and earned raves for his first comedic role in the colorful Dick Tracy (1990). This earned him another Academy Award nomination for Best Supporting Actor, and two years later he was nominated for Glengarry Glen Ross (1992). He went into romantic mode for Frankie and Johnny (1991). In 1992 he finally won the Academy Award for Best Actor for his amazing performance in Scent of a Woman (1992). A mixture of technical perfection (he plays a blind man) and charisma, the role was tailor-made for him, and remains a classic. The next few years would see Pacino becoming more comfortable with acting and movies as a business, turning out great roles in great films with more frequency and less of the demanding personal involvement of his wilder days. Carlito\u0027s Way (1993) proved another gangster classic, as did the epic crime drama Heat (1995) directed by Michael Mann and co-starring Robert De Niro, although they only had a few scenes together. He returned to the director\u0027s chair for the highly acclaimed and quirky Shakespeare adaptation Looking for Richard (1996). City Hall (1996), Donnie Brasco (1997) and Devil\u0027s Advocate (1997) all came out in this period. Reteaming with Mann and then Oliver Stone, he gave two commanding performances in The Insider (1999) and Any Given Sunday (1999). In the 2000s, Pacino starred in a number of theatrical blockbusters, including _Ocean\u0027s Thirteen (2007)_, but his choice in television roles (the vicious Roy Cohn in HBO\u0027s miniseries Angels in America (2003) and his sensitive portrayal of Jack Kevorkian, in the television movie You Don\u0027t Know Jack (2010)) are reminiscent of the bolder choices of his early career. Each television project garnered him an Emmy for Outstanding Lead Actor in a Miniseries or a Movie. In his personal life, Pacino is one of Hollywood\u0027s most enduring and notorious bachelors, having never been married. He has a daughter, Julie Marie, with acting teacher Jan Tarrant, and a new set of twins with longtime girlfriend Beverly D\u0027Angelo. His romantic history includes a long-time romance with \"Godfather\" co-star Diane Keaton. With his intense and gritty performances, Pacino was an original in the acting profession. His Method approach would become the process of many actors throughout time, and his unbeatable number of classic roles has already made him a legend among film buffs and all aspiring actors and directors. His commitment to acting as a profession and his constant screen dominance has established him as one of the movies\u0027 true legends. Pacino has never abandoned his love for the theater, and Shakespeare in particular, having directed the Shakespeare adaptation Looking for Richard (1996) and played Shylock in The Merchant of Venice (2004).",
+    "birthPlace": "New York City, New York, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Director",
+      "Producer"
+    ],
+    "knownFor": [
+      "tt0068646",
+      "tt0086250",
+      "tt0113277",
+      "tt0071562"
+    ]
+  },
+  {
+    "name": "Robert De Niro",
+    "birthDate": "1943-8-17",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMjAwNDU3MzcyOV5BMl5BanBnXkFtZTcwMjc0MTIxMw@@._V1_SY317_CR13,0,214,317_AL_.jpg",
+    "id": "nm0000134",
+    "miniBio": "Robert De Niro, thought of as one of the greatest American actors of all time, was born in New York City, to artists Virginia (Admiral) and Robert De Niro Sr. His paternal grandfather was of Italian descent, and his other ancestry is Irish, Dutch, English, French, and German. He was trained at the Stella Adler Conservatory and the American Workshop. He first gained fame for his role in Bang the Drum Slowly (1973), but he gained his reputation as a volatile actor in Mean Streets (1973), which was his first film with director Martin Scorsese. In 1974 De Niro received an Academy Award for best supporting actor for his role in The Godfather: Part II (1974) and received Academy Award nominations for best actor in Taxi Driver (1976), The Deer Hunter (1978), and Cape Fear (1991). He won the best actor award in 1980 for Raging Bull (1980). De Niro heads his own production company, Tribeca Film Center, and made his directorial debut in 1993 with A Bronx Tale (1993).",
+    "birthPlace": "New York City, New York, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Producer",
+      "Director"
+    ],
+    "knownFor": [
+      "tt0099685",
+      "tt0071562",
+      "tt0212338",
+      "tt1045658"
+    ]
+  },
+  {
+    "name": "Bruce Willis",
+    "birthDate": "1955-3-19",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMjA0MjMzMTE5OF5BMl5BanBnXkFtZTcwMzQ2ODE3Mw@@._V1_SY317_CR27,0,214,317_AL_.jpg",
+    "id": "nm0000246",
+    "miniBio": "Actor and musician Bruce Willis is well known for his film appearances as wisecracking or hard-edged characters, often in spectacular action films. Collectively, he has appeared in films that have grossed in excess of $2.5 billion USD placing him in the top ten stars in terms of box office receipts. Walter Bruce Willis was born on March 19, 1955, in West Germany, to a German mother, Marlene K. (from Kassel), and an American father, David Andrew Willis (from Carneys Point, New Jersey), who were then living on a United States military base. He was raised in Penns Grove, New Jersey. Willis picked up an interest for the dramatic arts in high school, and was allegedly \"discovered\" whilst working in a café in New York City and then appeared in a couple of off-Broadway productions. While bartending one night, he was seen by a casting director who liked his personality and needed a bartender for a small movie role. After countless auditions, Willis contributed minor film appearances, usually uncredited, before landing the role of private eye \"David Addison\" alongside sultry Cybill Shepherd in the hit romantic comedy television series Moonlighting (1985). The series firmly established Bruce Willis as a hot new talent, and his sarcastic and wisecracking P.I. was in effect a dry run for the role of hard-boiled NYC detective \"John McClane\" in the monster hit Die Hard (1988). This superbly paced action film balanced laconic humor and wholesale destruction as Willis\u0027 character single handedly battles a gang of ruthless international thieves in a Los Angeles skyscraper. Willis reprized the role of tough guy cop \"John McClane\" in the eagerly anticipated sequel Die Hard 2 (1990) set at snowbound Washington\u0027s Dulles International Airport as a group of renegade Special Forces soldiers seek to repatriate a corrupt South American general. Excellent box office returns demanded a further sequel Die Hard: With a Vengeance (1995) this time also starring Samuel L. Jackson as a cynical Harlem shopowner unwittingly thrust into assisting McClane during a terrorist bombing campaign on a sweltering day in NYC. Willis found time out from all the action mayhem to provide the voice of \"Mikey\" the baby in the very popular family comedies Look Who\u0027s Talking (1989), and its sequel Look Who\u0027s Talking Too (1990) also starring John Travolta and Kirstie Alley. Over the next decade, Willis starred in some very successful films, some very offbeat films and some unfortunate box office flops. The Bonfire of the Vanities (1990) and Hudson Hawk (1991) were both large scale financial disasters that were savaged by the critics, and both are arguably best left off the CVs of all the actors involved, however Willis was still popular with movie audiences and selling plenty of theatre tickets with the hyperviolent The Last Boy Scout (1991), the darkly humored Death Becomes Her (1992) and the mediocre police thriller Striking Distance (1993). During the 1990s, Willis also appeared in several independent and low budget productions that won him new fans and praise from the critics for his intriguing performances working with some very diverse film directors. He appeared in the oddly appealing North (1994), as a cagey prizefighter in the Quentin Tarantino directed mega-hit Pulp Fiction (1994), the Terry Gilliam directed apocalyptic thriller Twelve Monkeys (1995), the Luc Besson directed sci-fi opus O 5º Elemento (1997) and the M. Night Shyamalan directed spine-tingling epic The Sixth Sense (1999). Willis next starred in the gangster comedy The Whole Nine Yards (2000), worked again with \"hot\" director M. Night Shyamalan in the less gripping Unbreakable (2000), and in two military dramas, Hart\u0027s War (2002) and Tears of the Sun (2003) that both failed to really fire with movie audiences or critics alike. However, Willis bounced back into the spotlight in the critically applauded Frank Miller graphic novel turned movie Sin City (2005), the voice of \"RJ\" the scheming raccoon in the animated hit Over the Hedge (2006) and \"Die Hard\" fans rejoiced to see \"John McClane\" return to the big screen in the high tech Live Free or Die Hard (2007) aka \"Die Hard 4.0\". Willis was married to actress Demi Moore for approximately thirteen years and they share custody to their three children.",
+    "birthPlace": "Idar-Oberstein, West Germany",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Soundtrack",
+      "Producer"
+    ],
+    "knownFor": [
+      "tt0095016",
+      "tt0167404",
+      "tt0119116",
+      "tt0337978"
+    ]
+  },
+  {
+    "name": "Madeleine Stowe",
+    "birthDate": "1958-8-18",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTA3OTI0NzkzODVeQTJeQWpwZ15BbWU3MDEyMzYyOTY@._V1_SY317_CR3,0,214,317_AL_.jpg",
+    "id": "nm0000656",
+    "miniBio": "Madeleine Stowe was born in Los Angeles, California, to Mireya Maria (Mora Steinvorth) and Robert Alfred Stowe, a civil engineer. Her mother was a from a prominent political family in Costa Rica, while her father was of English and German ancestry. Stowe grew up in Eagle Rock, a working-class neighborhood of Los Angeles. At age ten she started practicing for a career as a concert pianist and trained every day for hours. However, when her instructor died in 1976 she more or less quit playing. She went to University of Southern California and studied cinema and journalism before taking up acting at Beverly Hills\u0027 Solaris Theater. She made a few appearances in TV and on film but her breakthrough came in 1987 with Stakeout (1987). Other major credits include The Last of the Mohicans (1992) and Short Cuts (1993). When not filming she spends her time at her ranch in Texas, which she shares with her husband Brian Benben.",
+    "birthPlace": "Los Angeles, California, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actress",
+      "Director",
+      "Writer"
+    ],
+    "knownFor": [
+      "tt1837642",
+      "tt0104691",
+      "tt0277434",
+      "tt0114746"
+    ]
+  },
+  {
+    "name": "Bill Paxton",
+    "birthDate": "1955-5-17",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BNjY2NTQwOTAyNV5BMl5BanBnXkFtZTcwNTUyNjYwMw@@._V1_SY317_CR8,0,214,317_AL_.jpg",
+    "id": "nm0000200",
+    "miniBio": "Bill Paxton was born William Paxton on May 17, 1955 in Fort Worth, Texas. He is the son of Mary Lou (Gray) and John Lane Paxton, a businessman and actor (as John Paxton). Bill moved to Los Angeles, California at age 18, where he found work in the film industry as a set dresser for Roger Corman\u0027s New World Pictures. He made his film debut in the Corman film Crazy Mama (1975), directed by Jonathan Demme. Moving to New York, Paxton studied acting under Stella Adler at New York University. After landing a small role in Stripes (1981), he found steady work in low-budget films and television. He also directed, wrote and produced award-winning short films including Fish Heads (1980), which aired on Saturday Night Live (1975). His first appearance in a James Cameron film was a small role in The Terminator (1984), followed by his very memorable performance as Private Hudson in Aliens (1986) and as the nomadic vampire Severen in Kathryn Bigelow\u0027s Near Dark (1987). Bill also appeared in John Hughes\u0027 Weird Science (1985), as Wyatt Donnelly\u0027s sadistic older brother Chet. Although he continued to work steadily in film and television, his big break did not come until his lead role in the critically acclaimed film-noir One False Move (1992). This quickly led to strong supporting roles as Wyatt Earp\u0027s naive younger brother Morgan in Tombstone (1993) and as Fred Haise, one of the three astronauts, in Apollo 13 (1995), as well as in James Cameron\u0027s offering True Lies (1994).",
+    "birthPlace": "Fort Worth, Texas, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Director",
+      "Producer"
+    ],
+    "knownFor": [
+      "tt0120338",
+      "tt0112384",
+      "tt0090605",
+      "tt1631867"
+    ]
+  },
+  {
+    "name": "Kevin Bacon",
+    "birthDate": "1958-7-8",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BOTQxMTEyMjI0NV5BMl5BanBnXkFtZTgwODE4ODAzMjE@._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0000102",
+    "miniBio": "Kevin Bacon was born on July 8, 1958 in Philadelphia, Pennsylvania, to Ruth Hilda (Holmes), an elementary school teacher, and Edmund Norwood Bacon, a prominent architect who was on the cover of Time Magazine in November 1964. Kevin\u0027s early training as an actor came from The Manning Street. His debut as the strict Chip Diller in Animal House (1978) almost seems like an inside joke, but he managed to escape almost unnoticed from that role. Diner (1982) became the turning point after a couple of television series and a number of less-than-memorable movie roles. In a cast of soon-to-be stars, he more than held his end up, and we saw a glimpse of the real lunatic image of The Bacon. He also starred in Footloose (1984), She\u0027s Having a Baby (1988), Tremors (1990) with Fred Ward, Flatliners (1990), and Apollo 13 (1995). Bacon is married to actress Kyra Sedgwick, with whom he has 2 children.",
+    "birthPlace": "Philadelphia, Pennsylvania, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Director",
+      "Soundtrack"
+    ],
+    "knownFor": [
+      "tt0112384",
+      "tt0087277",
+      "tt0327056",
+      "tt0117665"
+    ]
+  },
+  {
+    "name": "Kevin Costner",
+    "birthDate": "1955-1-18",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTQ0MDU1OTEyNF5BMl5BanBnXkFtZTgwNjI0MTk2MDE@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "id": "nm0000126",
+    "miniBio": "Kevin was born in Lynwood, California, on January 18, 1955, the third child of Bill Costner, a ditch digger and ultimately an electric line servicer for Southern California Edison, and Sharon Costner (née Tedrick), a welfare worker. His older brother, Dan, was born in 1950. A middle brother died at birth in 1953. His father\u0027s job required him to move regularly, which caused Kevin to feel like an Army kid, always the new kid at school, which led to him being a daydreamer. As a teen, he sang in the Baptist church choir, wrote poetry, and took writing classes. At 18, he built his own canoe and paddled his way down the rivers that Lewis \u0026 Clark followed to the Pacific. Despite his present height, he was only 5\u00272\" when he graduated high school. Nonetheless, he still managed to be a basketball, football and baseball star. In 1973, he enrolled at California State University at Fullerton, where he majored in business. During that period, Kevin decided to take acting lessons five nights a week. He graduated with a business degree in 1978 and married his college sweetheart, Cindy Costner. He initially took a marketing job in Orange County. Everything changed when he accidentally met Richard Burton on a flight from Mexico. Burton advised him to go completely after acting if that is what he wanted. He quit his job and moved to Hollywood soon after. He drove a truck, worked on a deep sea fishing boat, and gave bus tours to stars\u0027 homes before finally making his own way into the films. After making one soft core sex film, he vowed to not work again if that was the only work he could do. He didn\u0027t work for nearly six years, while he waited for a proper break. That break came with The Big Chill (1983), even though his scenes ended up on the cutting room floor -- he was remembered by director Lawrence Kasdan when he decided to make Silverado (1985). Costner\u0027s career took off after that.",
+    "birthPlace": "Lynwood, California, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Producer",
+      "Soundtrack"
+    ],
+    "knownFor": [
+      "tt0099348",
+      "tt0094226",
+      "tt0102798",
+      "tt0114898"
+    ]
+  },
+  {
+    "name": "Jeanne Tripplehorn",
+    "birthDate": "1963-6-10",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTk3MTAxMjAyNF5BMl5BanBnXkFtZTcwNjIwNTIzNw@@._V1_SY317_CR10,0,214,317_AL_.jpg",
+    "id": "nm0000675",
+    "miniBio": "Born in Tulsa, Oklahoma, on June 10, 1963, Jeanne Tripplehorn developed an interest in performing through her father, guitarist Tom Tripplehorn, who at one time recorded with the pop group Gary Lewis \u0026 The Playboys on such hits as \"This Diamond Ring\". (Note: many references list Jeanne\u0027s father\u0027s birth date as February 2, 1949, but this seem very unlikely as he would have been only 14 years old when she was born). Graduating from Edison High School, Jeanne began her career as a local radio and TV host. Educated at both the University of Tulsa and the drama division of The Juilliard School in New York City, she made her major TV debut in a supporting role in The Perfect Tribute (1991), a fictional story that centered around President Abraham Lincoln\u0027s Gettysburg Address. A year later, she made a big splash with her second lead, in Paul Verhoeven\u0027s thriller Instinto Fatal (1992) in support of Michael Douglas. In this movie, which made a sex star out of Sharon Stone, Jeanne\u0027s weird psychiatrist role established her as a talent to be reckoned with, although a torrid sex scene with Douglas certainly helped. She earned a huge break when she replaced a pregnant Robin Wright in the role of Tom Cruise\u0027s wife in the box-office smash The Firm (1993). Her smart work in this film afforded her the opportunity to work opposite other \"top guns\" in the industry, including Kevin Costner in the futuristic Waterworld (1995), Gwyneth Paltrow in Sliding Doors (1998) and Hugh Grant in Mickey Blue Eyes (1999). While none of these roles impressed to a great degree, they nevertheless put her in good standing. Reaching into her versatile bag of tricks, she went on to play everything from a lesbian gangster in Mike Figgis\u0027 experimental film Timecode (2000) to a love interest of left-wing activist Abbie Hoffman in Steal This Movie (2000). On stage, the lady with the strikingly open face and penetrating glare made her Broadway bow in the role of Masha in Anton Chekhov1s \"The Three Sisters\" opposite Amy Irving and Lili Taylor. Prior to this, she appeared off-Broadway in John Patrick Shanley\u0027s \"The Big Funk\" in 1990, then co-starred with Val Kilmer in a 1993 production of John Ford\u0027s 1630s play \"\u0027Tis Pity She\u0027s a Whore.\" In 2002, Jeanne was one of a revolving door of guest stars to appear in the Actor\u0027s Alley play \"The Guys,\" a tribute to the valiant firefighters of the 9/11 attack. On television, Jeanne appeared less frequently but did star opposite Arliss Howard in a superlative TV-movie adaptation of William Faulkner\u0027s Old Man (1997). Although the beginning of the millennium has been rather unspectacular for her career-wise, her private life has been sailing along beautifully of late. Back in the 1990s, she maintained a roller coaster relationship with actor/writer Ben Stiller. Engaged at one point in 1993, she even appeared on his early \u002790s TV show (The Ben Stiller Show (1992)) on occasion. The union broke up after six years, however, and in 2000, Jeanne married actor Leland Orser of TV\u0027s ER (1994) fame. She bore Orser, who appeared with her in the movie Very Bad Things (1998) and Brother\u0027s Keeper (2002), a son named August Tripplehorn Orser in 2002. Jeanne\u0027s career on TV has deservingly surged recently as the senior wife of polygamist Bill Paxton\u0027s three live-ins in the HBO drama Big Love (2006).",
+    "birthPlace": "Tulsa, Oklahoma, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actress",
+      "Soundtrack"
+    ],
+    "knownFor": [
+      "tt0103772",
+      "tt0106918",
+      "tt0421030",
+      "tt0120148"
+    ]
+  },
+  {
+    "name": "Dennis Hopper",
+    "birthDate": "1936-5-17",
+    "picture": "http://ia.media-imdb.com/images/M/MV5BMTMwNTQ5Nzg0OF5BMl5BanBnXkFtZTcwMDE2MDE4Mg@@._V1_SX214_CR0,0,214,317_AL_.jpg",
+    "id": "nm0000454",
+    "miniBio": "Multi-talented and unconventional actor/director regarded by many as one of the true \"enfant terribles\" of Hollywood who has led an amazing cinematic career for more than five decades, Dennis Hopper was born on May 17, 1936 in Dodge City, Kansas, to Marjorie Mae (Davis) and James Millard Hopper. The young Hopper expressed interest in acting from a young age and first appeared in a slew of 1950s television series, including Medic (1954), Cheyenne (1955) and Sugarfoot (1957). His first film role was in Johnny Guitar (1954), which was quickly followed by roles in Rebel Without a Cause (1955), Giant (1956) and Gunfight at the O.K. Corral (1957). Hopper actually became good friends with James Dean and was shattered when Dean was killed in a car crash on September 30, 1955. Hopper portrayed a young Napoléon Bonaparte (!) in the star-spangled The Story of Mankind (1957) and regularly appeared on screen throughout the 1960s, often in rather undemanding parts, usually as a villain in westerns such as True Grit (1969) and Hang \u0027Em High (1968). However, in early 1969, Hopper, fellow actor Peter Fonda and writer Terry Southern, wrote a counterculture road movie script and managed to scrape together $400,000 in financial backing. Hopper directed the low-budget film, titled Easy Rider (1969), starring Fonda, Hopper and a young Jack Nicholson. The film was a phenomenal box-office success, appealing to the anti-establishment youth culture of the times. It changed the Hollywood landscape almost overnight and major studios all jumped onto the anti-establishment bandwagon, pumping out low-budget films about rebellious hippies, bikers, draft dodgers and pot smokers. However, Hopper\u0027s next directorial effort, The Last Movie (1971), was a critical and financial failure, and he has admitted that during the 1970s he was seriously abusing various substances, both legal and illegal, which led to a downturn in the quality of his work. He appeared in a sparse collection of European-produced films over the next eight years, before cropping up in a memorable performance as a pot-smoking photographer alongside Marlon Brando and Martin Sheen in Francis Ford Coppola\u0027s Vietnam War epic Apocalypse Now (1979). He also received acclaim for his work in both acting and direction for Angústia de Viver (1980). With these two notable efforts, the beginning of the 1980s saw a renaissance of interest by Hollywood in the talents of Dennis Hopper and exorcising the demons of drugs and alcohol via a rehabilitation program meant a return to invigorating and provoking performances. He was superb in Rumble Fish (1983), co-starred in the tepid spy thriller The Osterman Weekend (1983), played a groovy school teacher in My Science Project (1985), was a despicable and deranged drug dealer in River\u0027s Edge (1986) and, most memorably, electrified audiences as foul-mouthed Frank Booth in the eerie and erotic David Lynch film Blue Velvet (1986). Interestingly, the offbeat Hopper was selected in the early 1980s to provide the voice of \"The StoryTeller\" in the animated series of \"Rabbit Ears\" children\u0027s films based upon the works of Hans Christian Andersen! Hopper returned to film direction in the late 1980s and was at the helm of the controversial gang film Colors (1988), which was well received by both critics and audiences. He was back in front of the cameras for roles in Super Mario Bros. (1993), got on the wrong side of gangster Christopher Walken in True Romance (1993), led police officer Keanu Reeves and bus passenger Sandra Bullock on a deadly ride in Speed (1994) and challenged gill-man Kevin Costner for world supremacy in Waterworld (1995). The enigmatic Hopper has continued to remain busy through the 1990s and into the new century with performances in Reféns Por Uma Noite (2003), The Keeper (2004) and Terra dos Mortos (2005). As well as his acting/directing talents, Hopper was a skilled photographer and painter, having had his works displayed in galleries in both the United States and overseas. He was additionally a dedicated and knowledgeable collector of modern art and has one of the most extensive collections in the United States. Dennis Hopper died of prostate cancer on May 29, 2010, less than two weeks after his 74th birthday.",
+    "birthPlace": "Venice Beach, California, USA",
+    "director": true,
+    "actor": false,
+    "jobCategories": [
+      "Actor",
+      "Director",
+      "Writer"
+    ],
+    "knownFor": [
+      "tt0111257",
+      "tt0078788",
+      "tt0064276",
+      "tt0108399"
+    ]
+  }
+]
