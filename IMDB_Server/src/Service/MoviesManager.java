@@ -18,18 +18,18 @@ public class MoviesManager extends Connection{
 
     String queryGetAll =
                     "PREFIX ns: "+GlobalNamespace+" "+
-                    "SELECT ?id ?Name ?Poster ?score ?duration ?launched ?description ?classification " +
+                    "SELECT ?id ?Name ?Poster ?duration ?launched ?description ?classification " +
                     "WHERE { ?b ns:hasMovieName ?Name; ns:hasMovieId ?id; ns:hasMoviePoster ?Poster; " +
                                "ns:hasMovieDuration ?duration; ns:hasMovieLaunchDate ?launched; ns:hasMovieDescription ?description; ns:hasMovieClassification ?classification .}";
     String queryGetById =
                     "PREFIX nsowl: "+GlobalNamespace+" "+
-                    "SELECT ?id ?Name ?Poster ?score ?duration ?launched ?description ?classification " +
+                    "SELECT ?id ?Name ?Poster ?duration ?launched ?description ?classification " +
                     "WHERE { "+Namespace+" a nsowl:Movie;  nsowl:hasMovieName ?Name; nsowl:hasMovieId ?id; nsowl:hasMoviePoster ?Poster; "+
                             "nsowl:hasMovieDuration ?duration; nsowl:hasMovieLaunchDate ?launched; nsowl:hasMovieDescription ?description; nsowl:hasMovieClassification ?classification .}";
 
     String queryGetMostRecent =
             "PREFIX ns: "+GlobalNamespace+" "+
-                    "SELECT ?id ?Name ?Poster ?score ?duration ?launched ?description ?classification " +
+                    "SELECT ?id ?Name ?Poster ?duration ?launched ?description ?classification " +
                     "WHERE { ?b ns:hasMovieName ?Name; ns:hasMovieId ?id; ns:hasMoviePoster ?Poster; " +
                     "ns:hasMovieDuration ?duration; ns:hasMovieLaunchDate ?launched; ns:hasMovieDescription ?description; ns:hasMovieClassification ?classification .} "+
                     "ORDER BY ?launched "+

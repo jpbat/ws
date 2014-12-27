@@ -11,7 +11,7 @@ define(
                 'index': 'index',
                 'movie/:id': 'movie',
                 'person/:id': 'person',
-                'search': 'search'
+                'movies': 'movies'
             },
 
             index: function () {
@@ -92,7 +92,7 @@ define(
                     }
                 });
             },
-            search: function () {
+            movies: function () {
 
                 $("#BackBoneContainer").html($("#SpinnerContainer").html());
 

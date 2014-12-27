@@ -12,7 +12,13 @@
 
 </head>
 <body>
-
+<div class="alertContainer">
+  <div class="alert alert-danger alert-dismissible fade in">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <h4 class="alert-heading">Oh snap! You got an error!</h4>
+    <p>Fail to retrieve content from server</p>
+  </div>
+</div>
 <div class="hidden" id="SpinnerContainer">
   <div class="spinner">
     <div class="spinner-container container1">

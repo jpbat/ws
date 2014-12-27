@@ -36,8 +36,9 @@ require.config({
     }
 });
 
-require([ 'application']
-    , function(App){
+require([ 'application','jquery','bootstrap']
+    , function(App,$){
+        $(".alert").alert();
         var MainApp = new App;
         MainApp.init();
     });

@@ -8,7 +8,7 @@
         <div class="col-md-8">
             <p class="information"><span class="field">Title: </span><%= element.Name %></p>
             <p class="information"><span class="field">Launch Date: </span><%= element.launched %></p>
-            <p class="information"><span class="field">Score: </span><%= element.score %> </p>
+            <p class="information"><span class="field">Score: </span><%= element.classification %> </p>
             <p class="information"><span class="field">Director: </span>
                 <% _.each(element.Directors, function(director) { %>
                 <%= director.name %>
