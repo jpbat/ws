@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 
 import com.google.gson.Gson;
@@ -40,6 +41,7 @@ public class DataFixer implements Runnable {
 		}
 	}
 	
+	@SuppressWarnings("deprecation")
 	public void run() {
 		Date d;
 		Movie m;
@@ -85,7 +87,11 @@ public class DataFixer implements Runnable {
 						break;
 					}
 					
-					m.setLaunchDate(d.toString());
+					Calendar cal = Calendar.getInstance();
+					cal.setTime(d);
+					String xpto = cal.get(Calendar.YEAR) + "-" + (cal.get(Calendar.MONTH) + 1) + "-" + cal.get(Calendar.DAY_OF_MONTH);
+					
+					m.setLaunchDate(xpto);
 					
 				}
 				

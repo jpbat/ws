@@ -5,7 +5,8 @@ __author__ = 'Joao'
 import shutil
 from os.path import isfile
 
-from rdflib import Graph, Namespace, RDF, Literal,BNode,URIRef
+from rdflib import Graph, Namespace, RDF, Literal, BNode, URIRef, XSD
+from dateutil import parser
 import json
 from pprint import pprint
 
@@ -21,21 +22,21 @@ ns=Namespace('http://www.movierecomendation.pt/ontology/movierecomendation.owl#'
 
 firstYear = 1995
 lastYear = 1996
+thisYear = firstYear
 
-while firstYear <= lastYear:
-	filename = 'movies_' + str(firstYear) + '.json'
-	print filename
+while thisYear <= lastYear:
+	filename = 'movies_' + str(thisYear) + '.json'
 	#load all json files to store in RDF
 	FileData = open(filename)
 	MovieJSON = json.load(FileData)
 	FileData.close()
 
-	filename = 'persons_' + str(firstYear) + '.json'
+	filename = 'persons_' + str(thisYear) + '.json'
 	FileData = open(filename)
 	PersonJSON = json.load(FileData)
 	FileData.close()
 
-	filename = 'studios_' + str(firstYear) + '.json'
+	filename = 'studios_' + str(thisYear) + '.json'
 	FileData = open(filename)
 	StudioJSON = json.load(FileData)
 	FileData.close()
@@ -74,7 +75,7 @@ while firstYear <= lastYear:
 			if(attr=='birthPlace'):
 				g.add((PersonNode,ns.hasPersonBirthPlace,Literal(person[attr])))
 			if(attr=='birthDate'):
-				g.add((PersonNode,ns.hasPersonBirth,Literal(person[attr])))
+				g.add((PersonNode,ns.hasPersonBirth,Literal(person[attr], datatype=XSD.date)))
 			if(attr=='actor'):
 				pprint(person[attr])
 			if(attr=='director'):
@@ -121,31 +122,30 @@ while firstYear <= lastYear:
 				g.add((MovieNode,ns.hasMovieId,Literal(movie[attr])))
 			if(attr=='directors'):
 				for director in movie[attr]['director']:
-					search = g.value(predicate=ns.hasPersonId,object=Literal(director))
+					search = g.value(predicate=ns.hasPersonId, object=Literal(director))
 					if(search==None):
 						pprint("Error:Director not found")
 						continue;
 					g.add((MovieNode,ns.hasDirector,search))
 			if(attr=='studios'):
 				for studio in movie[attr]['studio']:
-					search = g.value(predicate=ns.hasStudioId,object=Literal(studio))
+					search = g.value(predicate=ns.hasStudioId, object=Literal(studio))
 					if(search==None):
 						pprint("Error:Studio not found")
 						continue;
 					g.add((MovieNode,ns.hasStudio,search))
 			if(attr=='launchDate'):
-				g.add((MovieNode,ns.hasMovieLaunchDate,Literal(movie[attr])))
+				g.add((MovieNode,ns.hasMovieLaunchDate,Literal(movie[attr], datatype=XSD.date)))
 			if(attr=='genres'):
 				pprint(movie[attr])
 				for genre in movie[attr]['genre']:
 					g.add((MovieNode,ns.hasGenres,ns[genre]))
-				#g.add((MovieNode,ns.HasMovieGenres,Literal(movie[attr])))
 			if(attr=='description'):
 				g.add((MovieNode,ns.hasMovieDescription,Literal(movie[attr])))
 			if(attr=='score'):
-				g.add((MovieNode,ns.hasMovieClassification,Literal(movie[attr])))
+				g.add((MovieNode,ns.hasMovieClassification,Literal(movie[attr], datatype=XSD.float)))
 			if(attr=='duration'):
-				g.add((MovieNode,ns.hasMovieDuration,Literal(movie[attr])))
+				g.add((MovieNode,ns.hasMovieDuration,Literal(movie[attr], datatype=XSD.integer)))
 			if(attr=='stars'):
 				for star in movie[attr]['star']:
 					search = g.value(predicate=ns.hasPersonId,object=Literal(star))
@@ -158,6 +158,16 @@ while firstYear <= lastYear:
 			if(attr=='image'):
 				g.add((MovieNode,ns.hasMoviePoster,Literal(movie[attr])))
 
+	thisYear += 1
+
+thisYear = firstYear
+while thisYear <= lastYear:
+
+	filename = 'persons_' + str(thisYear) + '.json'
+	FileData = open(filename)
+	PersonJSON = json.load(FileData)
+	FileData.close()
+
 	LocalNamespace=Namespace('http://www.movierecomendation.pt/Person/')
 	for person in PersonJSON:
 		PersonNode = URIRef(LocalNamespace[person['id']]);
@@ -165,7 +175,6 @@ while firstYear <= lastYear:
 		if(search == None):
 			pprint("Error: Person not found! " + person['id'])
 			continue;
-
 		try:
 			for relevant in person['knownFor']:
 				search = g.value(predicate=ns.hasMovieId, object=Literal(relevant))
@@ -176,6 +185,6 @@ while firstYear <= lastYear:
 		except Exception, e:
 			pprint("Error: attribute not found on " + person['id'])	
 
-	firstYear += 1
+	thisYear += 1
 
 g.serialize(destination='output1.ttl', format='n3')
