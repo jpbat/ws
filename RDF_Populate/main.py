@@ -12,15 +12,15 @@ from pprint import pprint
 
 
 #load all json files to store in RDF
-FileData = open('movies_1995.json')
+FileData = open('movies.json')
 MovieJSON = json.load(FileData)
 FileData.close()
 
-FileData = open('persons_1995.json')
+FileData = open('persons.json')
 PersonJSON = json.load(FileData)
 FileData.close()
 
-FileData = open('studios_1995.json')
+FileData = open('studios.json')
 StudioJSON = json.load(FileData)
 FileData.close()
 
