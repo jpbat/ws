@@ -26,11 +26,53 @@ body {
         border-color: black;
 }
 
-.poster-preview{
+body .TopNavbar::before{
+        position: absolute;
+        content: 'Top Rated';
+        background-color: black;
+        bottom:100%;
+        font-size: 20px;
+        padding: 5px 10px;
+
+        -moz-border-radius-topright: 20px;
+        -webkit-border-top-right-radius: 20px;
+        border-top-right-radius: 20px;
+}
+
+.alertContainer{
+        position: absolute;
+        width: 100%;
+        padding: 20px;
+}
+.alert{
+        width: 100%;
+}
+
+.TopNavbar{
+        height: 20%;
+}
+
+.TopNavbar div{
+        text-align: center;
+}
+
+.TopNavbar a{
+        padding-top: 0;
+}
+
+.TopNavbar .poster-preview,
+#MoviesCont .poster-preview{
         border: 3px solid;
         border-radius: 8px;
         border-color: black;
-        height: 175px;
+}
+
+.TopNavbar .poster-preview{
+        height: 100%;
+}
+
+#MoviesCont .poster-preview{
+        width: 100%;
 }
 
 .information {
