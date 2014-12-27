@@ -22,17 +22,14 @@ public class Connection {
 
     public Connection(){
 
-        String Location = getClass().getSuperclass().getProtectionDomain().getCodeSource().getLocation().toString().replace("file:/","").replace("Connection.class","");
+        String Location = getClass().getSuperclass().getProtectionDomain().getCodeSource().getLocation().toString().replace("file:","").replace("Connection.class","");
+        System.out.println(Location);
         this.configFile = Location+configFile;
         if (!this.readConfig()) {
             return;
         }
 
-
         if(!(new File(TDBdirectory).exists())) {
-
-
-
 
             dataset = TDBFactory.createDataset(TDBdirectory);
             dataset.begin(ReadWrite.WRITE);
