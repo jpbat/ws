@@ -4,7 +4,7 @@ define(
         var View = Backbone.View.extend({
             tagName: "div",
             id: "",
-            className: "Container",
+            className: "",
             tpl:template,
             initialize: function() {
                 this.collection.on('reset', this.render, this);//MODEL SEEM TO OBEY TO CHANGE
@@ -16,7 +16,17 @@ define(
                 this.$el.html(templateHTML);
 
                 return this;
+            },
+
+            emptyRender: function() {
+                var Result = this.collection.toJSON();
+
+                var templateHTML = this.tpl({collection: [] });
+                this.$el.html(templateHTML);
+
+                return this;
             }
+
         });
 
 

@@ -1,6 +1,8 @@
 package rest;
 
 import Service.GenresManager;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -10,6 +12,7 @@ import javax.ws.rs.PathParam;
 public class Genre {
 
     GenresManager Service = new GenresManager();
+
 
     @GET
     @Path("GetByMovie/{id}")

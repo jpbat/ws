@@ -16,10 +16,6 @@ body {
         color: green;
 }
 
-.top-rated {
-	font-size: 200%;
-}
-
 .poster{
         border: 3px solid;
         border-radius: 8px;
@@ -85,7 +81,12 @@ body .TopNavbar::before{
 }
 
 .container {
-	padding-top: 50px;
+        height: 100%;
+
+}
+#MoviesCont{
+        height: 100%;
+        overflow-y: scroll;
 }
 
 .item {
@@ -95,4 +96,11 @@ body .TopNavbar::before{
 
 #BackBoneContainer #MoviesCont{
         overflow: scroll;
+}
+
+.movieLists li{
+        display: inline;
+}
+.movieLists li:not(:first-child):before {
+        content:','
 }

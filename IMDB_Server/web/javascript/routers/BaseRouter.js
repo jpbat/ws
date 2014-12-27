@@ -4,6 +4,7 @@ define(
         var _ = require('underscore');
         var Backbone = require('backbone');
         var $ = require('jquery');
+        var niceScroll = require('nicescroll');
 
         var BaseRouter = Backbone.Router.extend({
             routes: {
@@ -34,9 +35,12 @@ define(
                         console.log("success");
                     },
                     error: function () {
-                        //TODO ADICIONAR UMA ERROR VIEW
-                        console.log("fail");
-                        window.location.hash = '';
+                        var newElement = $('#alertContainer div').clone();
+                        $(newElement).find("p").html("Fail to retrieve the Top Movie list!");
+                        $('.alertContainer').append(newElement);
+                        console.log("Fail to retrieve Top Movies");
+                        self.ViewIndex.emptyRender();
+                        $("#BackBoneContainer").html(self.ViewIndex.el);
                     }
                 });
             },
@@ -60,8 +64,10 @@ define(
                         console.log("success");
                     },
                     error: function () {
-                        //TODO ADICIONAR UMA ERROR VIEW
-                        console.log("fail");
+                        var newElement = $('#alertContainer div').clone();
+                        $(newelement).find("p").html("Fail to retrieve movie!");
+                        $('.alertContainer').append(newElement);
+                        console.log("Fail to retrieve Movie");
                         window.location.hash = '';
                     }
                 });
@@ -86,8 +92,10 @@ define(
                         console.log("success");
                     },
                     error: function () {
-                        //TODO ADICIONAR UMA ERROR VIEW
-                        console.log("fail");
+                        var newElement = $('#alertContainer div').clone();
+                        $(newElement).find("p").html("Fail to retrieve the Person!");
+                        $('.alertContainer').append(newElement);
+                        console.log("Fail to retrieve Person");
                         window.location.hash = '';
                     }
                 });
@@ -104,16 +112,30 @@ define(
                     this.ViewMovies = new viewClass({collection:new collectionClass()});
                 }
 
+                if(!this.ViewGenres){
+                    var viewClass = require('views/genres');
+                    var collectionClass = require('collections/genres');
+
+                    this.ViewGenres = new viewClass({collection:new collectionClass()});
+                }
+                this.ViewGenres.collection.fetch({reset: true, type: 'GET'});
+
                 this.ViewMovies.collection.fetch({data:{limit:self.ViewMovies.limit,offset:self.ViewMovies.offset},
                     reset: true, type: 'GET',
                     success: function () {
                         self.ViewMovies.offset+=self.ViewMovies.limit;
                         $("#BackBoneContainer").html(self.ViewMovies.$el);
+                        $("#BackBoneContainer").append(self.ViewGenres.$el);
+
+                        $("#MoviesCont").niceScroll();
+
                         console.log("success");
                     },
                     error: function () {
-                        //TODO ADICIONAR UMA ERROR VIEW
-                        console.log("fail");
+                        var newElement = $('#alertContainer div').clone();
+                        $(newElement).find("p").html("Fail to retrieve the movie list!");
+                        $('.alertContainer').append(newElement);
+                        console.log("Fail to retrieve Movies");
                         window.location.hash = '';
                     }
                 });

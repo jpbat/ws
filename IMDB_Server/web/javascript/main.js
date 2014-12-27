@@ -6,6 +6,7 @@ require.config({
         backbone        :'libs/backbone-min',
         backboneSubRoute:'libs/backbone.subroute',
         bootstrap       :'libs/bootstrap.min',
+        nicescroll      :'libs/jquery.nicescroll.min',
         tpl             :'libs/tpl',
         text            :'libs/text',
         routes          :'routers',
@@ -15,22 +16,24 @@ require.config({
         templates       :'templates'
     },
     shim:{
+
         jquery:{
             exports: "$"
         },
         underscore: {
             exports: '_'
         },
-
         backbone: {
             exports: "SubRoute",
             deps: ["underscore", "jquery"]
-
         },
         backboneSubRoute: {
             deps: ["underscore", "jquery",'backbone']
         },
         bootstrap:{
+            deps: ['jquery']
+        },
+        nicescroll:{
             deps: ['jquery']
         }
     }

@@ -1,23 +1,26 @@
 define(
-    ['underscore','backbone','tpl!templates/Movie'],
+    ['underscore','backbone','tpl!templates/genres'],
     function(_,Backbone,template) {
         var View = Backbone.View.extend({
             tagName: "div",
             id: "",
+            className: "col-md-2",
             tpl:template,
-            className: "",
             initialize: function() {
-                this.model.on('change', this.render, this);//MODEL SEEM TO OBEY TO CHANGE
+                this.collection.on('reset', this.render, this);
             },
             render: function() {
-                var Result = this.model.toJSON();
+                var Result = this.collection.toJSON();
 
-                var templateHTML = this.tpl({model:Result});
-
+                var templateHTML = this.tpl({collection: Result});
                 this.$el.html(templateHTML);
+
                 return this;
             }
+
         });
+
+
         return View;
     }
 );

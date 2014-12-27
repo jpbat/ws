@@ -9,27 +9,41 @@
 		<p class="name"><%= model.Name %></p>
 		<p class="information"><span class="field">Launched:</span> <%= model.launched %></p>
 		<p class="information"><span class="field">Genres:</span>
-			<% _.each(model.Genres, function(genre) { %>
-			<%= genre.genre %>
-			<% }); %>
-
+			<ul class="movieLists genreList">
+				<% _.each(model.Genres, function(genre) { %>
+					<li class="genreName">
+						<%= genre.name %>
+					</li>
+				<% }); %>
+			</ul>
 		</p>
 		<p class="information"><span class="field">Director:</span>
-			<% _.each(model.Directors, function(director) { %>
-			<a href="/#person/<%=director.id %>"><%= director.name %></a>
-			<% }); %>
-			</p>
+			<ul class="movieLists directorList">
+				<% _.each(model.Directors, function(director) { %>
+					<li class="directorName">
+						<a href="/#person/<%=director.id %>"><%= director.name %></a>
+					</li>
+				<% }); %>
+			</ul>
+		</p>
 		<p class="information"><span class="field">Stars:</span>
-			<% _.each(model.Actors, function(actor) { %>
-			<a href="/#person/<%=actor.id %>"><%= actor.name %></a>
-			<% }); %>
+			<ul class="movieLists actorList">
+				<% _.each(model.Actors, function(actor) { %>
+					<li class="actorName">
+						<a href="/#person/<%=actor.id %>"><%= actor.name %></a>
+					</li>
+				<% }); %>
+			</ul>
 		</p>
 
-		</p>
 		<p class="information"><span class="field">Studios:</span>
-			<% _.each(model.Studios, function(studio) { %>
-			<%= studio.name %>
-			<% }); %>
+			<ul class="movieLists studioList">
+				<% _.each(model.Studios, function(studio) { %>
+					<li class="studioName">
+						<%= studio.name %>
+					</li>
+				<% }); %>
+			</ul>
 		</p>
 		<p class="information"><span class="field">Description: </span> <%= model.description %> </p>
 	</div>
