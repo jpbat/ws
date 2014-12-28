@@ -12,7 +12,9 @@
 
 </head>
 <body>
+<button onclick="history.back();" class="nav-button btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span> Back</button>
 <div class="alertContainer">
+
 </div>
 <div class="hidden" id="alertContainer">
   <div class="alert alert-danger alert-dismissible fade in">
@@ -44,7 +46,6 @@
     </div>
   </div>
 </div>
-
 <div id="BackBoneContainer" class="container"></div>
 
 </body>

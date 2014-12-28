@@ -104,3 +104,9 @@ body .TopNavbar::before{
 .movieLists li:not(:first-child):before {
         content:','
 }
+.nav-button {
+        float: right;
+        padding-left: 10px;
+        position: absolute;
+        top: 20px;
+}
