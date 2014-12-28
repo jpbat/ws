@@ -6,7 +6,7 @@ import shutil
 from os.path import isfile
 
 from rdflib import Graph, Namespace, RDF, Literal, BNode, URIRef, XSD
-from dateutil import parser
+
 import json
 from pprint import pprint
 
@@ -182,7 +182,7 @@ while thisYear <= lastYear:
 					pprint("Error: this better be a series: " + relevant)
 					continue
 				g.add((PersonNode,ns.isKnownFor,search))
-		except Exception, e:
+		except (Exception ):
 			pprint("Error: attribute not found on " + person['id'])	
 
 	thisYear += 1

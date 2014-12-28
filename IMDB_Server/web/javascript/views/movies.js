@@ -12,7 +12,6 @@ define(
                 this.limit = 5;
                 this.offset = 0;
                 this.collection.on('reset', this.clear, this);
-                this.collection.on('add change', this.render, this);
 
             },
 
@@ -41,13 +40,14 @@ define(
                 var triggerPoint = 100; // 100px from the bottom
                 if( !this.isLoading && this.el.scrollTop + this.el.clientHeight + triggerPoint > this.el.scrollHeight ) {
                     this.isLoading = true;
-                    console.log("!scroll");
+                    console.log("get off:"+self.offset+" limit:"+self.limit);
 
                     self.collection.fetch({data:{limit:self.limit,offset:self.offset},
                         type: 'GET',
                         success: function () {
                             self.offset+=self.limit;
-                            console.log("success");
+                            self.render();
+                            self.isLoading = false;
                         },
                         error: function () {
                             var newElement = $('#alertContainer div').clone();

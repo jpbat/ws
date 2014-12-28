@@ -51,25 +51,18 @@ public class Movie {
         return elements.toString();
     }
 
-/*    @GET
-    @Path("GetAll")
-    public String GetAll(){
-        JSONArray json = Service.GetAll();
-
-        return  AddInfo(json).toString();
-    }*/
-
     @GET
     @Path("GetAll")
-    public String GetAllf(@QueryParam("offset") int offset,@QueryParam("limit") int limit){
+    public String GetAll(@QueryParam("offset") int offset,@QueryParam("limit") int limit){
         JSONArray json;
+        System.out.println("off:"+offset);
+        System.out.println("limit:"+limit);
         if(limit==0){
             json = Service.GetAll();
 
         }else{
             json = Service.GetAll(offset,limit);
         }
-
 
         return  AddInfo(json).toString();
     }
