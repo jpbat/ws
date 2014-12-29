@@ -119,7 +119,7 @@ define(
                     this.ViewGenres = new viewClass({collection:new collectionClass()});
 
                     this.ViewGenres.collection.fetch({reset: true, type: 'GET'});
-                    this.ViewMovies.collection.fetch({data:{limit:self.ViewMovies.limit,offset:self.ViewMovies.offset},
+                    this.ViewMovies.collection.fetch({data:{limit:self.ViewMovies.limit,offset:self.ViewMovies.offset,genres:self.ViewMovies.genres.join('|')},
                         reset: true, type: 'GET',
                         success: function () {
                             self.ViewMovies.offset+=self.ViewMovies.limit;
@@ -138,6 +138,8 @@ define(
                             window.location.hash = '';
                         }
                     });
+
+                    this.ViewGenres.on('UpdateMovies', this.ViewMovies.ResetCollection,  this);
 
                 }else{
                     $("#BackBoneContainer").html(self.ViewMovies.$el);

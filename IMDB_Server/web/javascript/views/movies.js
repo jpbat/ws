@@ -11,13 +11,12 @@ define(
                 this.isLoading = false;
                 this.limit = 5;
                 this.offset = 0;
+                this.genres = [];
                 this.collection.on('reset', this.clear, this);
 
             },
 
             clear:function(){
-                this.limit = 5;
-                this.offset = 0;
                 this.$el.html(" ");
                 console.log("clear");
                 this.render();
@@ -32,6 +31,32 @@ define(
 
                 return this;
             },
+
+            ResetCollection:function(Genres){
+                console.log("reset collection trigger");
+                var self = this;
+                this.limit = 5;
+                this.offset = 0;
+
+                this.genres = Genres;
+                this.ViewMovies.collection.fetch({data:{limit:self.limit,offset:self.offset,genres:self.genres.join('|')},
+                    reset: true, type: 'GET',
+                    success: function () {
+                        self.offset+=self.limit;
+
+                        console.log("success");
+                    },
+                    error: function () {
+                        var newElement = $('#alertContainer div').clone();
+                        $(newElement).find("p").html("Fail to retrieve the movie list!");
+                        $('.alertContainer').append(newElement);
+                        console.log("Fail to retrieve Movies");
+                        window.location.hash = '';
+                    }
+                });
+            },
+
+
             events: {
                 'scroll': 'checkScroll'
             },
@@ -42,9 +67,10 @@ define(
                     this.isLoading = true;
                     console.log("get off:"+self.offset+" limit:"+self.limit);
 
-                    self.collection.fetch({data:{limit:self.limit,offset:self.offset},
+                    self.collection.fetch({data:{limit:self.limit,offset:self.offset,genres:self.genres.join('|')},
                         type: 'GET',
                         success: function () {
+
                             self.offset+=self.limit;
                             self.render();
                             self.isLoading = false;
@@ -56,8 +82,6 @@ define(
                             console.log("Fail to retrieve Movies");
                         }
                     });
-
-
 
                 }
             }

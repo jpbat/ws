@@ -110,3 +110,7 @@ body .TopNavbar::before{
         position: absolute;
         top: 20px;
 }
+
+#genreView li{
+        display: block;
+}

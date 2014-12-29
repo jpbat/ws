@@ -2,7 +2,9 @@ define(
     ['underscore','backbone'],
     function( _, Backbone){
         var model = Backbone.Model.extend({
-            defaults: {},
+            defaults: {
+                selected:false
+            },
             initialize: function () {
                 console.log('new Genre');
             }

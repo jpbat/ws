@@ -10,6 +10,8 @@ import org.json.JSONObject;
 import javax.ws.rs.*;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+import java.util.ArrayList;
+import java.util.List;
 
 @Path("Movies")
 public class Movie {
@@ -53,10 +55,12 @@ public class Movie {
 
     @GET
     @Path("GetAll")
-    public String GetAll(@QueryParam("offset") int offset,@QueryParam("limit") int limit){
+    public String GetAll(@QueryParam("offset") int offset,@QueryParam("limit") int limit,@QueryParam("genres") String genres){
         JSONArray json;
-        System.out.println("off:"+offset);
-        System.out.println("limit:"+limit);
+
+        if( !(genres==null) && !genres.isEmpty()){
+            json = Service.GetAllByGenre(genres, offset,limit);
+        }else
         if(limit==0){
             json = Service.GetAll();
 

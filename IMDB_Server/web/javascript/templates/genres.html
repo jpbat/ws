@@ -1,7 +1,7 @@
 <ul>
     <%_.each(collection, function(element) { %>
         <li>
-            <%= element.name %>
+            <input type="checkbox" name="genres" id="genre_<%= element.name %>" value="<%= element.name %>"> <label for="genre_<%= element.name %>"><%= element.name %></label>
         </li>
     <% }); %>
 </ul>
