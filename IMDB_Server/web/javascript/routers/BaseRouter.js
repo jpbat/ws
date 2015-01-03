@@ -111,28 +111,32 @@ define(
                     var collectionClass = require('collections/persons');
 
                     this.ViewPersons = new viewClass({collection:new collectionClass()});
+
+                    this.ViewPersons.collection.fetch({data:{limit:self.ViewPersons.limit,offset:self.ViewPersons.offset},
+                        reset: true, type: 'GET',
+                        success: function () {
+                            self.ViewPersons.offset+=self.ViewPersons.limit;
+                            $("#BackBoneContainer").html(self.ViewPersons.$el);
+
+                            $("#PersonsCont").niceScroll();
+
+                            console.log("success");
+                        },
+                        error: function () {
+                            var newElement = $('#alertContainer div').clone();
+                            $(newElement).find("p").html("Fail to retrieve the persons list!");
+                            $('.alertContainer').append(newElement);
+                            console.log("Fail to retrieve Persons ");
+                            window.location.hash = '';
+                        }
+                    });
+
+
+                }else{
+                    $("#BackBoneContainer").html(self.ViewPersons.$el);
+
+                    $("#PersonsCont").niceScroll();
                 }
-
-                this.ViewPersons.collection.fetch({data:{limit:self.ViewPersons.limit,offset:self.ViewPersons.offset},
-                    reset: true, type: 'GET',
-                    success: function () {
-                        self.ViewPersons.offset+=self.ViewPersons.limit;
-                        $("#BackBoneContainer").html(self.ViewPersons.$el);
-
-                        $("#PersonsCont").niceScroll();
-
-                        console.log("success");
-                    },
-                    error: function () {
-                        var newElement = $('#alertContainer div').clone();
-                        $(newElement).find("p").html("Fail to retrieve the persons list!");
-                        $('.alertContainer').append(newElement);
-                        console.log("Fail to retrieve Persons ");
-                        window.location.hash = '';
-                    }
-                });
-
-
 
 
 

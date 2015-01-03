@@ -57,6 +57,7 @@ body .TopNavbar::before{
 }
 
 .TopNavbar .poster-preview,
+#PersonsCont .poster-preview,
 #MoviesCont .poster-preview{
         border: 3px solid;
         border-radius: 8px;
@@ -67,7 +68,7 @@ body .TopNavbar::before{
         height: 100%;
 }
 
-#MoviesCont .poster-preview{
+#PersonsCont .poster-preview ,#MoviesCont .poster-preview{
         width: 100%;
 }
 
@@ -84,17 +85,19 @@ body .TopNavbar::before{
         height: 100%;
 
 }
-#MoviesCont{
-        height: 100%;
-        overflow-y: scroll;
-}
 
 .item {
     padding-top: 10px;
     color: black;
 }
 
-#BackBoneContainer #MoviesCont{
+#PersonsCont,#MoviesCont{
+        height: 100%;
+        overflow-y: scroll;
+}
+
+
+#BackBoneContainer #PersonsCont,#BackBoneContainer #MoviesCont{
         overflow: scroll;
 }
 
