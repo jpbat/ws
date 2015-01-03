@@ -38,6 +38,8 @@ public class PersonManager extends Connection{
         return this.PerformQuery(queryGetAll);
     }
 
+    public JSONArray GetAll(int offset,int limit){return this.PerformQuery(queryGetAll+" LIMIT "+limit+" OFFSET "+offset);}
+
     public JSONArray Get(String id){
         return this.PerformQuery(String.format(queryGetById, id));
     }

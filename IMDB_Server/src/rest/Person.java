@@ -45,8 +45,14 @@ public class Person {
 
     @GET
     @Path("GetAll")
-    public String GetAll(){
-        return Service.GetAll().toString();
+    public String GetAll(@QueryParam("offset") int offset,@QueryParam("limit") int limit){
+
+        if(limit==0){
+            return Service.GetAll().toString();
+
+        }else{
+            return Service.GetAll(offset,limit).toString();
+        }
     }
 
 }

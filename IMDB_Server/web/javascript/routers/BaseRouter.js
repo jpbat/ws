@@ -12,6 +12,7 @@ define(
                 'index': 'index',
                 'movie/:id': 'movie',
                 'person/:id': 'person',
+                'persons': 'persons',
                 'movies': 'movies'
             },
 
@@ -65,7 +66,7 @@ define(
                     },
                     error: function () {
                         var newElement = $('#alertContainer div').clone();
-                        $(newelement).find("p").html("Fail to retrieve movie!");
+                        $(newElement).find("p").html("Fail to retrieve movie!");
                         $('.alertContainer').append(newElement);
                         console.log("Fail to retrieve Movie");
                         window.location.hash = '';
@@ -99,6 +100,42 @@ define(
                         window.location.hash = '';
                     }
                 });
+            },
+            persons: function(){
+
+                $("#BackBoneContainer").html($("#SpinnerContainer").html());
+
+                var self = this;
+                if(!this.ViewPersons){
+                    var viewClass = require('views/persons');
+                    var collectionClass = require('collections/persons');
+
+                    this.ViewPersons = new viewClass({collection:new collectionClass()});
+                }
+
+                this.ViewPersons.collection.fetch({data:{limit:self.ViewPersons.limit,offset:self.ViewPersons.offset},
+                    reset: true, type: 'GET',
+                    success: function () {
+                        self.ViewPersons.offset+=self.ViewPersons.limit;
+                        $("#BackBoneContainer").html(self.ViewPersons.$el);
+
+                        $("#PersonsCont").niceScroll();
+
+                        console.log("success");
+                    },
+                    error: function () {
+                        var newElement = $('#alertContainer div').clone();
+                        $(newElement).find("p").html("Fail to retrieve the persons list!");
+                        $('.alertContainer').append(newElement);
+                        console.log("Fail to retrieve Persons ");
+                        window.location.hash = '';
+                    }
+                });
+
+
+
+
+
             },
             movies: function () {
 

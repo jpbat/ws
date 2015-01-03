@@ -72,7 +72,6 @@ public class MoviesManager extends Connection{
         return this.PerformQuery(queryGetAll);
     }
 
-
     public JSONArray GetMostRecent(){
         return this.PerformQuery(queryGetMostRecent);
     }

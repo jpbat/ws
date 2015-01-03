@@ -1,0 +1,16 @@
+
+<% _.each(collection, function(element) { %>
+<a href="/#movie/<%= element.id %>" class="item col-md-12">
+    <div class="col-md-2">
+        <img class="poster" src="<%= element.Picture %>" alt="picture">
+    </div>
+    <div class="col-md-8">
+        <p class="name"><%= element.Name %></p>
+        <p class="information"><span class="field">Born:</span> <%= element.Birth %></p>
+        <p class="information"><span class="field">Profession:</span> ??????? </p>
+        <p class="information"><span class="field">Birthplace:</span><%= element.BirthPlace %></p>
+    </div>
+    <div class="col-md-3 filter">
+    </div>
+</a>
+<% }); %>

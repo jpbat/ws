@@ -55,8 +55,6 @@ define(
                     }
                 });
             },
-
-
             events: {
                 'scroll': 'checkScroll'
             },
@@ -65,7 +63,6 @@ define(
                 var triggerPoint = 100; // 100px from the bottom
                 if( !this.isLoading && this.el.scrollTop + this.el.clientHeight + triggerPoint > this.el.scrollHeight ) {
                     this.isLoading = true;
-                    console.log("get off:"+self.offset+" limit:"+self.limit);
 
                     self.collection.fetch({data:{limit:self.limit,offset:self.offset,genres:self.genres.join('|')},
                         type: 'GET',
