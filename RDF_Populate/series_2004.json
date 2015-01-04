@@ -1,0 +1,216 @@
+[
+  {
+    "name": "South Park",
+    "id": "tt0121955",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTI5MTYyNDU3NF5BMl5BanBnXkFtZTYwNjU1MzM5._V1_SY317_CR13,0,214,317_AL_.jpg",
+    "score": 8.899999618530273,
+    "duration": 22,
+    "start": 1997,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Animation",
+        "Comedy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0029768",
+        "co0180031",
+        "co0074014"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0005295",
+        "nm0001778",
+        "nm0005002"
+      ]
+    },
+    "description": "The curious, adventure-seeking, fourth grade group of boys, Stan, Kyle, Cartman, and Kenny, all join in in buffoonish adventures that sometimes evolve nothing. Sometimes something that was simple at the start, turns out to get out of control. Everything is odd in the small mountain town, South Park, and the boys always find something to do with it.",
+    "seasons": 20
+  },
+  {
+    "name": "The Simpsons",
+    "id": "tt0096697",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTk0MTAzMzgxOV5BMl5BanBnXkFtZTgwOTM3Mjg4MzE@._V1_SY317_CR12,0,214,317_AL_.jpg",
+    "score": 9.0,
+    "duration": 22,
+    "start": 1989,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Animation",
+        "Comedy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0035761",
+        "co0056447",
+        "co0223402"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0144657",
+        "nm0004813",
+        "nm0001413"
+      ]
+    },
+    "description": "The Simpsons is an animated sitcom about the antics of a dysfunctional family called the Simpsons (surprise surprise). Homer is the oafish unhealthy beer loving father, Marge is the hardworking homemaker wife, Bart is the ten year old underachiever (and proud of it), Lisa is the unappreciated eight year old genius, and Maggie is the cute, pacifier loving silent infant. Written by Sam Kelly",
+    "seasons": 26
+  },
+  {
+    "name": "Home Improvement",
+    "id": "tt0101120",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTgzNzYzNDU5OF5BMl5BanBnXkFtZTcwMDg2NDQ3MQ@@._V1_SY317_CR6,0,214,317_AL_.jpg",
+    "score": 7.199999809265137,
+    "duration": 30,
+    "start": 1991,
+    "end": 1999,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Family"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0067205",
+        "co0028602"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000741",
+        "nm0005359",
+        "nm0385561"
+      ]
+    },
+    "description": "Light television comedy about family man Tim Taylor. The show\u0027s humor often revolves around cars, toys, tools, hardware shops, garages, fix-it-up projects, and similar themes. Written by Tad Dibbern \u003cDIBBERN_D@a1.mscf.upenn.edu\u003e",
+    "seasons": 8
+  },
+  {
+    "name": "Something in the Air",
+    "id": "tt0217960",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjYxNDU0NzY3NF5BMl5BanBnXkFtZTgwODIyMDE2MDE@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "score": 7.199999809265137,
+    "duration": 25,
+    "start": 2000,
+    "end": 2002,
+    "genres": {
+      "genre": [
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0051111"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0083809",
+        "nm0600461",
+        "nm0141560"
+      ]
+    },
+    "description": "",
+    "seasons": 1
+  },
+  {
+    "name": "South Park",
+    "id": "tt0121955",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTI5MTYyNDU3NF5BMl5BanBnXkFtZTYwNjU1MzM5._V1_SY317_CR13,0,214,317_AL_.jpg",
+    "score": 8.899999618530273,
+    "duration": 22,
+    "start": 1997,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Animation",
+        "Comedy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0029768",
+        "co0180031",
+        "co0074014"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0005295",
+        "nm0001778",
+        "nm0005002"
+      ]
+    },
+    "description": "The curious, adventure-seeking, fourth grade group of boys, Stan, Kyle, Cartman, and Kenny, all join in in buffoonish adventures that sometimes evolve nothing. Sometimes something that was simple at the start, turns out to get out of control. Everything is odd in the small mountain town, South Park, and the boys always find something to do with it.",
+    "seasons": 20
+  },
+  {
+    "name": "The Rockford Files",
+    "id": "tt0071042",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjA0OTkxOTQxMF5BMl5BanBnXkFtZTcwNzQ3NjI0MQ@@._V1_SY317_CR10,0,214,317_AL_.jpg",
+    "score": 8.199999809265137,
+    "duration": 60,
+    "start": 1974,
+    "end": 1980,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0034738",
+        "co0071153",
+        "co0046592"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0001258",
+        "nm0000890",
+        "nm0764134"
+      ]
+    },
+    "description": "Series about an ex-convict-turned-private-investigator named Jim Rockford who would rather run away than fight and would rather go fishing than work. He isn\u0027t a coward, and he isn\u0027t lazy -- just rather on the cautious side, that\u0027s all. And he bears a very strong resemblance to Western television hero Bret Maverick. Rockford is sometimes assisted (and sometimes deterred) in his cases by friends Dennis Becker (a police detective), Evelyn \"Angel\" Martin (his cowardly former cellmate) and pretty Beth Davenport (his lawyer). Written by Marty McKee \u003cmmckee@wkio.com\u003e",
+    "seasons": 6
+  },
+  {
+    "name": "Coach",
+    "id": "tt0096560",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTI5NTU5NDY4M15BMl5BanBnXkFtZTcwNzM2MTM1MQ@@._V1_SY317_CR3,0,214,317_AL_.jpg",
+    "score": 7.0,
+    "duration": 30,
+    "start": 1989,
+    "end": 1997,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Sport"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0087680",
+        "co0046592",
+        "co0037052"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0005266",
+        "nm0886733",
+        "nm0001193"
+      ]
+    },
+    "description": "Hayden Fox is the head coach of a university football team, and eats, sleeps and lives football. His partner, however, does not share his passion for the sport, which frequently causes friction in their relationship. While Hayden often fits the stereotype of dumb jock (as do his co-workers Luther and Dauber), he sincerely cares about his friends and family, and tries his best to make things work out. Written by Jean-Marc Rocher \u003crocher@fiberbit.net\u003e",
+    "seasons": 9
+  }
+]
