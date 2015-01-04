@@ -4,6 +4,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix movierecomendation: <http://www.movierecomendation.pt/ontology/movierecomendation.owl#> .
 @base <http://www.movierecomendation.pt/ontology/movierecomendation.owl> .
 
 <http://www.movierecomendation.pt/ontology/movierecomendation.owl> rdf:type :Ontology .
@@ -18,51 +19,61 @@
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasActor
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasActor> rdf:type :ObjectProperty ;
-                                                                            
-                                                                            rdfs:range <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Actor> ;
-                                                                            
-                                                                            rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> .
+movierecomendation:hasActor rdf:type :ObjectProperty ;
+                            
+                            rdfs:domain movierecomendation:Media ;
+                            
+                            rdfs:range movierecomendation:Person .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasDirector
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasDirector> rdf:type :ObjectProperty ;
-                                                                               
-                                                                               rdfs:range <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Director> ;
-                                                                               
-                                                                               rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> .
+movierecomendation:hasDirector rdf:type :ObjectProperty ;
+                               
+                               rdfs:domain movierecomendation:Media ;
+                               
+                               rdfs:range movierecomendation:Person .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasGenre
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasGenre> rdf:type :ObjectProperty ;
-                                                                            
-                                                                            rdfs:range <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Genre> ;
-                                                                            
-                                                                            rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> .
+movierecomendation:hasGenre rdf:type :ObjectProperty ;
+                            
+                            rdfs:range movierecomendation:Genre ;
+                            
+                            rdfs:domain movierecomendation:Media .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasProfession
+
+movierecomendation:hasProfession rdf:type :ObjectProperty ;
+                                 
+                                 rdfs:domain movierecomendation:Person ;
+                                 
+                                 rdfs:range movierecomendation:Profession .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasStudio
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasStudio> rdf:type :ObjectProperty ;
-                                                                             
-                                                                             rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> ;
-                                                                             
-                                                                             rdfs:range <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Studio> .
+movierecomendation:hasStudio rdf:type :ObjectProperty ;
+                             
+                             rdfs:domain movierecomendation:Media ;
+                             
+                             rdfs:range movierecomendation:Studio .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#isKnownFor
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#isKnownFor> rdf:type :ObjectProperty ;
-                                                                              
-                                                                              rdfs:range <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> ;
-                                                                              
-                                                                              rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Person> .
+movierecomendation:isKnownFor rdf:type :ObjectProperty ;
+                              
+                              rdfs:range movierecomendation:Media ;
+                              
+                              rdfs:domain movierecomendation:Person .
 
 
 
@@ -75,161 +86,191 @@
 #################################################################
 
 
-###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieClassification
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMediaClassification
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieClassification> rdf:type :DatatypeProperty ,
-                                                                                                   :FunctionalProperty ;
-                                                                                          
-                                                                                          rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> ;
-                                                                                          
-                                                                                          rdfs:range xsd:float .
-
-
-
-###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieDescription
-
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieDescription> rdf:type :DatatypeProperty ,
-                                                                                                :FunctionalProperty ;
-                                                                                       
-                                                                                       rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> ;
-                                                                                       
-                                                                                       rdfs:range xsd:string .
+movierecomendation:hasMediaClassification rdf:type :DatatypeProperty ,
+                                                   :FunctionalProperty ;
+                                          
+                                          rdfs:domain movierecomendation:Media ;
+                                          
+                                          rdfs:range xsd:float .
 
 
 
-###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieDuration
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMediaDescription
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieDuration> rdf:type :DatatypeProperty ,
-                                                                                             :FunctionalProperty ;
-                                                                                    
-                                                                                    rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> ;
-                                                                                    
-                                                                                    rdfs:range xsd:int .
-
-
-
-###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieId
-
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieId> rdf:type :DatatypeProperty ;
-                                                                              
-                                                                              rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> ;
-                                                                              
-                                                                              rdfs:range xsd:string .
+movierecomendation:hasMediaDescription rdf:type :DatatypeProperty ,
+                                                :FunctionalProperty ;
+                                       
+                                       rdfs:domain movierecomendation:Media ;
+                                       
+                                       rdfs:range xsd:string .
 
 
 
-###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieLaunchDate
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMediaDuration
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieLaunchDate> rdf:type :DatatypeProperty ,
-                                                                                               :FunctionalProperty ;
-                                                                                      
-                                                                                      rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> ;
-                                                                                      
-                                                                                      rdfs:range xsd:dateTime .
-
-
-
-###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieName
-
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieName> rdf:type :DatatypeProperty ,
-                                                                                         :FunctionalProperty ;
-                                                                                
-                                                                                rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> ;
-                                                                                
-                                                                                rdfs:range xsd:string .
+movierecomendation:hasMediaDuration rdf:type :DatatypeProperty ,
+                                             :FunctionalProperty ;
+                                    
+                                    rdfs:domain movierecomendation:Media ;
+                                    
+                                    rdfs:range xsd:int .
 
 
 
-###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMoviePoster
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMediaId
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMoviePoster> rdf:type :DatatypeProperty ,
-                                                                                           :FunctionalProperty ;
-                                                                                  
-                                                                                  rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> ;
-                                                                                  
-                                                                                  rdfs:range xsd:string .
+movierecomendation:hasMediaId rdf:type :DatatypeProperty ;
+                              
+                              rdfs:domain movierecomendation:Media ;
+                              
+                              rdfs:range xsd:string .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMediaLaunchDate
+
+movierecomendation:hasMediaLaunchDate rdf:type :DatatypeProperty ,
+                                               :FunctionalProperty ;
+                                      
+                                      rdfs:domain movierecomendation:Media ;
+                                      
+                                      rdfs:range xsd:dateTime .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMediaName
+
+movierecomendation:hasMediaName rdf:type :DatatypeProperty ,
+                                         :FunctionalProperty ;
+                                
+                                rdfs:domain movierecomendation:Media ;
+                                
+                                rdfs:range xsd:string .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMediaPoster
+
+movierecomendation:hasMediaPoster rdf:type :DatatypeProperty ,
+                                           :FunctionalProperty ;
+                                  
+                                  rdfs:domain movierecomendation:Media ;
+                                  
+                                  rdfs:range xsd:string .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonBirth
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonBirth> rdf:type :DatatypeProperty ,
-                                                                                           :FunctionalProperty ;
-                                                                                  
-                                                                                  rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Person> ;
-                                                                                  
-                                                                                  rdfs:range xsd:dateTime .
+movierecomendation:hasPersonBirth rdf:type :DatatypeProperty ,
+                                           :FunctionalProperty ;
+                                  
+                                  rdfs:domain movierecomendation:Person ;
+                                  
+                                  rdfs:range xsd:dateTime .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonBirthPlace
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonBirthPlace> rdf:type :DatatypeProperty ;
-                                                                                       
-                                                                                       rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Person> ;
-                                                                                       
-                                                                                       rdfs:range xsd:string .
+movierecomendation:hasPersonBirthPlace rdf:type :DatatypeProperty ;
+                                       
+                                       rdfs:domain movierecomendation:Person ;
+                                       
+                                       rdfs:range xsd:string .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonId
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonId> rdf:type :DatatypeProperty ;
-                                                                               
-                                                                               rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Person> ;
-                                                                               
-                                                                               rdfs:range xsd:string .
+movierecomendation:hasPersonId rdf:type :DatatypeProperty ;
+                               
+                               rdfs:domain movierecomendation:Person ;
+                               
+                               rdfs:range xsd:string .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonMiniBio
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonMiniBio> rdf:type :DatatypeProperty ;
-                                                                                    
-                                                                                    rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Person> ;
-                                                                                    
-                                                                                    rdfs:range xsd:string .
+movierecomendation:hasPersonMiniBio rdf:type :DatatypeProperty ;
+                                    
+                                    rdfs:domain movierecomendation:Person ;
+                                    
+                                    rdfs:range xsd:string .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonName
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonName> rdf:type :DatatypeProperty ,
-                                                                                          :FunctionalProperty ;
-                                                                                 
-                                                                                 rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Person> ;
-                                                                                 
-                                                                                 rdfs:range xsd:string .
+movierecomendation:hasPersonName rdf:type :DatatypeProperty ,
+                                          :FunctionalProperty ;
+                                 
+                                 rdfs:domain movierecomendation:Person ;
+                                 
+                                 rdfs:range xsd:string .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonPicture
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonPicture> rdf:type :DatatypeProperty ;
-                                                                                    
-                                                                                    rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Person> ;
-                                                                                    
-                                                                                    rdfs:range xsd:string .
+movierecomendation:hasPersonPicture rdf:type :DatatypeProperty ;
+                                    
+                                    rdfs:domain movierecomendation:Person ;
+                                    
+                                    rdfs:range xsd:string .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasSerieEnd
+
+movierecomendation:hasSerieEnd rdf:type :DatatypeProperty ;
+                               
+                               rdfs:domain movierecomendation:Serie ;
+                               
+                               rdfs:range xsd:int .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasSerieSeasons
+
+movierecomendation:hasSerieSeasons rdf:type :DatatypeProperty ;
+                                   
+                                   rdfs:domain movierecomendation:Serie ;
+                                   
+                                   rdfs:range xsd:int .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasSerieStart
+
+movierecomendation:hasSerieStart rdf:type :DatatypeProperty ;
+                                 
+                                 rdfs:domain movierecomendation:Serie ;
+                                 
+                                 rdfs:range xsd:int .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasStudioId
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasStudioId> rdf:type :DatatypeProperty ;
-                                                                               
-                                                                               rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Studio> ;
-                                                                               
-                                                                               rdfs:range xsd:string .
+movierecomendation:hasStudioId rdf:type :DatatypeProperty ;
+                               
+                               rdfs:domain movierecomendation:Studio ;
+                               
+                               rdfs:range xsd:string .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasStudioName
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasStudioName> rdf:type :DatatypeProperty ;
-                                                                                 
-                                                                                 rdfs:domain <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Studio> ;
-                                                                                 
-                                                                                 rdfs:range xsd:string .
+movierecomendation:hasStudioName rdf:type :DatatypeProperty ;
+                                 
+                                 rdfs:domain movierecomendation:Studio ;
+                                 
+                                 rdfs:range xsd:string .
 
 
 
@@ -242,161 +283,198 @@
 #################################################################
 
 
-###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Actor
-
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Actor> rdf:type :Class ;
-                                                                         
-                                                                         rdfs:subClassOf <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Person> .
-
-
-
-###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Director
-
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Director> rdf:type :Class ;
-                                                                            
-                                                                            rdfs:subClassOf <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Person> .
-
-
-
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Genre
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Genre> rdf:type :Class ;
-                                                                         
-                                                                         :equivalentClass [ rdf:type :Class ;
-                                                                                            :oneOf ( <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Family>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Sci-Fi>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Animation>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Biography>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Musical>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Reality-TV>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Comedy>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Thriller>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Music>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Film-Noir>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Short>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Game-Show>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Talk-Show>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Drama>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Adventure>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Adult>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#News>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Horror>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Action>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Sport>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Crime>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#History>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Documentary>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Romance>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#War>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Mystery>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Western>
-                                                                                                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Fantasy>
-                                                                                                   )
-                                                                                          ] .
+movierecomendation:Genre rdf:type :Class ;
+                         
+                         :equivalentClass [ rdf:type :Class ;
+                                            :oneOf ( movierecomendation:Family
+                                                     movierecomendation:Sci-Fi
+                                                     movierecomendation:Animation
+                                                     movierecomendation:Biography
+                                                     movierecomendation:Musical
+                                                     movierecomendation:Reality-TV
+                                                     movierecomendation:Comedy
+                                                     movierecomendation:Thriller
+                                                     movierecomendation:Music
+                                                     movierecomendation:Film-Noir
+                                                     movierecomendation:Short
+                                                     movierecomendation:Game-Show
+                                                     movierecomendation:Talk-Show
+                                                     movierecomendation:Drama
+                                                     movierecomendation:Adventure
+                                                     movierecomendation:Adult
+                                                     movierecomendation:News
+                                                     movierecomendation:Horror
+                                                     movierecomendation:Action
+                                                     movierecomendation:Sport
+                                                     movierecomendation:Crime
+                                                     movierecomendation:History
+                                                     movierecomendation:Documentary
+                                                     movierecomendation:Romance
+                                                     movierecomendation:War
+                                                     movierecomendation:Mystery
+                                                     movierecomendation:Western
+                                                     movierecomendation:Fantasy
+                                                   )
+                                          ] .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Media
+
+movierecomendation:Media rdf:type :Class ;
+                         
+                         rdfs:subClassOf [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasMediaPoster ;
+                                           :someValuesFrom xsd:string
+                                         ] ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasStudio ;
+                                           :someValuesFrom movierecomendation:Studio
+                                         ] ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasMediaClassification ;
+                                           :someValuesFrom xsd:float
+                                         ] ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasMediaDescription ;
+                                           :someValuesFrom xsd:string
+                                         ] ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasMediaLaunchDate ;
+                                           :someValuesFrom xsd:dateTime
+                                         ] ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasMediaDuration ;
+                                           :someValuesFrom xsd:int
+                                         ] ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasGenre ;
+                                           :someValuesFrom movierecomendation:Genre
+                                         ] ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasMediaId ;
+                                           :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           :onDataRange xsd:string
+                                         ] ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasMediaName ;
+                                           :someValuesFrom xsd:string
+                                         ] .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie> rdf:type :Class ;
-                                                                         
-                                                                         rdfs:subClassOf [ rdf:type :Restriction ;
-                                                                                           :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieClassification> ;
-                                                                                           :someValuesFrom xsd:float
-                                                                                         ] ,
-                                                                                         [ rdf:type :Restriction ;
-                                                                                           :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieLaunchDate> ;
-                                                                                           :someValuesFrom xsd:dateTime
-                                                                                         ] ,
-                                                                                         [ rdf:type :Restriction ;
-                                                                                           :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasGenre> ;
-                                                                                           :someValuesFrom <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Genre>
-                                                                                         ] ,
-                                                                                         [ rdf:type :Restriction ;
-                                                                                           :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasDirector> ;
-                                                                                           :someValuesFrom <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Director>
-                                                                                         ] ,
-                                                                                         [ rdf:type :Restriction ;
-                                                                                           :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieDescription> ;
-                                                                                           :someValuesFrom xsd:string
-                                                                                         ] ,
-                                                                                         [ rdf:type :Restriction ;
-                                                                                           :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasStudio> ;
-                                                                                           :someValuesFrom <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Studio>
-                                                                                         ] ,
-                                                                                         [ rdf:type :Restriction ;
-                                                                                           :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieId> ;
-                                                                                           :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                           :onDataRange xsd:string
-                                                                                         ] ,
-                                                                                         [ rdf:type :Restriction ;
-                                                                                           :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieName> ;
-                                                                                           :someValuesFrom xsd:string
-                                                                                         ] ,
-                                                                                         [ rdf:type :Restriction ;
-                                                                                           :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasActor> ;
-                                                                                           :someValuesFrom <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Actor>
-                                                                                         ] ,
-                                                                                         [ rdf:type :Restriction ;
-                                                                                           :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMovieDuration> ;
-                                                                                           :someValuesFrom xsd:int
-                                                                                         ] ,
-                                                                                         [ rdf:type :Restriction ;
-                                                                                           :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasMoviePoster> ;
-                                                                                           :someValuesFrom xsd:string
-                                                                                         ] .
+movierecomendation:Movie rdf:type :Class ;
+                         
+                         rdfs:subClassOf movierecomendation:Media ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasDirector ;
+                                           :someValuesFrom movierecomendation:Person
+                                         ] ;
+                         
+                         :disjointWith movierecomendation:Serie .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Person
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Person> rdf:type :Class ;
-                                                                          
-                                                                          rdfs:subClassOf [ rdf:type :Restriction ;
-                                                                                            :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonMiniBio> ;
-                                                                                            :someValuesFrom xsd:string
-                                                                                          ] ,
-                                                                                          [ rdf:type :Restriction ;
-                                                                                            :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#isKnownFor> ;
-                                                                                            :someValuesFrom <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Movie>
-                                                                                          ] ,
-                                                                                          [ rdf:type :Restriction ;
-                                                                                            :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonName> ;
-                                                                                            :someValuesFrom xsd:string
-                                                                                          ] ,
-                                                                                          [ rdf:type :Restriction ;
-                                                                                            :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonBirthPlace> ;
-                                                                                            :someValuesFrom xsd:string
-                                                                                          ] ,
-                                                                                          [ rdf:type :Restriction ;
-                                                                                            :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonBirth> ;
-                                                                                            :someValuesFrom xsd:dateTime
-                                                                                          ] ,
-                                                                                          [ rdf:type :Restriction ;
-                                                                                            :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonPicture> ;
-                                                                                            :someValuesFrom xsd:string
-                                                                                          ] ,
-                                                                                          [ rdf:type :Restriction ;
-                                                                                            :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasPersonId> ;
-                                                                                            :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                            :onDataRange xsd:string
-                                                                                          ] .
+movierecomendation:Person rdf:type :Class ;
+                          
+                          rdfs:subClassOf [ rdf:type :Restriction ;
+                                            :onProperty movierecomendation:hasPersonPicture ;
+                                            :someValuesFrom xsd:string
+                                          ] ,
+                                          [ rdf:type :Restriction ;
+                                            :onProperty movierecomendation:hasProfession ;
+                                            :someValuesFrom movierecomendation:Profession
+                                          ] ,
+                                          [ rdf:type :Restriction ;
+                                            :onProperty movierecomendation:hasPersonBirthPlace ;
+                                            :someValuesFrom xsd:string
+                                          ] ,
+                                          [ rdf:type :Restriction ;
+                                            :onProperty movierecomendation:hasPersonBirth ;
+                                            :someValuesFrom xsd:dateTime
+                                          ] ,
+                                          [ rdf:type :Restriction ;
+                                            :onProperty movierecomendation:hasPersonName ;
+                                            :someValuesFrom xsd:string
+                                          ] ,
+                                          [ rdf:type :Restriction ;
+                                            :onProperty movierecomendation:hasPersonMiniBio ;
+                                            :someValuesFrom xsd:string
+                                          ] ,
+                                          [ rdf:type :Restriction ;
+                                            :onProperty movierecomendation:hasPersonId ;
+                                            :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            :onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type :Restriction ;
+                                            :onProperty movierecomendation:isKnownFor ;
+                                            :someValuesFrom movierecomendation:Media
+                                          ] .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Profession
+
+movierecomendation:Profession rdf:type :Class ;
+                              
+                              :equivalentClass [ rdf:type :Class ;
+                                                 :oneOf ( movierecomendation:Actress
+                                                          movierecomendation:Actor
+                                                          movierecomendation:Miscellaneous_Crew
+                                                          movierecomendation:Assistant_Director
+                                                          movierecomendation:Writer
+                                                          movierecomendation:Music_Department
+                                                          movierecomendation:Producer
+                                                          movierecomendation:Soundtrack
+                                                          movierecomendation:Animation_Department
+                                                          movierecomendation:Director
+                                                        )
+                                               ] .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Serie
+
+movierecomendation:Serie rdf:type :Class ;
+                         
+                         rdfs:subClassOf movierecomendation:Media ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasSerieStart ;
+                                           :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           :onDataRange xsd:int
+                                         ] ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasSerieEnd ;
+                                           :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           :onDataRange xsd:int
+                                         ] ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasSerieSeasons ;
+                                           :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           :onDataRange xsd:int
+                                         ] .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Studio
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Studio> rdf:type :Class ;
-                                                                          
-                                                                          rdfs:subClassOf [ rdf:type :Restriction ;
-                                                                                            :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasStudioName> ;
-                                                                                            :someValuesFrom xsd:string
-                                                                                          ] ,
-                                                                                          [ rdf:type :Restriction ;
-                                                                                            :onProperty <http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasStudioId> ;
-                                                                                            :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                            :onDataRange xsd:string
-                                                                                          ] .
+movierecomendation:Studio rdf:type :Class ;
+                          
+                          rdfs:subClassOf [ rdf:type :Restriction ;
+                                            :onProperty movierecomendation:hasStudioId ;
+                                            :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                            :onDataRange xsd:string
+                                          ] ,
+                                          [ rdf:type :Restriction ;
+                                            :onProperty movierecomendation:hasStudioName ;
+                                            :someValuesFrom xsd:string
+                                          ] .
 
 
 
@@ -411,169 +489,229 @@
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Action
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Action> rdf:type :NamedIndividual .
+movierecomendation:Action rdf:type :NamedIndividual .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Actor
+
+movierecomendation:Actor rdf:type :NamedIndividual .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Actress
+
+movierecomendation:Actress rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Adult
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Adult> rdf:type :NamedIndividual .
+movierecomendation:Adult rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Adventure
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Adventure> rdf:type :NamedIndividual .
+movierecomendation:Adventure rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Animation
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Animation> rdf:type :NamedIndividual .
+movierecomendation:Animation rdf:type :NamedIndividual .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Animation_Department
+
+movierecomendation:Animation_Department rdf:type :NamedIndividual .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Assistant_Director
+
+movierecomendation:Assistant_Director rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Biography
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Biography> rdf:type :NamedIndividual .
+movierecomendation:Biography rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Comedy
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Comedy> rdf:type :NamedIndividual .
+movierecomendation:Comedy rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Crime
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Crime> rdf:type :NamedIndividual .
+movierecomendation:Crime rdf:type :NamedIndividual .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Director
+
+movierecomendation:Director rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Documentary
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Documentary> rdf:type :NamedIndividual .
+movierecomendation:Documentary rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Drama
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Drama> rdf:type :NamedIndividual .
+movierecomendation:Drama rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Family
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Family> rdf:type :NamedIndividual .
+movierecomendation:Family rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Fantasy
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Fantasy> rdf:type :NamedIndividual .
+movierecomendation:Fantasy rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Film-Noir
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Film-Noir> rdf:type :NamedIndividual .
+movierecomendation:Film-Noir rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Game-Show
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Game-Show> rdf:type :NamedIndividual .
+movierecomendation:Game-Show rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#History
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#History> rdf:type :NamedIndividual .
+movierecomendation:History rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Horror
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Horror> rdf:type :NamedIndividual .
+movierecomendation:Horror rdf:type :NamedIndividual .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Miscellaneous_Crew
+
+movierecomendation:Miscellaneous_Crew rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Music
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Music> rdf:type :NamedIndividual .
+movierecomendation:Music rdf:type :NamedIndividual .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Music_Department
+
+movierecomendation:Music_Department rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Musical
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Musical> rdf:type :NamedIndividual .
+movierecomendation:Musical rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Mystery
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Mystery> rdf:type :NamedIndividual .
+movierecomendation:Mystery rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#News
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#News> rdf:type :NamedIndividual .
+movierecomendation:News rdf:type :NamedIndividual .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Producer
+
+movierecomendation:Producer rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Reality-TV
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Reality-TV> rdf:type :NamedIndividual .
+movierecomendation:Reality-TV rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Romance
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Romance> rdf:type :NamedIndividual .
+movierecomendation:Romance rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Sci-Fi
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Sci-Fi> rdf:type :NamedIndividual .
+movierecomendation:Sci-Fi rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Short
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Short> rdf:type :NamedIndividual .
+movierecomendation:Short rdf:type :NamedIndividual .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Soundtrack
+
+movierecomendation:Soundtrack rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Sport
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Sport> rdf:type :NamedIndividual .
+movierecomendation:Sport rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Talk-Show
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Talk-Show> rdf:type :NamedIndividual .
+movierecomendation:Talk-Show rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Thriller
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Thriller> rdf:type :NamedIndividual .
+movierecomendation:Thriller rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#War
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#War> rdf:type :NamedIndividual .
+movierecomendation:War rdf:type :NamedIndividual .
 
 
 
 ###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Western
 
-<http://www.movierecomendation.pt/ontology/movierecomendation.owl#Western> rdf:type :NamedIndividual .
+movierecomendation:Western rdf:type :NamedIndividual .
+
+
+
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#Writer
+
+movierecomendation:Writer rdf:type :NamedIndividual .
 
 
 
@@ -587,34 +725,47 @@
 
 
 [ rdf:type :AllDifferent ;
-  :distinctMembers ( <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Action>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Adult>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Adventure>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Animation>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Biography>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Comedy>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Crime>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Documentary>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Drama>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Family>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Fantasy>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Film-Noir>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Game-Show>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#History>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Horror>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Music>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Musical>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Mystery>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#News>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Reality-TV>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Romance>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Sci-Fi>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Short>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Sport>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Talk-Show>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Thriller>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#War>
-                     <http://www.movierecomendation.pt/ontology/movierecomendation.owl#Western>
+  :distinctMembers ( movierecomendation:Action
+                     movierecomendation:Adult
+                     movierecomendation:Adventure
+                     movierecomendation:Animation
+                     movierecomendation:Biography
+                     movierecomendation:Comedy
+                     movierecomendation:Crime
+                     movierecomendation:Documentary
+                     movierecomendation:Drama
+                     movierecomendation:Family
+                     movierecomendation:Fantasy
+                     movierecomendation:Film-Noir
+                     movierecomendation:Game-Show
+                     movierecomendation:History
+                     movierecomendation:Horror
+                     movierecomendation:Music
+                     movierecomendation:Musical
+                     movierecomendation:Mystery
+                     movierecomendation:News
+                     movierecomendation:Reality-TV
+                     movierecomendation:Romance
+                     movierecomendation:Sci-Fi
+                     movierecomendation:Short
+                     movierecomendation:Sport
+                     movierecomendation:Talk-Show
+                     movierecomendation:Thriller
+                     movierecomendation:War
+                     movierecomendation:Western
+                   )
+] .
+[ rdf:type :AllDifferent ;
+  :distinctMembers ( movierecomendation:Actor
+                     movierecomendation:Actress
+                     movierecomendation:Animation_Department
+                     movierecomendation:Assistant_Director
+                     movierecomendation:Director
+                     movierecomendation:Miscellaneous_Crew
+                     movierecomendation:Music_Department
+                     movierecomendation:Producer
+                     movierecomendation:Soundtrack
+                     movierecomendation:Writer
                    )
 ] .
 
