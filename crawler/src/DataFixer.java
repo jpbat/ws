@@ -83,13 +83,23 @@ public class DataFixer implements Runnable {
 					try {
 						d = df.parse(launch);
 					} catch (Exception e) {
-						System.out.println(launch);
 						break;
 					}
 					
 					Calendar cal = Calendar.getInstance();
 					cal.setTime(d);
-					String xpto = cal.get(Calendar.YEAR) + "-" + (cal.get(Calendar.MONTH) + 1) + "-" + cal.get(Calendar.DAY_OF_MONTH);
+					
+					String xpto = cal.get(Calendar.YEAR) + "-";
+					
+					if (cal.get(Calendar.MONTH) + 1 < 10) {
+						xpto += "0";
+					}
+					xpto += cal.get(Calendar.MONTH) + 1 + "-";
+					
+					if (cal.get(Calendar.DAY_OF_MONTH) < 10) {
+						xpto += "0";
+					}
+					xpto += cal.get(Calendar.DAY_OF_MONTH) + "T0:00:00";
 					
 					m.setLaunchDate(xpto);
 					

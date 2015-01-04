@@ -37,6 +37,10 @@ public class Person {
 		this.actor = actor;
 	}
 	
+	public ArrayList<String> getKnownFor() {
+		return this.knownFor;
+	}
+	
 	public String toString() {
 		return "Person [name=" + name + ", birthDate=" + birthDate + ", picture=" + picture
 				+ ", director=" + director + ", actor=" + actor + "]";

@@ -1,6 +1,10 @@
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 
 import org.jsoup.Jsoup;
@@ -185,6 +189,7 @@ public class Crawler {
 		}
 
 		for (int page = 51; page < 0 ;page += 50) {
+		//for (int page = 51; ;page += 50) {
 			url = this.base + "/search/title?sort=moviemeter,asc&start=" + page + "&title_type=feature&year=" + year;
 
 			System.out.println(url);
@@ -219,6 +224,8 @@ public class Crawler {
 	public ArrayList<Person> parsePersons() {
 		
 		Document doc;
+		Date d;
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 		String name, birthDate, picture, id, birthPlace, miniBio;
 		ArrayList<Person> retval = new ArrayList<Person>();
 		ArrayList<String> jobCategories = new ArrayList<String>();
@@ -244,6 +251,27 @@ public class Crawler {
 			}
 			name = doc.select("#overview-top .header .itemprop").text();
 			birthDate = doc.select("time").attr("datetime");
+			
+			try {
+				d = df.parse(birthDate);
+				Calendar cal = Calendar.getInstance();
+				cal.setTime(d);
+				
+				birthDate = cal.get(Calendar.YEAR) + "-";
+				
+				if (cal.get(Calendar.MONTH) + 1 < 10) {
+					birthDate += "0";
+				}
+				birthDate += cal.get(Calendar.MONTH) + 1 + "-";
+				
+				if (cal.get(Calendar.DAY_OF_MONTH) < 10) {
+					birthDate += "0";
+				}
+				birthDate += cal.get(Calendar.DAY_OF_MONTH) + "T0:00:00";
+				
+			} catch (Exception e) {
+				birthDate = ("00-00-00T0:00:00");
+			}
 			
 			picture = doc.select("#name-poster").attr("src");
 			
@@ -297,6 +325,27 @@ public class Crawler {
 			}
 			name = doc.select("#overview-top .header .itemprop").text();
 			birthDate = doc.select("time").attr("datetime");
+			
+			try {
+				d = df.parse(birthDate);
+				Calendar cal = Calendar.getInstance();
+				cal.setTime(d);
+				
+				birthDate = cal.get(Calendar.YEAR) + "-";
+				
+				if (cal.get(Calendar.MONTH) + 1 < 10) {
+					birthDate += "0";
+				}
+				birthDate += cal.get(Calendar.MONTH) + 1 + "-";
+				
+				if (cal.get(Calendar.DAY_OF_MONTH) < 10) {
+					birthDate += "0";
+				}
+				birthDate += cal.get(Calendar.DAY_OF_MONTH);
+				
+			} catch (Exception e) {
+				birthDate = ("00-00-00");
+			}
 			
 			picture = doc.select("#name-poster").attr("src");
 			
@@ -363,4 +412,118 @@ public class Crawler {
 		
 		return retval;
 	}
+	
+	private Serie fetchSerie(String id) {
+		String aux;
+		Serie s = new Serie();
+		s.genres = new Genres();
+		s.stars = new Stars();
+		s.studios = new Studios();
+		s.genres.genre = new ArrayList<String>();
+		s.stars.star = new ArrayList<String>();
+		s.studios.studio = new ArrayList<String>();
+		
+		Document doc = getDocument(this.base + "/title/" + id);
+		
+		s.name = doc.select("#overview-top h1 .itemprop").text();
+		s.image = doc.select("#img_primary img").attr("src");
+		s.description = doc.select("#titleStoryLine .canwrap p").text();
+		try {
+			s.start = Integer.parseInt(doc.select(".header .nobr").text().split("\\–")[0].substring(1));
+			aux = doc.select(".header .nobr").text().split("\\–")[1];
+			s.end = Integer.parseInt(aux.substring(0, aux.length() - 1));
+		} catch (NumberFormatException e) {
+			s.end = 0;
+		}
+		s.duration = Integer.parseInt(doc.select("#overview-top .infobar time").text().split(" ")[0]);
+
+		String score = doc.select("#overview-top .star-box-giga-star").text();
+		if (score.length() == 0) {
+			s.score = -1;
+		} else {
+			s.score = Float.parseFloat(score);
+		}
+		
+		ArrayList<String> genres = new ArrayList<>();
+		for (Element e : doc.select("#overview-top .infobar a .itemprop")) {
+			genres.add(e.text());
+		}
+		s.genres.genre.addAll(genres);
+		
+		ArrayList<String> stars = new ArrayList<>();
+		try {
+			Elements es = doc.select("[itemprop=actors] a");
+			for (Element e : es) {
+				String star = e.attr("href").split("/")[2];;
+				if (star.indexOf("See full") != -1)
+					break;
+				stars.add(star);
+			}
+		} catch (Exception e) {
+		}
+		s.stars.star.addAll(stars);
+		
+		ArrayList<String> studios = new ArrayList<String>();
+		for (Element e : doc.select(".txt-block [itemprop=creator] a")) {
+			String studio = e.attr("href").split("/")[2].split("\\?")[0];
+			studios.add(studio);
+		}
+		
+		s.studios.studio.addAll(studios);
+		
+		int seasons;
+		for (int i = 0; ; i++) {
+			aux = doc.select(".seasons-and-year-nav div a").get(i).text();
+			try {
+				seasons = Integer.parseInt(aux);
+			} catch (NumberFormatException e) {
+				continue;
+			}
+			break;
+		}
+		s.setSeasons(seasons);
+		s.setId(id);
+		
+		return s;
+		
+	}
+	
+	public ArrayList<Serie> parseKnownFor(ArrayList<Person> persons) {
+
+		String id;
+		Document doc;
+		ArrayList<Serie> retval = new ArrayList<Serie>();
+		
+		System.out.println("Starting to fetch series from: " + persons.size() + " actors to find series");
+		
+		for (int j = 0; j < persons.size(); j++) {
+			
+			System.out.print("Working: " + 100 * j / persons.size() + "% (" +  (j+1) + "/" + 
+					+ persons.size() + ")\r");
+			
+			for (int i = 0; i < persons.get(j).getKnownFor().size(); i++) {
+				id = persons.get(j).getKnownFor().get(i);
+				
+				doc = getDocument(base + "/title/" + id);
+				if (doc == null) {
+					i--;
+					continue;
+				}
+				
+				String infobar = doc.select(".infobar").text();
+				
+				boolean isSeries = infobar.contains("TV Series");
+				
+				if (isSeries == false && this.map.containsKey(id) == false) {
+					continue;
+				}
+				
+				this.map.put(id, 0);
+				retval.add(fetchSerie(id));
+			}
+		}
+		
+		return retval;
+	}
 }
+

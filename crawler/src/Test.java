@@ -2,8 +2,12 @@
 public class Test {
 	
 	public static void main(String[] args) {
-		String a = "/title/tt0112462/?ref_=nm_knf_i2";
-		System.out.println(a.split("/")[2].split("\\?")[0]);
+		String a = "(1991–1999)";
+		String aux = a.split("–")[1];
+		System.out.println(aux.substring(0, aux.length()-1));
+		
+		aux = "(1991–1999)".split("–")[1].split("\\–")[1];
+		System.out.println(Integer.parseInt(aux.substring(0, aux.length() - 1)));
 	}
 
 }
