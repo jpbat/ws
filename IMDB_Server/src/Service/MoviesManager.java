@@ -1,6 +1,5 @@
 package Service;
 
-
 import com.google.gson.Gson;
 import com.hp.hpl.jena.query.*;
 import com.hp.hpl.jena.rdf.model.Model;
@@ -19,19 +18,19 @@ public class MoviesManager extends Connection{
     String queryGetAll =
                     "PREFIX ns: "+GlobalNamespace+" "+
                     "SELECT ?id ?Name ?Poster ?duration ?launched ?description ?classification " +
-                    "WHERE { ?b ns:hasMovieName ?Name; ns:hasMovieId ?id; ns:hasMoviePoster ?Poster; " +
-                               "ns:hasMovieDuration ?duration; ns:hasMovieLaunchDate ?launched; ns:hasMovieDescription ?description; ns:hasMovieClassification ?classification .}";
+                    "WHERE {?b ns:hasMediaName ?Name; ns:hasMediaId ?id; ns:hasMediaPoster ?Poster; ns:hasMediaDuration ?duration; ns:hasMediaDescription ?description;" +
+                            " ns:hasMediaClassification ?classification . OPTIONAL { ?b ns:hasMediaLaunchDate ?launched } . OPTIONAL { ?b ns:hasSerieEnd ?end } . OPTIONAL { ?b ns:hasSerieStart ?start } . OPTIONAL { ?b ns:hasSerieSeasons ?seasons } . }";
     String queryGetById =
                     "PREFIX nsowl: "+GlobalNamespace+" "+
                     "SELECT ?id ?Name ?Poster ?duration ?launched ?description ?classification " +
-                    "WHERE { "+Namespace+" a nsowl:Movie;  nsowl:hasMovieName ?Name; nsowl:hasMovieId ?id; nsowl:hasMoviePoster ?Poster; "+
-                            "nsowl:hasMovieDuration ?duration; nsowl:hasMovieLaunchDate ?launched; nsowl:hasMovieDescription ?description; nsowl:hasMovieClassification ?classification .}";
+                    "WHERE { "+Namespace+" a nsowl:Movie;  nsowl:hasMediaName ?Name; nsowl:hasMediaId ?id; nsowl:hasMediaPoster ?Poster; "+
+                            "nsowl:hasMediaDuration ?duration; nsowl:hasMediaLaunchDate ?launched; nsowl:hasMediaDescription ?description; nsowl:hasMediaClassification ?classification .}";
 
     String queryGetMostRecent =
             "PREFIX ns: "+GlobalNamespace+" "+
                     "SELECT ?id ?Name ?Poster ?duration ?launched ?description ?classification " +
-                    "WHERE { ?b ns:hasMovieName ?Name; ns:hasMovieId ?id; ns:hasMoviePoster ?Poster; " +
-                    "ns:hasMovieDuration ?duration; ns:hasMovieLaunchDate ?launched; ns:hasMovieDescription ?description; ns:hasMovieClassification ?classification .} "+
+                    "WHERE { ?b ns:hasMediaName ?Name; ns:hasMediaId ?id; ns:hasMediaPoster ?Poster; " +
+                    "ns:hasMediaDuration ?duration; ns:hasMediaLaunchDate ?launched; ns:hasMediaDescription ?description; ns:hasMediaClassification ?classification .} "+
                     "ORDER BY ?launched "+
                     "LIMIT 6";
     String querySelectGenre=
