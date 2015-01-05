@@ -8,7 +8,7 @@ import org.json.JSONObject;
  */
 public class ProfessionManager extends Connection {
     private String GlobalNamespace="<http://www.movierecomendation.pt/ontology/movierecomendation.owl#>";
-    private String Namespace ="<http://www.movierecomendation.pt/Movie/>";
+    private String Namespace ="<http://www.movierecomendation.pt/Person/>";
     private String owl = "<http://www.w3.org/2002/07/owl#>";
     private String rdf = "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>";
 
