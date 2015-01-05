@@ -4,26 +4,26 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
- * Created by Joao on 19/12/2014.
+ * Created by Joao on 05/01/2015.
  */
-public class GenresManager extends Connection{
+public class ProfessionManager extends Connection {
     private String GlobalNamespace="<http://www.movierecomendation.pt/ontology/movierecomendation.owl#>";
     private String Namespace ="<http://www.movierecomendation.pt/Movie/>";
     private String owl = "<http://www.w3.org/2002/07/owl#>";
     private String rdf = "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>";
 
-    String queryGetGenreByMovieId =
+    String queryGetProfessionByMovieId =
             "PREFIX nsowl:"+GlobalNamespace+" "+
                     "PREFIX ns:"+Namespace+" "+
-                    "SELECT ?uri WHERE { ns:%s nsowl:hasGenre ?uri .}";
+                    "SELECT ?uri WHERE { ns:%s nsowl:hasProfession ?uri .}";
 
     String queryGetAll =
             "PREFIX rdf:"+rdf+" "+
-            "PREFIX owl:"+owl+" "+
-            "PREFIX nsowl:"+GlobalNamespace+" "+
-            "PREFIX ns:"+Namespace+" "+
+                    "PREFIX owl:"+owl+" "+
+                    "PREFIX nsowl:"+GlobalNamespace+" "+
+                    "PREFIX ns:"+Namespace+" "+
                     "SELECT DISTINCT ?uri "+
-                    "WHERE {nsowl:Genre owl:equivalentClass ?node. ?node owl:oneOf ?ref. ?ref rdf:rest*/rdf:first ?uri .} "+
+                    "WHERE {nsowl:Profession owl:equivalentClass ?node. ?node owl:oneOf ?ref. ?ref rdf:rest*/rdf:first ?uri .} "+
                     "ORDER BY ?uri";
 
     private JSONArray AddInfo(JSONArray json){
@@ -31,7 +31,7 @@ public class GenresManager extends Connection{
             JSONObject current = (JSONObject)json.get(i);
             String GenreUri = current.get("uri").toString();
             String[] parts = GenreUri.split("#");
-            current.put("name",parts[1]);
+            current.put("name",parts[1].replace("_"," "));
         }
 
         return json;
@@ -41,8 +41,8 @@ public class GenresManager extends Connection{
         return AddInfo(this.PerformQuery(queryGetAll));
     }
 
-    public JSONArray GetByMovie(String id){
-        return AddInfo(this.PerformQuery(String.format(queryGetGenreByMovieId, id)));
+    public JSONArray GetByPerson(String id){
+        return AddInfo(this.PerformQuery(String.format(queryGetProfessionByMovieId, id)));
     }
 
 }

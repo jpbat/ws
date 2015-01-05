@@ -1,9 +1,6 @@
 package rest;
 
-import Service.GenresManager;
-import Service.MoviesManager;
-import Service.PersonManager;
-import Service.StudiosManager;
+import Service.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -20,7 +17,6 @@ public class Movie {
     PersonManager PersonService = new PersonManager();
     StudiosManager StudioService = new StudiosManager();
     GenresManager GenreService = new GenresManager();
-
     private JSONArray AddInfo(JSONArray json){
         for(int i=0; i<json.length(); i++){
             JSONObject current = (JSONObject)json.get(i);
@@ -30,6 +26,7 @@ public class Movie {
             current.put("Directors",PersonService.GetDirectorByMovie(movieId));
             current.put("Studios",StudioService.GetbyMovie(movieId));
             current.put("Genres",GenreService.GetByMovie(movieId));
+            current.put("Profession",PersonService.GetActorByMovie(movieId));
         }
 
         return json;
