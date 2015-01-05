@@ -20,8 +20,8 @@ print("graph has %s statements.\n" % len(g))
 
 ns=Namespace('http://www.movierecomendation.pt/ontology/movierecomendation.owl#')
 
-firstYear = 1995
-lastYear = 1996
+firstYear = 2004
+lastYear = 2004
 thisYear = firstYear
 
 while thisYear <= lastYear:
@@ -188,10 +188,11 @@ while thisYear <= lastYear:
 						pprint("Error:Studio not found")
 						continue;
 					g.add((SerieNode,ns.hasStudio,search))
-			if(attr=='Start'):
+			if(attr=='start'):
 				g.add((SerieNode,ns.hasSerieStart,Literal(serie[attr], datatype=XSD.integer)))
-			if(attr=='End'):
-				g.add((SerieNode,ns.hasSerieEnd,Literal(serie[attr], datatype=XSD.integer)))
+			if(attr=='end'):
+				if(serie[attr] != 0):
+					g.add((SerieNode,ns.hasSerieEnd,Literal(serie[attr], datatype=XSD.integer)))
 			if(attr=='genres'):
 				for genre in serie[attr]['genre']:
 					g.add((SerieNode,ns.hasGenre,ns[genre]))
