@@ -22,34 +22,17 @@ firstYear = 2004
 lastYear = 2004
 thisYear = firstYear
 
+#
+# STORE PPL IN TREE
+#########################
+LocalNamespace=Namespace('http://www.movierecomendation.pt/Person/')
 while thisYear <= lastYear:
-	filename = 'movies_' + str(thisYear) + '.json'
-	#load all json files to store in RDF
-	FileData = open(filename)
-	MovieJSON = json.load(FileData)
-	FileData.close()
-
-	filename = 'series_' + str(thisYear) + '.json'
-	#load all json files to store in RDF
-	FileData = open(filename)
-	SeriesJSON = json.load(FileData)
-	FileData.close()
 
 	filename = 'persons_' + str(thisYear) + '.json'
 	FileData = open(filename)
 	PersonJSON = json.load(FileData)
 	FileData.close()
 
-	filename = 'studios_' + str(thisYear) + '.json'
-	FileData = open(filename)
-	StudioJSON = json.load(FileData)
-	FileData.close()
-
-	#
-	# STORE PPL IN TREE
-	#########################
-
-	LocalNamespace=Namespace('http://www.movierecomendation.pt/Person/')
 	for person in PersonJSON:
 
 		#see if Person is already added
@@ -83,12 +66,18 @@ while thisYear <= lastYear:
 			#	pprint(person[attr])
 			#if(attr=='director'):
 			#	pprint(person[attr])
+	thisYear += 1
+#
+# STORE STUDIOS IN TREE
+#########################
+LocalNamespace=Namespace('http://www.movierecomendation.pt/Studio/')
+while thisYear <= lastYear:
 
-	#
-	# STORE STUDIOS IN TREE
-	#########################
+	filename = 'studios_' + str(thisYear) + '.json'
+	FileData = open(filename)
+	StudioJSON = json.load(FileData)
+	FileData.close()
 
-	LocalNamespace=Namespace('http://www.movierecomendation.pt/Studio/')
 	for studio in StudioJSON:
 		#see if Studio is already added
 		search = g.value(predicate=ns.hasStudioId,object=Literal(studio['id']))
@@ -103,12 +92,18 @@ while thisYear <= lastYear:
 				g.add((StudioNode,ns.hasStudioId,Literal(studio[attr])))
 			if(attr=='name'):
 				g.add((StudioNode,ns.hasStudioName,Literal(studio[attr])))
+	thisYear += 1
+#
+# STORE MOVIES IN TREE
+#########################
+LocalNamespace=Namespace('http://www.movierecomendation.pt/Movie/')
+while thisYear <= lastYear:
 
-	#
-	# STORE MOVIES IN TREE
-	#########################
-
-	LocalNamespace=Namespace('http://www.movierecomendation.pt/Movie/')
+	filename = 'movies_' + str(thisYear) + '.json'
+	#load all json files to store in RDF
+	FileData = open(filename)
+	MovieJSON = json.load(FileData)
+	FileData.close()
 
 	for movie in MovieJSON:
 		#see if movie is already added
@@ -159,12 +154,19 @@ while thisYear <= lastYear:
 				g.add((MovieNode,ns.hasMediaName,Literal(movie[attr])))
 			if(attr=='image'):
 				g.add((MovieNode,ns.hasMediaPoster,Literal(movie[attr])))
+	thisYear += 1
 
-	#
-	# STORE SERIES IN TREE
-	#########################
+#
+# STORE SERIES IN TREE
+#########################
+LocalNamespace=Namespace('http://www.movierecomendation.pt/Serie/')
+while thisYear <= lastYear:
 
-	LocalNamespace=Namespace('http://www.movierecomendation.pt/Serie/')
+	filename = 'series_' + str(thisYear) + '.json'
+	#load all json files to store in RDF
+	FileData = open(filename)
+	SeriesJSON = json.load(FileData)
+	FileData.close()
 
 	for serie in SeriesJSON:
 		#see if movie is already added
@@ -213,10 +215,10 @@ while thisYear <= lastYear:
 				g.add((SerieNode,ns.hasMediaPoster,Literal(serie[attr])))
 			if(attr=='seasons'):
 				g.add((SerieNode,ns.hasSerieSeason,Literal(serie[attr], datatype=XSD.integer)))
-
-
-
 	thisYear += 1
+
+
+
 
 thisYear = firstYear
 while thisYear <= lastYear:
@@ -234,12 +236,13 @@ while thisYear <= lastYear:
 			pprint("Error: Person not found! " + person['id'])
 			continue;
 		try:
-			for relevant in person['knownFor']:
-				search = g.value(predicate=ns.hasMediaId, object=Literal(relevant))
-				if search == None:
-					pprint("Error: this better be a series: " + relevant)
-					continue
-				g.add((PersonNode,ns.isKnownFor,search))
+			if((search, ns.isKnownFor, None) not in g):
+				for relevant in person['knownFor']:
+					search = g.value(predicate=ns.hasMediaId, object=Literal(relevant))
+					if search == None:
+						pprint("Error: NOT FOUND: " + relevant)
+						continue
+					g.add((PersonNode,ns.isKnownFor,search))
 		except (Exception ):
 			pprint("Error: attribute not found on " + person['id'])	
 
