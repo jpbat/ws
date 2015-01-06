@@ -50,6 +50,7 @@ public class Crawler {
 	private Movie parseMovie(String url, String name) {
 		
 		this.l.log(Logger.start + name);
+		String director;
 		Movie m = new Movie();
 		m.genres = new Genres();
 		m.stars = new Stars();
@@ -78,7 +79,11 @@ public class Crawler {
 		
 		ArrayList<String> directors = new ArrayList<>();
 		for (Element e : doc.select("[itemprop=director] a")) {
-			String director = e.attr("href").split("/")[2];
+			try {
+				director = e.attr("href").split("/")[2];
+			} catch (Exception e1) {
+				break;
+			}
 			directors.add(director);
 			
 			if (!map.containsKey(director)) {
@@ -617,8 +622,6 @@ public class Crawler {
 
 		IMDBCrawler.personsToJSON(persons, year);
 		IMDBCrawler.studiosToJSON(studios, year);
-		
-//		new DataFixer(year);
 	}
 	
 	private Studio parseStudio(String id) {

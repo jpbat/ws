@@ -2079,7 +2079,36 @@
     "description": "Structural Engineer Michael Scofield turns himself in to the Fox River Penitentiary in order to break out his brother Lincoln Burrows, who is on death row for the murder of the Vice President\u0027s brother. But Lincoln was set up by some of the Company (an agency formed by corrupt government officials) guys, headed by General Jonathan Krantz. Michael breaks out from Fox River with his brother Lincoln and other convicts. Written by Jyoti",
     "seasons": 4
   },
-  null,
+  {
+    "name": "Two and a Half Men",
+    "id": "tt0369179",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTcwMDU1MDExNl5BMl5BanBnXkFtZTcwOTAwMjYyOQ@@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "score": 7.199999809265137,
+    "duration": 22,
+    "start": 2003,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0004981",
+        "co0099776",
+        "co0005035"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0001083",
+        "nm0005110",
+        "nm0427489"
+      ]
+    },
+    "description": "The Harper brothers Charlie and Alan are almost opposites but form a great team. They have little in common except their dislike for their mundane, maternally cold and domineering mother, Evelyn. Alan, a compulsively neat chiropractor and control-freak, is thrown out by his manipulative wife Judith who nevertheless gets him to pay for everything and do most jobs in the house. Charlie is a freelance jingle composer and irresistible Cassanova who lives in a luxurious beach-house and rarely gets up before noon. Charlie \"temporarily\" allows Alan and his son Jake, a food-obsessed, lazy school kid who shuttles between his parents, to move in with them after Alan\u0027s separation/divorce. The sitcom revolves around their conflicting lifestyles, raising Jake (who has the efficient, caring dad while having a ball with his fun-loving sugar uncle who teaches him boyish things), and bantering with Evelyn and various other friends and family. Other fairly regular characters include Charlie\u0027s cleaning ... Written by KGF Vissers",
+    "seasons": 12
+  },
   {
     "name": "How to Get Away with Murder",
     "id": "tt3205802",
@@ -2798,7 +2827,38 @@
     "description": "A family tree with Zeek (Craig T. Nelson) and Camille Braverman (Bonnie Bedelia) serving as the patriarch and matriarch. After forty-six years of marriage, they\u0027ve managed to keep their foundation intact by burying their problems underneath the surface for the sake of their now-adult children. Adam (Peter Krause) is the first-born and the ripest apple the tree has to offer. He runs a shoe company, has a supportive wife, two children (boy and girl) and a beautiful home to share with them. He\u0027s a dog short of \"The American Dream\". Sarah (Lauren Graham), is the unstable daughter returning home at thirty-eight years of age with her rebellious daughter and sensitive son to live with Zeek and Camille. Crosby (Dax Shepard), is a happy-go-lucky bachelor living in the now, on a docked boat. He has no idea that his frivolous life is about to change tremendously. Then there is Julia (Erika Christensen). She is the bread-winning shot-calling lawyer, whose husband mans the stay-at-home-dad duties.... Written by Jordan Ray Allen",
     "seasons": 6
   },
-  null,
+  {
+    "name": "CSI: Crime Scene Investigation",
+    "id": "tt0247082",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTkyODgwMDMzNV5BMl5BanBnXkFtZTgwMTExOTMyMjE@._V1_SY317_CR5,0,214,317_AL_.jpg",
+    "score": 7.800000190734863,
+    "duration": 60,
+    "start": 2000,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0054762",
+        "co0183875",
+        "co0048735"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000401",
+        "nm0001339",
+        "nm0247040"
+      ]
+    },
+    "description": "This show follows the nights of the detectives working at the Las Vegas Police Department Crime Scene Investigations bureau. Being the second busiest crime lab in America, CSI officers use the best scientific and technical methods to solve puzzles and catch criminals. Written by Steve Richer",
+    "seasons": 15
+  },
   {
     "name": "It\u0027s Always Sunny in Philadelphia",
     "id": "tt0472954",

@@ -1,5 +1,105 @@
 [
   {
+    "name": "Paramount Pictures [us]",
+    "id": "co0023400"
+  },
+  {
+    "name": "M.G. Films",
+    "id": "co0076419"
+  },
+  {
+    "name": "Broadway Video [us]",
+    "id": "co0013731"
+  },
+  {
+    "name": "Warner Bros. [us]",
+    "id": "co0026840"
+  },
+  {
+    "name": "1492 Pictures [us]",
+    "id": "co0046151"
+  },
+  {
+    "name": "Heyday Films [gb]",
+    "id": "co0159772"
+  },
+  {
+    "name": "New Line Cinema [us]",
+    "id": "co0046718"
+  },
+  {
+    "name": "Gran Via [us]",
+    "id": "co0177687"
+  },
+  {
+    "name": "Avery Pix [us]",
+    "id": "co0028247"
+  },
+  {
+    "name": "Helena Productions [gb]",
+    "id": "co0318026"
+  },
+  {
+    "name": "Latina Pictures [mt]",
+    "id": "co0181591"
+  },
+  {
+    "name": "Walt Disney Pictures [us]",
+    "id": "co0008970"
+  },
+  {
+    "name": "Pixar Animation Studios [us]",
+    "id": "co0017902"
+  },
+  {
+    "name": "Focus Features [us]",
+    "id": "co0042399"
+  },
+  {
+    "name": "Anonymous Content [us]",
+    "id": "co0017525"
+  },
+  {
+    "name": "This Is That Productions [us]",
+    "id": "co0017713"
+  },
+  {
+    "name": "Regency Enterprises [us]",
+    "id": "co0021592"
+  },
+  {
+    "name": "New Regency Pictures [us]",
+    "id": "co0025101"
+  },
+  {
+    "name": "Daybreak",
+    "id": "co0010747"
+  },
+  {
+    "name": "DreamWorks SKG [us]",
+    "id": "co0040938"
+  },
+  {
+    "name": "Montecito Picture Company, The [us]",
+    "id": "co0118469"
+  },
+  {
+    "name": "Blue Sea Productions [us]",
+    "id": "co0098163"
+  },
+  {
+    "name": "Fox 2000 Pictures [us]",
+    "id": "co0017497"
+  },
+  {
+    "name": "DreamWorks Pictures [us]",
+    "id": "co0095166"
+  },
+  {
+    "name": "Nickelodeon Movies [us]",
+    "id": "co0004265"
+  },
+  {
     "name": "Home Box Office (HBO) [us]",
     "id": "co0008693"
   },
@@ -166,10 +266,6 @@
   {
     "name": "Electric Entertainment [us]",
     "id": "co0003899"
-  },
-  {
-    "name": "Anonymous Content [us]",
-    "id": "co0017525"
   },
   {
     "name": "Lee Caplin / Picture Entertainment [us]",
@@ -504,6 +600,10 @@
     "id": "co0098797"
   },
   {
+    "name": "Tannenbaum Company, The [us]",
+    "id": "co0099776"
+  },
+  {
     "name": "Nowalk Entertainment [us]",
     "id": "co0500990"
   },
@@ -666,6 +766,10 @@
   {
     "name": "Imagine Television [us]",
     "id": "co0006166"
+  },
+  {
+    "name": "Alliance Atlantis Communications [ca]",
+    "id": "co0054762"
   },
   {
     "name": "Bluebush Productions [us]",

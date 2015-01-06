@@ -1,74 +1,5 @@
 [
   {
-    "name": "The Polar Express",
-    "id": "tt0338348",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTM1NTU0NTE4MV5BMl5BanBnXkFtZTcwMTQ0MjEzMw@@._V1_SY317_CR0,0,214,317_AL_.jpg",
-    "score": 6.5,
-    "duration": "100",
-    "launchDate": "2004-11-10",
-    "genres": {
-      "genre": [
-        "Animation",
-        "Adventure",
-        "Family"
-      ]
-    },
-    "directors": {
-      "director": [
-        "nm0000709"
-      ]
-    },
-    "studios": {
-      "studio": [
-        "co0040620",
-        "co0036807",
-        "co0036575"
-      ]
-    },
-    "stars": {
-      "star": [
-        "nm0000158",
-        "nm0178875",
-        "nm0005052"
-      ]
-    },
-    "description": "This is the story of a young hero boy on Christmas Eve who boards on a powerful magical train that\u0027s headed to the North Pole and Santa Claus\u0027s home. What unfolds is an an adventure which follows a doubting boy, who takes an extraordinary train ride to the North Pole; during this ride, he embarks on a journey of self-discovery which shows him that the wonder of life never fades for those who believe. Written by Anthony Pereyra {hypersonic91@yahoo.com}"
-  },
-  {
-    "name": "Christmas with the Kranks",
-    "id": "tt0388419",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTUxNDA4OTU4Nl5BMl5BanBnXkFtZTcwMzQxODYyMQ@@._V1_SX214_AL_.jpg",
-    "score": 5.0,
-    "duration": "99",
-    "launchDate": "2004-11-24",
-    "genres": {
-      "genre": [
-        "Comedy",
-        "Family"
-      ]
-    },
-    "directors": {
-      "director": [
-        "nm0005387"
-      ]
-    },
-    "studios": {
-      "studio": [
-        "co0003580",
-        "co0046151",
-        "co0125564"
-      ]
-    },
-    "stars": {
-      "star": [
-        "nm0000741",
-        "nm0000130",
-        "nm0000101"
-      ]
-    },
-    "description": "Luther Krank is fed up with the commerciality of Christmas; he decides to skip the holiday and go on a vacation with his wife instead. But when his daughter decides at the last minute to come home, he must put together a holiday celebration. Written by Anonymous"
-  },
-  {
     "name": "Mean Girls",
     "id": "tt0377092",
     "image": "http://ia.media-imdb.com/images/M/MV5BMjE1MDQ4MjI1OV5BMl5BanBnXkFtZTcwNzcwODAzMw@@._V1_SY317_CR5,0,214,317_AL_.jpg",
@@ -100,6 +31,75 @@
       ]
     },
     "description": "Raised in African bush country by her zoologist parents, Cady Heron thinks she knows about survival of the fittest. But the law of the jungle takes on a whole new meaning when the home-schooled 16-year-old enters public high school for the first time and encounters psychological warfare and unwritten social rules that teenage girls face today. Written by Sujit R. Varma"
+  },
+  {
+    "name": "Harry Potter and the Prisoner of Azkaban",
+    "id": "tt0304141",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "score": 7.8,
+    "duration": "142",
+    "launchDate": "2004-06-04",
+    "genres": {
+      "genre": [
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ]
+    },
+    "directors": {
+      "director": [
+        "nm0190859"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0026840",
+        "co0046151",
+        "co0159772"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0705356",
+        "nm0914612",
+        "nm0342488"
+      ]
+    },
+    "description": "Harry Potter is having a tough time with his relatives (yet again). He runs away after using magic to inflate Uncle Vernon\u0027s sister Marge who was being offensive towards Harry\u0027s parents. Initially scared for using magic outside the school, he is pleasantly surprised that he won\u0027t be penalized after all. However, he soon learns that a dangerous criminal and Voldemort\u0027s trusted aide Sirius Black has escaped from the Azkaban prison and wants to kill Harry to avenge the Dark Lord. To worsen the conditions for Harry, vile creatures called Dementors are appointed to guard the school gates and inexplicably happen to have the most horrible effect on him. Little does Harry know that by the end of this year, many holes in his past (whatever he knows of it) will be filled up and he will have a clearer vision of what the future has in store... Written by Soumitra"
+  },
+  {
+    "name": "The Notebook",
+    "id": "tt0332280",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTk3OTM5Njg5M15BMl5BanBnXkFtZTYwMzA0ODI3._V1_SX214_AL_.jpg",
+    "score": 8.0,
+    "duration": "123",
+    "launchDate": "2004-06-25",
+    "genres": {
+      "genre": [
+        "Drama",
+        "Romance"
+      ]
+    },
+    "directors": {
+      "director": [
+        "nm0001024"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0046718",
+        "co0177687",
+        "co0028247"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0001687",
+        "nm0001258",
+        "nm1046097"
+      ]
+    },
+    "description": "In a nursing home, resident Duke reads a romance story for an old woman who has senile dementia with memory loss. In the late 1930s, wealthy seventeen year-old Allie Hamilton is spending summer vacation in Seabrook. Local worker Noah Calhoun meets Allie at a carnival and they soon fall in love with each other. One day, Noah brings Allie to an ancient house that he dreams of buying and restoring and they make love. But Allie\u0027s parents do not approve of their romance since Noah belongs to another social class, and they travel to New York with her. Noah writes 365 letters to Allie, but her mother Anne Hamilton does not deliver them to her daughter. Three years later, the United States joins the World War II and Noah and his best friend Fin enlist in the army, and Allie works as an army nurse. She meets injured soldier Lon Hammond in the hospital. After the war, they meet each other again and Lon, who is wealthy and handsome, proposes. Meanwhile Noah buys and restores the old house and ... Written by Claudio Carvalho, Rio de Janeiro, Brazil"
   },
   {
     "name": "Troy",
@@ -135,12 +135,12 @@
     "description": "It is the year 1250 B.C. during the late Bronze age. Two emerging nations begin to clash after Paris, the Trojan prince, convinces Helen, Queen of Sparta, to leave her husband, Menelaus, and sail with him back to Troy. After Menelaus finds out that his wife was taken by the Trojans, he asks his brother Agamemnon to help him get her back. Agamemnon sees this as an opportunity for power. So they set off with 1,000 ships holding 50,000 Greeks to Troy. With the help of Achilles, the Greeks are able to fight the never before defeated Trojans. But they come to a stop by Hector, Prince of Troy. The whole movie shows their battle struggles and the foreshadowing of fate in this remake by Wolfgang Petersen of Homer\u0027s \"The Iliad.\" Written by Mensur Gjonbalaj"
   },
   {
-    "name": "Team America: World Police",
-    "id": "tt0372588",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTM2Nzc4NjYxMV5BMl5BanBnXkFtZTcwNTM1MTcyMQ@@._V1_SY317_CR6,0,214,317_AL_.jpg",
-    "score": 7.1,
-    "duration": "98",
-    "launchDate": "2004-10-15",
+    "name": "The Incredibles",
+    "id": "tt0317705",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "score": 8.0,
+    "duration": "115",
+    "launchDate": "2004-11-05",
     "genres": {
       "genre": [
         "Animation",
@@ -150,58 +150,23 @@
     },
     "directors": {
       "director": [
-        "nm0005295"
+        "nm0083348"
       ]
     },
     "studios": {
       "studio": [
-        "co0023400",
-        "co0093765",
-        "co0152527"
+        "co0008970",
+        "co0017902"
       ]
     },
     "stars": {
       "star": [
-        "nm0005295",
-        "nm0001778",
-        "nm1224826"
+        "nm0005266",
+        "nm0000168",
+        "nm0000456"
       ]
     },
-    "description": "The North American anti-terrorist force Team America attacks a group of terrorist in Paris. Later, the leader of the organization, Spottswoode, invites the famous Broadway actor Gary Johnston to join his world police and work undercover in Cairo in a terrorist organization and disclose their plan of destroying the world. The Team America destroy the cell of terrorists, but then the Panama Canal is attacked by the criminals as a payback. Gary feels responsible for the death of many innocents and leaves the counter-terrorism organization. When the leader of North Korea, Kim Jong Il, joins a group of pacifist actors and actresses with the intention of using weapons of massive destruction, the Team America tries to avoid the destruction of the world. Written by Claudio Carvalho, Rio de Janeiro, Brazil"
-  },
-  {
-    "name": "The Notebook",
-    "id": "tt0332280",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTk3OTM5Njg5M15BMl5BanBnXkFtZTYwMzA0ODI3._V1_SX214_AL_.jpg",
-    "score": 8.0,
-    "duration": "123",
-    "launchDate": "2004-06-25",
-    "genres": {
-      "genre": [
-        "Drama",
-        "Romance"
-      ]
-    },
-    "directors": {
-      "director": [
-        "nm0001024"
-      ]
-    },
-    "studios": {
-      "studio": [
-        "co0046718",
-        "co0177687",
-        "co0028247"
-      ]
-    },
-    "stars": {
-      "star": [
-        "nm0001687",
-        "nm0001258",
-        "nm1046097"
-      ]
-    },
-    "description": "In a nursing home, resident Duke reads a romance story for an old woman who has senile dementia with memory loss. In the late 1930s, wealthy seventeen year-old Allie Hamilton is spending summer vacation in Seabrook. Local worker Noah Calhoun meets Allie at a carnival and they soon fall in love with each other. One day, Noah brings Allie to an ancient house that he dreams of buying and restoring and they make love. But Allie\u0027s parents do not approve of their romance since Noah belongs to another social class, and they travel to New York with her. Noah writes 365 letters to Allie, but her mother Anne Hamilton does not deliver them to her daughter. Three years later, the United States joins the World War II and Noah and his best friend Fin enlist in the army, and Allie works as an army nurse. She meets injured soldier Lon Hammond in the hospital. After the war, they meet each other again and Lon, who is wealthy and handsome, proposes. Meanwhile Noah buys and restores the old house and ... Written by Claudio Carvalho, Rio de Janeiro, Brazil"
+    "description": "Bob Parr (A.K.A. Mr. Incredible), and his wife Helen (A.K.A. Elastigirl), are the world\u0027s greatest famous crime-fighting superheroes in Metroville. Always saving lives and battling evil on a daily basis. But fifteen years later, they have been forced to adopt civilian identities and retreat to the suburbs where they have no choice but to retire of being a superhero and force to live a \"normal life\" with their three children Violet, Dash and Jack-Jack (who were secretly born with superpowers). Itching to get back into action, Bob gets his chance when a mysterious communication summons him to a remote island for a top secret assignment. He soon discovers that it will take a super family effort to rescue the world from total destruction. Written by Anthony Pereyra {hypersonic91@yahoo.com}"
   },
   {
     "name": "Eternal Sunshine of the Spotless Mind",
@@ -239,172 +204,143 @@
     "description": "A man, Joel Barish, heartbroken that his girlfriend Clementine underwent a procedure to erase him from her memory, decides to do the same. However, as he watches his memories of her fade away, he realizes that he still loves her, and may be too late to correct his mistake. Written by anonymous"
   },
   {
-    "name": "The Incredibles",
-    "id": "tt0317705",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_SY317_CR0,0,214,317_AL_.jpg",
-    "score": 8.0,
-    "duration": "115",
-    "launchDate": "2004-11-05",
+    "name": "The Girl Next Door",
+    "id": "tt0265208",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTQ0ODIyMzE1N15BMl5BanBnXkFtZTcwODEwODczMw@@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "score": 6.8,
+    "duration": "108",
+    "launchDate": "2004-04-09",
     "genres": {
       "genre": [
-        "Animation",
-        "Action",
-        "Adventure"
+        "Comedy",
+        "Drama",
+        "Romance"
       ]
     },
     "directors": {
       "director": [
-        "nm0083348"
+        "nm0339004"
       ]
     },
     "studios": {
       "studio": [
-        "co0008970",
-        "co0017902"
+        "co0021592",
+        "co0025101",
+        "co0010747"
       ]
     },
     "stars": {
       "star": [
-        "nm0005266",
-        "nm0000168",
-        "nm0000456"
+        "nm0386472",
+        "nm0236202",
+        "nm0193846"
       ]
     },
-    "description": "Bob Parr (A.K.A. Mr. Incredible), and his wife Helen (A.K.A. Elastigirl), are the world\u0027s greatest famous crime-fighting superheroes in Metroville. Always saving lives and battling evil on a daily basis. But fifteen years later, they have been forced to adopt civilian identities and retreat to the suburbs where they have no choice but to retire of being a superhero and force to live a \"normal life\" with their three children Violet, Dash and Jack-Jack (who were secretly born with superpowers). Itching to get back into action, Bob gets his chance when a mysterious communication summons him to a remote island for a top secret assignment. He soon discovers that it will take a super family effort to rescue the world from total destruction. Written by Anthony Pereyra {hypersonic91@yahoo.com}"
+    "description": "18-year-old Matthew Kidman is a straight \u0027A\u0027 over-achiever who feels that he has never really lived life to the full. That is, until he meets \u0027the girl next door\u0027. Danielle moves in next door, and Matthew thinks he\u0027s found the girl of his dreams. All is going well, until Matthew\u0027s sex-mad friend Eli reveals that Danielle is actually a ex-porn star. Matthew doesn\u0027t know how to take the news or how to treat Danielle, and things go from bad to worse when Danielle\u0027s former producer Kelly appears to take her back. Written by FilmFanUK"
   },
   {
-    "name": "Napoleon Dynamite",
-    "id": "tt0374900",
-    "image": "http://ia.media-imdb.com/images/M/MV5BNjYwNTA3MDIyMl5BMl5BanBnXkFtZTYwMjIxNjA3._V1_SX214_AL_.jpg",
-    "score": 6.9,
-    "duration": "96",
-    "launchDate": "2004-08-27",
+    "name": "EuroTrip",
+    "id": "tt0356150",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTIxNjcxMDUxN15BMl5BanBnXkFtZTYwNjAxNTM3._V1_SY317_CR1,0,214,317_AL_.jpg",
+    "score": 6.5,
+    "duration": "93",
+    "launchDate": "2004-02-20",
     "genres": {
       "genre": [
+        "Adventure",
         "Comedy"
       ]
     },
     "directors": {
       "director": [
-        "nm0381478"
+        "nm0769840",
+        "nm0073688"
       ]
     },
     "studios": {
       "studio": [
-        "co0028932",
+        "co0040938",
+        "co0118469",
+        "co0098163"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1310709",
+        "nm0686009",
+        "nm0005502"
+      ]
+    },
+    "description": "Ohio high school student Scott Thomas is a good student and nice guy - albeit a little predictable - who is about to graduate and go into pre-med. He is unceremoniously dumped by his whorish girlfriend Fiona on graduation day. Among the people he turns to in his hour of despair is his German pen pal, Mike. Scott and Mike seem to have a special connection. After Mike makes advances to Scott now that he and Fiona are not seeing each other, Scott abruptly sends Mike a message saying he never wants to hear from him again. However, Scott learns shorty thereafter that Mike is actually a beautiful girl named Mieke. By this time, Mieke has blocked his messages. Thinking that Mieke is actually who he was meant to be with, Scott, impulsively for a change, decides to go to Berlin to be with her. Along for the ride is Scott\u0027s best friend, the girl crazy Cooper Harris. They manage only to get a flight into London, and thus have to make their way from London to Berlin. Along the way in Paris, they ... Written by Huggo"
+  },
+  {
+    "name": "Man on Fire",
+    "id": "tt0328107",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTc3MDc1MTAwMV5BMl5BanBnXkFtZTcwMDY0MTIzMw@@._V1_SX214_AL_.jpg",
+    "score": 7.8,
+    "duration": "146",
+    "launchDate": "2004-04-23",
+    "genres": {
+      "genre": [
+        "Action",
+        "Drama",
+        "Thriller"
+      ]
+    },
+    "directors": {
+      "director": [
+        "nm0001716"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0017497",
+        "co0021592",
+        "co0025101"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000243",
+        "nm0000686",
+        "nm0266824"
+      ]
+    },
+    "description": "A wave of kidnappings has swept through Mexico, feeding a growing sense of panic among its wealthier citizens, especially parents. In one six-day period, there were twenty-four abductions, leading many to hire bodyguards for their children. Into this world enters John Creasy, a burned-out ex-CIA operative/assassin, who has given up on life. Creasy\u0027s friend Rayburn brings him to Mexico City to be a bodyguard to nine-year-old Pita Ramos, daughter of industrialist Samuel Ramos and his wife Lisa. Creasy is not interested in being a bodyguard, especially to a youngster, but for lack of something better to do, he accepts the assignment. Creasy barely tolerates the precocious child and her pestering questions about him and his life. But slowly, she chips away at his seemingly impenetrable exterior, his defenses drop, and he opens up to her. Creasy\u0027s new-found purpose in life is shattered when Pita is kidnapped. Despite being seriously wounded during the kidnapping, he vows to kill anyone ... Written by Sujit R. Varma"
+  },
+  {
+    "name": "Lemony Snicket\u0027s A Series of Unfortunate Events",
+    "id": "tt0339291",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjE3MDM4NTg0NV5BMl5BanBnXkFtZTcwNjI4MTczMw@@._V1_SX214_AL_.jpg",
+    "score": 6.8,
+    "duration": "108",
+    "launchDate": "2004-12-17",
+    "genres": {
+      "genre": [
+        "Adventure",
+        "Comedy",
+        "Family"
+      ]
+    },
+    "directors": {
+      "director": [
+        "nm0797869"
+      ]
+    },
+    "studios": {
+      "studio": [
         "co0023400",
-        "co0034438"
+        "co0095166",
+        "co0004265"
       ]
     },
     "stars": {
       "star": [
-        "nm1417647",
-        "nm0708293",
-        "nm0340973"
+        "nm0000120",
+        "nm0000179",
+        "nm0000658"
       ]
     },
-    "description": "Preston, Idaho\u0027s most curious resident, Napoleon Dynamite, lives with his grandma and his 32-year-old brother (who cruises chat rooms for ladies) and works to help his best friend, Pedro, snatch the Student Body President title from mean teen Summer Wheatley. Written by Anonymous"
-  },
-  {
-    "name": "Kill Bill: Vol. 1",
-    "id": "tt0266697",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTU1NDg1Mzg4M15BMl5BanBnXkFtZTYwMDExOTc3._V1_SX214_AL_.jpg",
-    "score": 8.1,
-    "duration": "111",
-    "launchDate": "2003-10-10",
-    "genres": {
-      "genre": [
-        "Action",
-        "Crime"
-      ]
-    },
-    "directors": {
-      "director": [
-        "nm0000233"
-      ]
-    },
-    "studios": {
-      "studio": [
-        "co0022594",
-        "co0019267",
-        "co0086625"
-      ]
-    },
-    "stars": {
-      "star": [
-        "nm0000235",
-        "nm0001016",
-        "nm0000435"
-      ]
-    },
-    "description": "The lead character, called \u0027The Bride,\u0027 was a member of the Deadly Viper Assassination Squad, led by her lover \u0027Bill.\u0027 Upon realizing she was pregnant with Bill\u0027s child, \u0027The Bride\u0027 decided to escape her life as a killer. She fled to Texas, met a young man, who, on the day of their wedding rehearsal was gunned down by an angry and jealous Bill (with the assistance of the Deadly Viper Assassination Squad). Four years later, \u0027The Bride\u0027 wakes from a coma, and discovers her baby is gone. She, then, decides to seek revenge upon the five people who destroyed her life and killed her baby. The saga of Kill Bill Volume I begins. Written by JD"
-  },
-  {
-    "name": "Kill Bill: Vol. 1",
-    "id": "tt0266697",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTU1NDg1Mzg4M15BMl5BanBnXkFtZTYwMDExOTc3._V1_SX214_AL_.jpg",
-    "score": 8.1,
-    "duration": "111",
-    "launchDate": "2003-10-10",
-    "genres": {
-      "genre": [
-        "Action",
-        "Crime"
-      ]
-    },
-    "directors": {
-      "director": [
-        "nm0000233"
-      ]
-    },
-    "studios": {
-      "studio": [
-        "co0022594",
-        "co0019267",
-        "co0086625"
-      ]
-    },
-    "stars": {
-      "star": [
-        "nm0000235",
-        "nm0001016",
-        "nm0000435"
-      ]
-    },
-    "description": "The lead character, called \u0027The Bride,\u0027 was a member of the Deadly Viper Assassination Squad, led by her lover \u0027Bill.\u0027 Upon realizing she was pregnant with Bill\u0027s child, \u0027The Bride\u0027 decided to escape her life as a killer. She fled to Texas, met a young man, who, on the day of their wedding rehearsal was gunned down by an angry and jealous Bill (with the assistance of the Deadly Viper Assassination Squad). Four years later, \u0027The Bride\u0027 wakes from a coma, and discovers her baby is gone. She, then, decides to seek revenge upon the five people who destroyed her life and killed her baby. The saga of Kill Bill Volume I begins. Written by JD"
-  },
-  {
-    "name": "Kill Bill: Vol. 1",
-    "id": "tt0266697",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTU1NDg1Mzg4M15BMl5BanBnXkFtZTYwMDExOTc3._V1_SX214_AL_.jpg",
-    "score": 8.1,
-    "duration": "111",
-    "launchDate": "2003-10-10",
-    "genres": {
-      "genre": [
-        "Action",
-        "Crime"
-      ]
-    },
-    "directors": {
-      "director": [
-        "nm0000233"
-      ]
-    },
-    "studios": {
-      "studio": [
-        "co0022594",
-        "co0019267",
-        "co0086625"
-      ]
-    },
-    "stars": {
-      "star": [
-        "nm0000235",
-        "nm0001016",
-        "nm0000435"
-      ]
-    },
-    "description": "The lead character, called \u0027The Bride,\u0027 was a member of the Deadly Viper Assassination Squad, led by her lover \u0027Bill.\u0027 Upon realizing she was pregnant with Bill\u0027s child, \u0027The Bride\u0027 decided to escape her life as a killer. She fled to Texas, met a young man, who, on the day of their wedding rehearsal was gunned down by an angry and jealous Bill (with the assistance of the Deadly Viper Assassination Squad). Four years later, \u0027The Bride\u0027 wakes from a coma, and discovers her baby is gone. She, then, decides to seek revenge upon the five people who destroyed her life and killed her baby. The saga of Kill Bill Volume I begins. Written by JD"
+    "description": "Violet, Klaus and Sunny Baudelaire are three intelligent young children who receive terrible news that their parents have died in a fire and have left them an enormous fortune not to be used until the eldest child is of age. When they are sent to live with Count Olaf, a greedy distant relative, they soon learn he is trying to steal their fortune for himself. Written by jackwhiteyouremyhero"
   }
 ]
