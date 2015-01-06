@@ -1,104 +1,357 @@
 [
   {
-    "name": "South Park",
-    "id": "tt0121955",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTI5MTYyNDU3NF5BMl5BanBnXkFtZTYwNjU1MzM5._V1_SY317_CR13,0,214,317_AL_.jpg",
-    "score": 8.899999618530273,
-    "duration": 22,
-    "start": 1997,
+    "name": "Game of Thrones",
+    "id": "tt0944947",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTk0NDg4NjQ5N15BMl5BanBnXkFtZTgwMzkzNTgyMTE@._V1_SX214_AL_.jpg",
+    "score": 9.5,
+    "duration": 55,
+    "start": 2011,
     "end": 0,
     "genres": {
       "genre": [
-        "Animation",
-        "Comedy"
+        "Adventure",
+        "Drama",
+        "Fantasy"
       ]
     },
     "studios": {
       "studio": [
-        "co0029768",
-        "co0180031",
-        "co0074014"
+        "co0008693",
+        "co0335036",
+        "co0167350"
       ]
     },
     "stars": {
       "star": [
-        "nm0005295",
-        "nm0001778",
-        "nm0005002"
+        "nm0372176",
+        "nm0227759",
+        "nm3586035"
       ]
     },
-    "description": "The curious, adventure-seeking, fourth grade group of boys, Stan, Kyle, Cartman, and Kenny, all join in in buffoonish adventures that sometimes evolve nothing. Sometimes something that was simple at the start, turns out to get out of control. Everything is odd in the small mountain town, South Park, and the boys always find something to do with it.",
-    "seasons": 20
+    "description": "Nine noble families fight for control of the mythical land of Westeros. Political and sexual intrigue is pervasive. Robert Baratheon, King of Westeros, asks his old friend Eddard, Lord Stark, to serve as Hand of the King, or highest official. Secretly warned that the previous Hand was assassinated, Eddard accepts in order to investigate further. Meanwhile the Queen\u0027s family, the Lannisters, may be hatching a plot to take power. Across the sea, the last members of the previous and deposed ruling family, the Targaryens, are also scheming to regain the throne. The friction between the houses Stark, Lannister, Baratheon and Targaryen and with the remaining great houses Greyjoy, Tully, Arryn,Tyrell and Martell leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war and political confusion, a neglected military order of misfits, the Night\u0027s Watch, is all that stands between the realms of men and icy horrors beyond. Written by Tfilm78 and Cajunman",
+    "seasons": 6
   },
   {
-    "name": "The Simpsons",
-    "id": "tt0096697",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTk0MTAzMzgxOV5BMl5BanBnXkFtZTgwOTM3Mjg4MzE@._V1_SY317_CR12,0,214,317_AL_.jpg",
-    "score": 9.0,
-    "duration": 22,
-    "start": 1989,
+    "name": "American Horror Story",
+    "id": "tt1844624",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjA1MzAwNjYzMl5BMl5BanBnXkFtZTgwMDg1ODU3MjE@._V1_SX214_AL_.jpg",
+    "score": 8.399999618530273,
+    "duration": 60,
+    "start": 2011,
     "end": 0,
     "genres": {
       "genre": [
-        "Animation",
-        "Comedy"
+        "Drama",
+        "Horror",
+        "Thriller"
       ]
     },
     "studios": {
       "studio": [
-        "co0035761",
-        "co0056447",
-        "co0223402"
+        "co0314634",
+        "co0156994",
+        "co0056447"
       ]
     },
     "stars": {
       "star": [
-        "nm0144657",
-        "nm0004813",
-        "nm0001413"
+        "nm1404239",
+        "nm0001448",
+        "nm0005299"
       ]
     },
-    "description": "The Simpsons is an animated sitcom about the antics of a dysfunctional family called the Simpsons (surprise surprise). Homer is the oafish unhealthy beer loving father, Marge is the hardworking homemaker wife, Bart is the ten year old underachiever (and proud of it), Lisa is the unappreciated eight year old genius, and Maggie is the cute, pacifier loving silent infant. Written by Sam Kelly",
-    "seasons": 26
+    "description": "Each season focuses on a different setting. The cast plays different roles in different seasons. Written by james-71-245232",
+    "seasons": 5
   },
   {
-    "name": "Home Improvement",
-    "id": "tt0101120",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTgzNzYzNDU5OF5BMl5BanBnXkFtZTcwMDg2NDQ3MQ@@._V1_SY317_CR6,0,214,317_AL_.jpg",
-    "score": 7.199999809265137,
-    "duration": 30,
-    "start": 1991,
-    "end": 1999,
+    "name": "The Walking Dead",
+    "id": "tt1520211",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjI4NDY5OTc1Nl5BMl5BanBnXkFtZTgwODczNjA2MjE@._V1_SX214_AL_.jpg",
+    "score": 8.699999809265137,
+    "duration": 44,
+    "start": 2010,
+    "end": 0,
     "genres": {
       "genre": [
-        "Comedy",
-        "Family"
+        "Drama",
+        "Horror",
+        "Thriller"
       ]
     },
     "studios": {
       "studio": [
-        "co0067205",
-        "co0028602"
+        "co0019701",
+        "co0090153",
+        "co0092570"
       ]
     },
     "stars": {
       "star": [
-        "nm0000741",
-        "nm0005359",
-        "nm0385561"
+        "nm0511088",
+        "nm1256532",
+        "nm0915637"
       ]
     },
-    "description": "Light television comedy about family man Tim Taylor. The show\u0027s humor often revolves around cars, toys, tools, hardware shops, garages, fix-it-up projects, and similar themes. Written by Tad Dibbern \u003cDIBBERN_D@a1.mscf.upenn.edu\u003e",
-    "seasons": 8
+    "description": "Rick Grimes is a former Sheriff\u0027s deputy who has been in a coma for several months after being shot while on duty. When he wakes, he discovers that the world has been taken over by zombies, and that he seems to be the only person still alive. After returning home to discover his wife and son missing, he heads for Atlanta to search for his family. Narrowly escaping death at the hands of the zombies on arrival in Atlanta, he is aided by another survivor,Glenn,who takes Rick to a camp outside the town. There,Rick finds his wife Lori and his son,Carl, along with his partner/best friend Shane and a small group of survivors who struggle to fend off the zombie hordes; as well as competing with other survivor groups who are prepared to do whatever it takes to survive. Written by Contributors",
+    "seasons": 6
   },
   {
-    "name": "Something in the Air",
-    "id": "tt0217960",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMjYxNDU0NzY3NF5BMl5BanBnXkFtZTgwODIyMDE2MDE@._V1_SY317_CR0,0,214,317_AL_.jpg",
-    "score": 7.199999809265137,
-    "duration": 25,
-    "start": 2000,
-    "end": 2002,
+    "name": "Marco Polo",
+    "id": "tt2189461",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTcwMDU5NzMzOV5BMl5BanBnXkFtZTgwNzk5NTE0MzE@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "score": 8.399999618530273,
+    "duration": 60,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Adventure"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0287554",
+        "co0150452"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm3080119",
+        "nm0938950",
+        "nm0001040"
+      ]
+    },
+    "description": "In a world replete with greed, betrayal, sexual intrigue and rivalry, \"Marco Polo\" is based on the famed explorer\u0027s adventures in Kublai Khan\u0027s court in 13th century China.",
+    "seasons": 1
+  },
+  {
+    "name": "Penny Dreadful",
+    "id": "tt2628232",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTY3Mjk2MzExN15BMl5BanBnXkFtZTgwMDc1NjE2MTE@._V1_SX214_AL_.jpg",
+    "score": 8.199999809265137,
+    "duration": 60,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Horror"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0437576",
+        "co0165439"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0001326",
+        "nm0001096",
+        "nm1200692"
+      ]
+    },
+    "description": "Explorer Sir Malcolm Murray, American gunslinger Ethan Chandler, and others unite to combat supernatural threats in Victorian London.",
+    "seasons": 2
+  },
+  {
+    "name": "Arrow",
+    "id": "tt2193021",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTg3OTc0NzkyOV5BMl5BanBnXkFtZTgwMDMwMTM3MjE@._V1_SX214_AL_.jpg",
+    "score": 8.199999809265137,
+    "duration": 42,
+    "start": 2012,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Action",
+        "Adventure",
+        "Crime"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0330789",
+        "co0283444",
+        "co0005035"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1854386",
+        "nm1556320",
+        "nm0708981"
+      ]
+    },
+    "description": "Oliver Queen and his father are lost at sea when their luxury yacht sinks, apparently in a storm. His father dies, but Oliver survives for five years on an uncharted island and eventually returns home. But he wasn\u0027t alone on the island where he learned not only how to fight and survive but also of his father\u0027s corruption and unscrupulous business dealings. He returns to civilization a changed man, determined to put things right. He disguises himself with the hood of one of his mysterious island mentors, arms himself with a bow and sets about hunting down the men and women who have corrupted his city. Written by Anonymous",
+    "seasons": 3
+  },
+  {
+    "name": "Sons of Anarchy",
+    "id": "tt1124373",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTEyODg2NzkwMDBeQTJeQWpwZ15BbWU4MDQwODI3MzIx._V1_SX214_AL_.jpg",
+    "score": 8.699999809265137,
+    "duration": 45,
+    "start": 2008,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0320887",
+        "co0292355",
+        "co0153896"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0402271",
+        "nm0095478",
+        "nm0005408"
+      ]
+    },
+    "description": "Sons of Anarchy, aka SAMCRO, is a motorcycle club that operates both illegal and legal businesses in the small town of Charming. They combine gun-running and a garage, plus involvement in porn film. Clay, the president, likes it old school and violent; while Jax, his stepson and the club\u0027s VP, has thoughts about changing the way things are, based on his dead father\u0027s journal. Their conflict has effects on both the club and their personal relationships. Written by Pia",
+    "seasons": 7
+  },
+  {
+    "name": "Breaking Bad",
+    "id": "tt0903747",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTU2MTgzMzQxNV5BMl5BanBnXkFtZTcwODg4NTQ3OQ@@._V1_SX214_AL_.jpg",
+    "score": 9.5,
+    "duration": 45,
+    "start": 2008,
+    "end": 2013,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0212797",
+        "co0071947",
+        "co0086397"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0186505",
+        "nm0666739",
+        "nm0348152"
+      ]
+    },
+    "description": "When chemistry teacher Walter White is diagnosed with Stage III cancer and given only two years to live, he decides he has nothing to lose. He lives with his teenage son, who has cerebral palsy, and his wife, in New Mexico. Determined to ensure that his family will have a secure future, Walt embarks on a career of drugs and crime. He proves to be remarkably proficient in this new world as he begins manufacturing and selling methamphetamine with one of his former students. The series tracks the impacts of a fatal diagnosis on a regular, hard working man, and explores how a fatal diagnosis affects his morality and transforms him into a major player of the drug trade. Written by WellardRockard, jackenyon",
+    "seasons": 5
+  },
+  {
+    "name": "Homeland",
+    "id": "tt1796960",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTg4MDkwMTIyMF5BMl5BanBnXkFtZTgwNDE4OTMyMjE@._V1_SY317_CR12,0,214,317_AL_.jpg",
+    "score": 8.5,
+    "duration": 55,
+    "start": 2011,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0039827",
+        "co0012092",
+        "co0068002"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000132",
+        "nm0001597",
+        "nm0507073"
+      ]
+    },
+    "description": "Carrie Mathison, a CIA operations officer, is on probation after carrying out an unauthorized operation in Iraq. As a result, she has been reassigned to the Counter terrorism center. Whilst in Iraq, she was warned that an American prisoner had been turned by Al-Qaeda. When Nicholas Brody, a U.S. Marine Sergeant, is rescued after being held hostage since 2003, she suspects that he is the turned American prisoner. Brody is received home as a war hero, so Carrie goes to any lengths possible, ignoring protocol, to catch him out. Written by Kad",
+    "seasons": 5
+  },
+  {
+    "name": "Once Upon a Time",
+    "id": "tt1843230",
+    "image": "http://ia.media-imdb.com/images/M/MV5BNjAxODcyMDI5N15BMl5BanBnXkFtZTgwNDQzOTA5MjE@._V1_SY317_CR12,0,214,317_AL_.jpg",
+    "score": 8.100000381469727,
+    "duration": 60,
+    "start": 2011,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Adventure",
+        "Fantasy",
+        "Romance"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0358422",
+        "co0209226"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0329481",
+        "nm0607185",
+        "nm0663469"
+      ]
+    },
+    "description": "For Emma Swan, life has been anything but a happy ending. But when she\u0027s reunited with Henry - the son she gave up for adoption ten years ago - on the night of her 28th birthday, everything changes. The now 10-year-old Henry is in desperate need of Emma\u0027s help because he believes from reading a book of fairytales that she\u0027s the daughter of Snow White and Prince Charming - who sent her away from the Enchanted Forest to be protected from a curse that was enacted by the Evil Queen. Emma initially refuses to believe a word of Henry\u0027s story but soon finds that his hometown of Storybrooke, Maine is more than it seems. Because it\u0027s in Storybrooke that all of the classic characters we know are frozen in time with no memories of their former selves - except for the Evil Queen, who is Storybrooke\u0027s mayor and Henry\u0027s adoptive mother Regina Mills. Now, as the epic \"Final Battle\" for the future of both worlds approaches, Emma will have to accept her destiny and uncover the mystery behind a place ... Written by Anonymous",
+    "seasons": 4
+  },
+  {
+    "name": "The Wire",
+    "id": "tt0306414",
+    "image": "http://ia.media-imdb.com/images/M/MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ@@._V1_SY317_CR9,0,214,317_AL_.jpg",
+    "score": 9.399999618530273,
+    "duration": 55,
+    "start": 2002,
+    "end": 2008,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0019588",
+        "co0008693"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0922035",
+        "nm0714698",
+        "nm0812308"
+      ]
+    },
+    "description": "Set in Baltimore, this show centers around the city\u0027s inner-city drug scene. It starts as mid-level drug dealer, D\u0027Angelo Barksdale beats a murder rap. After a conversation with a judge, Det. James McNulty has been assigned to lead a joint homicide and narcotics team, in order to bring down drug kingpin Avon Barksdale. Avon Barksdale, accompanied by his right-hand man Stringer Bell, enforcer Wee-Bey and many lieutenants (including his own nephew, D\u0027Angelo Barksdale), has to deal with law enforcement, informants in his own camp, and competition with a local rival, Omar, who\u0027s been robbing Barksdale\u0027s dealers and reselling the drugs. The supervisor of the investigation, Lt. Cedric Daniels, has to deal with his own problems, such as a corrupt bureaucracy, some of his detectives beating suspects, hard-headed but determined Det. McNulty, and a blackmailing deputy. The show depicts the lives of every part of the drug \"food chain\", from junkies to dealers, and from cops to politicians. Written by Yuri",
+    "seasons": 5
+  },
+  {
+    "name": "Downton Abbey",
+    "id": "tt1606375",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTg2ODI2NTUwN15BMl5BanBnXkFtZTgwMTMwMzU0MjE@._V1_SY317_CR38,0,214,317_AL_.jpg",
+    "score": 8.800000190734863,
+    "duration": 65,
+    "start": 2010,
+    "end": 0,
     "genres": {
       "genre": [
         "Drama"
@@ -106,58 +359,88 @@
     },
     "studios": {
       "studio": [
-        "co0051111"
+        "co0106806",
+        "co0003548"
       ]
     },
     "stars": {
       "star": [
-        "nm0083809",
-        "nm0600461",
-        "nm0141560"
+        "nm0095017",
+        "nm0517642",
+        "nm0001527"
       ]
     },
-    "description": "",
-    "seasons": 1
+    "description": "Lord Grantham sees his family heritage, especially the grand country home Downton Abbey, as his mission in life. The death of his heir aboard the Titanic means distant cousin Matthew Crawley, a Manchester lawyer, suddenly is next in line and accepts moving onto the vast estate with his even more modernist, socially engaged mother, who clashes with his lordship\u0027s domineering, conservative mother, the dowager countess. Marrying off the daughters is another concern. Meanwhile, the butler presides over a staff which serves the family, but also lead most of their entire lives in the servants\u0027 quarters, intriguing amongst themselves. Written by KGF Vissers",
+    "seasons": 6
   },
   {
-    "name": "South Park",
-    "id": "tt0121955",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTI5MTYyNDU3NF5BMl5BanBnXkFtZTYwNjU1MzM5._V1_SY317_CR13,0,214,317_AL_.jpg",
-    "score": 8.899999618530273,
-    "duration": 22,
-    "start": 1997,
+    "name": "The 100",
+    "id": "tt2661044",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTU5MTczNTkxNl5BMl5BanBnXkFtZTgwNTM5NDc1MTE@._V1_SX214_AL_.jpg",
+    "score": 7.699999809265137,
+    "duration": 43,
+    "start": 2014,
     "end": 0,
     "genres": {
       "genre": [
-        "Animation",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0265986",
+        "co0142434",
+        "co0005035"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1343638",
+        "nm2345856",
+        "nm2973459"
+      ]
+    },
+    "description": "The series is set 97 years after a devastating nuclear war wiped out almost all life on Earth. The only known survivors are the residents of twelve space stations in Earth\u0027s orbit prior to the war. The space stations banded together to form a single massive station named \"The Ark\", where about 2,400 people live. Resources are scarce and all crimes no matter their nature or severity are punishable by death (\"floating\") unless the perpetrator is under 18 years of age. After the Ark\u0027s life support systems are found to be critically failing, one hundred juvenile prisoners are declared \"expendable\" and sent to the surface in a last ditch attempt to determine if Earth is habitable again. The teens arrive on a beautiful planet they\u0027ve only seen from space. Confronting the dangers of this rugged new world, they struggle to form a tentative community. However they discover that not all humanity was wiped out. There are people on Earth who survived the war, called \"grounders\" by the 100. The ... Written by Thomas O\u0027Darren",
+    "seasons": 2
+  },
+  {
+    "name": "The Big Bang Theory",
+    "id": "tt0898266",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjI1Mzc4MDUwNl5BMl5BanBnXkFtZTgwMDAzOTIxMjE@._V1_SY317_CR20,0,214,317_AL_.jpg",
+    "score": 8.600000381469727,
+    "duration": 22,
+    "start": 2007,
+    "end": 0,
+    "genres": {
+      "genre": [
         "Comedy"
       ]
     },
     "studios": {
       "studio": [
-        "co0029768",
-        "co0180031",
-        "co0074014"
+        "co0004981",
+        "co0005035"
       ]
     },
     "stars": {
       "star": [
-        "nm0005295",
-        "nm0001778",
-        "nm0005002"
+        "nm0301959",
+        "nm1433588",
+        "nm0192505"
       ]
     },
-    "description": "The curious, adventure-seeking, fourth grade group of boys, Stan, Kyle, Cartman, and Kenny, all join in in buffoonish adventures that sometimes evolve nothing. Sometimes something that was simple at the start, turns out to get out of control. Everything is odd in the small mountain town, South Park, and the boys always find something to do with it.",
-    "seasons": 20
+    "description": "Leonard Hofstadter and Sheldon Cooper are both brilliant physicists working at Caltech in Pasadena, California. They are colleagues, best friends, and roommates, although in all capacities their relationship is always tested primarily by Sheldon\u0027s regimented, deeply eccentric, and non-conventional ways. They are also friends with their Caltech colleagues mechanical engineer Howard Wolowitz and astrophysicist Rajesh Koothrappali. The foursome spend their time working on their individual work projects, playing video games, watching science-fiction movies, or reading comic books. As they are self-professed nerds, all have little or no luck with popular women. When Penny, a pretty woman and an aspiring actress originally from Omaha, moves into the apartment across the hall from Leonard and Sheldon\u0027s, Leonard has another aspiration in life, namely to get Penny to be his girlfriend. Written by Huggo",
+    "seasons": 10
   },
   {
-    "name": "The Rockford Files",
-    "id": "tt0071042",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMjA0OTkxOTQxMF5BMl5BanBnXkFtZTcwNzQ3NjI0MQ@@._V1_SY317_CR10,0,214,317_AL_.jpg",
-    "score": 8.199999809265137,
-    "duration": 60,
-    "start": 1974,
-    "end": 1980,
+    "name": "Sherlock",
+    "id": "tt1475582",
+    "image": "http://ia.media-imdb.com/images/M/MV5BNTA2MTE1NDI5OV5BMl5BanBnXkFtZTcwNzM2MzU3Nw@@._V1_SY317_CR21,0,214,317_AL_.jpg",
+    "score": 9.300000190734863,
+    "duration": 90,
+    "start": 2010,
+    "end": 0,
     "genres": {
       "genre": [
         "Crime",
@@ -167,50 +450,2597 @@
     },
     "studios": {
       "studio": [
-        "co0034738",
-        "co0071153",
-        "co0046592"
+        "co0023675",
+        "co0103752",
+        "co0003548"
       ]
     },
     "stars": {
       "star": [
-        "nm0001258",
-        "nm0000890",
-        "nm0764134"
+        "nm1212722",
+        "nm0293509",
+        "nm0835939"
       ]
     },
-    "description": "Series about an ex-convict-turned-private-investigator named Jim Rockford who would rather run away than fight and would rather go fishing than work. He isn\u0027t a coward, and he isn\u0027t lazy -- just rather on the cautious side, that\u0027s all. And he bears a very strong resemblance to Western television hero Bret Maverick. Rockford is sometimes assisted (and sometimes deterred) in his cases by friends Dennis Becker (a police detective), Evelyn \"Angel\" Martin (his cowardly former cellmate) and pretty Beth Davenport (his lawyer). Written by Marty McKee \u003cmmckee@wkio.com\u003e",
-    "seasons": 6
+    "description": "In this modernized version of the Conan Doyle characters, using his detective plots, Sherlock Holmes lives in early 21st century London and acts more cocky towards Scotland Yard\u0027s detective inspector Lestrade because he\u0027s actually less confident. Doctor Watson is now a fairly young veteran of the Afghan war, less adoring and more active. Written by KGF Vissers",
+    "seasons": 4
   },
   {
-    "name": "Coach",
-    "id": "tt0096560",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTI5NTU5NDY4M15BMl5BanBnXkFtZTcwNzM2MTM1MQ@@._V1_SY317_CR3,0,214,317_AL_.jpg",
-    "score": 7.0,
-    "duration": 30,
-    "start": 1989,
-    "end": 1997,
+    "name": "Orange Is the New Black",
+    "id": "tt2372162",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjA1ODMzNDM5Ml5BMl5BanBnXkFtZTgwNDU0NjQ5MTE@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "score": 8.5,
+    "duration": 55,
+    "start": 2013,
+    "end": 0,
     "genres": {
       "genre": [
         "Comedy",
+        "Crime",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0152432",
+        "co0026995"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm2279940",
+        "nm5335029",
+        "nm0543383"
+      ]
+    },
+    "description": "The story of Piper Chapman, a woman in her thirties who is sentenced to fifteen months in prison after being convicted of a decade-old crime of transporting money for her drug-dealing girlfriend.",
+    "seasons": 3
+  },
+  {
+    "name": "Doctor Who",
+    "id": "tt0436992",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjI2MTc4MjMzMV5BMl5BanBnXkFtZTgwNDIyNzkwMjE@._V1_SX214_AL_.jpg",
+    "score": 8.899999618530273,
+    "duration": 45,
+    "start": 2005,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Family"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0043107",
+        "co0045850"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0134922",
+        "nm1982510",
+        "nm1741002"
+      ]
+    },
+    "description": "The continuing adventures of The Doctor, an alien time traveller - a Time Lord - from Gallifrey. Together with his companions they travel through time and space in the TARDIS, battling evil where they find it. Written by IMDb Editors",
+    "seasons": 9
+  },
+  {
+    "name": "Supernatural",
+    "id": "tt0460681",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTc2NzMxODU0NV5BMl5BanBnXkFtZTgwMjYyNzk1MjE@._V1_SX214_AL_.jpg",
+    "score": 8.699999809265137,
+    "duration": 44,
+    "start": 2005,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0005035",
+        "co0080859",
+        "co0214348"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0655585",
+        "nm0010075",
+        "nm0064769"
+      ]
+    },
+    "description": "This television drama is about two brothers, Sam and Dean, who were raised by their father, John, to hunt and kill all things that go \"bump in the night\" after his wife, Mary, was murdered by evil supernatural being when the boys were young. 22 years later the brothers set out on a journey, fighting evil along the way, to find their recently missing father who, when they finally meet up with, reveals he knows what killed their mother, a demon, and has found a way to track and kill it. Meanwhile, Sam starts to develop frightening abilities that include death visions, visions of people dying before it actually happens. These visions are somehow connected to the demon who murdered his mother and its mysterious plans that seem to be all about Sam. When their father dies striking a deal with the very same devil that had killed his wife, the brothers, now alone and without their mentor, are determined to finish the crusade their father started. But disturbing revelations about Sam\u0027s part in... Written by Rachel B.",
+    "seasons": 10
+  },
+  {
+    "name": "The Librarians",
+    "id": "tt3663490",
+    "image": "http://ia.media-imdb.com/images/M/MV5BNDI5NzMwMjAxNl5BMl5BanBnXkFtZTgwOTc2NDg1MzE@._V1_SX214_AL_.jpg",
+    "score": 7.099999904632568,
+    "duration": 42,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Adventure"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0003899"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0005381",
+        "nm0437283",
+        "nm0095751"
+      ]
+    },
+    "description": "A group of librarians set off on adventures in an effort to save mysterious, ancient artifacts.",
+    "seasons": 1
+  },
+  {
+    "name": "True Detective",
+    "id": "tt2356777",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjA2NjI1Mzg2MV5BMl5BanBnXkFtZTgwMTI2MzE1MDE@._V1_SX214_AL_.jpg",
+    "score": 9.300000190734863,
+    "duration": 55,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0017525",
+        "co0307412",
+        "co0176737"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000190",
+        "nm0000437",
+        "nm1157358"
+      ]
+    },
+    "description": "In 2012, Louisiana State Police Detectives Rust Cohle and Martin Hart are brought in to revisit a homicide case they worked in 1995. As the inquiry unfolds in present day through separate interrogations, the two former detectives narrate the story of their investigation, reopening unhealed wounds, and drawing into question their supposed solving of a bizarre ritualistic murder in 1995. The timelines braid and converge in 2012 as each man is pulled back into a world they believed they\u0027d left behind. In learning about each other and their killer, it becomes clear that darkness lives on both sides of the law. Written by Rich28",
+    "seasons": 2
+  },
+  {
+    "name": "The Flash",
+    "id": "tt3107288",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTQ5MzY5ODE5M15BMl5BanBnXkFtZTgwNzU4OTM1MjE@._V1_SX214_AL_.jpg",
+    "score": 8.300000190734863,
+    "duration": 43,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0330789",
+        "co0283444",
+        "co0005035"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm2652716",
+        "nm2765384",
+        "nm1263939"
+      ]
+    },
+    "description": "Barry Allen is a Central City police forensic scientist with a reasonably happy life despite the childhood trauma of a mysterious red and yellow being killing his mother, and framing his father. All that changes when a massive particle accelerator accident leads to Barry being struck by lightning in his lab. Coming out of coma nine months later, Barry and his new friends at STAR labs find that he now has the ability to move at superhuman speed. Furthermore, Barry learns that he is but one of many affected by that event, most of whom are using their powers for evil. Determined to make a difference, Barry dedicates his life fighting such threats as The Flash. While he gains allies he never expected, there are also secret forces determined also to aid and manipulate him for their own agenda. Written by Kenneth Chisholm (kchishol@rogers.com)",
+    "seasons": 1
+  },
+  {
+    "name": "The Vampire Diaries",
+    "id": "tt1405406",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjA4MjAxNTY1OV5BMl5BanBnXkFtZTcwNjk3MDIwNA@@._V1_SX214_AL_.jpg",
+    "score": 8.100000381469727,
+    "duration": 43,
+    "start": 2009,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0142434",
+        "co0265986",
+        "co0005035"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm2400045",
+        "nm0913587",
+        "nm0813812"
+      ]
+    },
+    "description": "The vampire brothers Damon and Stefan Salvatore, eternal adolescents, having been leading \u0027normal\u0027 lives, hiding their bloodthirsty condition, for centuries, moving on before their non-aging is noticed. They are back in the Virginia town where they became vampires. Stefan is noble, denying himself blood to avoid killing, and tries to control his evil brother Damon. Stefan falls in love with schoolgirl Elena, whose best friend is a witch, like her grandma. Written by KGF Vissers",
+    "seasons": 6
+  },
+  {
+    "name": "Agents of S.H.I.E.L.D.",
+    "id": "tt2364582",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTkwODYyMjgzOV5BMl5BanBnXkFtZTgwODAzMTE5MjE@._V1_SX214_AL_.jpg",
+    "score": 7.400000095367432,
+    "duration": 45,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Action",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0009514",
+        "co0377521",
+        "co0209226"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0163988",
+        "nm0001840",
+        "nm3474430"
+      ]
+    },
+    "description": "After the Battle of New York, the world has changed. It now knows not only about the Avengers, but also the powerful menaces that require those superheroes and more to face them. In response, Phil Coulson of the Strategic Homeland Intervention, Enforcement and Logistics Division assembles an elite covert team to find and deal with these threats wherever they are found. With a world rapidly becoming more bizarre and dangerous than ever before as the supervillains arise, these agents of S.H.I.E.L.D. are ready to take them on. Written by Kenneth Chisholm (kchishol@rogers.com)",
+    "seasons": 2
+  },
+  {
+    "name": "Criminal Minds",
+    "id": "tt0452046",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTQyMzExMzAzMl5BMl5BanBnXkFtZTcwMDEzNzk1OQ@@._V1_SY317_CR1,0,214,317_AL_.jpg",
+    "score": 8.199999809265137,
+    "duration": 42,
+    "start": 2005,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0067205",
+        "co0066107",
+        "co0085751"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0005245",
+        "nm1131557",
+        "nm0004959"
+      ]
+    },
+    "description": "Based in Quantico, Virginia, the Behavioral Analysis Unit (BAU) is a subsection of the FBI. Called in by local police departments to assist in solving crimes of a serial and/or extremely violent nature where the perpetrator is unknown (referred to by the Unit as the unknown subject or unsub for short), the BAU uses the controversial scientific art of profiling to track and apprehend the unsub. Profiling entails coming up with basic characteristics of the unsub and the victims (referred to as the victimology), using evidence from the case and matching that information to historic precedents and psychological analyses as a means to solve the case. Because of the nature of the work conducted by the BAU - the work being time consuming and psychologically demanding - its members are fiercely loyal to the Unit and to its other members. Also because of the work\u0027s overall demanding nature, not many members of the BAU have been able to maintain a happy or stable family life. Written by Huggo",
+    "seasons": 10
+  },
+  {
+    "name": "Vikings",
+    "id": "tt2306299",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTkyNTc3MDM4OF5BMl5BanBnXkFtZTcwODQ3NjU1OQ@@._V1_SY317_CR51,0,214,317_AL_.jpg",
+    "score": 8.600000381469727,
+    "duration": 44,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Action",
+        "Drama",
+        "History"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0079853",
+        "co0304458",
+        "co0330730"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1379938",
+        "nm1641140",
+        "nm0319698"
+      ]
+    },
+    "description": "The adventures of Ragnar Lothbrok: the greatest hero of his age. The series tells the saga of Ragnar\u0027s band of Viking brothers and his family as he rises to become King of the Viking tribes. As well as being a fearless warrior, Ragnar embodies the Norse traditions of devotion to the gods: legend has it that he was a direct descendant of Odin, the god of war and warriors. Written by History Channel",
+    "seasons": 3
+  },
+  {
+    "name": "Friends",
+    "id": "tt0108778",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMzgxMzcxMjYzMl5BMl5BanBnXkFtZTcwMzE3NTEyMQ@@._V1_SY317_CR13,0,214,317_AL_.jpg",
+    "score": 9.0,
+    "duration": 22,
+    "start": 1994,
+    "end": 2004,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Romance"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0005035",
+        "co0074685"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000098",
+        "nm0001073",
+        "nm0001435"
+      ]
+    },
+    "description": "Six young people, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pressures of life. Written by Kevin Ackley \u003ckackley1@aol.com\u003e",
+    "seasons": 10
+  },
+  {
+    "name": "Grey\u0027s Anatomy",
+    "id": "tt0413573",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTkyMzY0MzEwMl5BMl5BanBnXkFtZTgwNTk3OTA5MjE@._V1_SY317_CR12,0,214,317_AL_.jpg",
+    "score": 7.699999809265137,
+    "duration": 41,
+    "start": 2005,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Romance"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0170849",
+        "co0085751",
+        "co0067205"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0690186",
+        "nm0150362",
+        "nm0933156"
+      ]
+    },
+    "description": "A drama centered on the personal and professional lives of five surgical interns and their supervisors.",
+    "seasons": 11
+  },
+  {
+    "name": "Suits",
+    "id": "tt1632701",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTk1MjYzOTU2Nl5BMl5BanBnXkFtZTgwMzAxMTg5MTE@._V1_SX214_AL_.jpg",
+    "score": 8.800000190734863,
+    "duration": 44,
+    "start": 2011,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0035615",
+        "co0242101",
+        "co0177234"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0532683",
+        "nm1140666",
+        "nm1620783"
+      ]
+    },
+    "description": "While running from a drug deal gone bad, Mike Ross, a brilliant young college-dropout, slips into a job interview with one of New York City\u0027s best legal closers, Harvey Specter. Tired of cookie-cutter law school grads, Harvey takes a gamble by hiring Mike on the spot after he recognizes his raw talent and photographic memory. Mike and Harvey are a winning team. Even though Mike is a genius, he still has a lot to learn about law. And while Harvey may seem like an emotionless, cold-blooded shark, Mike\u0027s sympathy and concern for their cases and clients will help remind Harvey why he went into law in the first place. Mike\u0027s other allies in the office include the firm\u0027s best paralegal Rachel and Harvey\u0027s no-nonsense assistant Donna to help him serve justice. Proving to be an irrepressible duo and invaluable to the practice, Mike and Harvey must keep their secret from everyone including managing partner Jessica and Harvey\u0027s arch nemesis Louis, who seems intent on making Mike\u0027s life as ... Written by USA Network",
+    "seasons": 5
+  },
+  {
+    "name": "House of Cards",
+    "id": "tt1856010",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjI2NjkxMjYwM15BMl5BanBnXkFtZTgwNzc4MTE5MDE@._V1_SX214_AL_.jpg",
+    "score": 9.100000381469727,
+    "duration": 55,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0194736",
+        "co0375454",
+        "co0148949"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000228",
+        "nm0318703",
+        "nm0000705"
+      ]
+    },
+    "description": "Majority House Whip Francis Underwood takes you on a long journey as he exacts his vengeance on those he feels wronged him - that is, his own cabinet members including the President of the United States himself. Dashing, cunning, methodical and vicious, Frank Underwood along with his equally manipulative yet ambiguous wife, Claire take Washington by storm through climbing the hierarchical ladder to power in this Americanized recreation of the BBC series of the same name. Written by Jacob Oberfrank",
+    "seasons": 3
+  },
+  {
+    "name": "Gilmore Girls",
+    "id": "tt0238784",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTYyMjM4Mjc5MF5BMl5BanBnXkFtZTcwMTg1OTAzMQ@@._V1_SY317_CR4,0,214,317_AL_.jpg",
+    "score": 8.0,
+    "duration": 44,
+    "start": 2000,
+    "end": 2007,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0077268",
+        "co0030084",
+        "co0005035"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0334179",
+        "nm0088127",
+        "nm0012962"
+      ]
+    },
+    "description": "Lorelai Gilmore, 32, has such a close relationship with her daughter Rory that they are often mistaken for sisters. Between Lorelai\u0027s relationship with her parents, Rory\u0027s new prep school, and both of their romantic entanglements, there\u0027s plenty of drama to go around. Written by lcheala@imdb.com",
+    "seasons": 7
+  },
+  {
+    "name": "Peaky Blinders",
+    "id": "tt2442560",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTkyNjMwNjQxOF5BMl5BanBnXkFtZTgwMjE0MjE4MjE@._V1_SX214_AL_.jpg",
+    "score": 8.699999809265137,
+    "duration": 60,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0275656",
+        "co0103644",
+        "co0043107"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0614165",
+        "nm0000554",
+        "nm2167957"
+      ]
+    },
+    "description": "A gangster family epic set in 1919 Birmingham, England and centered on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby, who means to move up in the world.",
+    "seasons": 3
+  },
+  {
+    "name": "Gotham",
+    "id": "tt3749900",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjMzNTU3MDY3OF5BMl5BanBnXkFtZTgwMjY1Nzg3MTE@._V1_SY317_CR104,0,214,317_AL_.jpg",
+    "score": 8.100000381469727,
+    "duration": 42,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0265205",
+        "co0038332",
+        "co0005035"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1360270",
+        "nm0000586",
+        "nm0006610"
+      ]
+    },
+    "description": "In crime ridden Gotham City, Thomas and Martha Wayne are murdered before young Bruce Wayne\u0027s eyes. Although the idealistic Gotham City Police Dept. detective James Gordon, and his cynical partner, Harvey Bullock, seem to solve the case quickly, things are not so simple. Inspired by Bruce\u0027s traumatized desire for justice, Gordon vows to find it amid Gotham\u0027s corruption. Thus begins Gordon\u0027s lonely quest that would set him against his own comrades and the underworld with their own deadly rivalries and mysteries. In the coming wars, innocence will be lost and compromises will be made as some criminals will fall as casualties while others will rise as supervillains. All the while, young Bruce observes this war with a growing obsession that would one day drive him to seek his own revenge as The Batman. Written by Kenneth Chisholm (kchishol@rogers.com)",
+    "seasons": 1
+  },
+  {
+    "name": "Modern Family",
+    "id": "tt1442437",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTg3ODU2Mzg0NV5BMl5BanBnXkFtZTgwOTU5MDE5MjE@._V1_SX214_AL_.jpg",
+    "score": 8.699999809265137,
+    "duration": 22,
+    "start": 2009,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0226603",
+        "co0056447",
+        "co0051053"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0642145",
+        "nm0005527",
+        "nm0100866"
+      ]
+    },
+    "description": "Jay Pritchett sits at the head of a large and unconventional family. Now in his second marriage to his gorgeous young wife, Gloria, Jay has been given something of a second chance. Still, old habits are hard to break, and it\u0027s trial by fire as he tries to adapt to life with the same passion and vigor that Gloria exhibits, which are matched by her precocious 12-year-old son, Manny. There are some culture clashes, a few misunderstandings, but also plenty of sweet victories along the way. Jay\u0027s grown daughter, Claire, and her husband, Phil, are the proud parents of three kids with whom they want that open, healthy, honest relationship. It\u0027s not always easy, especially when you have Haley, a teenage daughter who\u0027s growing up a little fast, Alex, a too-smart-for-her-own-good middle daughter and Luke, a scatterbrained boy. Add to this that Phil is just a big kid himself, even if he does always have the best intentions. Claire is the anchor, trying her best to run a tight ship and determined... Written by ABC publicity",
+    "seasons": 6
+  },
+  {
+    "name": "Pretty Little Liars",
+    "id": "tt1578873",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTY4ODk2OTk3N15BMl5BanBnXkFtZTgwNTE4Mjk4MTE@._V1_SX214_AL_.jpg",
+    "score": 8.0,
+    "duration": 60,
+    "start": 2010,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0050794",
+        "co0142434",
+        "co0183230"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0069079",
+        "nm1667364",
+        "nm1423955"
+      ]
+    },
+    "description": "A clique of teenage girls drift apart after the group\u0027s leader, Alison DiLaurentis, goes missing. Her body is found and the girls are reunited at her funeral. All four begin receiving text messages from the mysterious \u0027A\u0027, who seems to know many of the group\u0027s deepest secrets, some of which only the late Alison had knowledge of. The girls join forces against A\u0027s scheming and try to uncover the mystery of Alison\u0027s death. Written by Anonymous",
+    "seasons": 7
+  },
+  {
+    "name": "Dexter",
+    "id": "tt0773262",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTM5MjkwMTI0MV5BMl5BanBnXkFtZTcwODQwMTc0OQ@@._V1_SY317_CR9,0,214,317_AL_.jpg",
+    "score": 9.0,
+    "duration": 55,
+    "start": 2006,
+    "end": 2013,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0075105",
+        "co0177677",
+        "co0176685"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0355910",
+        "nm1358539",
+        "nm0953882"
+      ]
+    },
+    "description": "Meet Dexter Morgan. By day he\u0027s a blood spatter pattern expert for the Miami Metro police department. But by night - he takes on an entirely different persona: serial killer. But Dexter isn\u0027t your average serial killer as he only kills people who fit a very prolific and precise \"moral code\" taught to him by his late father Harry (he didn\u0027t kill Harry, honest), and developed very thoroughly throughout each kill. While dealing with his daily activities and his boss, Sgt. Doakes, the one man who may or may not know the truth about his after-hours activities, he is given a friendly message by a guy referred to only as \"The Ice Truck Killer\" - a crime scene where there is no blood. This shocking discovery turns Dexter\u0027s world completely upside down. The Ice Truck Killer wants Dexter to play his game and Dexter is very eager to take on this cat-and-mouse chase throughout Miami. Written by halo1k",
+    "seasons": 8
+  },
+  {
+    "name": "Parks and Recreation",
+    "id": "tt1266020",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTM5MjQ2MTA5Nl5BMl5BanBnXkFtZTgwOTU5NjY2MDE@._V1_SY317_CR15,0,214,317_AL_.jpg",
+    "score": 8.600000381469727,
+    "duration": 22,
+    "start": 2009,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0093771",
+        "co0070636",
+        "co0196576"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0688132",
+        "nm2106637",
+        "nm0644406"
+      ]
+    },
+    "description": "The absurd antics of an Indiana town\u0027s public officials as they pursue sundry projects to make their city a better place.",
+    "seasons": 7
+  },
+  {
+    "name": "How I Met Your Mother",
+    "id": "tt0460649",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTA5MzAzNTcyNjZeQTJeQWpwZ15BbWU3MDUyMzE1MTk@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "score": 8.5,
+    "duration": 22,
+    "start": 2005,
+    "end": 2014,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0056447",
+        "co0284012"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1102140",
+        "nm0781981",
+        "nm1130627"
+      ]
+    },
+    "description": "The year is 2030. Ted Mosby is relaying the story of how he met his wife to his daughter and son. The story starts in the year 2005, when then twenty-seven year old architect Ted was spurred on to want to get married after his best friends from his college days at Wesleyan, lawyer Marshall Eriksen, who was his roommate at the time and kindergarten teacher Lily Aldrin, got engaged after nine years of dating each other. Ted\u0027s new quest in life was much to the dismay of his womanizing friend, Barney Stinson. But soon after Marshall and Lily\u0027s engagement, Ted believed that his life mate was going to be news reporter and aspiring news anchor Robin Scherbatsky, who, despite having had a romantic relationship with her after this time, ended up being who the kids know as their \"Aunt\" Robin. As Ted relays the story to his kids, the constants are that their Uncle Marshall, Aunt Lily, Uncle Barney and Aunt Robin are always in the picture and thus have something to do with how he got together ... Written by Huggo",
+    "seasons": 9
+  },
+  {
+    "name": "Shameless",
+    "id": "tt1586680",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjEzMzMwNTM1MF5BMl5BanBnXkFtZTgwNDc5NDI0MzE@._V1_SY317_CR9,0,214,317_AL_.jpg",
+    "score": 8.699999809265137,
+    "duration": 46,
+    "start": 2011,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0265986",
+        "co0037310",
+        "co0005035"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0002536",
+        "nm0000513",
+        "nm1185747"
+      ]
+    },
+    "description": "Meet the fabulously dysfunctional Gallagher family. Dad\u0027s a drunk, Mom split long ago, eldest daughter Fiona tries to hold the family together. Eldest son Philip (Lip) trades his physics tutoring skills for sexual favors from neighborhood girls. Middle son Ian is gay. Youngest daughter Debbie is stealing money from her UNICEF collection. Ten-year-old Carl is a budding sociopath and an arsonist, and toddler Liam is - well, he might actually be black, but nobody has a clue how. Written by Showtime Publicity",
+    "seasons": 5
+  },
+  {
+    "name": "Black Mirror",
+    "id": "tt2085059",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTk5NTk1Mzg3Ml5BMl5BanBnXkFtZTcwNDAyNzY3OA@@._V1_SY317_CR5,0,214,317_AL_.jpg",
+    "score": 8.800000190734863,
+    "duration": 60,
+    "start": 2011,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Thriller"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0104481",
+        "co0263795"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm4676680",
+        "nm5333660",
+        "nm2257207"
+      ]
+    },
+    "description": "A television anthology series that shows the dark side of life and technology.",
+    "seasons": 3
+  },
+  {
+    "name": "Gossip Girl",
+    "id": "tt0397442",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTg1NTc4Mzk1N15BMl5BanBnXkFtZTcwMjc4NjY4MQ@@._V1_SX214_AL_.jpg",
+    "score": 7.400000095367432,
+    "duration": 42,
+    "start": 2007,
+    "end": 2012,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Romance"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0125579",
+        "co0142434",
+        "co0183875"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0515116",
+        "nm1015262",
+        "nm0046112"
+      ]
+    },
+    "description": "Gossip Girl follows the lives of priveledged teenagers on the upper east side. Serena Van Der Woodsen is a blonde and beautiful socialite, Everyone knows Serena. Blair Waldorf is Serena\u0027s best friend but it\u0027s always about Serena not Blair. Nate Archibald is Blair\u0027s boyfriend but ever since Serena came back from boarding school Nate has been acting strange? Chuck Bass a rich and arrogant person. Daniel Humphrey a loney boy from Brooklyn, NY who no body knows. Follow the lives of this guilty pleasure show.",
+    "seasons": 6
+  },
+  {
+    "name": "Lost",
+    "id": "tt0411008",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjA3NzMyMzU1MV5BMl5BanBnXkFtZTcwNjc1ODUwMg@@._V1_SY317_CR17,0,214,317_AL_.jpg",
+    "score": 8.600000381469727,
+    "duration": 44,
+    "start": 2004,
+    "end": 2010,
+    "genres": {
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0021593",
+        "co0067205",
+        "co0209226"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0306201",
+        "nm0004710",
+        "nm0289142"
+      ]
+    },
+    "description": "Life is laid bare as a group of plane crash survivors find themselves stranded on a remote Pacific island. The trauma of the crash soon becomes overshadowed by the island itself, where unseen creatures stalk the jungle, paranormal happenings abound and astonishing coincidences reveal themselves. In this unique environment emotions swell as the survivors battle their inner and outer demons, and strive to live together - so that they won\u0027t die alone. Written by Tobias Stapleford",
+    "seasons": 6
+  },
+  {
+    "name": "The Blacklist",
+    "id": "tt2741602",
+    "image": "http://ia.media-imdb.com/images/M/MV5BNTk2ODQzOTY4N15BMl5BanBnXkFtZTgwNjkwMjQ3MjE@._V1_SY317_CR1,0,214,317_AL_.jpg",
+    "score": 8.199999809265137,
+    "duration": 43,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0022730",
+        "co0096447",
+        "co0086397"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000652",
+        "nm1443644",
+        "nm1459109"
+      ]
+    },
+    "description": "A highly articulate, erudite and intelligent businessman and mastermind, \"Red\" Reddington, has allegedly been on the \"10 Most Wanted List\" of various U.S. law enforcement agencies for over 20 years. The legend is that Red is as elusive an Artiste as he is clever; Red built and controls a veritable labyrinth of creative enterprises coupled with uncanny ability to gather and finesse information at the drop of a hat. On the first day at FBI for a new female profiler fresh out of Quantico, Red offers to bandy wits with the FBI. Red promises to deliver various criminals and plots previously unknown to any branch of law enforcement... and all Red requests in return is to choose his muse. Written by LA-Lawyer",
+    "seasons": 2
+  },
+  {
+    "name": "Mozart in the Jungle",
+    "id": "tt3502172",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTQ5NzU2ODMyN15BMl5BanBnXkFtZTgwODc0Mjg1MzE@._V1_SX214_AL_.jpg",
+    "score": 8.199999809265137,
+    "duration": 29,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0285944"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm3860305",
+        "nm0004787",
+        "nm3231692"
+      ]
+    },
+    "description": "Sex, drugs and classical music illustrate what happens behind the curtains at the symphony can be just as captivating as what occurs on stage.",
+    "seasons": 1
+  },
+  {
+    "name": "Teen Wolf",
+    "id": "tt1567432",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTY3OTY0OTI3NV5BMl5BanBnXkFtZTcwMjkwMjk3NQ@@._V1_SX214_AL_.jpg",
+    "score": 7.800000190734863,
+    "duration": 41,
+    "start": 2011,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Horror"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0071026",
+        "co0063774"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0692677",
+        "nm3729721",
+        "nm0388382"
+      ]
+    },
+    "description": "Awkward teen Scott McCall\u0027s life changes forever when he is bitten by a werewolf and becomes one himself. Some changes are positive - increased prowess in sports, super-hearing and a boost in confidence. But there are problems, and dangers, that come along with being a lycanthrope. Written by Anonymous",
+    "seasons": 5
+  },
+  {
+    "name": "Revenge",
+    "id": "tt1837642",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTY2NjA5MDc0OF5BMl5BanBnXkFtZTgwNTE4OTA5MjE@._V1_SY317_CR12,0,214,317_AL_.jpg",
+    "score": 8.100000381469727,
+    "duration": 44,
+    "start": 2011,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0355149",
+        "co0069651",
+        "co0209226"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000656",
+        "nm0885840",
+        "nm0542759"
+      ]
+    },
+    "description": "As a summer to remember begins in the Hamptons, new arrival Emily Thorne dazzles the members of high society by making herself known in the exclusive social circle of Grayson Global CEO Conrad Grayson and his socialite wife Victoria. But it soon becomes clear that the beguiling young philanthropist has a dark past. Emily was once known as Amanda Clarke, a young nine-year-old whose life was torn apart when her father - Grayson Global hedge fund manager David Clarke - was falsely accused of channeling money to a terrorist organization responsible for the downing of a commercial airliner. Now living under an assumed identity, she is determined to seek vengeance on the people who destroyed her father\u0027s life - the two main conspirators being Conrad and Victoria Grayson - by making their lives come crashing down around them. Because when everything you love has been stolen from you, someone has to pay. Written by Anonymous",
+    "seasons": 4
+  },
+  {
+    "name": "Bones",
+    "id": "tt0460627",
+    "image": "http://ia.media-imdb.com/images/M/MV5BODU0NzA1MTEwN15BMl5BanBnXkFtZTcwOTI1NjI5MQ@@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "score": 8.100000381469727,
+    "duration": 40,
+    "start": 2005,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Crime",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0212869",
+        "co0046572",
+        "co0056447"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0221043",
+        "nm0004770",
+        "nm0174819"
+      ]
+    },
+    "description": "Brilliant, but socially inept, forensic anthropologist Dr. Temperence Brennan works at the Jeffersonian Institute in Washington DC. After consulting for him on a FBI case, she is approached by cocky yet charming ex-Army Ranger turned Special Agent, Seeley Booth to help the Bureau solve crimes by identifying human remains that are too far gone for standard FBI forensic investigations. Brennan\u0027s empirical, literal view of the world causes friction with Booths emotive, instinctive attitude creating a volatile relationship. However as their case load increases the symbiotic partnership produces results and with the support of Brennan\u0027s Squint Squad, murderers, past and present should be on the look out. Written by h_berry",
+    "seasons": 10
+  },
+  {
+    "name": "The Mentalist",
+    "id": "tt1196946",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTQ5OTgzOTczM15BMl5BanBnXkFtZTcwMDM2OTY4MQ@@._V1_SY317_CR12,0,214,317_AL_.jpg",
+    "score": 8.100000381469727,
+    "duration": 43,
+    "start": 2008,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0265205",
+        "co0005035"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0048932",
+        "nm0000677",
+        "nm1085727"
+      ]
+    },
+    "description": "After a serial killer named Red John murdered Patrick Jane\u0027s wife and daughter, Jane dedicated his life to hunting down and killing Red John. To that end he gave up his lucrative pretense of being a psychic and joined the California Bureau of Investigation (CBI) as a consultant to the team responsible for investigating the Red John case, led by Senior Agent Teresa Lisbon. Using Jane\u0027s exceptional gift for observation and his mentalist tricks, the team is able to close an unprecedented number of cases, but Jane\u0027s unconventional and often outright illegal methods also bring much censure down on Lisbon\u0027s head, making his assistance both a blessing and a curse. Meanwhile, the hunt for Red John continues... Written by Anonymous",
+    "seasons": 7
+  },
+  {
+    "name": "White Collar",
+    "id": "tt1358522",
+    "image": "http://ia.media-imdb.com/images/M/MV5BNDI5MDgyMTYzNF5BMl5BanBnXkFtZTcwMjAwNzk1Mw@@._V1_SY317_CR9,0,214,317_AL_.jpg",
+    "score": 8.300000190734863,
+    "duration": 40,
+    "start": 2009,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Crime",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0288470",
+        "co0094955"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0093589",
+        "nm0215229",
+        "nm0308606"
+      ]
+    },
+    "description": "The unlikely partnership between charming con artist Neal Caffrey and straightman FBI agent Peter Burke. Caffrey provides his expertise to help Burke catch other elusive criminals in exchange for his freedom, and together they prove that to solve the hardest crimes, you must hire the smartest criminal. Written by Twentieth Century Fox",
+    "seasons": 6
+  },
+  {
+    "name": "Fargo",
+    "id": "tt2802850",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjMzMTIzMTUwN15BMl5BanBnXkFtZTgwNjE0NTg0MTE@._V1_SX214_AL_.jpg",
+    "score": 9.100000381469727,
+    "duration": 53,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0071026",
+        "co0216537"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000671",
+        "nm0293509",
+        "nm2798112"
+      ]
+    },
+    "description": "A drifter named Lorne Malvo arrives in small-town Minnesota and influences the population with his malice and violence, including put-upon insurance salesman Lester Nygaard.",
+    "seasons": 2
+  },
+  {
+    "name": "NCIS",
+    "id": "tt0364845",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTYyMTQ0MTU1OF5BMl5BanBnXkFtZTcwMjI0Njg4Ng@@._V1_SY317_CR6,0,214,317_AL_.jpg",
+    "score": 8.0,
+    "duration": 60,
+    "start": 2003,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Action",
+        "Comedy",
+        "Crime"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0114905",
+        "co0066107",
+        "co0183875"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0001319",
+        "nm0915762",
+        "nm0005306"
+      ]
+    },
+    "description": "Special Agent Leroy Jethro Gibbs is the leader of a team of special agents belonging to the NCIS (Naval Criminal Investigative Service) Major Case Response Team. Gibbs, a former Marine, is a tough investigator and a highly skilled interrogator who relies on his gut instinct as much as evidence. Gibbs\u0027 second in command is Senior Field Agent Tony DiNozzo, a womanizing, movie-quoting former Baltimore Homicide Detective, who despite being the class clown always gets the job done. The team also consists of probationary field agent Ziva David, a former Mossad officer who is a skilled fighter, as well as Junior Field Agent Timothy McGee, a computer-savvy agent often mocked by DiNozzo. Assisting them are Abby Sciuto, the energetic-but-Goth lab tech who is like a daughter to Gibbs, and Dr. Donald Mallard, nicknamed Ducky, the eccentric medical examiner full of unusual stories. This team of elite agents, based in Washington, D.C., solve criminal cases involving Marine and Navy personnel and ... Written by NCIS Lover",
+    "seasons": 12
+  },
+  {
+    "name": "The Affair",
+    "id": "tt2699110",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjM2MTM2ODMwOF5BMl5BanBnXkFtZTgwMTk3OTM1MjE@._V1_SY317_CR9,0,214,317_AL_.jpg",
+    "score": 8.0,
+    "duration": 60,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": []
+    },
+    "stars": {
+      "star": [
+        "nm0922035",
+        "nm2235721",
+        "nm0005491"
+      ]
+    },
+    "description": "The psychological effects of an affair between a married waitress at a Hamptons diner and a teacher who spends his summer at his in-laws\u0027 estate on the island.",
+    "seasons": 2
+  },
+  {
+    "name": "Scandal",
+    "id": "tt1837576",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjI1NDI5OTAwMV5BMl5BanBnXkFtZTgwNTYzOTA5MjE@._V1_SY317_CR12,0,214,317_AL_.jpg",
+    "score": 8.0,
+    "duration": 43,
+    "start": 2012,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Thriller"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0170849",
+        "co0209226"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0913488",
+        "nm1581670",
+        "nm1705090"
+      ]
+    },
+    "description": "When you get into trouble there\u0027s only one person to call, Olivia Pope. Olivia is a professional \u0027fixer\u0027 who makes problems go away before anyone even knows they exist. For the moneyed, the powerful and even the President, Olivia is a legend in her field. Her spectacular success is mostly due to her unbreakable rule of always trust your gut. No matter how careful you are, when you do damage control for a living, you\u0027re bound to cause some damage to your own life. She and her crew eat, sleep, live and breathe crisis. Each week, as the team races against the clock to defuse intriguing new problems before they become full-blown disasters, they also have to deal with their own personal issues. They may call themselves \u0027gladiators in suits\u0027, but little by little, Olivia and her crew begin to reveal the chinks in their armor. Written by Anonymous",
+    "seasons": 4
+  },
+  {
+    "name": "Castle",
+    "id": "tt1219024",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTQ4NTMzMDM5OF5BMl5BanBnXkFtZTgwMDczOTA5MjE@._V1_SY317_CR12,0,214,317_AL_.jpg",
+    "score": 8.300000190734863,
+    "duration": 43,
+    "start": 2009,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Crime",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0097246",
+        "co0163896",
+        "co0209226"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0277213",
+        "nm1065664",
+        "nm0838360"
+      ]
+    },
+    "description": "After a serial killer imitates the plots of his novels, successful mystery novelist Richard \"Rick\" Castle gets permission from the Mayor of New York City to tag along with an NYPD homicide investigation team for research purposes. A \"guy\u0027s guy\", he proves popular with the male team members, but immediately offends the sensibilities of the team leader, Detective Kate Beckett. Though she\u0027ll never admit it, he slowly wins her over with his innovative approach to crime solving. He brings to the table skills the others don\u0027t have: contacts in Manhattan high society, free-form creative thinking, and years of developing believable fictional characters that have inadvertently molded him into a natural criminal profiler. But life is not all crime fighting adventure for this wealthy playboy: his relationship with Beckett becomes even more strained when he unveils a new series of detective novels featuring a racy character based on her, and his home life is dominated by his mother (a fading ... Written by Anonymous",
+    "seasons": 7
+  },
+  {
+    "name": "Outlander",
+    "id": "tt3006802",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjA2Nzg0OTIyM15BMl5BanBnXkFtZTgwNzQyMzc3MjE@._V1_SY317_SX214_AL_.jpg",
+    "score": 8.800000190734863,
+    "duration": 64,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Romance",
+        "Sci-Fi"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0086397",
+        "co0410831",
+        "co0303436"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm2928020",
+        "nm1537825",
+        "nm0574615"
+      ]
+    },
+    "description": "Follows the story of Claire Randall, a married combat nurse from 1945 who is mysteriously swept back in time to 1743, where she is immediately thrown into an unknown world where her life is threatened. When she is forced to marry Jamie Fraser, a chivalrous and romantic young Scottish warrior, a passionate relationship is ignited that tears Claire\u0027s heart between two vastly different men in two irreconcilable lives. Written by Starz",
+    "seasons": 2
+  },
+  {
+    "name": "Law \u0026 Order: Special Victims Unit",
+    "id": "tt0203259",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjE3NzMxOTI4M15BMl5BanBnXkFtZTgwMzE1ODg3MjE@._V1_SY317_CR1,0,214,317_AL_.jpg",
+    "score": 8.100000381469727,
+    "duration": 60,
+    "start": 1999,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0019598",
+        "co0069685",
+        "co0080319"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0002127",
+        "nm0005221",
+        "nm0001384"
+      ]
+    },
+    "description": "This show delves into the dark side of the New York underworld as the detectives of a new elite force, the Special Victims Unit, investigate and prosecute various sexually oriented crimes, while trying to balance the effects of the investigation on their own lives. Written by Brian Barjenbruch",
+    "seasons": 16
+  },
+  {
+    "name": "House M.D.",
+    "id": "tt0412142",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjA4NTkzNjg1OF5BMl5BanBnXkFtZTcwNjg3MTI1Ng@@._V1_SX214_AL_.jpg",
+    "score": 8.899999618530273,
+    "duration": 44,
+    "start": 2004,
+    "end": 2012,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0022072",
+        "co0146945",
+        "co0057712"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0491402",
+        "nm0004898",
+        "nm0000494"
+      ]
+    },
+    "description": "The series follows the life of anti-social, pain killer addict, witty and arrogant medical doctor Gregory House with only half a muscle in his right leg. He and his team of medical doctors try to cure very ill ordinary people in the United States of America. Written by Samtroy",
+    "seasons": 8
+  },
+  {
+    "name": "The Office",
+    "id": "tt0386676",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTgzNjAzMDE0NF5BMl5BanBnXkFtZTcwNTEyMzM3OA@@._V1_SY317_CR9,0,214,317_AL_.jpg",
+    "score": 8.800000190734863,
+    "duration": 22,
+    "start": 2005,
+    "end": 2013,
+    "genres": {
+      "genre": [
+        "Comedy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0082215",
+        "co0129175",
+        "co0070636"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0933988",
+        "nm1024677",
+        "nm0278979"
+      ]
+    },
+    "description": "A remake of the hit 2001 BBC TV series The Office (2001), this is a mockumentary that documents the exploits of a paper supply company in Scranton, Pennsylvania. Made up of head chief Michael Scott, a harmlessly deluded and ignorantly insensitive boss who cares about the welfare of his employees while trying to put his own spin on company policy. With an office including the likes of various peers who have their own hangups, The Office (2005) takes a look at the lives of its co-workers: bored but talented salesman Jim, his mildly sociopathic, butt kissing enemy Dwight, mildly righteous receptionist Pam, and indifferent temp Ryan. Written by mystic80",
+    "seasons": 9
+  },
+  {
+    "name": "Broadchurch",
+    "id": "tt2249364",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTk4MTk3MjIwNF5BMl5BanBnXkFtZTcwOTM2MDU1OQ@@._V1_SY317_CR5,0,214,317_AL_.jpg",
+    "score": 8.399999618530273,
+    "duration": 48,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0110977",
+        "co0424780",
+        "co0015194"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1469236",
+        "nm0855039",
+        "nm2092886"
+      ]
+    },
+    "description": "A seemingly calm and friendly seaside town becomes a town wrapped in secrets when the death of an eleven year old boy sparks an unwanted media frenzy. As the town\u0027s locals start to open up about what they do and don\u0027t know, it falls upon the police to catch the supposed killer.",
+    "seasons": 2
+  },
+  {
+    "name": "New Girl",
+    "id": "tt1826940",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTkyMTcwNTM3OF5BMl5BanBnXkFtZTcwMDI2MjcxOA@@._V1_SY317_CR4,0,214,317_AL_.jpg",
+    "score": 7.900000095367432,
+    "duration": 30,
+    "start": 2011,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0368370",
+        "co0363589",
+        "co0286257"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0221046",
+        "nm2159926",
+        "nm0339011"
+      ]
+    },
+    "description": "Jess - a bubbly offbeat teacher who is known to burst into spontaneous song - catches her boyfriend with another woman, and needs a new place to live. She moves into a loft with three single guys she\u0027s never met before. Nick is a jaded law-school dropout, who usually just wants to be left alone. Schmidt is an flashy businessman, who believes he is a gift to women. Winston is a former athlete who doesn\u0027t know what to do, but really needs to win whatever it is. Can this dysfunctional group handle the \"adorkable\" new girl? Written by L. Hamre",
+    "seasons": 4
+  },
+  {
+    "name": "Mad Men",
+    "id": "tt0804503",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTg1MTIwODYwMl5BMl5BanBnXkFtZTgwNjAwNzQzMTE@._V1_SY317_CR2,0,214,317_AL_.jpg",
+    "score": 8.699999809265137,
+    "duration": 45,
+    "start": 2007,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0026995",
+        "co0247554",
+        "co0019701"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0358316",
+        "nm0005253",
+        "nm0440229"
+      ]
+    },
+    "description": "The professional and personal lives of those who work in advertising on Madison Avenue - self-coined \"mad men\" - in the 1960s are presented. The stories focus on those at one of the avenue\u0027s smaller firms, Sterling Cooper, and its various incarnations over the decade. At the heart of these stories is Donald Draper, the creative genius of the company. That professional creative brilliance belies the fact of a troubled childhood, one that he would rather forget and not let anyone know about except for a select few, but one that shaped who he is as an adult and as an ad man in the need not only to sell products but sell himself to the outside world. His outward confidence also masks many insecurities as evidenced through his many vices, such as excessive smoking, drinking and womanizing - the latter despite being a family man - and how he deals with the aftermath of some of the negative aspects of his life. Written by Huggo",
+    "seasons": 7
+  },
+  {
+    "name": "The Originals",
+    "id": "tt2632424",
+    "image": "http://ia.media-imdb.com/images/M/MV5BNTQzMTExNzU0NV5BMl5BanBnXkFtZTgwMjgzNDIxMDE@._V1_SX214_AL_.jpg",
+    "score": 8.600000381469727,
+    "duration": 45,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0265986",
+        "co0429120",
+        "co0142434"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0604784",
+        "nm0319171",
+        "nm2322853"
+      ]
+    },
+    "description": "A spin-off from The Vampire Diaries and set in New Orleans, The Originals centers on the Mikaelson siblings, otherwise known as the world\u0027s original vampires: Klaus (Joseph Morgan), Elijah (Daniel Gillies), and Rebekah (Claire Holt). Now Klaus must take down his protégé, Marcel (Charles Michael Davis), who is now in charge of New Orleans, in order to re-take his city, as he originally built New Orleans. Klaus departed from the city after being chased down by his father Mikael, while it was being constructed and Marcel took charge. As Klaus has returned after many years, his ego has provoked him to become the king of the city. \"Every King needs an heir\" says Klaus, accepting the unborn child. The child is a first to be born to a hybrid (part vampire, part werewolf) and a werewolf (Hayley). Written by Anaya Miller",
+    "seasons": 2
+  },
+  {
+    "name": "The Good Wife",
+    "id": "tt1442462",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTI2OTk4MDk3OF5BMl5BanBnXkFtZTcwMTY3NTc3Mg@@._V1_SX214_AL_.jpg",
+    "score": 8.300000190734863,
+    "duration": 60,
+    "start": 2009,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0074212",
+        "co0286028",
+        "co0286157"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000523",
+        "nm0636562",
+        "nm0001038"
+      ]
+    },
+    "description": "Alicia Florrick is the wife of a former state\u0027s attorney for Cook County. He has been imprisoned after a sex and corruption scandal. Alicia must deal with the public humiliation. She must also fend for her two children. After years of being a housewife and mother, she returns to work as a litigator at the law firm Stern, Lockhart \u0026 Gardner. She must now prove herself in the courtroom. Written by Anonymous",
+    "seasons": 6
+  },
+  {
+    "name": "Person of Interest",
+    "id": "tt1839578",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTcyODc4OTU1N15BMl5BanBnXkFtZTcwODAwMjYyOQ@@._V1_SY317_CR4,0,214,317_AL_.jpg",
+    "score": 8.399999618530273,
+    "duration": 43,
+    "start": 2011,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Action",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0355349",
+        "co0021593",
+        "co0005035"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0001029",
+        "nm0378245",
+        "nm0152430"
+      ]
+    },
+    "description": "A billionaire software-genius named Harold Finch creates a Machine for the government that is designed to detect acts of terror before they can happen, by monitoring the entire world through every cell-phone, email and surveillance camera. Finch discovered that the machine sees everything, potential terrorist acts and violent crimes that involve ordinary people. When the government considered violent crimes between normal people \"irrelevant\", Finch built a back door into the system that gives him the social security number of a person involved in a future violent crime so he could act. Partnered with John Reese, an ex-CIA agent, the two work in secret to prevent violent crimes before they can happen. Eventually their activities lead to being hunted by the New York Police Department, CIA Agents in pursuit of Reese who was listed as dead, a computer hacker named Root who wants access to the Machine, and government officials who want to keep all knowledge of the Machine a complete secret. Written by Jones",
+    "seasons": 4
+  },
+  {
+    "name": "Glee",
+    "id": "tt1327801",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTU0OTA5MjA0MF5BMl5BanBnXkFtZTcwNzY0NTY0OA@@._V1_SY317_CR131,0,214,317_AL_.jpg",
+    "score": 6.800000190734863,
+    "duration": 44,
+    "start": 2009,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Music"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0314634",
+        "co0156994",
+        "co0056447"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0584951",
+        "nm0528331",
+        "nm1285162"
+      ]
+    },
+    "description": "When a High School Spanish teacher, Will Schuester, becomes the director of the school\u0027s failing Glee club, New Directions, he hopes to be able to rejuvenate it. The club competes in the choir competition circuit. It\u0027s been called \"a High School Musical for adults\", the series follows the club and its mixture of oddball members as they try and restore it to its former glory. It is a musical comedy in which the eager and ambitious students not only compete to win the Nationals, but also have to deal with the tough and cruel realities of their school, McKinley High. At the same time, Will is trying to rejuvenate his failing love life whilst preventing the school\u0027s cheer leading coach Sue Sylvester from sabotaging the choir. Written by WellardRockard",
+    "seasons": 6
+  },
+  {
+    "name": "Reign",
+    "id": "tt2710394",
+    "image": "http://ia.media-imdb.com/images/M/MV5BNDY4NTgzNjQyNF5BMl5BanBnXkFtZTgwMTgzNDIxMDE@._V1_SX214_AL_.jpg",
+    "score": 7.699999809265137,
+    "duration": 42,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Fantasy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0274041",
+        "co0031191",
+        "co0079853"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm2560043",
+        "nm0001227",
+        "nm2650700"
+      ]
+    },
+    "description": "Chronicles the rise to power of Mary Queen of Scots (Kane) when she arrives in France as a 15-year-old, betrothed to Prince Francis, and with her four best friends as ladies-in-waiting. It details the secret history of survival at French Court amidst fierce foes, dark forces, and a world of sexual intrigue. Written by CW",
+    "seasons": 2
+  },
+  {
+    "name": "One Tree Hill",
+    "id": "tt0368530",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTU5MTE0Mzg4Nl5BMl5BanBnXkFtZTcwNjc0NDUwNA@@._V1_SX214_AL_.jpg",
+    "score": 7.699999809265137,
+    "duration": 60,
+    "start": 2003,
+    "end": 2012,
+    "genres": {
+      "genre": [
+        "Drama",
         "Sport"
       ]
     },
     "studios": {
       "studio": [
-        "co0087680",
-        "co0046592",
-        "co0037052"
+        "co0005035",
+        "co0099647"
       ]
     },
     "stars": {
       "star": [
-        "nm0005266",
-        "nm0886733",
-        "nm0001193"
+        "nm0614877",
+        "nm0480798",
+        "nm1122026"
       ]
     },
-    "description": "Hayden Fox is the head coach of a university football team, and eats, sleeps and lives football. His partner, however, does not share his passion for the sport, which frequently causes friction in their relationship. While Hayden often fits the stereotype of dumb jock (as do his co-workers Luther and Dauber), he sincerely cares about his friends and family, and tries his best to make things work out. Written by Jean-Marc Rocher \u003crocher@fiberbit.net\u003e",
+    "description": "This series follows the eventful lives of some high-school kids in Tree Hill, a small but not too quiet town in North Carolina, where the greatest source of pride is the high school basketball team, the Ravens, since living memory coached by old Whitey Durham. Its greatest talent ever was Dan Scott, who now runs a successful car dealership. The present talents are his two sons, Nathan Scott, a beautiful and popular athlete, the absolute star, who was molded and stifled by his proud dad, ambitious Dan Scott, who pushes him harder then even the coach approves of, but rather neglected by his spoiled, impulsive mother Deb, an alcoholic, and Lucas, abandoned at birth with his devoted mother, hard-working café-owner Karen Roe, who grew up with Dan\u0027s older but poor brother Keith as substitute father as a social reject, only playing hoops on a public yard in the park with street-kids, his passion being reading; when an incident forces the coach to replace suspended players, Lucas soon proves ... Written by KGF Vissers",
     "seasons": 9
+  },
+  {
+    "name": "Prison Break",
+    "id": "tt0455275",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTg3NTkwNzAxOF5BMl5BanBnXkFtZTcwMjM1NjI5MQ@@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "score": 8.600000381469727,
+    "duration": 44,
+    "start": 2005,
+    "end": 2009,
+    "genres": {
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0142476",
+        "co0098797",
+        "co0056447"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0700712",
+        "nm0589505",
+        "nm1004774"
+      ]
+    },
+    "description": "Structural Engineer Michael Scofield turns himself in to the Fox River Penitentiary in order to break out his brother Lincoln Burrows, who is on death row for the murder of the Vice President\u0027s brother. But Lincoln was set up by some of the Company (an agency formed by corrupt government officials) guys, headed by General Jonathan Krantz. Michael breaks out from Fox River with his brother Lincoln and other convicts. Written by Jyoti",
+    "seasons": 4
+  },
+  null,
+  {
+    "name": "How to Get Away with Murder",
+    "id": "tt3205802",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTQyMzE2NDY0MF5BMl5BanBnXkFtZTgwMDYyMTE5MjE@._V1_SX214_AL_.jpg",
+    "score": 8.199999809265137,
+    "duration": 43,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0170849",
+        "co0500990",
+        "co0209226"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0205626",
+        "nm0113117",
+        "nm0257917"
+      ]
+    },
+    "description": "A sexy, suspense-driven legal thriller about a group of ambitious law students and their brilliant, mysterious criminal defense professor. They become entangled in a murder plot that will shake the entire university and change the course of their lives. Written by Anonymous",
+    "seasons": 1
+  },
+  {
+    "name": "The Newsroom",
+    "id": "tt1870479",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTEyMzc0ODAwMjVeQTJeQWpwZ15BbWU4MDMxODk4OTIx._V1_SX214_AL_.jpg",
+    "score": 8.699999809265137,
+    "duration": 55,
+    "start": 2012,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0284741"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0001099",
+        "nm0607865",
+        "nm0302330"
+      ]
+    },
+    "description": "A news team attempts to create a news show that reports the news in an ethical and reasonable way. They take real, newsworthy events from our world as they\u0027re happening (such as bin Laden\u0027s assassination, NSA spying, etc) and report on them as if they were an actual news station that followed rational and moral guidelines, in a biting criticism of our popular press and a clever blurring of art and reality. Written by Guy T",
+    "seasons": 3
+  },
+  {
+    "name": "True Blood",
+    "id": "tt0844441",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjMyNDgxOTUwNl5BMl5BanBnXkFtZTgwNDc1NTg4MTE@._V1_SX214_AL_.jpg",
+    "score": 8.0,
+    "duration": 60,
+    "start": 2008,
+    "end": 2014,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0247237",
+        "co0008693"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0001593",
+        "nm0610459",
+        "nm0870794"
+      ]
+    },
+    "description": "The series follows Sookie Stackhouse, a barmaid living in Louisiana who can read people\u0027s minds, and how her life is turned upside down when the Vampire Bill, walks into her place of employment two years after vampires \u0027came out of the coffin\u0027 on national television. Written by Tommy Stewart",
+    "seasons": 7
+  },
+  {
+    "name": "Hannibal",
+    "id": "tt2243973",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTk3NDI1MDM5MV5BMl5BanBnXkFtZTcwNjkyODIxOQ@@._V1_SY317_CR19,0,214,317_AL_.jpg",
+    "score": 8.600000381469727,
+    "duration": 44,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Horror"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0014380",
+        "co0138108",
+        "co0368304"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0586568",
+        "nm0223518",
+        "nm0199215"
+      ]
+    },
+    "description": "Explores the early relationship between the renowned psychiatrist and his patient, a young FBI criminal profiler, who is haunted by his ability to empathize with serial killers.",
+    "seasons": 3
+  },
+  {
+    "name": "Blue Bloods",
+    "id": "tt1595859",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTMyMzYxODc1MV5BMl5BanBnXkFtZTcwMTI0Njg4Ng@@._V1_SY317_CR5,0,214,317_AL_.jpg",
+    "score": 7.400000095367432,
+    "duration": 43,
+    "start": 2010,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0106949",
+        "co0315236",
+        "co0048735"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0005531",
+        "nm0005256",
+        "nm0261678"
+      ]
+    },
+    "description": "Revolves around a family of New York cops.",
+    "seasons": 5
+  },
+  {
+    "name": "Twilight Zone",
+    "id": "tt0052520",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTQ0MTIzNDA0Ml5BMl5BanBnXkFtZTcwODQ2MzcyMQ@@._V1_SY317_CR5,0,214,317_AL_.jpg",
+    "score": 9.0,
+    "duration": 51,
+    "start": 1959,
+    "end": 1964,
+    "genres": {
+      "genre": [
+        "Fantasy",
+        "Horror",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0057419",
+        "co0070627"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0785245",
+        "nm0566389",
+        "nm1031805"
+      ]
+    },
+    "description": "Rod Serling\u0027s seminal anthology series focused on ordinary folks who suddenly found themselves in extraordinary, usually supernatural, situations. The stories would typically end with an ironic twist that would see the guilty punished.",
+    "seasons": 5
+  },
+  {
+    "name": "The Fall",
+    "id": "tt2294189",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTQ0MDU4NTY0MV5BMl5BanBnXkFtZTgwMjAyNzU0MjE@._V1_SY317_CR5,0,214,317_AL_.jpg",
+    "score": 8.199999809265137,
+    "duration": 60,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Thriller"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0262794",
+        "co0103544"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000096",
+        "nm1946193",
+        "nm0001487"
+      ]
+    },
+    "description": "A psychological thriller that examines the lives of two hunters. One is a serial killer who stalks his victims in and around Belfast and the other is a talented female Detective Superintendent from the MET who is brought in to catch him. Written by vhavnal",
+    "seasons": 2
+  },
+  {
+    "name": "Californication",
+    "id": "tt0904208",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjAyMDM2ODExNF5BMl5BanBnXkFtZTgwNTI2MjkzMTE@._V1_SY317_CR9,0,214,317_AL_.jpg",
+    "score": 8.399999618530273,
+    "duration": 28,
+    "start": 2007,
+    "end": 2014,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0225724",
+        "co0225706",
+        "co0052980"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000141",
+        "nm0001523",
+        "nm0359577"
+      ]
+    },
+    "description": "A self-loathing, alcoholic writer attempts to repair his damaged relationships with his daughter and her mother while combating sex addiction, a budding drug problem, and the seeming inability to avoid making bad decisions.",
+    "seasons": 7
+  },
+  {
+    "name": "Boardwalk Empire",
+    "id": "tt0979432",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTgyNDI1Njg2NF5BMl5BanBnXkFtZTgwMTIwOTM0MjE@._V1_SX214_AL_.jpg",
+    "score": 8.699999809265137,
+    "duration": 55,
+    "start": 2010,
+    "end": 2014,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "History"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0008693",
+        "co0092329",
+        "co0198598"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000114",
+        "nm0334318",
+        "nm1842344"
+      ]
+    },
+    "description": "Set in the Prohibition era of the 1920s Boardwalk Empire is the story of Enoch \"Nucky\" Thompson, the treasurer of Atlantic County, Atlantic City, New Jersey. Due to his relationships with mobsters as well as political contacts, the Federal Government start to take an interest in him. His lavish lifestyle seems at odds with his position, and as well as his connections, there is prolific bootlegging in the area. Written by WellardRockard",
+    "seasons": 5
+  },
+  {
+    "name": "Grimm",
+    "id": "tt1830617",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjM1MDY1MDg2OV5BMl5BanBnXkFtZTgwNjgwMzYzMDE@._V1_SY317_CR12,0,214,317_AL_.jpg",
+    "score": 7.800000190734863,
+    "duration": 45,
+    "start": 2011,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0250594",
+        "co0147414",
+        "co0096447"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1365912",
+        "nm0395203",
+        "nm1128780"
+      ]
+    },
+    "description": "Portland detective, Nick Burkhardt, has seen some gruesome crime scenes, but nothing prepares him for the strange visions he begins seeing: seemingly regular people momentarily transforming into hideous monsters. A visit from his only living relative reveals the truth. Nick has inherited the ability to see supernatural creatures, and as a \"Grimm,\" he is tasked with keeping the balance between mankind and the mythological. A reformed \"Big Bad Wolf\" becomes his greatest (and also reluctant) ally and confidant. It\u0027s not long before his work as a policeman leads Nick to the criminals he once thought were only found in fairy tales. Written by L. Hamre",
+    "seasons": 4
+  },
+  {
+    "name": "Black Sails",
+    "id": "tt2375692",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTY1ODU0NDU4MF5BMl5BanBnXkFtZTgwMDIzOTE4MzE@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "score": 7.900000095367432,
+    "duration": 56,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Adventure",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0049118",
+        "co0071240",
+        "co0473348"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm2090702",
+        "nm2315197",
+        "nm2498781"
+      ]
+    },
+    "description": "Captain Flint and his pirates, twenty years prior to Robert Louis Stevenson\u0027s classic \"Treasure Island\".",
+    "seasons": 3
+  },
+  {
+    "name": "Under the Dome",
+    "id": "tt1553656",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjA3NDk0NzM1MF5BMl5BanBnXkFtZTcwOTYxMTk3OQ@@._V1_SY317_CR13,0,214,317_AL_.jpg",
+    "score": 7.0,
+    "duration": 43,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Mystery",
+        "Sci-Fi"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0065354",
+        "co0355274",
+        "co0274041"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1036181",
+        "nm0498956",
+        "nm4337039"
+      ]
+    },
+    "description": "An invisible and mysterious force field descends upon a small fictional town in the United States, trapping residents inside, cut off from the rest of civilization. The trapped townsfolk must discover the secrets and purpose of the \"dome\" and its origins, while coming to learn more than they ever knew about each other.",
+    "seasons": 3
+  },
+  {
+    "name": "Entourage",
+    "id": "tt0387199",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTY4MTE2MDAxOF5BMl5BanBnXkFtZTcwNjEyNzU3Mw@@._V1_SY317_CR0,0,214,317_AL_.jpg",
+    "score": 8.600000381469727,
+    "duration": 28,
+    "start": 2004,
+    "end": 2011,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0008693",
+        "co0092329"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0175305",
+        "nm0004978",
+        "nm0001143"
+      ]
+    },
+    "description": "In this sitcom, the suddenly risen film star Vince Chase, a \u0027jeune premier\u0027 of humble origins, learns the ropes of the business and the the high-profile world of the wealthy happy few in and around Hollywood, but not alone: he brings from his native New York his atypical \u0027entourage (hence the title), not glitterati or professionals but a close circle of friends since childhood, and his professional agent finds they often make his job harder as the Queens boys not only sponge on the star but also have his ear, so Vince is much harder to counsel. Vince chooses his friend from home Eric as his manager, and LA professional Ari Gold as his agent. Over the course of the Series, they progress from kids from Queens, to actors, to producers and chase the funding and support to try to make the perfect movie for Vincent. Written by KGF Vissers",
+    "seasons": 8
+  },
+  {
+    "name": "Justified",
+    "id": "tt1489428",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTgzNjQ4NjM1NF5BMl5BanBnXkFtZTcwNzQ4OTEzNw@@._V1_SY317_CR11,0,214,317_AL_.jpg",
+    "score": 8.699999809265137,
+    "duration": 44,
+    "start": 2010,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0216537",
+        "co0280908",
+        "co0003113"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0648249",
+        "nm0141710",
+        "nm0780678"
+      ]
+    },
+    "description": "U.S. Marshal Raylan Givens is a modern day 19th century-style lawman, enforcing his brand of justice in a way that puts a target on his back with criminals and places him at odds with his bosses in the Marshal service. That conflict results in a reassignment for Givens to the U.S. District covering the town where he grew up. He is an anachronism - a tough, soft spoken gentleman who finds his quarry fascinating, but never gives an inch. Dig under his placid skin and you\u0027ll find an angry man who grew up hard in rural Kentucky, with an outlaw father, who knows a lot more about who he doesn\u0027t want to be than who he really is. Written by FX Publicity",
+    "seasons": 6
+  },
+  {
+    "name": "Family Guy",
+    "id": "tt0182576",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTk4MzM0MTU2MV5BMl5BanBnXkFtZTgwMTIwMzg3MjE@._V1_SY317_CR30,0,214,317_AL_.jpg",
+    "score": 8.399999618530273,
+    "duration": 22,
+    "start": 1999,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Animation",
+        "Comedy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0056447",
+        "co0042369",
+        "co0159275"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0532235",
+        "nm0097504",
+        "nm0001293"
+      ]
+    },
+    "description": "The Griffin household includes two teenagers, a cynical dog who is smarter than everyone else, and an evil baby who makes numerous attempts to eradicate his mother. Heading up this eclectic household is Peter Griffin. Peter does his best to do what\u0027s right for the family, but along the way, he makes mistakes that are the stuff of legends. Written by Ronos",
+    "seasons": 13
+  },
+  {
+    "name": "Elementary",
+    "id": "tt2191671",
+    "image": "http://ia.media-imdb.com/images/M/MV5BNTAwMTExNTM4N15BMl5BanBnXkFtZTcwOTkwOTgxOA@@._V1_SX214_AL_.jpg",
+    "score": 8.0,
+    "duration": 60,
+    "start": 2012,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0395934",
+        "co0280908",
+        "co0274041"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0001538",
+        "nm0005154",
+        "nm0001644"
+      ]
+    },
+    "description": "A modern take on the cases of Sherlock Holmes, with the detective now living in New York City.",
+    "seasons": 3
+  },
+  {
+    "name": "Forever",
+    "id": "tt3487382",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTQzMTUwMjQ3Nl5BMl5BanBnXkFtZTgwMTY2MDE5MjE@._V1_SX214_AL_.jpg",
+    "score": 8.300000190734863,
+    "duration": 43,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0498383",
+        "co0226345",
+        "co0005035"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0344435",
+        "nm1004211",
+        "nm0601376"
+      ]
+    },
+    "description": "Henry Morgan is a man who\u0027s been alive for 200 years and he doesn\u0027t know why and has spent the past 200 years trying to find out. Presently he works as a medical examiner in New York. Detective Jo Martinez works with him and is intrigued with him. Abe is the only one who knows Henry\u0027s secret. Written by rcs0411@yahoo.com",
+    "seasons": 1
+  },
+  {
+    "name": "The Killing",
+    "id": "tt1637727",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTQ5MTUxMzU3Ml5BMl5BanBnXkFtZTgwMDU3NDYxMjE@._V1_SX214_AL_.jpg",
+    "score": 8.199999809265137,
+    "duration": 45,
+    "start": 2011,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0338971",
+        "co0130477",
+        "co0094955"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0257969",
+        "nm1172478",
+        "nm0001004"
+      ]
+    },
+    "description": "In Seattle, Det. Sarah Linden is on what is supposed to be her last day on the job. She and her son Jack are supposed to leave that evening to join her fiancé in Sonoma. Her replacement, Det. Stephen Holder, is ready to take over but they answer a call from a patrol car who have found a bloodied sweater in a field. When the missing girl, Rosie Larsen, is found in the trunk of a car at the bottom of a lake it turns out the car is registered to the campaign committee for councilman Darren Richmond, who is running for mayor. Linden delays her departure for what she hopes will be only a few days. Written by garykmcd",
+    "seasons": 4
+  },
+  {
+    "name": "Os Tudors",
+    "id": "tt0758790",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTUwNDM3MDE1NV5BMl5BanBnXkFtZTcwNzY3NDkyMw@@._V1_SY317_CR12,0,214,317_AL_.jpg",
+    "score": 8.199999809265137,
+    "duration": 60,
+    "start": 2007,
+    "end": 2010,
+    "genres": {
+      "genre": [
+        "Drama",
+        "History",
+        "Romance"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0078130",
+        "co0075105",
+        "co0082215"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0001667",
+        "nm0147147",
+        "nm0112390"
+      ]
+    },
+    "description": "This costume drama features England\u0027s splendid Renaissance dynasty under King Henry VIII. Beginning in Season 1 when Henry VIII was growing desperate for an heir and growing distant from his first wife, the series moves quickly to the period when Anne Boleyn became his obsession. During this time Cardinal Wolsey rose to become the power behind his throne, ruling ruthlessly and nearly absolutely while Henry (played by Johnathon Rhys Meyers) for the most part followed the Cardinal\u0027s advice, maneuvering through a series of betrayals and plots against him. When Anne Boleyn plays much harder to get than any woman ever has, Henry begins to search for a way out of his marriage to Catherine of Aragon, so that he can make Anne his wife. Needing a divorce, Henry turns to Wolsey, who promises to help him create waves of backlash from the church, as well as the Spanish Habsburg dynasty and its overseas empire. Against this background gyrate the private lives and political intrigues of several ... Written by KGF Vissers and Ayla Slessor",
+    "seasons": 4
+  },
+  {
+    "name": "Brooklyn Nine-Nine",
+    "id": "tt2467372",
+    "image": "http://ia.media-imdb.com/images/M/MV5BNDkzNjkwMDk2Ml5BMl5BanBnXkFtZTgwMDMyMDczMDE@._V1_SX214_AL_.jpg",
+    "score": 8.300000190734863,
+    "duration": 23,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Crime"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0447669",
+        "co0447670",
+        "co0070636"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1676221",
+        "nm3715867",
+        "nm0187719"
+      ]
+    },
+    "description": "Captain Ray Holt (Andre Braugher) takes over Brooklyn\u0027s 99th precinct, which includes Detective Jake Peralta (Andy Samberg), a talented but carefree detective who\u0027s used to doing whatever he wants. The other employees of the 99th precinct include Detective Amy Santiago (Melissa Fumero), Jake\u0027s over achieving and competitive partner; Detective Rosa Diaz (Stephanie Beatriz), a tough and kept to herself coworker; Detective Charles Boyle (Joe Lo Truglio), Jake\u0027s best friend who also has crush on Rosa; Detective Sergeant Terry Jeffords (Terry Crews), was recently taken off the field after the birth of his twin girls; and Gina Linetti (Chelsea Peretti), the precinct\u0027s sarcastic administrator.",
+    "seasons": 2
+  },
+  {
+    "name": "Banshee",
+    "id": "tt2017109",
+    "image": "http://ia.media-imdb.com/images/M/MV5BNTE4NTAxMTQ2OV5BMl5BanBnXkFtZTgwNjkyMzkxMzE@._V1_SX214_AL_.jpg",
+    "score": 8.300000190734863,
+    "duration": 60,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0247237",
+        "co0057633"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0085952",
+        "nm1102278",
+        "nm0587431"
+      ]
+    },
+    "description": "Lucas Hood (Antony Starr), an ex-con and master thief assumes the identity of a murdered sheriff where he continues his criminal activities. His past seems to haunt him by those he betrayed years earlier. This ex-con imposes his own brand of justice where violence erupts at every turn in the not so quiet Amish town, Banshee, Pennsylvania. Written by megcak555",
+    "seasons": 3
+  },
+  {
+    "name": "Hart of Dixie",
+    "id": "tt1832979",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTk2NDU1MzQ3NF5BMl5BanBnXkFtZTcwNDk2NzQzNg@@._V1_SX214_AL_.jpg",
+    "score": 7.800000190734863,
+    "duration": 60,
+    "start": 2011,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0299663",
+        "co0274041",
+        "co0005035"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1377375",
+        "nm0454809",
+        "nm0930317"
+      ]
+    },
+    "description": "Fast-talking New Yorker and brand new doctor Zoe Hart has it all figured out - after graduating top of her class from medical school, she\u0027ll follow in her father\u0027s footsteps and become a cardio-thoracic surgeon. But when her dreams fall apart, Zoe decides to accept an offer from a stranger, Dr. Harley Wilkes, to work with him at his small practice in Bluebell, Alabama. Zoe arrives in this small Gulf Coast town only to find that Harley has passed away and left his half of the medical practice to her in his will. Written by Anonymous",
+    "seasons": 4
+  },
+  {
+    "name": "Parenthood",
+    "id": "tt1416765",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjAwMjA3Mzg2N15BMl5BanBnXkFtZTgwMDY2Nzg3MjE@._V1_SY317_CR1,0,214,317_AL_.jpg",
+    "score": 8.0,
+    "duration": 60,
+    "start": 2010,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0317281",
+        "co0006166",
+        "co0196576"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0470244",
+        "nm0334179",
+        "nm1009277"
+      ]
+    },
+    "description": "A family tree with Zeek (Craig T. Nelson) and Camille Braverman (Bonnie Bedelia) serving as the patriarch and matriarch. After forty-six years of marriage, they\u0027ve managed to keep their foundation intact by burying their problems underneath the surface for the sake of their now-adult children. Adam (Peter Krause) is the first-born and the ripest apple the tree has to offer. He runs a shoe company, has a supportive wife, two children (boy and girl) and a beautiful home to share with them. He\u0027s a dog short of \"The American Dream\". Sarah (Lauren Graham), is the unstable daughter returning home at thirty-eight years of age with her rebellious daughter and sensitive son to live with Zeek and Camille. Crosby (Dax Shepard), is a happy-go-lucky bachelor living in the now, on a docked boat. He has no idea that his frivolous life is about to change tremendously. Then there is Julia (Erika Christensen). She is the bread-winning shot-calling lawyer, whose husband mans the stay-at-home-dad duties.... Written by Jordan Ray Allen",
+    "seasons": 6
+  },
+  null,
+  {
+    "name": "It\u0027s Always Sunny in Philadelphia",
+    "id": "tt0472954",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjI1NDg3MDU5Nl5BMl5BanBnXkFtZTcwMDg0ODg5OQ@@._V1_SX214_AL_.jpg",
+    "score": 8.899999618530273,
+    "duration": 22,
+    "start": 2005,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0206017",
+        "co0093045",
+        "co0216537"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0206359",
+        "nm1097351",
+        "nm0568390"
+      ]
+    },
+    "description": "Four egocentric friends who run a neighborhood Irish pub in Philadelphia try to find their way through the adult world of work and relationships. Unfortunately, their warped views and precarious judgments often lead them to trouble, creating a myriad of uncomfortable situations that usually only get worse before they get better. Written by DesertShark25",
+    "seasons": 12
+  },
+  {
+    "name": "Spartacus: War of the Damned",
+    "id": "tt1442449",
+    "image": "http://ia.media-imdb.com/images/M/MV5BOTA2NDU2MzM5Nl5BMl5BanBnXkFtZTcwMTk3Njg3OA@@._V1_SX214_AL_.jpg",
+    "score": 8.699999809265137,
+    "duration": 55,
+    "start": 2010,
+    "end": 2013,
+    "genres": {
+      "genre": [
+        "Action",
+        "Adventure",
+        "Biography"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0198894",
+        "co0202789"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1813878",
+        "nm0005128",
+        "nm0071847"
+      ]
+    },
+    "description": "The inspiration behind this series is the Thracian Gladiator Spartacus, who led a slave uprising against the Roman Republic. The Thracians had been persuaded by Claudius Glaber to serve as auxiliaries in the Roman legions in a campaign against the Getae, who had often plundered Thracian lands. However after Glaber reneges on the deal and switches his attentions from the Getae to attack Mithridates in Asia Minor, the Thracians feel betrayed and mutiny. Captured by Glaber, Spartacus is condemned to death as a Gladiator, whilst his wife Sura is condemned to slavery. Spartacus, however, proves to be a formidable gladiator, and defeats the four gladiators tasked with executing him. He becomes a favorite of the crowd, leading Senator Albinius to commute his death sentence to a life of slavery. Spartacus is purchased by Batiatus for gladiator training, who promises to help him find Sura if he proves himself in training. As the series develops, the story follows the betrayals and machinations... Written by WellardRockard",
+    "seasons": 3
+  },
+  {
+    "name": "Girls",
+    "id": "tt1723816",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTA5ODcyMzQ0NjFeQTJeQWpwZ15BbWU4MDc4MjU1NTMx._V1_SX214_AL_.jpg",
+    "score": 7.5,
+    "duration": 30,
+    "start": 2012,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0073081"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm2501633",
+        "nm4129745",
+        "nm3733434"
+      ]
+    },
+    "description": "The assorted humiliations, disasters and rare triumphs of four very different twenty-something girls: Hannah, an aspiring writer; Marnie, an art gallery assistant and cousins Jessa and Shoshanna. Written by Anonymous",
+    "seasons": 4
+  },
+  {
+    "name": "The Sopranos",
+    "id": "tt0141842",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTIxMjc4NTA2Nl5BMl5BanBnXkFtZTYwNTU2MzU5._V1_SX214_AL_.jpg",
+    "score": 9.300000190734863,
+    "duration": 55,
+    "start": 1999,
+    "end": 2007,
+    "genres": {
+      "genre": [
+        "Crime",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0008693",
+        "co0214340",
+        "co0176278"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0001254",
+        "nm0000966",
+        "nm0004908"
+      ]
+    },
+    "description": "An innovative look at the life of fictional Mafia Capo Tony Soprano, this serial is presented largely first person, but additional perspective is conveyed by the intimate conversations Tony has with his psychotherapist. We see Tony at work, at home, and in therapy. Moments of black comedy intersperse this aggressive, adult drama, with adult language, and extreme violence. Written by David Fowler",
+    "seasons": 6
+  },
+  {
+    "name": "Orphan Black",
+    "id": "tt2234222",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTY5NzUyNTYwMV5BMl5BanBnXkFtZTgwNTg1MTM2MTE@._V1_SX214_AL_.jpg",
+    "score": 8.5,
+    "duration": 44,
+    "start": 2013,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Action",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0069372"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1137209",
+        "nm1851313",
+        "nm2849998"
+      ]
+    },
+    "description": "SPOILER: Orphan Black follows outsider, orphan and street-wise chameleon Sarah. After witnessing a woman\u0027s suicide, Sarah assumes the stranger\u0027s identity - who happens to look just like her. Expecting to solve all her problems by cleaning out the dead woman\u0027s savings, Sarah is instead thrust headlong into a kaleidoscopic mystery as she realizes the dizzying truth - she and the dead woman are clones. As Sarah searches for answers, she discovers the chilling fact that there are more people like her out there - genetically identical individuals who were planted in unsuspecting birth parents and nurtured in completely different circumstances. With no idea who created the clones, she\u0027ll need to discover the reason in a hurry as an assassin is killing them one by one. Written by Annonymous",
+    "seasons": 3
+  },
+  {
+    "name": "Hawaii Five-0",
+    "id": "tt1600194",
+    "image": "http://ia.media-imdb.com/images/M/MV5BOTk5NzI3NTIwOF5BMl5BanBnXkFtZTgwOTA1Mzk2MDE@._V1_SY317_CR29,0,214,317_AL_.jpg",
+    "score": 7.5,
+    "duration": 42,
+    "start": 2010,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0306387",
+        "co0314568",
+        "co0048735"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1533927",
+        "nm0004790",
+        "nm0196654"
+      ]
+    },
+    "description": "Steve McGarrett comes to Hawaii to avenge his father\u0027s death but when the governor offers his own task force, he accepts. He picks up team members on the way, Danny Williams, the head detective on his father\u0027s case, Chin Ho Kelly, a former HPD Detective who was fired for accused corruption and McGarrett\u0027s father\u0027s old patrol partner, Kono Kalakaua, a Cadet at the Police Academy who\u0027s 1 week from graduating, and Captain Lou Grover, a former Chicago PD Head of SWAT.",
+    "seasons": 5
+  },
+  {
+    "name": "Scorpion",
+    "id": "tt3514324",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTExMTQ4MzM1MDheQTJeQWpwZ15BbWU4MDkzMjU4MTMx._V1_SY317_CR4,0,214,317_AL_.jpg",
+    "score": 7.199999809265137,
+    "duration": 43,
+    "start": 2014,
+    "end": 0,
+    "genres": {
+      "genre": [
+        "Action",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0315120",
+        "co0500483",
+        "co0374900"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm1175468",
+        "nm1897713",
+        "nm0858776"
+      ]
+    },
+    "description": "An eccentric genius forms an international network of super-geniuses to act as the last line of defense against the complicated threats of the modern world.",
+    "seasons": 1
+  },
+  {
+    "name": "Freaks and Geeks",
+    "id": "tt0193676",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMjA0MTkwNDYwM15BMl5BanBnXkFtZTcwOTM4MDUyMQ@@._V1_SY317_CR9,0,214,317_AL_.jpg",
+    "score": 9.0,
+    "duration": 44,
+    "start": 1999,
+    "end": 2000,
+    "genres": {
+      "genre": [
+        "Comedy",
+        "Drama"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0073081",
+        "co0003158"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0004802",
+        "nm0197855",
+        "nm0290556"
+      ]
+    },
+    "description": "It\u0027s the 1980s and at McKinley High, there\u0027s two different groups of teenagers, the Freaks with cool and charismatic Daniel Desario and tomboy Lindsay Weir and the Geeks with Lindsay\u0027s shy younger brother Sam, gentle Bill Haverchuck, and self-proclaimed ladies\u0027 man Neal Schweiber. The show chronicles the normal teen/adolescence problems any teenager goes through including acceptance, drugs, drinking, and bullying. Written by Corey Semple (Hairsprayer07)",
+    "seasons": 1
   }
 ]

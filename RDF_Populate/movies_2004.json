@@ -5,7 +5,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTM1NTU0NTE4MV5BMl5BanBnXkFtZTcwMTQ0MjEzMw@@._V1_SY317_CR0,0,214,317_AL_.jpg",
     "score": 6.5,
     "duration": "100",
-    "launchDate": "2004-11-10T0:00:00",
+    "launchDate": "2004-11-10",
     "genres": {
       "genre": [
         "Animation",
@@ -40,7 +40,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTUxNDA4OTU4Nl5BMl5BanBnXkFtZTcwMzQxODYyMQ@@._V1_SX214_AL_.jpg",
     "score": 5.0,
     "duration": "99",
-    "launchDate": "2004-11-24T0:00:00",
+    "launchDate": "2004-11-24",
     "genres": {
       "genre": [
         "Comedy",
@@ -74,7 +74,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMjE1MDQ4MjI1OV5BMl5BanBnXkFtZTcwNzcwODAzMw@@._V1_SY317_CR5,0,214,317_AL_.jpg",
     "score": 7.0,
     "duration": "97",
-    "launchDate": "2004-04-30T0:00:00",
+    "launchDate": "2004-04-30",
     "genres": {
       "genre": [
         "Comedy"
@@ -107,7 +107,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTk5MzU1MDMwMF5BMl5BanBnXkFtZTcwNjczODMzMw@@._V1_SY317_CR0,0,214,317_AL_.jpg",
     "score": 7.1,
     "duration": "163",
-    "launchDate": "2004-05-14T0:00:00",
+    "launchDate": "2004-05-14",
     "genres": {
       "genre": [
         "Adventure"
@@ -140,7 +140,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTM2Nzc4NjYxMV5BMl5BanBnXkFtZTcwNTM1MTcyMQ@@._V1_SY317_CR6,0,214,317_AL_.jpg",
     "score": 7.1,
     "duration": "98",
-    "launchDate": "2004-10-15T0:00:00",
+    "launchDate": "2004-10-15",
     "genres": {
       "genre": [
         "Animation",
@@ -175,7 +175,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTk3OTM5Njg5M15BMl5BanBnXkFtZTYwMzA0ODI3._V1_SX214_AL_.jpg",
     "score": 8.0,
     "duration": "123",
-    "launchDate": "2004-06-25T0:00:00",
+    "launchDate": "2004-06-25",
     "genres": {
       "genre": [
         "Drama",
@@ -204,47 +204,12 @@
     "description": "In a nursing home, resident Duke reads a romance story for an old woman who has senile dementia with memory loss. In the late 1930s, wealthy seventeen year-old Allie Hamilton is spending summer vacation in Seabrook. Local worker Noah Calhoun meets Allie at a carnival and they soon fall in love with each other. One day, Noah brings Allie to an ancient house that he dreams of buying and restoring and they make love. But Allie\u0027s parents do not approve of their romance since Noah belongs to another social class, and they travel to New York with her. Noah writes 365 letters to Allie, but her mother Anne Hamilton does not deliver them to her daughter. Three years later, the United States joins the World War II and Noah and his best friend Fin enlist in the army, and Allie works as an army nurse. She meets injured soldier Lon Hammond in the hospital. After the war, they meet each other again and Lon, who is wealthy and handsome, proposes. Meanwhile Noah buys and restores the old house and ... Written by Claudio Carvalho, Rio de Janeiro, Brazil"
   },
   {
-    "name": "Harry Potter and the Prisoner of Azkaban",
-    "id": "tt0304141",
-    "image": "http://ia.media-imdb.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SY317_CR0,0,214,317_AL_.jpg",
-    "score": 7.8,
-    "duration": "142",
-    "launchDate": "2004-06-04T0:00:00",
-    "genres": {
-      "genre": [
-        "Adventure",
-        "Family",
-        "Fantasy"
-      ]
-    },
-    "directors": {
-      "director": [
-        "nm0190859"
-      ]
-    },
-    "studios": {
-      "studio": [
-        "co0026840",
-        "co0046151",
-        "co0159772"
-      ]
-    },
-    "stars": {
-      "star": [
-        "nm0705356",
-        "nm0914612",
-        "nm0342488"
-      ]
-    },
-    "description": "Harry Potter is having a tough time with his relatives (yet again). He runs away after using magic to inflate Uncle Vernon\u0027s sister Marge who was being offensive towards Harry\u0027s parents. Initially scared for using magic outside the school, he is pleasantly surprised that he won\u0027t be penalized after all. However, he soon learns that a dangerous criminal and Voldemort\u0027s trusted aide Sirius Black has escaped from the Azkaban prison and wants to kill Harry to avenge the Dark Lord. To worsen the conditions for Harry, vile creatures called Dementors are appointed to guard the school gates and inexplicably happen to have the most horrible effect on him. Little does Harry know that by the end of this year, many holes in his past (whatever he knows of it) will be filled up and he will have a clearer vision of what the future has in store... Written by Soumitra"
-  },
-  {
     "name": "Eternal Sunshine of the Spotless Mind",
     "id": "tt0338013",
     "image": "http://ia.media-imdb.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_SX214_AL_.jpg",
     "score": 8.3,
     "duration": "108",
-    "launchDate": "2004-03-19T0:00:00",
+    "launchDate": "2004-03-19",
     "genres": {
       "genre": [
         "Drama",
@@ -279,7 +244,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_SY317_CR0,0,214,317_AL_.jpg",
     "score": 8.0,
     "duration": "115",
-    "launchDate": "2004-11-05T0:00:00",
+    "launchDate": "2004-11-05",
     "genres": {
       "genre": [
         "Animation",
@@ -313,7 +278,7 @@
     "image": "http://ia.media-imdb.com/images/M/MV5BNjYwNTA3MDIyMl5BMl5BanBnXkFtZTYwMjIxNjA3._V1_SX214_AL_.jpg",
     "score": 6.9,
     "duration": "96",
-    "launchDate": "2004-08-27T0:00:00",
+    "launchDate": "2004-08-27",
     "genres": {
       "genre": [
         "Comedy"
@@ -339,5 +304,107 @@
       ]
     },
     "description": "Preston, Idaho\u0027s most curious resident, Napoleon Dynamite, lives with his grandma and his 32-year-old brother (who cruises chat rooms for ladies) and works to help his best friend, Pedro, snatch the Student Body President title from mean teen Summer Wheatley. Written by Anonymous"
+  },
+  {
+    "name": "Kill Bill: Vol. 1",
+    "id": "tt0266697",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTU1NDg1Mzg4M15BMl5BanBnXkFtZTYwMDExOTc3._V1_SX214_AL_.jpg",
+    "score": 8.1,
+    "duration": "111",
+    "launchDate": "2003-10-10",
+    "genres": {
+      "genre": [
+        "Action",
+        "Crime"
+      ]
+    },
+    "directors": {
+      "director": [
+        "nm0000233"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0022594",
+        "co0019267",
+        "co0086625"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000235",
+        "nm0001016",
+        "nm0000435"
+      ]
+    },
+    "description": "The lead character, called \u0027The Bride,\u0027 was a member of the Deadly Viper Assassination Squad, led by her lover \u0027Bill.\u0027 Upon realizing she was pregnant with Bill\u0027s child, \u0027The Bride\u0027 decided to escape her life as a killer. She fled to Texas, met a young man, who, on the day of their wedding rehearsal was gunned down by an angry and jealous Bill (with the assistance of the Deadly Viper Assassination Squad). Four years later, \u0027The Bride\u0027 wakes from a coma, and discovers her baby is gone. She, then, decides to seek revenge upon the five people who destroyed her life and killed her baby. The saga of Kill Bill Volume I begins. Written by JD"
+  },
+  {
+    "name": "Kill Bill: Vol. 1",
+    "id": "tt0266697",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTU1NDg1Mzg4M15BMl5BanBnXkFtZTYwMDExOTc3._V1_SX214_AL_.jpg",
+    "score": 8.1,
+    "duration": "111",
+    "launchDate": "2003-10-10",
+    "genres": {
+      "genre": [
+        "Action",
+        "Crime"
+      ]
+    },
+    "directors": {
+      "director": [
+        "nm0000233"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0022594",
+        "co0019267",
+        "co0086625"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000235",
+        "nm0001016",
+        "nm0000435"
+      ]
+    },
+    "description": "The lead character, called \u0027The Bride,\u0027 was a member of the Deadly Viper Assassination Squad, led by her lover \u0027Bill.\u0027 Upon realizing she was pregnant with Bill\u0027s child, \u0027The Bride\u0027 decided to escape her life as a killer. She fled to Texas, met a young man, who, on the day of their wedding rehearsal was gunned down by an angry and jealous Bill (with the assistance of the Deadly Viper Assassination Squad). Four years later, \u0027The Bride\u0027 wakes from a coma, and discovers her baby is gone. She, then, decides to seek revenge upon the five people who destroyed her life and killed her baby. The saga of Kill Bill Volume I begins. Written by JD"
+  },
+  {
+    "name": "Kill Bill: Vol. 1",
+    "id": "tt0266697",
+    "image": "http://ia.media-imdb.com/images/M/MV5BMTU1NDg1Mzg4M15BMl5BanBnXkFtZTYwMDExOTc3._V1_SX214_AL_.jpg",
+    "score": 8.1,
+    "duration": "111",
+    "launchDate": "2003-10-10",
+    "genres": {
+      "genre": [
+        "Action",
+        "Crime"
+      ]
+    },
+    "directors": {
+      "director": [
+        "nm0000233"
+      ]
+    },
+    "studios": {
+      "studio": [
+        "co0022594",
+        "co0019267",
+        "co0086625"
+      ]
+    },
+    "stars": {
+      "star": [
+        "nm0000235",
+        "nm0001016",
+        "nm0000435"
+      ]
+    },
+    "description": "The lead character, called \u0027The Bride,\u0027 was a member of the Deadly Viper Assassination Squad, led by her lover \u0027Bill.\u0027 Upon realizing she was pregnant with Bill\u0027s child, \u0027The Bride\u0027 decided to escape her life as a killer. She fled to Texas, met a young man, who, on the day of their wedding rehearsal was gunned down by an angry and jealous Bill (with the assistance of the Deadly Viper Assassination Squad). Four years later, \u0027The Bride\u0027 wakes from a coma, and discovers her baby is gone. She, then, decides to seek revenge upon the five people who destroyed her life and killed her baby. The saga of Kill Bill Volume I begins. Written by JD"
   }
 ]
