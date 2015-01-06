@@ -99,7 +99,7 @@ public class DataFixer implements Runnable {
 					if (cal.get(Calendar.DAY_OF_MONTH) < 10) {
 						xpto += "0";
 					}
-					xpto += cal.get(Calendar.DAY_OF_MONTH) + "T0:00:00";
+					xpto += cal.get(Calendar.DAY_OF_MONTH);
 					
 					m.setLaunchDate(xpto);
 					

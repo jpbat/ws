@@ -24,28 +24,28 @@ public class IMDBCrawler {
 		ArrayList<Studio> studios = new ArrayList<Studio>();
 		ArrayList<Serie> series = new ArrayList<Serie>();
 		
+		
 		//for (int year = 1898 + slaveId; year < 2024; year = year + slaves) {
 		for (int year = 2004 + slaveId; year < 2005; year = year + slaves) {
-			movies = this.c.get(year);
-			System.out.println(movies.size() + " movies fetched from " + year + "!");
-			moviesToJSON(movies, year);
-			new DataFixer(year);
-
-			persons = this.c.parsePersons();
-			System.out.println(persons.size() + " persons fetched from " + year + "!");
-			personsToJSON(persons, year);
+//			movies = this.c.get(year);
+//			System.out.println(movies.size() + " movies fetched from " + year + "!");
+//			IMDBCrawler.moviesToJSON(movies, year);
+//
+//			persons = this.c.parsePersons();
+//			System.out.println(persons.size() + " persons fetched from " + year + "!");
+//			
+//			studios = this.c.parseStudios();
+//			System.out.println(studios.size() + " studios fetched from " + year + "!");
 			
-			studios = this.c.parseStudios();
-			System.out.println(studios.size() + " studios fetched from " + year + "!");
-			studiosToJSON(studios, year);
+			series = this.c.parseSeries();
+			System.out.println(series.size() + " series fetched!");
+			IMDBCrawler.seriesToJSON(series, year);
 			
-			series = this.c.parseKnownFor(persons);
-			System.out.println(series.size() + " series fetched from " + year + "!");
-			seriesToJSON(series, year);
-		}	
+			this.c.finalParse(movies, persons, studios, year);
+		}
 	}
 	
-	private static void moviesToJSON(ArrayList<Movie> movies, int year) {
+	public static void moviesToJSON(ArrayList<Movie> movies, int year) {
 		
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		
@@ -61,7 +61,7 @@ public class IMDBCrawler {
 		}
 	}
 
-	private static void personsToJSON(ArrayList<Person> persons, int year) {
+	public static void personsToJSON(ArrayList<Person> persons, int year) {
 		
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		
@@ -77,7 +77,7 @@ public class IMDBCrawler {
 		}
 	}
 	
-	private static void studiosToJSON(ArrayList<Studio> studios, int year) {
+	public static void studiosToJSON(ArrayList<Studio> studios, int year) {
 		
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		
@@ -93,7 +93,7 @@ public class IMDBCrawler {
 		}
 	}
 	
-	private static void seriesToJSON(ArrayList<Serie> series, int year) {
+	public static void seriesToJSON(ArrayList<Serie> series, int year) {
 		
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		

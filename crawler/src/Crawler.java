@@ -18,6 +18,7 @@ public class Crawler {
 	private Logger l;
 	public ArrayList<String> directorsUrls, actorsUrls, studiosUrls;
 	public HashMap<String, Integer> map;
+	public ArrayList<String> finish;
 	
 	public Crawler (Logger l) {
 		this.l = l;
@@ -25,6 +26,7 @@ public class Crawler {
 		this.actorsUrls = new ArrayList<String>();
 		this.studiosUrls = new ArrayList<String>();
 		this.map = new HashMap<String, Integer>();
+		this.finish = new ArrayList<String>();
 	}
 
 	private Document getDocument(String url) {
@@ -267,10 +269,10 @@ public class Crawler {
 				if (cal.get(Calendar.DAY_OF_MONTH) < 10) {
 					birthDate += "0";
 				}
-				birthDate += cal.get(Calendar.DAY_OF_MONTH) + "T0:00:00";
+				birthDate += cal.get(Calendar.DAY_OF_MONTH);
 				
 			} catch (Exception e) {
-				birthDate = ("00-00-00T0:00:00");
+				birthDate = ("00-00-00");
 			}
 			
 			picture = doc.select("#name-poster").attr("src");
@@ -425,6 +427,10 @@ public class Crawler {
 		
 		Document doc = getDocument(this.base + "/title/" + id);
 		
+		if (doc == null) {
+			return null;
+		}
+		
 		s.name = doc.select("#overview-top h1 .itemprop").text();
 		s.image = doc.select("#img_primary img").attr("src");
 		s.description = doc.select("#titleStoryLine .canwrap p").text();
@@ -435,8 +441,12 @@ public class Crawler {
 		} catch (NumberFormatException e) {
 			s.end = 0;
 		}
-		s.duration = Integer.parseInt(doc.select("#overview-top .infobar time").text().split(" ")[0]);
-
+		try {
+			s.duration = Integer.parseInt(doc.select("#overview-top .infobar time").text().split(" ")[0]);	
+		} catch (NumberFormatException e) {
+			s.duration = 0;
+		}
+		
 		String score = doc.select("#overview-top .star-box-giga-star").text();
 		if (score.length() == 0) {
 			s.score = -1;
@@ -458,6 +468,11 @@ public class Crawler {
 				if (star.indexOf("See full") != -1)
 					break;
 				stars.add(star);
+				
+				if (map.containsKey(star) == false) {
+					this.map.put(star, 0);
+					this.finish.add(star);
+				}
 			}
 		} catch (Exception e) {
 		}
@@ -467,16 +482,26 @@ public class Crawler {
 		for (Element e : doc.select(".txt-block [itemprop=creator] a")) {
 			String studio = e.attr("href").split("/")[2].split("\\?")[0];
 			studios.add(studio);
+
+			if (map.containsKey(studio) == false) {
+				this.map.put(studio, 0);
+				this.finish.add(studio);
+			}
 		}
 		
 		s.studios.studio.addAll(studios);
 		
 		int seasons;
+		aux = null;
 		for (int i = 0; ; i++) {
-			aux = doc.select(".seasons-and-year-nav div a").get(i).text();
 			try {
+				aux = doc.select(".seasons-and-year-nav div a").get(i).text();
 				seasons = Integer.parseInt(aux);
-			} catch (NumberFormatException e) {
+			} catch (Exception e) {
+				if (aux == null) {
+					seasons = 0;
+					break;
+				}
 				continue;
 			}
 			break;
@@ -488,42 +513,193 @@ public class Crawler {
 		
 	}
 	
-	public ArrayList<Serie> parseKnownFor(ArrayList<Person> persons) {
+	public ArrayList<Serie> parseSeries() {
 
+		int limit = 100;
 		String id;
 		Document doc;
+		Elements elements;
+		String url, filter = ".results tr .title>a";
 		ArrayList<Serie> retval = new ArrayList<Serie>();
+
+		System.out.println("Fetching series");
+		url = base + "/search/title?start=1&title_type=tv_series";
+
+		doc = getDocument(url);
 		
-		System.out.println("Starting to fetch series from: " + persons.size() + " actors to find series");
+		if (doc == null) {
+			return retval;
+		}
 		
-		for (int j = 0; j < persons.size(); j++) {
+		elements = doc.select(filter);
+		
+		if (elements.size() == 0) {
+			return retval;
+		}
+		
+		for (int j = 0; j < elements.size(); j++) {
 			
-			System.out.print("Working: " + 100 * j / persons.size() + "% (" +  (j+1) + "/" + 
-					+ persons.size() + ")\r");
+			Element e = elements.get(j);
 			
-			for (int i = 0; i < persons.get(j).getKnownFor().size(); i++) {
-				id = persons.get(j).getKnownFor().get(i);
+			System.out.print("Working: " + 100 * j / limit + "% (" +  (1 + j) + "/" + 
+					+ limit + ")\r");
+			
+			id = e.attr("href").split("/")[2];
+			
+			retval.add(fetchSerie(id));
+		}
+		
+		for (int page = 51; page < limit ;page += 50) {
+
+			url = this.base + "/search/title?start=" + page + "&title_type=tv_series";
+
+//			System.out.println(url);
+			
+			doc = getDocument(url);
+
+			if (doc == null) {
+				continue;
+			}
+
+			elements = doc.select(filter);
+			
+			for (int j = 0; j < elements.size(); j++) {
 				
-				doc = getDocument(base + "/title/" + id);
-				if (doc == null) {
-					i--;
-					continue;
-				}
+				Element e = elements.get(j);
 				
-				String infobar = doc.select(".infobar").text();
+				System.out.print("Working: " + 100 * (page + j) / limit + "% (" +  (page + j) + "/" + 
+						+ limit + ")\r");
 				
-				boolean isSeries = infobar.contains("TV Series");
+//				System.out.println(e.attr("href"));
 				
-				if (isSeries == false && this.map.containsKey(id) == false) {
-					continue;
-				}
+				id = e.attr("href").split("/")[2];
 				
-				this.map.put(id, 0);
 				retval.add(fetchSerie(id));
 			}
 		}
 		
 		return retval;
+	}
+
+	public void finalParse(ArrayList<Movie> movies, ArrayList<Person> persons,
+			ArrayList<Studio> studios, int year) {
+		
+		String id;
+		Person p = null;
+		Studio s = null;
+		
+		System.out.println("Doing the final parse...");
+		
+		for (int i = 0; i < this.finish.size(); i++) {
+			
+			p = null;
+			s = null;
+			
+			System.out.print("Working: " + 100 * i / this.finish.size() + "% (" + i + "/" + 
+					+ this.finish.size() + ")\r");
+			
+			id = this.finish.get(i);
+			
+			if (id.startsWith("nm")) {
+				while (p == null) {
+					p = parsePerson(id);
+				}
+				persons.add(p);
+			} else if (id.startsWith("co")) {
+				while (s == null) {
+					s = parseStudio(id);
+				}
+				studios.add(s);
+			} else {
+				System.out.println("[ERROR]" + id);
+			}
+		}
+
+		IMDBCrawler.personsToJSON(persons, year);
+		IMDBCrawler.studiosToJSON(studios, year);
+		
+//		new DataFixer(year);
+	}
+	
+	private Studio parseStudio(String id) {
+		
+		Document doc;
+
+		doc = getDocument(base + "/company/" + id);
+		if (doc == null) {
+			return null;
+		}
+		
+		String name = doc.select(".title").text();
+		return new Studio(id, name);
+	}
+
+	@SuppressWarnings("unchecked")
+	private Person parsePerson(String id) {
+		
+		Document doc;
+		Date d;
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		String name, birthDate, picture, birthPlace, miniBio;
+		ArrayList<String> jobCategories = new ArrayList<String>();
+		ArrayList<String> knownFor = new ArrayList<String>();
+		
+		doc = getDocument(base + "/name/" + id);
+		if (doc == null) {
+			return null;
+		}
+		
+		name = doc.select("#overview-top .header .itemprop").text();
+		birthDate = doc.select("time").attr("datetime");
+		
+		try {
+			d = df.parse(birthDate);
+			Calendar cal = Calendar.getInstance();
+			cal.setTime(d);
+			
+			birthDate = cal.get(Calendar.YEAR) + "-";
+			
+			if (cal.get(Calendar.MONTH) + 1 < 10) {
+				birthDate += "0";
+			}
+			birthDate += cal.get(Calendar.MONTH) + 1 + "-";
+			
+			if (cal.get(Calendar.DAY_OF_MONTH) < 10) {
+				birthDate += "0";
+			}
+			birthDate += cal.get(Calendar.DAY_OF_MONTH);
+			
+		} catch (Exception e) {
+			birthDate = ("00-00-00");
+		}
+		
+		picture = doc.select("#name-poster").attr("src");
+		
+		for (Element e: doc.select("#name-job-categories a")) {
+			jobCategories.add(e.text());
+		}
+		
+		Elements els = doc.select("#knownfor a");
+		for (int j = 0; j < els.size(); j+=2) {
+			knownFor.add(els.get(j).attr("href").split("/")[2].split("\\?")[0]);
+		}
+		
+		//WE NEED TO GET DEEPER!!!
+		doc = getDocument(base + "/name/" + id + "/bio");
+
+		try {
+			miniBio = doc.select("#overviewTable tr a").last().text();
+		} catch (Exception e) {
+			miniBio = "(not available)";
+		}
+	
+		try {
+			birthPlace = doc.select("#bio_content .soda.odd p").first().text();
+		} catch (Exception e) {
+			birthPlace = "(not available)";
+		}
+		
+		return new Person(id, name, birthDate, picture, false, true, (ArrayList<String>) jobCategories.clone(), birthPlace, miniBio, (ArrayList<String>) knownFor.clone());
 	}
 }
 
