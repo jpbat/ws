@@ -27,15 +27,15 @@ public class IMDBCrawler {
 		
 		//for (int year = 1898 + slaveId; year < 2024; year = year + slaves) {
 		for (int year = 2004 + slaveId; year < 2005; year = year + slaves) {
-//			movies = this.c.get(year);
-//			System.out.println(movies.size() + " movies fetched from " + year + "!");
-//			IMDBCrawler.moviesToJSON(movies, year);
-//
-//			persons = this.c.parsePersons();
-//			System.out.println(persons.size() + " persons fetched from " + year + "!");
-//			
-//			studios = this.c.parseStudios();
-//			System.out.println(studios.size() + " studios fetched from " + year + "!");
+			movies = this.c.get(year);
+			System.out.println(movies.size() + " movies fetched from " + year + "!");
+			IMDBCrawler.moviesToJSON(movies, year);
+
+			persons = this.c.parsePersons();
+			System.out.println(persons.size() + " persons fetched from " + year + "!");
+			
+			studios = this.c.parseStudios();
+			System.out.println(studios.size() + " studios fetched from " + year + "!");
 			
 			series = this.c.parseSeries();
 			System.out.println(series.size() + " series fetched!");
