@@ -11,10 +11,8 @@ import json
 from pprint import pprint
 
 g = Graph()
-if(not isfile("output.ttl")):
-	shutil.copy2('onto.ttl','output.ttl')
 
-g.parse("output.ttl", format="n3")
+g.parse('onto.ttl', format="n3")
 
 print("graph has %s statements.\n" % len(g))
 
@@ -80,7 +78,7 @@ while thisYear <= lastYear:
 			if(attr=='birthPlace'):
 				g.add((PersonNode,ns.hasPersonBirthPlace,Literal(person[attr])))
 			if(attr=='birthDate'):
-				g.add((PersonNode,ns.hasPersonBirth,Literal(person[attr], datatype=XSD.date)))
+				g.add((PersonNode,ns.hasPersonBirth,Literal(person[attr], datatype=XSD.dateTime)))
 			#if(attr=='actor'):
 			#	pprint(person[attr])
 			#if(attr=='director'):
@@ -140,7 +138,7 @@ while thisYear <= lastYear:
 						continue;
 					g.add((MovieNode,ns.hasStudio,search))
 			if(attr=='launchDate'):
-				g.add((MovieNode,ns.hasMediaLaunchDate,Literal(movie[attr], datatype=XSD.date)))
+				g.add((MovieNode,ns.hasMediaLaunchDate,Literal(movie[attr], datatype=XSD.dateTime)))
 			if(attr=='genres'):
 				for genre in movie[attr]['genre']:
 					g.add((MovieNode,ns.hasGenre,ns[genre]))

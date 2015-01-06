@@ -104,7 +104,7 @@
         <DataProperty IRI="#hasSerieEnd"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasSerieSeasons"/>
+        <DataProperty IRI="#hasSerieSeason"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasSerieStart"/>
@@ -247,10 +247,10 @@
             <NamedIndividual IRI="#Talk-Show"/>
             <NamedIndividual IRI="#Drama"/>
             <NamedIndividual IRI="#Adventure"/>
-            <NamedIndividual IRI="#News"/>
             <NamedIndividual IRI="#Adult"/>
-            <NamedIndividual IRI="#Action"/>
+            <NamedIndividual IRI="#News"/>
             <NamedIndividual IRI="#Horror"/>
+            <NamedIndividual IRI="#Action"/>
             <NamedIndividual IRI="#Sport"/>
             <NamedIndividual IRI="#Crime"/>
             <NamedIndividual IRI="#History"/>
@@ -414,7 +414,7 @@
     <SubClassOf>
         <Class IRI="#Serie"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasSerieSeasons"/>
+            <DataProperty IRI="#hasSerieSeason"/>
             <Datatype abbreviatedIRI="xsd:int"/>
         </DataExactCardinality>
     </SubClassOf>
@@ -621,7 +621,7 @@
         <Class IRI="#Serie"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasSerieSeasons"/>
+        <DataProperty IRI="#hasSerieSeason"/>
         <Class IRI="#Serie"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -693,7 +693,7 @@
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasSerieSeasons"/>
+        <DataProperty IRI="#hasSerieSeason"/>
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
     <DataPropertyRange>
