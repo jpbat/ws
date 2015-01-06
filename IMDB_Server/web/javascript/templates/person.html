@@ -2,16 +2,17 @@
 <div class="row">
 	<div class="col-md-3">
 		<img class="poster" src="<%= model.Picture %>" alt="picture">
-		<p class="field">Categories</p>
-		<p class="information">Actor<p>
-		<p class="information">Producer<p>
-		<p class="information">Director<p>
+		<p class="field">Profession</p>
+		<ul>
+		<% _.each(model.Profession, function(profession) { %>
+			<li class="information"><%= profession.name %></li>
+		<% }); %>
+		</ul>
 	</div>
 	<div class="col-md-9">
 		<p class="name"><%= model.Name %></p>
-		<p class="information"><span class="field">Born:</span> <%= model.Birth %></p>
-		<p class="information"><span class="field">Profession:</span> ??????? </p>
-		<p class="information"><span class="field">Birthplace:</span><%= model.BirthPlace %></p>
-		<p class="information"><span class="field">Minibio:</span> <%= model.MiniBio %></p>
+		<p class="information"><span class="field">Born: </span> <%= model.Birth %></p>
+		<p class="information"><span class="field">Birthplace: </span><%= model.BirthPlace %></p>
+		<p class="information"><span class="field">Minibio: </span> <%= model.MiniBio %></p>
 	</div>
 </div>
