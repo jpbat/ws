@@ -12,7 +12,7 @@ public class ProfessionManager extends Connection {
     private String owl = "<http://www.w3.org/2002/07/owl#>";
     private String rdf = "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>";
 
-    String queryGetProfessionByMovieId =
+    String queryGetProfessionByPersonId =
             "PREFIX nsowl:"+GlobalNamespace+" "+
                     "PREFIX ns:"+Namespace+" "+
                     "SELECT ?uri WHERE { ns:%s nsowl:hasProfession ?uri .}";
@@ -42,7 +42,7 @@ public class ProfessionManager extends Connection {
     }
 
     public JSONArray GetByPerson(String id){
-        return AddInfo(this.PerformQuery(String.format(queryGetProfessionByMovieId, id)));
+        return AddInfo(this.PerformQuery(String.format(queryGetProfessionByPersonId, id)));
     }
 
 }
