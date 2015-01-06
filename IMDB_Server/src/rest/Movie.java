@@ -74,4 +74,10 @@ public class Movie {
     public String GetRecent(){
         return Service.GetMostRecent().toString();
     }
+
+    @GET
+    @Path("GetKnownById/{id}")
+    public String GetKnownById(@PathParam("id") String id){
+        return Service.GetKnownById(id).toString();
+    }
 }

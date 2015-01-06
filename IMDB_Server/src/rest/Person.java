@@ -16,6 +16,7 @@ public class Person {
 
     PersonManager Service = new PersonManager();
     ProfessionManager ProfessionService = new ProfessionManager();
+    MoviesManager MovieService = new MoviesManager();
 
     private JSONArray AddInfo(JSONArray json){
         for(int i=0; i<json.length(); i++){
@@ -23,6 +24,7 @@ public class Person {
             String personId = current.get("id").toString();
 
             current.put("Profession",ProfessionService.GetByPerson(personId));
+            current.put("KnownFor", MovieService.GetKnownById(personId));
         }
 
         return json;
@@ -68,5 +70,4 @@ public class Person {
             return AddInfo(Service.GetAll(offset,limit)).toString();
         }
     }
-
 }

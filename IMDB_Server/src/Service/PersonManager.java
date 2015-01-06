@@ -20,7 +20,7 @@ public class PersonManager extends Connection{
     String queryGetById =
             "PREFIX ns: "+Namespace+" "+
             "PREFIX nsowl: "+GlobalNamespace+" "+
-            "SELECT DISTINCT ?id ?Name ?Picture ?Birth ?BirthPlace ?MiniBio " +
+            "SELECT DISTINCT ?id ?Name ?Picture ?Birth ?BirthPlace ?MiniBio" +
             "WHERE { ns:%s a ?type ;  nsowl:hasPersonId ?id ; nsowl:hasPersonName ?Name ;nsowl:hasPersonPicture ?Picture ;nsowl:hasPersonBirth ?Birth ;nsowl:hasPersonBirthPlace ?BirthPlace ;nsowl:hasPersonMiniBio ?MiniBio .}";
     String queryGetDirectorByMovieId =
             "PREFIX nsowl:"+GlobalNamespace+" "+
