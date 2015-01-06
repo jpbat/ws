@@ -26,6 +26,7 @@ thisYear = firstYear
 # STORE PPL IN TREE
 #########################
 LocalNamespace=Namespace('http://www.movierecomendation.pt/Person/')
+thisYear = firstYear
 while thisYear <= lastYear:
 
 	filename = 'persons_' + str(thisYear) + '.json'
@@ -57,10 +58,11 @@ while thisYear <= lastYear:
 			if(attr=='jobCategories'):
 				for prof in person[attr]:
 					g.add((PersonNode,ns.hasProfession,ns[prof.replace(" ","_")]))
-					pprint(ns[prof.replace(" ","_")])
 			if(attr=='birthPlace'):
 				g.add((PersonNode,ns.hasPersonBirthPlace,Literal(person[attr])))
 			if(attr=='birthDate'):
+				if(person[attr] =="00-00-00"):
+					continue
 				g.add((PersonNode,ns.hasPersonBirth,Literal(person[attr], datatype=XSD.dateTime)))
 			#if(attr=='actor'):
 			#	pprint(person[attr])
@@ -71,6 +73,7 @@ while thisYear <= lastYear:
 # STORE STUDIOS IN TREE
 #########################
 LocalNamespace=Namespace('http://www.movierecomendation.pt/Studio/')
+thisYear = firstYear
 while thisYear <= lastYear:
 
 	filename = 'studios_' + str(thisYear) + '.json'
@@ -97,6 +100,8 @@ while thisYear <= lastYear:
 # STORE MOVIES IN TREE
 #########################
 LocalNamespace=Namespace('http://www.movierecomendation.pt/Movie/')
+thisYear = firstYear
+pprint("Add Movies")
 while thisYear <= lastYear:
 
 	filename = 'movies_' + str(thisYear) + '.json'
@@ -133,6 +138,8 @@ while thisYear <= lastYear:
 						continue;
 					g.add((MovieNode,ns.hasStudio,search))
 			if(attr=='launchDate'):
+				if(movie[attr] =="00-00-00"):
+					continue
 				g.add((MovieNode,ns.hasMediaLaunchDate,Literal(movie[attr], datatype=XSD.dateTime)))
 			if(attr=='genres'):
 				for genre in movie[attr]['genre']:
@@ -159,7 +166,9 @@ while thisYear <= lastYear:
 #
 # STORE SERIES IN TREE
 #########################
+pprint("Add Series")
 LocalNamespace=Namespace('http://www.movierecomendation.pt/Serie/')
+thisYear = firstYear
 while thisYear <= lastYear:
 
 	filename = 'series_' + str(thisYear) + '.json'
@@ -169,6 +178,8 @@ while thisYear <= lastYear:
 	FileData.close()
 
 	for serie in SeriesJSON:
+		if(serie ==None):
+			continue
 		#see if movie is already added
 		search = g.value(predicate=ns.hasMediaId,object=Literal(serie['id']))
 		if(search!=None):
