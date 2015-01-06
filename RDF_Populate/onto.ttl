@@ -234,13 +234,13 @@ movierecomendation:hasSerieEnd rdf:type :DatatypeProperty ;
 
 
 
-###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasSerieSeasons
+###  http://www.movierecomendation.pt/ontology/movierecomendation.owl#hasSerieSeason
 
-movierecomendation:hasSerieSeasons rdf:type :DatatypeProperty ;
-                                   
-                                   rdfs:domain movierecomendation:Serie ;
-                                   
-                                   rdfs:range xsd:int .
+movierecomendation:hasSerieSeason rdf:type :DatatypeProperty ;
+                                  
+                                  rdfs:domain movierecomendation:Serie ;
+                                  
+                                  rdfs:range xsd:int .
 
 
 
@@ -303,10 +303,10 @@ movierecomendation:Genre rdf:type :Class ;
                                                      movierecomendation:Talk-Show
                                                      movierecomendation:Drama
                                                      movierecomendation:Adventure
-                                                     movierecomendation:Adult
                                                      movierecomendation:News
-                                                     movierecomendation:Horror
+                                                     movierecomendation:Adult
                                                      movierecomendation:Action
+                                                     movierecomendation:Horror
                                                      movierecomendation:Sport
                                                      movierecomendation:Crime
                                                      movierecomendation:History
@@ -326,7 +326,16 @@ movierecomendation:Genre rdf:type :Class ;
 movierecomendation:Media rdf:type :Class ;
                          
                          rdfs:subClassOf [ rdf:type :Restriction ;
-                                           :onProperty movierecomendation:hasMediaPoster ;
+                                           :onProperty movierecomendation:hasMediaClassification ;
+                                           :someValuesFrom xsd:float
+                                         ] ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasMediaId ;
+                                           :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           :onDataRange xsd:string
+                                         ] ,
+                                         [ rdf:type :Restriction ;
+                                           :onProperty movierecomendation:hasMediaDescription ;
                                            :someValuesFrom xsd:string
                                          ] ,
                                          [ rdf:type :Restriction ;
@@ -334,11 +343,11 @@ movierecomendation:Media rdf:type :Class ;
                                            :someValuesFrom movierecomendation:Studio
                                          ] ,
                                          [ rdf:type :Restriction ;
-                                           :onProperty movierecomendation:hasMediaClassification ;
-                                           :someValuesFrom xsd:float
+                                           :onProperty movierecomendation:hasMediaName ;
+                                           :someValuesFrom xsd:string
                                          ] ,
                                          [ rdf:type :Restriction ;
-                                           :onProperty movierecomendation:hasMediaDescription ;
+                                           :onProperty movierecomendation:hasMediaPoster ;
                                            :someValuesFrom xsd:string
                                          ] ,
                                          [ rdf:type :Restriction ;
@@ -352,15 +361,6 @@ movierecomendation:Media rdf:type :Class ;
                                          [ rdf:type :Restriction ;
                                            :onProperty movierecomendation:hasGenre ;
                                            :someValuesFrom movierecomendation:Genre
-                                         ] ,
-                                         [ rdf:type :Restriction ;
-                                           :onProperty movierecomendation:hasMediaId ;
-                                           :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                           :onDataRange xsd:string
-                                         ] ,
-                                         [ rdf:type :Restriction ;
-                                           :onProperty movierecomendation:hasMediaName ;
-                                           :someValuesFrom xsd:string
                                          ] .
 
 
@@ -384,7 +384,11 @@ movierecomendation:Movie rdf:type :Class ;
 movierecomendation:Person rdf:type :Class ;
                           
                           rdfs:subClassOf [ rdf:type :Restriction ;
-                                            :onProperty movierecomendation:hasPersonPicture ;
+                                            :onProperty movierecomendation:hasPersonBirthPlace ;
+                                            :someValuesFrom xsd:string
+                                          ] ,
+                                          [ rdf:type :Restriction ;
+                                            :onProperty movierecomendation:hasPersonMiniBio ;
                                             :someValuesFrom xsd:string
                                           ] ,
                                           [ rdf:type :Restriction ;
@@ -392,20 +396,16 @@ movierecomendation:Person rdf:type :Class ;
                                             :someValuesFrom movierecomendation:Profession
                                           ] ,
                                           [ rdf:type :Restriction ;
-                                            :onProperty movierecomendation:hasPersonBirthPlace ;
+                                            :onProperty movierecomendation:hasPersonPicture ;
                                             :someValuesFrom xsd:string
-                                          ] ,
-                                          [ rdf:type :Restriction ;
-                                            :onProperty movierecomendation:hasPersonBirth ;
-                                            :someValuesFrom xsd:dateTime
                                           ] ,
                                           [ rdf:type :Restriction ;
                                             :onProperty movierecomendation:hasPersonName ;
                                             :someValuesFrom xsd:string
                                           ] ,
                                           [ rdf:type :Restriction ;
-                                            :onProperty movierecomendation:hasPersonMiniBio ;
-                                            :someValuesFrom xsd:string
+                                            :onProperty movierecomendation:hasPersonBirth ;
+                                            :someValuesFrom xsd:dateTime
                                           ] ,
                                           [ rdf:type :Restriction ;
                                             :onProperty movierecomendation:hasPersonId ;
@@ -450,13 +450,13 @@ movierecomendation:Serie rdf:type :Class ;
                                            :onDataRange xsd:int
                                          ] ,
                                          [ rdf:type :Restriction ;
-                                           :onProperty movierecomendation:hasSerieEnd ;
-                                           :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           :onProperty movierecomendation:hasSerieSeason ;
+                                           :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                            :onDataRange xsd:int
                                          ] ,
                                          [ rdf:type :Restriction ;
-                                           :onProperty movierecomendation:hasSerieSeasons ;
-                                           :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           :onProperty movierecomendation:hasSerieEnd ;
+                                           :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                            :onDataRange xsd:int
                                          ] .
 
@@ -467,13 +467,13 @@ movierecomendation:Serie rdf:type :Class ;
 movierecomendation:Studio rdf:type :Class ;
                           
                           rdfs:subClassOf [ rdf:type :Restriction ;
+                                            :onProperty movierecomendation:hasStudioName ;
+                                            :someValuesFrom xsd:string
+                                          ] ,
+                                          [ rdf:type :Restriction ;
                                             :onProperty movierecomendation:hasStudioId ;
                                             :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                             :onDataRange xsd:string
-                                          ] ,
-                                          [ rdf:type :Restriction ;
-                                            :onProperty movierecomendation:hasStudioName ;
-                                            :someValuesFrom xsd:string
                                           ] .
 
 
@@ -725,6 +725,19 @@ movierecomendation:Writer rdf:type :NamedIndividual .
 
 
 [ rdf:type :AllDifferent ;
+  :distinctMembers ( movierecomendation:Actor
+                     movierecomendation:Actress
+                     movierecomendation:Animation_Department
+                     movierecomendation:Assistant_Director
+                     movierecomendation:Director
+                     movierecomendation:Miscellaneous_Crew
+                     movierecomendation:Music_Department
+                     movierecomendation:Producer
+                     movierecomendation:Soundtrack
+                     movierecomendation:Writer
+                   )
+] .
+[ rdf:type :AllDifferent ;
   :distinctMembers ( movierecomendation:Action
                      movierecomendation:Adult
                      movierecomendation:Adventure
@@ -753,19 +766,6 @@ movierecomendation:Writer rdf:type :NamedIndividual .
                      movierecomendation:Thriller
                      movierecomendation:War
                      movierecomendation:Western
-                   )
-] .
-[ rdf:type :AllDifferent ;
-  :distinctMembers ( movierecomendation:Actor
-                     movierecomendation:Actress
-                     movierecomendation:Animation_Department
-                     movierecomendation:Assistant_Director
-                     movierecomendation:Director
-                     movierecomendation:Miscellaneous_Crew
-                     movierecomendation:Music_Department
-                     movierecomendation:Producer
-                     movierecomendation:Soundtrack
-                     movierecomendation:Writer
                    )
 ] .
 
