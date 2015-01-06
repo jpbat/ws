@@ -26,7 +26,6 @@ public class Movie {
             current.put("Directors",PersonService.GetDirectorByMovie(movieId));
             current.put("Studios",StudioService.GetbyMovie(movieId));
             current.put("Genres",GenreService.GetByMovie(movieId));
-            current.put("Profession",PersonService.GetActorByMovie(movieId));
         }
 
         return json;

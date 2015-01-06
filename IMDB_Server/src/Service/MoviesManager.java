@@ -13,7 +13,6 @@ import java.io.File;
 
 public class MoviesManager extends Connection{
     private String GlobalNamespace="<http://www.movierecomendation.pt/ontology/movierecomendation.owl#>";
-    private String Namespace ="<http://www.movierecomendation.pt/Movie/%s>";
 
     String queryGetAll =
                     "PREFIX ns: "+GlobalNamespace+" "+
@@ -21,11 +20,11 @@ public class MoviesManager extends Connection{
                     "WHERE {?b ns:hasMediaName ?Name; ns:hasMediaId ?id; ns:hasMediaPoster ?Poster; ns:hasMediaDuration ?duration; ns:hasMediaDescription ?description;" +
                             " ns:hasMediaClassification ?classification . OPTIONAL { ?b ns:hasMediaLaunchDate ?launched } . OPTIONAL { ?b ns:hasSerieEnd ?end } . OPTIONAL { ?b ns:hasSerieStart ?start } . OPTIONAL { ?b ns:hasSerieSeasons ?seasons } . }";
     String queryGetById =
-                    "PREFIX nsowl: "+GlobalNamespace+" "+
+            "PREFIX ns: "+GlobalNamespace+" "+
                     "SELECT ?id ?Name ?Poster ?duration ?launched ?description ?classification " +
-                    "WHERE { "+Namespace+" a nsowl:Movie;  nsowl:hasMediaName ?Name; nsowl:hasMediaId ?id; nsowl:hasMediaPoster ?Poster; "+
-                            "nsowl:hasMediaDuration ?duration; nsowl:hasMediaLaunchDate ?launched; nsowl:hasMediaDescription ?description; nsowl:hasMediaClassification ?classification .}";
-
+                    "WHERE {?b ns:hasMediaName ?Name; ns:hasMediaId ?id; ns:hasMediaPoster ?Poster; ns:hasMediaDuration ?duration; ns:hasMediaDescription ?description;" +
+                    " ns:hasMediaClassification ?classification . OPTIONAL { ?b ns:hasMediaLaunchDate ?launched } . OPTIONAL { ?b ns:hasSerieEnd ?end } . OPTIONAL { ?b ns:hasSerieStart ?start } . OPTIONAL { ?b ns:hasSerieSeasons ?seasons } ." +
+                    "FILTER regex(?id, \"%s\") }";
     String queryGetMostRecent =
             "PREFIX ns: "+GlobalNamespace+" "+
                     "SELECT ?id ?Name ?Poster ?duration ?launched ?description ?classification " +
