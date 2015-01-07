@@ -9,7 +9,7 @@
 		<% } %>
 	</div>
 	<div class="col-md-9">
-		<p class="name"><%= model.Name %></p>
+		<p class="name"><%= model.Name %> <span class="label label-primary"><%= element.type %></span> </p>
 		<% if (model.type == "Movie") { %>
 			<p class="information"><span class="field">Launched:</span> <%= model.launched %></p>
 		<% } %>
