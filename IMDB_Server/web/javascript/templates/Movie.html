@@ -4,10 +4,21 @@
 		<img class="poster" src="<%= model.Poster %>" alt="poster">
 		<p class="information"><span class="field">Score:</span>  <%= model.classification %> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </p>
 		<p class="information"><span class="field">Duration:</span> <%= model.duration %> </p>
+		<% if (model.seasons != "undefined") { %>
+			<p class="information"><span class="field">Seasons:</span> <%= model.seasons %> </p>
+		<% } %>
 	</div>
 	<div class="col-md-9">
 		<p class="name"><%= model.Name %></p>
-		<p class="information"><span class="field">Launched:</span> <%= model.launched %></p>
+		<% if (model.launched != "") { %>
+			<p class="information"><span class="field">Launched:</span> <%= model.launched %></p>
+		<% } %>
+		<% if (model.start != "") { %>
+		<p class="information"><span class="field">Start:</span> <%= model.start %></p>
+		<% } %>
+		<% if (model.end != "") { %>
+		<p class="information"><span class="field">End:</span> <%= model.end %></p>
+		<% } %>
 		<p class="information"><span class="field">Genres:</span>
 			<ul class="movieLists genreList">
 				<% _.each(model.Genres, function(genre) { %>

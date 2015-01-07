@@ -16,9 +16,9 @@ public class MoviesManager extends Connection{
     private String RdfNamespace="<http://www.w3.org/1999/02/22-rdf-syntax-ns#>";
     private String RdfsNamespace="<http://www.w3.org/2000/01/rdf-schema#>";
 
-    String StandardSelect = "DISTINCT ?id ?Name ?typeUri ?Poster ?duration ?launched ?description ?classification ";
+    String StandardSelect = "DISTINCT ?id ?Name ?typeUri ?Poster ?duration ?launched ?description ?classification ?start ?end ?seasons ";
 
-    String StandardWhere = "?MovieUri ns:hasMediaName ?Name; ns:hasMediaId ?id; rdf:type ?typeUri; ns:hasMediaPoster ?Poster; ns:hasMediaDuration ?duration; ns:hasMediaDescription ?description; ns:hasMediaClassification ?classification . ?typeUri rdfs:subClassOf ns:Media. OPTIONAL { ?MovieUri ns:hasMediaLaunchDate ?launched } . OPTIONAL { ?MovieUri ns:hasSerieEnd ?end } . OPTIONAL { ?MovieUri ns:hasSerieStart ?start } . OPTIONAL { ?MovieUri ns:hasSerieSeasons ?seasons } .";
+    String StandardWhere = "?MovieUri ns:hasMediaName ?Name; ns:hasMediaId ?id; rdf:type ?typeUri; ns:hasMediaPoster ?Poster; ns:hasMediaDuration ?duration; ns:hasMediaDescription ?description; ns:hasMediaClassification ?classification . ?typeUri rdfs:subClassOf ns:Media. OPTIONAL { ?MovieUri ns:hasMediaLaunchDate ?launched } . OPTIONAL { ?MovieUri ns:hasSerieEnd ?end } . OPTIONAL { ?MovieUri ns:hasSerieStart ?start } . OPTIONAL { ?MovieUri ns:hasSerieSeason ?seasons } .";
     
     String queryGetAll =
                     "PREFIX ns: "+GlobalNamespace+" "+

@@ -13,7 +13,6 @@ public class StudiosManager extends Connection{
 
     private String GlobalNamespace="<http://www.movierecomendation.pt/ontology/movierecomendation.owl#>";
     private String Namespace ="<http://www.movierecomendation.pt/Studio/>";
-    private String MovieNamespace ="<http://www.movierecomendation.pt/Movie/>";
     private String RDFNamespace ="<http://www.w3.org/1999/02/22-rdf-syntax-ns#>";
 
     private String queryGetAll =
@@ -29,9 +28,7 @@ public class StudiosManager extends Connection{
                     "WHERE { ns:%s a nsowl:Sudio;  nsowl:hasStudioId ?id ; nsowl:hasStudioName ?name .}";
     String queryGetStudioByMovieId =
             "PREFIX nsowl:"+GlobalNamespace+" "+
-                    "PREFIX ns:"+MovieNamespace+" "+
-                    "SELECT ?id ?name "+
-                    "WHERE {{ ns:%s nsowl:hasStudio ?rid . ?rid nsowl:hasStudioId ?id ; nsowl:hasStudioName ?name .} }";
+            "SELECT ?id ?name WHERE { ?MovieUri nsowl:hasMediaId ?MovieId . ?MovieUri nsowl:hasStudio ?rid . ?rid nsowl:hasStudioId ?id ; nsowl:hasStudioName ?name . FILTER regex(?MovieId, \"%s\") }";
 
 
 

@@ -13,8 +13,7 @@ public class GenresManager extends Connection{
 
     String queryGetGenreByMovieId =
             "PREFIX nsowl:"+GlobalNamespace+" "+
-            "SELECT ?uri WHERE { ?MovieUri nsowl" +
-                    ":hasMediaId ?MovieId . ?MovieUri nsowl:hasGenre ?uri . FILTER regex(?MovieId, \"%s\") }";
+            "SELECT ?uri WHERE { ?MovieUri nsowl:hasMediaId ?MovieId . ?MovieUri nsowl:hasGenre ?uri . FILTER regex(?MovieId, \"%s\") }";
 
     String queryGetAll =
             "PREFIX rdf:"+rdf+" "+

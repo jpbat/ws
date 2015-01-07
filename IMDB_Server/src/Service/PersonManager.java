@@ -11,7 +11,6 @@ public class PersonManager extends Connection{
 
     private String GlobalNamespace="<http://www.movierecomendation.pt/ontology/movierecomendation.owl#>";
     private String Namespace ="<http://www.movierecomendation.pt/Person/>";
-    private String MovieNamespace ="<http://www.movierecomendation.pt/Movie/>";
 
     String queryGetAll =
             "PREFIX nsowl: "+GlobalNamespace+" "+
@@ -24,15 +23,13 @@ public class PersonManager extends Connection{
             "WHERE { ns:%s a ?type ;  nsowl:hasPersonId ?id ; nsowl:hasPersonName ?Name ;nsowl:hasPersonPicture ?Picture ;nsowl:hasPersonBirth ?Birth ;nsowl:hasPersonBirthPlace ?BirthPlace ;nsowl:hasPersonMiniBio ?MiniBio .}";
     String queryGetDirectorByMovieId =
             "PREFIX nsowl:"+GlobalNamespace+" "+
-            "PREFIX ns:"+MovieNamespace+" "+
             "SELECT ?id ?name ?Picture ?Birth ?BirthPlace ?MiniBio "+
-            "WHERE {{ ns:%s nsowl:hasDirector ?rid . ?rid nsowl:hasPersonName ?name ; nsowl:hasPersonId ?id ; nsowl:hasPersonPicture ?Picture ;nsowl:hasPersonBirth ?Birth ;nsowl:hasPersonBirthPlace ?BirthPlace ;nsowl:hasPersonMiniBio ?MiniBio   .} }";
+            "WHERE { ?MovieUri nsowl:hasMediaId ?MovieId . ?MovieUri nsowl:hasDirector ?rid . ?rid nsowl:hasPersonName ?name ; nsowl:hasPersonId ?id ; nsowl:hasPersonPicture ?Picture ;nsowl:hasPersonBirth ?Birth ;nsowl:hasPersonBirthPlace ?BirthPlace ;nsowl:hasPersonMiniBio ?MiniBio . FILTER regex(?MovieId, \"%s\") }";
 
     String queryGetActorByMovieId =
             "PREFIX nsowl:"+GlobalNamespace+" "+
-            "PREFIX ns:"+MovieNamespace+" "+
             "SELECT ?id ?name ?Picture ?Birth ?BirthPlace ?MiniBio "+
-            "WHERE { ns:%s nsowl:hasActor ?rid . ?rid nsowl:hasPersonName ?name ; nsowl:hasPersonId ?id ; nsowl:hasPersonPicture ?Picture ;nsowl:hasPersonBirth ?Birth ;nsowl:hasPersonBirthPlace ?BirthPlace ;nsowl:hasPersonMiniBio ?MiniBio .} ";
+            "WHERE { ?MovieUri nsowl:hasMediaId ?MovieId . ?MovieUri nsowl:hasActor ?rid . ?rid nsowl:hasPersonName ?name ; nsowl:hasPersonId ?id ; nsowl:hasPersonPicture ?Picture ;nsowl:hasPersonBirth ?Birth ;nsowl:hasPersonBirthPlace ?BirthPlace ;nsowl:hasPersonMiniBio ?MiniBio . FILTER regex(?MovieId, \"%s\") } ";
 
     public JSONArray GetAll(){
         return this.PerformQuery(queryGetAll);
