@@ -2,63 +2,59 @@
 <div class="row">
 	<div class="col-md-3">
 		<img class="poster" src="<%= model.Poster %>" alt="poster">
-		<p class="information"><span class="field">Score:</span>  <%= model.classification %> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </p>
-		<p class="information"><span class="field">Duration:</span> <%= model.duration %> min</p>
-		<% if (model.type == "Serie") { %>
-			<p class="information"><span class="field">Seasons:</span> <%= model.seasons %> </p>
+		<div class="information"><span class="field">Score:</span>  <%= model.classification %> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> </div>
+		<div class="information"><span class="field">Duration:</span> <%= model.duration %> min</div>
+		<% if (model.seasons) { %>
+			<div class="information"><span class="field">Seasons:</span> <%= model.seasons %> </div>
 		<% } %>
 	</div>
 	<div class="col-md-9">
-		<p class="name"><%= model.Name %> <span class="label label-primary"><%= element.type %></span> </p>
-		<% if (model.type == "Movie") { %>
-			<p class="information"><span class="field">Launched:</span> <%= model.launched %></p>
+		<div class="name"><%= model.Name %> <span class="label label-primary"><%= model.type %></span> </div>
+		<% if (model.launched) { %>
+			<div class="information"><span class="field">Launched:</span> <%= model.launched %></div>
 		<% } %>
-		<% if (model.type == "Serie") { %>
-		<p class="information"><span class="field">Start:</span> <%= model.start %></p>
+		<% if (model.start) { %>
+		<div class="information"><span class="field">Original run:</span> <%= model.start %> - <%= (model.end?model.end:"Ongoing") %></div>
 		<% } %>
-		<% if (model.type == "Serie" && model.end != undefined) { %>
-		<p class="information"><span class="field">End:</span> <%= model.end %></p>
-		<% } %>
-		<p class="information"><span class="field">Genres:</span>
-			<ul class="movieLists genreList">
+		<div class="information"><span class="field">Genres:</span>
+			<ul class="Lists genreList">
 				<% _.each(model.Genres, function(genre) { %>
 					<li class="genreName">
 						<%= genre.name %>
 					</li>
 				<% }); %>
 			</ul>
-		</p>
+		</div>
 		<% if (model.Directors.length > 0) {%>
-			<p class="information"><span class="field">Director:</span>
-				<ul class="movieLists directorList">
+			<div class="information"><span class="field">Director:</span>
+				<ul class="Lists directorList">
 					<% _.each(model.Directors, function(director) { %>
 						<li class="directorName">
 							<a href="/#person/<%=director.id %>"><%= director.name %></a>
 						</li>
 					<% }); %>
 				</ul>
-			</p>
+			</div>
 		<% } %>
-		<p class="information"><span class="field">Stars:</span>
-			<ul class="movieLists actorList">
+		<div class="information"><span class="field">Stars:</span>
+			<ul class="Lists actorList">
 				<% _.each(model.Actors, function(actor) { %>
 					<li class="actorName">
 						<a href="/#person/<%=actor.id %>"><%= actor.name %></a>
 					</li>
 				<% }); %>
 			</ul>
-		</p>
-
-		<p class="information"><span class="field">Studios:</span>
-			<ul class="movieLists studioList">
+		</div>
+		<div class="information"><span class="field">Studios:</span>
+			<ul class="Lists studioList">
 				<% _.each(model.Studios, function(studio) { %>
 					<li class="studioName">
 						<%= studio.name %>
 					</li>
 				<% }); %>
 			</ul>
-		</p>
-		<p class="information"><span class="field">Description: </span> <%= model.description %> </p>
+		</div>
+		<div class="information"><span class="field">Description: </span> <%= model.description %> </div>
 	</div>
 </div>
 

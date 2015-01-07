@@ -100,11 +100,14 @@ body .TopNavbar::before{
 #BackBoneContainer #PersonsCont,#BackBoneContainer #MoviesCont{
         overflow: scroll;
 }
-
-.movieLists li{
+.Lists{
+        -webkit-padding-start: 0px;
+        padding-left: 0px;
+}
+.Lists, .Lists li{
         display: inline;
 }
-.movieLists li:not(:first-child):before {
+.Lists li:not(:first-child):before {
         content:','
 }
 .nav-button {
