@@ -35,6 +35,7 @@ define(
             ResetCollection:function(Genres){
                 console.log("reset collection trigger");
                 var self = this;
+                this.limit = 8;
                 this.offset = 0;
 
                 this.genres = Genres;
