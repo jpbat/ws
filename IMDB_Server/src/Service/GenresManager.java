@@ -8,23 +8,21 @@ import org.json.JSONObject;
  */
 public class GenresManager extends Connection{
     private String GlobalNamespace="<http://www.movierecomendation.pt/ontology/movierecomendation.owl#>";
-    private String Namespace ="<http://www.movierecomendation.pt/Movie/>";
     private String owl = "<http://www.w3.org/2002/07/owl#>";
     private String rdf = "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>";
 
     String queryGetGenreByMovieId =
             "PREFIX nsowl:"+GlobalNamespace+" "+
-                    "PREFIX ns:"+Namespace+" "+
-                    "SELECT ?uri WHERE { ns:%s nsowl:hasGenre ?uri .}";
+            "SELECT ?uri WHERE { ?MovieUri nsowl" +
+                    ":hasMediaId ?MovieId . ?MovieUri nsowl:hasGenre ?uri . FILTER regex(?MovieId, \"%s\") }";
 
     String queryGetAll =
             "PREFIX rdf:"+rdf+" "+
             "PREFIX owl:"+owl+" "+
             "PREFIX nsowl:"+GlobalNamespace+" "+
-            "PREFIX ns:"+Namespace+" "+
-                    "SELECT DISTINCT ?uri "+
-                    "WHERE {nsowl:Genre owl:equivalentClass ?node. ?node owl:oneOf ?ref. ?ref rdf:rest*/rdf:first ?uri .} "+
-                    "ORDER BY ?uri";
+            "SELECT DISTINCT ?uri "+
+            "WHERE {nsowl:Genre owl:equivalentClass ?node. ?node owl:oneOf ?ref. ?ref rdf:rest*/rdf:first ?uri .} "+
+            "ORDER BY ?uri";
 
     private JSONArray AddInfo(JSONArray json){
         for(int i=0; i<json.length(); i++){
