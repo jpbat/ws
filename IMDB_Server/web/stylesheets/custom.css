@@ -87,9 +87,15 @@ body .TopNavbar::before{
 }
 
 .item {
-    padding-top: 10px;
-    color: black;
+        border-bottom:#000000 1px solid;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        color: black;
 }
+.item:last-child {
+        border-bottom:#000000 0px solid;
+}
+
 
 #PersonsCont,#MoviesCont{
         height: 100%;
@@ -119,4 +125,11 @@ body .TopNavbar::before{
 
 #genreView li{
         display: block;
+}
+
+.MediaType_Movie .label-primary{
+
+}
+.MediaType_Serie .label-primary{
+        background-color: orange;
 }

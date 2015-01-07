@@ -9,7 +9,7 @@ define(
 
             initialize: function() {
                 this.isLoading = false;
-                this.limit = 5;
+                this.limit = 8;
                 this.offset = 0;
                 this.genres = [];
                 this.collection.on('reset', this.clear, this);

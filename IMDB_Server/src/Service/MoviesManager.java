@@ -47,7 +47,7 @@ public class MoviesManager extends Connection{
                     "SELECT "+ StandardSelect +
                     "WHERE {%s} ";
     String queryWhereGenre=
-            "{ ?MovieUri ns:hasGenres ns:%s . "+ StandardWhere +" }";
+            "{ ?MovieUri ns:hasGenre ns:%s . "+ StandardWhere +" }";
 
     String queryGetKnownForByPersonId =
             "PREFIX ns: "+GlobalNamespace+" "+

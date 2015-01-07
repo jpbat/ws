@@ -1,7 +1,7 @@
 
 
     <% _.each(collection, function(element) { %>
-    <a href="/#movie/<%= element.id %>" class="item col-md-12">
+    <a href="/#movie/<%= element.id %>" class="item col-md-12 MediaType_<%= element.type %>">
         <div class="col-md-2">
             <img class="poster-preview" src="<%= element.Poster %>" alt="picture">
         </div>
@@ -28,4 +28,5 @@
 
         </div>
     </a>
+
     <% }); %>

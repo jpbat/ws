@@ -185,6 +185,8 @@ define(
                 }else{
                     $("#BackBoneContainer").html(self.ViewMovies.$el);
                     $("#BackBoneContainer").append(self.ViewGenres.$el);
+                    self.ViewMovies.delegateEvents();
+                    self.ViewGenres.delegateEvents();
                     $("#MoviesCont").niceScroll();
                 }
 
