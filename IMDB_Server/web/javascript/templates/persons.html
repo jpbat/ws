@@ -7,7 +7,14 @@
     <div class="col-md-8">
         <p class="information"><span class="field">Name:</span><%= element.Name %></p>
         <p class="information"><span class="field">Born:</span> <%= element.Birth %></p>
-        <p class="information"><span class="field">Profession:</span> ??????? </p>
+        <p class="information"><span class="field">Profession:</span>
+        <ul class="movieLists">
+            <% _.each(element.Profession, function(profession) { %>
+                <li class="information"><%= profession.name %></li>
+            <% }); %>
+
+        </ul>
+        </p>
         <p class="information"><span class="field">Birthplace:</span><%= element.BirthPlace %></p>
     </div>
     <div class="col-md-3 filter">
