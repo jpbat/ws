@@ -38,7 +38,7 @@ public class MoviesManager extends Connection{
                     "PREFIX rdfs: "+RdfsNamespace+" "+
                     "SELECT "+ StandardSelect +
                     "WHERE { "+ StandardWhere +" } "+
-                    "ORDER BY ?launched "+
+                    "ORDER BY DESC(?classification) "+
                     "LIMIT 6";
     String querySelectGenre=
                     "PREFIX ns: "+GlobalNamespace+" "+

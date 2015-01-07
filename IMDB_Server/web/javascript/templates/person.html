@@ -2,25 +2,27 @@
 <div class="row">
 	<div class="col-md-3">
 		<img class="poster" src="<%= model.Picture %>" alt="picture">
-		<p class="field">Profession</p>
+		<div class="field">Profession
 		<ul>
 		<% _.each(model.Profession, function(profession) { %>
 			<li class="information"><%= profession.name %></li>
 		<% }); %>
 		</ul>
+		</div>
 		<% if (model.KnownFor.length > 0) {%>
-			<p class="field">Known For</p>
-			<ul>
-			<% _.each(model.KnownFor, function(movie) { %>
-				<li class="information"><a href="/#movie/<%= movie.id %>"><%= movie.Name %></a></li>
-			<% }); %>
-			</ul>
+			<div class="field">Known For
+				<ul>
+					<% _.each(model.KnownFor, function(movie) { %>
+						<li class="information"><a href="/#movie/<%= movie.id %>"><%= movie.Name %></a></li>
+					<% }); %>
+				</ul>
+			</div>
 		<% } %>
 	</div>
 	<div class="col-md-9">
-		<p class="name"><%= model.Name %></p>
-		<p class="information"><span class="field">Born: </span> <%= model.Birth %></p>
-		<p class="information"><span class="field">Birthplace: </span><%= model.BirthPlace %></p>
-		<p class="information"><span class="field">Minibio: </span> <%= model.MiniBio %></p>
+		<div class="name"><%= model.Name %></div>
+		<div class="information"><span class="field">Born: </span> <%= model.Birth %></div>
+		<div class="information"><span class="field">Birthplace: </span><%= model.BirthPlace %></div>
+		<div class="information"><span class="field">Minibio: </span> <%= model.MiniBio %></div>
 	</div>
 </div>
