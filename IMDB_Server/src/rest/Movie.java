@@ -22,6 +22,9 @@ public class Movie {
             JSONObject current = (JSONObject)json.get(i);
             String movieId = current.get("id").toString();
 
+            String[] parts = current.get("typeUri").toString().split("#");
+
+            current.put("type", parts[1]);
             current.put("Actors",PersonService.GetActorByMovie(movieId));
             current.put("Directors",PersonService.GetDirectorByMovie(movieId));
             current.put("Studios",StudioService.GetbyMovie(movieId));
