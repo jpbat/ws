@@ -8,12 +8,14 @@
 			<li class="information"><%= profession.name %></li>
 		<% }); %>
 		</ul>
-		<p class="field">Known For</p>
-		<ul>
-		<% _.each(model.KnownFor, function(movie) { %>
-			<li class="information"><a href="/#movie/<%= movie.id %>"><%= movie.Name %></a></li>
-		<% }); %>
-		</ul>
+		<% if (model.KnownFor.length > 0) {%>
+			<p class="field">Known For</p>
+			<ul>
+			<% _.each(model.KnownFor, function(movie) { %>
+				<li class="information"><a href="/#movie/<%= movie.id %>"><%= movie.Name %></a></li>
+			<% }); %>
+			</ul>
+		<% } %>
 	</div>
 	<div class="col-md-9">
 		<p class="name"><%= model.Name %></p>

@@ -7,7 +7,6 @@
 	</div>
 	<div class="col-md-9">
 		<p class="name"><%= model.Name %></p>
-		<p class="information"><span class="field">Type:</span> <%= model.type %></p>
 		<p class="information"><span class="field">Launched:</span> <%= model.launched %></p>
 		<p class="information"><span class="field">Genres:</span>
 			<ul class="movieLists genreList">
@@ -18,15 +17,17 @@
 				<% }); %>
 			</ul>
 		</p>
-		<p class="information"><span class="field">Director:</span>
-			<ul class="movieLists directorList">
-				<% _.each(model.Directors, function(director) { %>
-					<li class="directorName">
-						<a href="/#person/<%=director.id %>"><%= director.name %></a>
-					</li>
-				<% }); %>
-			</ul>
-		</p>
+		<% if (model.Directors.length > 0) {%>
+			<p class="information"><span class="field">Director:</span>
+				<ul class="movieLists directorList">
+					<% _.each(model.Directors, function(director) { %>
+						<li class="directorName">
+							<a href="/#person/<%=director.id %>"><%= director.name %></a>
+						</li>
+					<% }); %>
+				</ul>
+			</p>
+		<% } %>
 		<p class="information"><span class="field">Stars:</span>
 			<ul class="movieLists actorList">
 				<% _.each(model.Actors, function(actor) { %>
