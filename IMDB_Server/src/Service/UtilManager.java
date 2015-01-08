@@ -2,6 +2,7 @@ package Service;
 
 import org.apache.jena.atlas.lib.StrUtils;
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 /**
  * Created by Joao on 07/01/2015.
@@ -23,8 +24,19 @@ public class UtilManager extends Connection {
                      , "   OPTIONAL { ?Uri rdf:type ?typeUri.?typeUri rdf:type owl:Class.}."
                      , " }") ;
 
+    private JSONArray AddInfo(JSONArray json){
+        for(int i=0; i<json.length(); i++){
+            JSONObject current = (JSONObject)json.get(i);
+            String GenreUri = current.get("typeUri").toString();
+            String[] parts = GenreUri.split("#");
+            current.put("type",parts[1]);
+        }
+
+        return json;
+    }
+
     public JSONArray StringMatching(String text){
-        return this.PerformQuery(String.format(StringMatchingQuery, text));
+        return AddInfo(this.PerformQuery(String.format(StringMatchingQuery, text)));
     }
 
 }

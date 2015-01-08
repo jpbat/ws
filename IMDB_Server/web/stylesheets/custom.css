@@ -5,10 +5,10 @@ body {
 
 .search-logo {
 	padding-top: 50px;
-        font-size: 400%;
+        font-size: 200%;
         text-align: center;
         color: green;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
 }
 .name {
        	font-size: 400%;
@@ -45,6 +45,7 @@ body .TopNavbar::before{
 }
 
 .TopNavbar{
+        z-index: -1;
         height: 20%;
 }
 
@@ -127,9 +128,35 @@ body .TopNavbar::before{
         display: block;
 }
 
-.MediaType_Movie .label-primary{
+.ClassType_Movie .label-primary{
 
 }
-.MediaType_Serie .label-primary{
+.ClassType_Serie .label-primary{
         background-color: orange;
+}
+.ClassType_Person .label-primary{
+        background-color: green;
+}
+.ClassType_Studio .label-primary{
+        background-color: #000000;
+}
+
+
+
+#SearchResult{
+        overflow-y: scroll;
+        max-height: 50%;
+        background: white;
+}
+#SearchResult ul{
+        -webkit-margin-before:0;
+        padding-left: 0;
+}
+
+#SearchResult li{
+         display: block;
+ }
+
+#SearchResult li:hover{
+        color: steelblue;
 }
