@@ -19,6 +19,9 @@ define(
             },
             updateModel:function(id){
                 var self = this;
+
+                self.trigger('FetchStart');
+
                 this.model.fetch({
                     reset: true,
                     type: 'GET',

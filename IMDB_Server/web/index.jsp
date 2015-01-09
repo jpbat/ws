@@ -17,7 +17,7 @@
   <div class="container">
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><a id="homeButton" href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a class="disabled" id="homeButton" href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
         <li><a id="backButton" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

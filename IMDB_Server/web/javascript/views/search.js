@@ -62,7 +62,7 @@ define(
                             self.isLoading = false;
                         },
                         error: function () {
-                            var newElement = $('#alertContainer div').clone();
+                            var newElement = $('#alertContainer').find('div').clone();
                             $(newElement).find("p").html("Fail to retrieve query Results");
                             $('.alertContainer').append(newElement);
                             console.log("Fail to retrieve query Results");

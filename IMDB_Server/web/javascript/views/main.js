@@ -28,6 +28,9 @@ define(
             },
             resetCollection: function(){
                 var self = this;
+
+                self.trigger('FetchStart');
+
                 this.collection.fetch({
                     reset: true,
                     type: 'GET',

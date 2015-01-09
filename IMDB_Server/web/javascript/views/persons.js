@@ -29,7 +29,9 @@ define(
 
                 this.$el.html(" ");
 
-                this.ViewMovies.collection.fetch({
+                self.trigger('FetchStart');
+
+                this.collection.fetch({
                     data:{  limit:self.limit,
                             offset:self.offset},
                     reset: true,
@@ -48,6 +50,9 @@ define(
             },
             fetchNextCollection:function(){
                 var self = this;
+
+                self.trigger('FetchStart');
+
                 self.collection.fetch({
                     data:{  limit:self.limit,
                             offset:self.offset},
