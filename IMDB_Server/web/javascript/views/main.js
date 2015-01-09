@@ -19,19 +19,26 @@ define(
             },
             render: function () {
                 var Result = this.collection.toJSON();
-
                 var templateHTML = this.tpl({collection: Result});
+
                 this.$el.html(templateHTML);
                 this.$el.find("#searchCont").append(this.searchView.$el);
+
                 return this;
             },
-
-            emptyRender: function () {
-
-                var templateHTML = this.tpl({collection: []});
-                this.$el.html(templateHTML);
-
-                return this;
+            resetCollection: function(){
+                var self = this;
+                this.collection.fetch({
+                    reset: true,
+                    type: 'GET',
+                    success: function () {
+                        self.trigger('FetchSuccess');
+                    },
+                    error: function () {
+                        self.trigger('FetchFail',"Fail to retrieve the Top Movie list!");
+                        this.collection.reset();
+                    }
+                });
             }
 
         });

@@ -15,7 +15,21 @@ define(
                 'persons': 'persons',
                 'movies': 'movies'
             },
-
+            hideSpinner:function(){
+                console.log("Hide Spinner");
+            },
+            addError:function(err){
+                var newElement = $('#alertContainer div').clone();
+                $(newElement).find("p").html(err);
+                $('.alertContainer').append(newElement);
+            },
+            reRoute:function(err){
+                if(err){
+                    this.addError(err);
+                }
+                console.log("Rerouting");
+                window.location.hash = '';
+            },
             index: function () {
                 var self = this;
 
@@ -29,21 +43,10 @@ define(
                     this.ViewIndex.collection.url= "http://localhost:8080/rest/Movies/GetRecent/";
                 }
 
-                this.ViewIndex.collection.fetch({
-                    reset: true, type: 'GET',
-                    success: function () {
-                        $("#BackBoneContainer").html(self.ViewIndex.el);
-                        console.log("success");
-                    },
-                    error: function () {
-                        var newElement = $('#alertContainer div').clone();
-                        $(newElement).find("p").html("Fail to retrieve the Top Movie list!");
-                        $('.alertContainer').append(newElement);
-                        console.log("Fail to retrieve Top Movies");
-                        self.ViewIndex.emptyRender();
-                        $("#BackBoneContainer").html(self.ViewIndex.el);
-                    }
-                });
+                this.ViewIndex.resetCollection();
+
+                $("#BackBoneContainer").html(self.ViewIndex.el);
+
 
                 $("#homeButton").attr("href", "/");
                 $("#backButton").attr("href", "javascript:history.back()");
@@ -62,64 +65,47 @@ define(
 
                     this.ViewMovie = new viewClass({model:new modelClass()});
 
+                    this.ViewMovie.on('FetchSuccess', this.hideSpinner ,  this);
+                    this.ViewMovie.on('FetchFail', this.reRoute ,  this);
+
                 }
-                console.log("movie: " + id);
-                this.ViewMovie.model.fetch({reset: true, type: 'GET', data: {id: id},
-                    success: function () {
-                        $("#BackBoneContainer").html(self.ViewMovie.$el);
-                        console.log("success");
-                    },
-                    error: function () {
-                        var newElement = $('#alertContainer div').clone();
-                        $(newElement).find("p").html("Fail to retrieve movie!");
-                        $('.alertContainer').append(newElement);
-                        console.log("Fail to retrieve Movie");
-                        window.location.hash = '';
-                    }
-                });
+                this.ViewMovie.updateModel(id);
+
+                $("#BackBoneContainer").html(self.ViewMovie.$el);
 
                 $("#homeButton").attr("href", "/");
                 $("#backButton").attr("href", "javascript:history.back()");
                 $("#moviesButton").attr("href", "#movies");
                 $("#personsButton").attr("href", "#persons");
             },
-
             person: function (id) {
                 var self = this;
 
                 $("#BackBoneContainer").html($("#SpinnerContainer").html());
 
                 if(!this.ViewPerson){
+
                     var viewClass = require('views/person');
                     var modelClass = require('models/person');
 
                     this.ViewPerson = new viewClass({model:new modelClass()});
 
                 }
-                console.log("Person: " + id);
-                this.ViewPerson.model.fetch({reset: true, type: 'GET', data: {id: id},
-                    success: function () {
-                        $("#BackBoneContainer").html(self.ViewPerson.$el);
-                        console.log("success");
-                    },
-                    error: function () {
-                        var newElement = $('#alertContainer div').clone();
-                        $(newElement).find("p").html("Fail to retrieve the Person!");
-                        $('.alertContainer').append(newElement);
-                        console.log("Fail to retrieve Person");
-                        window.location.hash = '';
-                    }
-                });
+
+                this.ViewMovie.updateModel(id);
+
+                $("#BackBoneContainer").html(self.ViewPerson.$el);
 
                 $("#homeButton").attr("href", "/");
                 $("#backButton").attr("href", "javascript:history.back()");
                 $("#moviesButton").attr("href", "#movies");
                 $("#personsButton").attr("href", "#persons");
             },
+
             persons: function(){
 
                 $("#BackBoneContainer").html($("#SpinnerContainer").html());
-
+                $("#PersonsCont").niceScroll();
                 var self = this;
                 if(!this.ViewPersons){
                     var viewClass = require('views/persons');
@@ -127,31 +113,10 @@ define(
 
                     this.ViewPersons = new viewClass({collection:new collectionClass()});
 
-                    this.ViewPersons.collection.fetch({data:{limit:self.ViewPersons.limit,offset:self.ViewPersons.offset},
-                        reset: true, type: 'GET',
-                        success: function () {
-                            self.ViewPersons.offset+=self.ViewPersons.limit;
-                            $("#BackBoneContainer").html(self.ViewPersons.$el);
-
-                            $("#PersonsCont").niceScroll();
-
-                            console.log("success");
-                        },
-                        error: function () {
-                            var newElement = $('#alertContainer div').clone();
-                            $(newElement).find("p").html("Fail to retrieve the persons list!");
-                            $('.alertContainer').append(newElement);
-                            console.log("Fail to retrieve Persons ");
-                            window.location.hash = '';
-                        }
-                    });
-
-
-                }else{
-                    $("#BackBoneContainer").html(self.ViewPersons.$el);
-
-                    $("#PersonsCont").niceScroll();
+                    this.ViewPersons.resetCollection();
                 }
+
+                $("#BackBoneContainer").html(self.ViewPersons.$el);
 
                 $("#homeButton").attr("href", "/");
                 $("#backButton").attr("href", "javascript:history.back()");
@@ -169,6 +134,7 @@ define(
                     var collectionClass = require('collections/movies');
 
                     this.ViewMovies = new viewClass({collection:new collectionClass()});
+                    this.ViewMovies.resetCollection([]);
                 }
 
                 if(!this.ViewGenres){
@@ -176,37 +142,16 @@ define(
                     var collectionClass = require('collections/genres');
 
                     this.ViewGenres = new viewClass({collection:new collectionClass()});
+                    this.ViewGenres.resetCollection();
 
-                    this.ViewGenres.collection.fetch({reset: true, type: 'GET'});
-                    this.ViewMovies.collection.fetch({data:{limit:self.ViewMovies.limit,offset:self.ViewMovies.offset,genres:self.ViewMovies.genres.join('|')},
-                        reset: true, type: 'GET',
-                        success: function () {
-                            self.ViewMovies.offset+=self.ViewMovies.limit;
-                            $("#BackBoneContainer").html(self.ViewMovies.$el);
-                            $("#BackBoneContainer").append(self.ViewGenres.$el);
-
-                            $("#MoviesCont").niceScroll();
-
-                            console.log("success");
-                        },
-                        error: function () {
-                            var newElement = $('#alertContainer div').clone();
-                            $(newElement).find("p").html("Fail to retrieve the movie list!");
-                            $('.alertContainer').append(newElement);
-                            console.log("Fail to retrieve Movies");
-                            window.location.hash = '';
-                        }
-                    });
-
-                    this.ViewGenres.on('UpdateMovies', this.ViewMovies.ResetCollection,  this);
-
-                }else{
-                    $("#BackBoneContainer").html(self.ViewMovies.$el);
-                    $("#BackBoneContainer").append(self.ViewGenres.$el);
-                    self.ViewMovies.delegateEvents();
-                    self.ViewGenres.delegateEvents();
-                    $("#MoviesCont").niceScroll();
+                    this.ViewGenres.on('UpdateMovies', this.ViewMovies.resetCollection,  this.ViewMovies);
                 }
+
+                $("#BackBoneContainer").html(self.ViewMovies.$el);
+                $("#BackBoneContainer").append(self.ViewGenres.$el);
+                self.ViewMovies.delegateEvents();
+                self.ViewGenres.delegateEvents();
+                //$("#MoviesCont").niceScroll();
 
                 $("#homeButton").attr("href", "/");
                 $("#backButton").attr("href", "javascript:history.back()");

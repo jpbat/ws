@@ -17,6 +17,9 @@ define(
 
                 return this;
             },
+            resetCollection:function(){
+                this.collection.fetch({reset: true, type: 'GET'});
+            },
             events: {
                 'change input[name=genres]': 'inputChange'
             },

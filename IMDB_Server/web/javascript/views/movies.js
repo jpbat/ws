@@ -12,18 +12,10 @@ define(
                 this.limit = 8;
                 this.offset = 0;
                 this.genres = [];
-                this.collection.on('reset', this.clear, this);
+                this.collection.on('reset', this.render, this);
 
             },
-
-            clear:function(){
-                this.$el.html(" ");
-                console.log("clear");
-                this.render();
-            },
-
             render: function() {
-                var self = this;
                 var Result = this.collection.toJSON();
 
                 var templateHTML = this.tpl({collection: Result});
@@ -31,55 +23,58 @@ define(
 
                 return this;
             },
-
-            ResetCollection:function(Genres){
-                console.log("reset collection trigger");
+            //COLLECTION RELATED
+            resetCollection:function(Genres){
                 var self = this;
-                this.limit = 8;
-                this.offset = 0;
+                self.offset = 0;
+                self.genres = Genres;
 
-                this.genres = Genres;
-                this.ViewMovies.collection.fetch({data:{limit:self.limit,offset:self.offset,genres:self.genres.join('|')},
-                    reset: true, type: 'GET',
+                self.$el.html(" ");
+                self.collection.fetch({
+                    data:{  limit:self.limit,
+                            offset:self.offset,
+                            genres:self.genres.join('|')},
+                    reset: true,
+                    type: 'GET',
                     success: function () {
                         self.offset+=self.limit;
-
-                        console.log("success");
+                        self.isLoading = false;
+                        self.trigger('FetchSuccess');
                     },
                     error: function () {
-                        var newElement = $('#alertContainer div').clone();
-                        $(newElement).find("p").html("Fail to retrieve the movie list!");
-                        $('.alertContainer').append(newElement);
-                        console.log("Fail to retrieve Movies");
-                        window.location.hash = '';
+                        self.isLoading = false;
+                        self.trigger('FetchFail',"Fail to retrieve the movie list!");
                     }
                 });
             },
+            fetchNextCollection:function(){
+                var self = this;
+                self.collection.fetch({
+                    data:{  limit:self.limit,
+                        offset:self.offset,
+                        genres:self.genres.join('|')},
+                    type: 'GET',
+                    reset: true,
+                    success: function () {
+                        self.offset+=self.limit;
+                        self.isLoading = false;
+                        self.trigger('FetchSuccess');
+                    },
+                    error: function () {
+                        self.isLoading = false;
+                        self.trigger('FetchFail',"Fail to retrieve the movie list!");
+                    }
+                });
+            },
+            //EVENTS RELATED
             events: {
                 'scroll': 'checkScroll'
             },
             checkScroll: function () {
-                var self = this;
                 var triggerPoint = 100; // 100px from the bottom
                 if( !this.isLoading && this.el.scrollTop + this.el.clientHeight + triggerPoint > this.el.scrollHeight ) {
                     this.isLoading = true;
-
-                    self.collection.fetch({data:{limit:self.limit,offset:self.offset,genres:self.genres.join('|')},
-                        type: 'GET',
-                        success: function () {
-
-                            self.offset+=self.limit;
-                            self.render();
-                            self.isLoading = false;
-                        },
-                        error: function () {
-                            var newElement = $('#alertContainer div').clone();
-                            $(newElement).find("p").html("Fail to retrieve the movie list!");
-                            $('.alertContainer').append(newElement);
-                            console.log("Fail to retrieve Movies");
-                        }
-                    });
-
+                    this.fetchNextCollection();
                 }
             }
         });

@@ -1,6 +1,6 @@
 define(
-    ['underscore','backbone','tpl!templates/person'],
-    function(_,Backbone,template) {
+    ['underscore','backbone','tpl!templates/person','jquery'],
+    function(_,Backbone,template,$) {
         var View = Backbone.View.extend({
             tagName: "div",
             id: "",
@@ -19,6 +19,19 @@ define(
                 this.$el.html(templateHTML);
 
                 return this;
+            },
+            updateModel:function(id){
+                var self = this;
+                this.model.fetch({reset: true, type: 'GET', data: {id: id},
+                    success: function () {
+                        self.trigger('FetchSuccess');
+                        console.log("Got a Person");
+                    },
+                    error: function () {
+                        self.trigger('FetchFail',"Fail to retrieve the Person!");
+                        console.log("Fail to retrieve Person");
+                    }
+                });
             }
         });
         return View;
