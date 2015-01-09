@@ -7,9 +7,6 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.QueryParam;
 
-/**
- * Created by Joao on 07/01/2015.
- */
 @Path("Util")
 public class Util {
 
@@ -17,7 +14,15 @@ public class Util {
 
     @GET
     @Path("Search/")
-    public String Get(@QueryParam("query") String text){
-        return Service.StringMatching(text).toString();
+    public String Get(@QueryParam("query") String text,@QueryParam("offset") int offset,@QueryParam("limit") int limit){
+        System.out.println( offset);
+        System.out.println( limit);
+        if(limit==0){
+            return Service.StringMatching(text).toString();
+
+        }else{
+            return Service.StringMatching(text,offset,limit).toString();
+        }
+
     }
 }

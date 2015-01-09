@@ -11,23 +11,11 @@ define(
                 this.searchView = new SearchView({collection: new Searchcollection()});
             },
             events: {
-                'change input[name=search]': 'search'
+                'keyup input[name=search]': 'search'
             },
             search: function (event) {
                 var caller = event.target || event.srcElement;
-                //TODO change to trigger
-                this.searchView.collection.fetch({
-                    data: {query: $(caller).val()},
-                    reset: true, type: 'GET',
-                    success: function (data) {
-
-                        console.log(data.toJSON());
-                    },
-                    error: function () {
-                        console.log("error");
-                    }
-                });
-
+                this.searchView.updateSearch($(caller).val());
             },
             render: function () {
                 var Result = this.collection.toJSON();

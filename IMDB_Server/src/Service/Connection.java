@@ -35,13 +35,11 @@ public class Connection {
             return;
         }
 
-
         if(dataset == null) {
             Dataset ds = DatasetFactory.assemble(Location + "assembler.ttl", "http://localhost/jena_example/#text_dataset");
             loadData(ds, source);
 
             dataset = ds;
-
         }
 
     }
@@ -127,23 +125,6 @@ public class Connection {
             dataset.commit() ;
         } finally { dataset.end() ; }
 
-    }
-
-    public static Dataset createCode()
-    {
-
-        Dataset ds1 = DatasetFactory.createMem() ;
-
-        // Define the index mapping
-        EntityDefinition entDef = new EntityDefinition("uri", "text", RDFS.label.asNode()) ;
-
-        // Lucene, in memory.
-        Directory dir =  new RAMDirectory();
-
-        // Join together into a dataset
-        Dataset ds = TextDatasetFactory.createLucene(ds1, dir, entDef) ;
-
-        return ds ;
     }
 
 }

@@ -4,6 +4,8 @@ import org.apache.jena.atlas.lib.StrUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import javax.ws.rs.QueryParam;
+
 /**
  * Created by Joao on 07/01/2015.
  */
@@ -16,7 +18,7 @@ public class UtilManager extends Connection {
                      , "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
                      , "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
                      , "SELECT * "
-                     , " { ?Uri text:query ( '%s' ) ."
+                     , " { ?Uri text:query ( '%s*' ) ."
                      , "   OPTIONAL { ?Uri ns:hasMediaName ?name }."
                      , "   OPTIONAL { ?Uri ns:hasPersonName ?name }."
                      , "   OPTIONAL { ?Uri ns:hasStudioName ?name }."
@@ -37,6 +39,11 @@ public class UtilManager extends Connection {
 
     public JSONArray StringMatching(String text){
         return AddInfo(this.PerformQuery(String.format(StringMatchingQuery, text)));
+    }
+
+    public JSONArray StringMatching(String text, int offset, int limit){
+
+        return AddInfo(this.PerformQuery(String.format(StringMatchingQuery, text)+" LIMIT "+limit+" OFFSET "+offset));
     }
 
 }
