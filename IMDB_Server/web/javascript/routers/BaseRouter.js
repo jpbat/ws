@@ -44,6 +44,11 @@ define(
                         $("#BackBoneContainer").html(self.ViewIndex.el);
                     }
                 });
+
+                $("#homeButton").attr("href", "/");
+                $("#backButton").attr("href", "javascript:history.back()");
+                $("#moviesButton").attr("href", "#movies");
+                $("#personsButton").attr("href", "#persons");
             },
 
             movie: function (id) {
@@ -72,6 +77,11 @@ define(
                         window.location.hash = '';
                     }
                 });
+
+                $("#homeButton").attr("href", "/");
+                $("#backButton").attr("href", "javascript:history.back()");
+                $("#moviesButton").attr("href", "#movies");
+                $("#personsButton").attr("href", "#persons");
             },
 
             person: function (id) {
@@ -100,6 +110,11 @@ define(
                         window.location.hash = '';
                     }
                 });
+
+                $("#homeButton").attr("href", "/");
+                $("#backButton").attr("href", "javascript:history.back()");
+                $("#moviesButton").attr("href", "#movies");
+                $("#personsButton").attr("href", "#persons");
             },
             persons: function(){
 
@@ -138,7 +153,10 @@ define(
                     $("#PersonsCont").niceScroll();
                 }
 
-
+                $("#homeButton").attr("href", "/");
+                $("#backButton").attr("href", "javascript:history.back()");
+                $("#moviesButton").attr("href", "#movies");
+                $("#personsButton").removeAttr("href");
 
             },
             movies: function () {
@@ -190,6 +208,10 @@ define(
                     $("#MoviesCont").niceScroll();
                 }
 
+                $("#homeButton").attr("href", "/");
+                $("#backButton").attr("href", "javascript:history.back()");
+                $("#moviesButton").removeAttr("href");
+                $("#personsButton").attr("href", "#persons");
 
             }
         });

@@ -5,7 +5,7 @@ body {
 
 .search-logo {
 	padding-top: 50px;
-        font-size: 200%;
+        font-size: 400%;
         text-align: center;
         color: green;
         padding-bottom: 50px;
@@ -29,6 +29,7 @@ body .TopNavbar::before{
         bottom:100%;
         font-size: 20px;
         padding: 5px 10px;
+        background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
 
         -moz-border-radius-topright: 20px;
         -webkit-border-top-right-radius: 20px;
@@ -45,7 +46,6 @@ body .TopNavbar::before{
 }
 
 .TopNavbar{
-        z-index: -1;
         height: 20%;
 }
 
@@ -103,6 +103,9 @@ body .TopNavbar::before{
         overflow-y: scroll;
 }
 
+#BackBoneContainer {
+        padding-top: 50px;
+}
 
 #BackBoneContainer #PersonsCont,#BackBoneContainer #MoviesCont{
         overflow: scroll;
@@ -141,8 +144,6 @@ body .TopNavbar::before{
         background-color: #000000;
 }
 
-
-
 #SearchResult{
         overflow-y: scroll;
         max-height: 50%;
@@ -159,4 +160,11 @@ body .TopNavbar::before{
 
 #SearchResult li:hover{
         color: steelblue;
+}
+
+.navbar.navbar-default.navbar-fixed-top {
+        background-image: linear-gradient(to top,#3c3c3c 0,#222 100%);
+}
+.navbar.navbar-default.navbar-fixed-top * {
+        color: white;
 }

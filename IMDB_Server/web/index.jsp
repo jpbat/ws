@@ -12,7 +12,22 @@
 
 </head>
 <body>
-<button onclick="history.back();" class="nav-button btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span> Back</button>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a id="homeButton" href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a id="backButton" href="javascript:history.back()"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id="moviesButton" href="#movies"><span class="glyphicon glyphicon-film"></span> Movies</a></li>
+        <li><a id="peopleButton" href="#persons"><span class="glyphicon glyphicon-user"></span> People</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <div class="alertContainer">
 
 </div>

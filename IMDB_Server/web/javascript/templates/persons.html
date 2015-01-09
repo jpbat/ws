@@ -4,19 +4,20 @@
     <div class="col-md-2">
         <img class="poster-preview" src="<%= element.Picture %>" alt="picture">
     </div>
-    <div class="col-md-10">
-        <div class="information"><span class="field">Name:</span><%= element.Name %></div>
-        <div class="information"><span class="field">Born:</span> <%= element.Birth %></div>
-        <div class="information"><span class="field">Profession:</span>
+    <div class="col-md-8">
+        <p class="information"><span class="field">Name:</span><%= element.Name %></p>
+        <p class="information"><span class="field">Born:</span> <%= element.Birth %></p>
+        <p class="information"><span class="field">Profession:</span>
         <ul class="Lists">
             <% _.each(element.Profession, function(profession) { %>
                 <li class="information"><%= profession.name %></li>
             <% }); %>
 
         </ul>
-        </div>
-        <div class="information"><span class="field">Birthplace:</span><%= element.BirthPlace %></div>
+        </p>
+        <p class="information"><span class="field">Birthplace:</span><%= element.BirthPlace %></p>
     </div>
-
+    <div class="col-md-3 filter">
+    </div>
 </a>
 <% }); %>
