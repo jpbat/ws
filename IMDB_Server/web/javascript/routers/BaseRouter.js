@@ -29,6 +29,9 @@ define(
 
                     this.ViewIndex = new viewClass({collection: new collectionClass()});
                     this.ViewIndex.collection.url = "http://localhost:8080/rest/Movies/GetRecent/";
+
+                    this.ViewIndex.on('FetchStart', this.showSpinner, this);
+                    this.ViewIndex.on('FetchSuccess', this.hideSpinner, this);
                 }
 
                 this.ViewIndex.resetCollection();
