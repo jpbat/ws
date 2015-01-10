@@ -15,7 +15,8 @@ define(
                 'serie/:id': 'movie',
                 'person/:id': 'person',
                 'persons': 'persons',
-                'movies': 'movies'
+                'movies': 'movies',
+                '*path':  'index'
             },
             index: function () {
                 var self = this;
