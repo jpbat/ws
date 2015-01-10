@@ -17,7 +17,6 @@ public class Util {
     public String Get(@QueryParam("query") String text,@QueryParam("offset") int offset,@QueryParam("limit") int limit){
         if(limit==0){
             return Service.StringMatching(text).toString();
-
         }else{
             return Service.StringMatching(text,offset,limit).toString();
         }

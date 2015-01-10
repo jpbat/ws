@@ -35,7 +35,12 @@ public class Person {
     @Path("Get/{id}")
     public String Get(@PathParam("id") String id){
         JSONArray json = AddInfo(Service.Get(id));
-        JSONObject elements= (JSONObject) json.get(0);
+        JSONObject elements;
+        try {
+            elements= (JSONObject) AddInfo(json).get(0);
+        } catch (Exception e) {
+            elements = new JSONObject();
+        }
 
         return elements.toString();
     }
@@ -44,7 +49,12 @@ public class Person {
     @Path("Get")
     public String GetbyId(@QueryParam("id") String id) {
         JSONArray json = AddInfo(Service.Get(id));
-        JSONObject elements= (JSONObject) json.get(0);
+        JSONObject elements;
+        try {
+            elements= (JSONObject) AddInfo(json).get(0);
+        } catch (Exception e) {
+            elements = new JSONObject();
+        }
 
         return elements.toString();
     }

@@ -38,7 +38,12 @@ public class Movie {
     @Path("Get/{id}")
     public String Get(@PathParam("id") String id) {
         JSONArray json = Service.Get(id);
-        JSONObject elements= (JSONObject) AddInfo(json).get(0);
+        JSONObject elements;
+        try {
+            elements= (JSONObject) AddInfo(json).get(0);
+        } catch (Exception e) {
+            elements = new JSONObject();
+        }
 
         return elements.toString();
     }
@@ -47,7 +52,12 @@ public class Movie {
     @Path("Get")
     public String GetbyId(@QueryParam("id") String id) {
         JSONArray json = Service.Get(id);
-        JSONObject elements= (JSONObject) AddInfo(json).get(0);
+        JSONObject elements;
+        try {
+            elements= (JSONObject) AddInfo(json).get(0);
+        } catch (Exception e) {
+            elements = new JSONObject();
+        }
 
         return elements.toString();
     }

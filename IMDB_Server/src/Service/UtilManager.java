@@ -48,7 +48,6 @@ public class UtilManager extends Connection {
     }
 
     public JSONArray StringMatching(String text){
-
         return AddInfo(this.PerformQuery(String.format(StringMatchingQuery, text)));
     }
 
@@ -64,12 +63,12 @@ public class UtilManager extends Connection {
             JSONArray GenreJson = gService.GetAll();
             JSONArray ProfessionJson = pService.GetAll();
 
-            for (int i = 0; i <GenreJson.length(); i++) {
+            for (int i = 0; i < GenreJson.length(); i++) {
                 JSONObject aux = (JSONObject)GenreJson.get(i);
                 GenreList.add(aux.getString("name").toLowerCase());
             }
 
-            for (int i = 0; i <ProfessionJson.length(); i++) {
+            for (int i = 0; i < ProfessionJson.length(); i++) {
                 JSONObject aux = (JSONObject)ProfessionJson.get(i);
                 ProfessionList.add(aux.getString("name").toLowerCase());
             }
@@ -104,6 +103,11 @@ public class UtilManager extends Connection {
             ElementTypes[i]=Type.NONE;
             System.out.println("NONE");
         }
+
+        for (int i = 0; i < ElementTypes.length; i++) {
+            System.out.println(ElementTypes[i] + ": " + queryElements[i]);
+        }
+
         return AddInfo(this.PerformQuery(String.format(StringMatchingQuery, text)+" LIMIT "+limit+" OFFSET "+offset));
     }
 

@@ -15,7 +15,7 @@ define(
             render: function () {
                 var Result = this.collection.toJSON();
 
-                if(Result.length ==0){
+                if(Result.length == 0){
                     return this;
                 }
 
@@ -35,7 +35,6 @@ define(
                     this.data="";
                     this.$el.html(" ");
                 }
-
             },
             //COLLECTION RELATED
             resetCollection:function(data){
