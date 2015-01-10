@@ -25,7 +25,19 @@ body {
 body .TopNavbar::before{
         position: absolute;
         content: 'Top Rated';
-        background-color: black;
+        bottom:100%;
+        font-size: 20px;
+        padding: 5px 10px;
+        background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+
+        -moz-border-radius-topright: 20px;
+        -webkit-border-top-right-radius: 20px;
+        border-top-right-radius: 20px;
+}
+
+body #recomended::before{
+        position: absolute;
+        content: 'Recomended';
         bottom:100%;
         font-size: 20px;
         padding: 5px 10px;
