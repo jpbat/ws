@@ -1,7 +1,10 @@
 <ul>
     <%_.each(collection, function(element) { %>
-    <li class="ClassType_<%= element.type %> ">
-        <%= element.name %> <span class="label label-primary"><%= element.type %></span>
-    </li>
+        <li data-uri="<%= element.Uri %>" class="ClassType_<%= element.type %> ">
+            <%= element.name %>
+            <span class="label label-primary">
+                <%= element.type %>
+            </span>
+        </li>
     <% }); %>
 </ul>

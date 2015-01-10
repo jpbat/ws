@@ -11,6 +11,8 @@ define(
                 '': 'index',
                 'index': 'index',
                 'movie/:id': 'movie',
+                'media/:id': 'movie',
+                'serie/:id': 'movie',
                 'person/:id': 'person',
                 'persons': 'persons',
                 'movies': 'movies'
@@ -31,7 +33,7 @@ define(
                 this.ViewIndex.resetCollection();
 
                 $("#BackBoneContainer").html(self.ViewIndex.el);
-                self.ViewIndex.delegateEvents();
+                self.ViewIndex.render();
 
                 $("#homeButton").addClass("disabled");
                 $("#backButton").removeClass("disabled");

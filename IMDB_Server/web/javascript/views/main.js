@@ -24,6 +24,9 @@ define(
                 this.$el.html(templateHTML);
                 this.$el.find("#searchCont").append(this.searchView.$el);
 
+                this.searchView.delegateEvents();
+                this.delegateEvents();
+
                 return this;
             },
             resetCollection: function(){

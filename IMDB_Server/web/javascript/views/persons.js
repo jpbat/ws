@@ -6,13 +6,11 @@ define(
             id: "PersonsCont",
             tpl:template,
             className: "col-md-12",
-
+            isLoading: false,
+            limit :8,
+            offset :0,
             initialize: function() {
-                this.isLoading = false;
-                this.limit = 8;
-                this.offset = 0;
                 this.collection.on('reset', this.render, this);
-
             },
             render: function() {
                 var Result = this.collection.toJSON();

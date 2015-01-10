@@ -25,7 +25,10 @@ define(
 
                 self.trigger('FetchStart');
 
-                this.model.fetch({reset: true, type: 'GET', data: {id: id},
+                this.model.fetch({
+                    reset: true,
+                    type: 'GET',
+                    data: {id: id},
                     success: function () {
                         self.trigger('FetchSuccess');
                         console.log("Got a Person");

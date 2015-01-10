@@ -15,8 +15,6 @@ public class Util {
     @GET
     @Path("Search/")
     public String Get(@QueryParam("query") String text,@QueryParam("offset") int offset,@QueryParam("limit") int limit){
-        System.out.println( offset);
-        System.out.println( limit);
         if(limit==0){
             return Service.StringMatching(text).toString();
 
