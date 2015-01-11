@@ -41,8 +41,8 @@ text:TextIndexLucene  rdfs:subClassOf   text:TextIndex .
            .
 
 <#indexLucene> a text:TextIndexLucene ;
-               ##text:directory <file:/Lucene> ;
-               text:directory "mem" ;
+               text:directory <file:Lucene> ;
+               ##text:directory "mem" ;
                text:entityMap <#entMap> ;
                .
 
@@ -51,7 +51,13 @@ text:TextIndexLucene  rdfs:subClassOf   text:TextIndex .
           text:graphField       "graph" ;
           text:defaultField     "text" ; ## Must be defined in the text:maps
           text:map (
+                [ text:field "id" ; text:predicate ns:hasPersonId ] ##person id
+                [ text:field "id" ; text:predicate ns:hasMediaId ] ##media id
                 [ text:field "text" ; text:predicate ns:hasMediaName ]
                 [ text:field "text" ; text:predicate ns:hasPersonName ]
                 [ text:field "text" ; text:predicate ns:hasStudioName ]
+                [ text:field "description" ; text:predicate ns:hasMediaDescription ]
+                [ text:field "description" ; text:predicate ns:hasPersonMiniBio ]
+                [ text:field "categories" ; text:predicate ns:hasProfession ]
+                [ text:field "categories" ; text:predicate ns:hasGenre ]
           ) .
