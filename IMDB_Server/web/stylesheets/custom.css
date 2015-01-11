@@ -51,8 +51,12 @@ body #recomended::before{
 .alertContainer{
         position: absolute;
         width: 100%;
-        padding: 20px;
+        z-index: 1030;
 }
+.alertContainer .alert:first-child{
+        margin-top: 20px;
+}
+
 .alert{
         width: 100%;
 }
@@ -70,6 +74,7 @@ body #recomended::before{
 }
 
 .TopNavbar .poster-preview,
+#ResultsCont .poster-preview,
 #PersonsCont .poster-preview,
 #MoviesCont .poster-preview{
         border: 3px solid;
@@ -81,7 +86,7 @@ body #recomended::before{
         height: 100%;
 }
 
-#PersonsCont .poster-preview ,#MoviesCont .poster-preview{
+#ResultsCont .poster-preview, #PersonsCont .poster-preview ,#MoviesCont .poster-preview{
         width: 100%;
 }
 
@@ -110,7 +115,7 @@ body #recomended::before{
 }
 
 
-#PersonsCont,#MoviesCont{
+#ResultsCont,#PersonsCont,#MoviesCont{
         height: 100%;
         overflow-y: scroll;
 }
@@ -119,9 +124,10 @@ body #recomended::before{
         padding-top: 50px;
 }
 
-#BackBoneContainer #PersonsCont,#BackBoneContainer #MoviesCont{
+#BackBoneContainer #PersonsCont,#BackBoneContainer #MoviesCont,#BackBoneContainer #ResultsCont{
         overflow: scroll;
 }
+
 .Lists{
         -webkit-padding-start: 0px;
         padding-left: 0px;
@@ -188,10 +194,24 @@ a.disabled {
         position: absolute;
         width: 100%;
         height: 100%;
-        margin: -100px auto auto;
-        z-index: 100;
+        margin: 0px auto auto;
+        z-index: 9999;
+        background-color: gray;
+        opacity: 0.8;
 }
-.spinner{
+#SpinnerContainer .spinner{
         margin: auto;
         top: 50%;
+        opacity: 1.0;
+}
+#searchCont.fetchWait .spinner{
+        display: block;
+}
+#searchCont .spinner{
+        display: none;
+        z-index: 100;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 7px 25px 0 0;
 }

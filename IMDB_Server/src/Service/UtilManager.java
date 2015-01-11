@@ -45,12 +45,25 @@ public class UtilManager extends Connection {
                      , "PREFIX owl: <http://www.w3.org/2002/07/owl#>"
                      , "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
                      , "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
-                     , "SELECT DISTINCT ?Uri ?name ?typeUri "
+                     , "SELECT DISTINCT ?Uri ?name ?typeUri ?img ?classification ?launched ?end ?start ?seasons ?Birth ?BirthPlace"
                      , "WHERE "
                      , " { %s"
                      , "   OPTIONAL { ?Uri ns:hasMediaName ?name }."
                      , "   OPTIONAL { ?Uri ns:hasPersonName ?name }."
                      , "   OPTIONAL { ?Uri ns:hasStudioName ?name }."
+
+                     , "   OPTIONAL { ?Uri ns:hasMediaPoster ?img }."
+                     , "   OPTIONAL { ?Uri ns:hasPersonPicture ?img }."
+
+                     , "   OPTIONAL { ?Uri ns:hasMediaClassification ?classification }."
+                     , "   OPTIONAL { ?Uri ns:hasMediaLaunchDate ?launched }. "
+                     , "   OPTIONAL { ?Uri ns:hasSerieEnd ?end } ."
+                     , "   OPTIONAL { ?Uri ns:hasSerieStart ?start } . "
+                     , "   OPTIONAL { ?Uri ns:hasSerieSeason ?seasons } ."
+
+                     , "   OPTIONAL { ?Uri ns:hasPersonBirth ?Birth }."
+                     , "   OPTIONAL { ?Uri ns:hasPersonBirthPlace ?BirthPlace }."
+
                      , "   OPTIONAL { ?Uri rdf:type ?typeUri. ?typeUri rdfs:subClassOf ns:Media.}."
                      , "   OPTIONAL { ?Uri rdf:type ?typeUri.?typeUri rdf:type owl:Class.}."
                      , "   OPTIONAL { ?Uri ns:hasGenre ?GenreUri.}."

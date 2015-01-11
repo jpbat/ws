@@ -65,7 +65,8 @@ define(
 
                 self.trigger('FetchStart');
 
-                self.collection.fetch({data:{limit:self.limit,offset:self.offset,query: self.data},
+                self.collection.fetch({
+                    data:{limit:self.limit,offset:self.offset,query: self.data},
                     type: 'GET',
                     reset: true,
                     success: function () {
@@ -91,7 +92,7 @@ define(
                     self.fetchNextCollection();
                 }
             },
-            openSelected:function(){
+            openSelected:function(event){
                 var caller = event.target || event.srcElement;
                 window.location.hash=$(caller).attr("data-uri").replace("http://www.movierecomendation.pt/","#").toLowerCase();
             }
