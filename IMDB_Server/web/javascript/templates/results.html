@@ -1,0 +1,32 @@
+<% _.each(collection, function(element) { %>
+<div data-uri="<%= element.Uri %>" class="item col-md-12 ClassType_<%= element.type %>">
+    <div class="col-md-2">
+        <img class="poster-preview" src="<%= element.img %>" alt="picture">
+    </div>
+    <div class="col-md-10">
+        <div class="information"><span class="field">Name: </span><%= element.name %> <span class="label label-primary"><%= element.type %></span> </div>
+        <% if (element.classification) { %>
+        <div class="information"><span class="field">Score: </span><%= element.classification %> </div>
+        <% } %>
+        <% if (element.Birth) { %>
+        <div class="information"><span class="field">Born:</span> <%= element.Birth %></div>
+        <% } %>
+        <% if (element.launched) { %>
+        <div class="information"><span class="field">Launch Date: </span><%= element.launched %></div>
+        <% } %>
+        <% if (element.start) { %>
+        <div class="information"><span class="field">Original run:</span> <%= element.start %> - <%= (element.end?element.end:"Ongoing") %></div>
+        <% } %>
+        <% if (element.seasons) { %>
+        <div class="information"><span class="field">Seasons:</span> <%= element.seasons %> </div>
+        <% } %>
+        <% if (element.BirthPlace) { %>
+        <div class="information"><span class="field">Birthplace:</span><%= element.BirthPlace %></div>
+        <% } %>
+
+    </div>
+
+
+</div>
+
+<% }); %>
