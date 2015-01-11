@@ -14,10 +14,12 @@ define(
                 'media/:id': 'movie',
                 'serie/:id': 'movie',
                 'person/:id': 'person',
+                'search/:query': 'search',
                 'persons': 'persons',
                 'movies': 'movies',
                 '*path':  'index'
             },
+            //MAIN VIEW
             index: function () {
                 var self = this;
 
@@ -32,6 +34,8 @@ define(
 
                     this.ViewIndex.on('FetchStart', this.showSpinner, this);
                     this.ViewIndex.on('FetchSuccess', this.hideSpinner, this);
+                    this.ViewIndex.on('FetchFail', this.hideSpinner, this);
+                    this.ViewIndex.on('FetchFail', this.addError, this);
                 }
 
                 this.ViewIndex.resetCollection();
@@ -45,6 +49,7 @@ define(
                 $("#personsButton").removeClass("disabled");
             },
 
+            //MODELS VIEWS
             movie: function (id) {
                 var self = this;
 
@@ -98,6 +103,7 @@ define(
                 $("#personsButton").removeClass("disabled");
             },
 
+            //COLLECTIONS VIEWS
             persons: function () {
 
                 $("#BackBoneContainer").html($("#SpinnerContainer").html());
@@ -170,6 +176,34 @@ define(
                 $("#moviesButton").addClass("disabled");
                 $("#personsButton").removeClass("disabled");
             },
+            search: function (query) {
+
+                $("#BackBoneContainer").html($("#SpinnerContainer").html());
+
+                var self = this;
+                if (!this.ViewSearch) {
+                    var viewClass = require('views/results');
+                    var collectionClass = require('collections/results');
+
+                    this.ViewSearch = new viewClass({collection: new collectionClass()});
+
+                    this.ViewSearch.on('FetchStart', this.showSpinner, this);
+                    this.ViewSearch.on('FetchSuccess', this.hideSpinner, this);
+                    this.ViewSearch.on('FetchFail', this.reRoute, this);
+                }
+
+                this.ViewSearch.resetCollection(query);
+                $("#BackBoneContainer").html(self.ViewSearch.$el);
+                self.ViewSearch.delegateEvents();
+                self.ViewSearch.$el.niceScroll();
+
+                $("#homeButton").removeClass("disabled");
+                $("#backButton").removeClass("disabled");
+                $("#moviesButton").removeClass("disabled");
+                $("#personsButton").removeClass("disabled");
+            },
+
+            //EVENTS
             showSpinner: function () {
                 $("#SpinnerContainer").removeClass("hidden");
                 console.log("Show Spinner");

@@ -1,40 +1,24 @@
 define(
-    ['underscore','backbone','tpl!templates/search','jquery'],
+    ['underscore','backbone','tpl!templates/results','jquery'],
     function(_,Backbone,template,$) {
-        return Backbone.View.extend({
+        var View = Backbone.View.extend({
             tagName: "div",
-            id: "SearchResult",
-            minChars: 3,
-            searchTimeout:1000,
-            limit:20,
-            offset:0,
-            tpl: template,
-            initialize: function () {
+            id: "ResultsCont",
+            tpl:template,
+            className: "col-md-12",
+            isLoading: false,
+            limit :8,
+            offset :0,
+            initialize: function() {
                 this.collection.on('reset', this.render, this);
             },
-            render: function () {
+            render: function() {
                 var Result = this.collection.toJSON();
-
-                if(Result.length == 0){
-                    return this;
-                }
 
                 var templateHTML = this.tpl({collection: Result});
                 this.$el.append(templateHTML);
 
                 return this;
-            },
-            updateSearch:function(data){
-                var self=this;
-                window.clearTimeout(this.timeoutFunc);
-                if(data.length>=this.minChars){
-                    this.data = data;
-                    window.clearTimeout(this.timeoutFunc);
-                    this.timeoutFunc=window.setTimeout(function(){self.resetCollection(self.data);},this.searchTimeout);
-                }else{
-                    this.data="";
-                    this.$el.html(" ");
-                }
             },
             //COLLECTION RELATED
             resetCollection:function(data){
@@ -43,10 +27,12 @@ define(
 
                 this.$el.html(" ");
 
+                self.data = data;
+
                 self.trigger('FetchStart');
 
                 this.collection.fetch({
-                    data: {limit:self.limit,offset:self.offset,query: data},
+                    data: {limit:self.limit,offset:self.offset,query:self.data },
                     reset: true,
                     type: 'GET',
                     success: function () {
@@ -67,8 +53,8 @@ define(
 
                 self.collection.fetch({
                     data:{limit:self.limit,offset:self.offset,query: self.data},
-                    type: 'GET',
                     reset: true,
+                    type: 'GET',
                     success: function () {
                         self.offset+=self.limit;
                         self.isLoading = false;
@@ -76,26 +62,31 @@ define(
                     },
                     error: function () {
                         self.isLoading = false;
-                        self.trigger('FetchFail',"Fail to retrieve query Results!");
+                        self.trigger('FetchFail',"Fail to retrieve the Result list!");
                     }
                 });
             },
             //EVENTS RELATED
-            events: {   'scroll': 'checkScroll',
-                        'click li':'openSelected'
+            events: {
+                'scroll': 'checkScroll',
+                'click .item':'openSelected'
             },
             checkScroll: function () {
-                var self = this;
                 var triggerPoint = 100; // 100px from the bottom
                 if( !this.isLoading && this.el.scrollTop + this.el.clientHeight + triggerPoint > this.el.scrollHeight ) {
                     this.isLoading = true;
-                    self.fetchNextCollection();
+                    this.fetchNextCollection();
                 }
             },
             openSelected:function(event){
                 var caller = event.target || event.srcElement;
+
+                if(!($(caller).hasClass("item"))){
+                    caller = $(caller).closest("div[data-uri]");
+                }
                 window.location.hash=$(caller).attr("data-uri").replace("http://www.movierecomendation.pt/","#").toLowerCase();
             }
         });
+        return View;
     }
 );
