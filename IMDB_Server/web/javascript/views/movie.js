@@ -5,7 +5,7 @@ define(
             tagName: "div",
             id: "",
             tpl:template,
-            className: "",
+            className: "modelDisplay",
             initialize: function() {
                 this.model.on('change', this.render, this);
             },

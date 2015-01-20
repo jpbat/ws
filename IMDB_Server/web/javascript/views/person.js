@@ -5,7 +5,7 @@ define(
             tagName: "div",
             id: "",
             tpl:template,
-            className: "",
+            className: "modelDisplay",
             events:{
 
             },

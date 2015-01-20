@@ -1,0 +1,16 @@
+Client Development
+https://jquery.com/
+http://backbonejs.org/
+http://requirejs.org/
+
+Server Development
+https://jena.apache.org/tutorials/sparql.html
+http://www.w3.org/TR/rdf-sparql-query/
+
+
+RDF Populate Development
+http://rdflib.readthedocs.org/en/latest/
+
+Crawler Development
+http://jsoup.org/
+http://www.imdb.com/

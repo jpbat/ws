@@ -48,6 +48,7 @@ public class UtilManager extends Connection {
                      , "SELECT DISTINCT ?Uri ?name ?typeUri ?img ?classification ?launched ?end ?start ?seasons ?Birth ?BirthPlace"
                      , "WHERE "
                      , " { %s"
+
                      , "   OPTIONAL { ?Uri ns:hasMediaName ?name }."
                      , "   OPTIONAL { ?Uri ns:hasPersonName ?name }."
                      , "   OPTIONAL { ?Uri ns:hasStudioName ?name }."
@@ -78,6 +79,8 @@ public class UtilManager extends Connection {
     public JSONArray StringMatching(String text, int offset, int limit){
 
         AddCategorys();
+
+        text = text .replaceAll("(\\|{2})|(\\&{2})|(\\')|(\\\")|(\\*)","");
 
         String [] queryElements = text.toLowerCase().split("\\s+");
 

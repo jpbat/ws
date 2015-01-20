@@ -69,7 +69,7 @@ define(
                 this.ViewMovie.updateModel(id);
 
                 $("#BackBoneContainer").html(self.ViewMovie.$el);
-
+                self.ViewMovie.$el.niceScroll();
                 $("#homeButton").removeClass("disabled");
                 $("#backButton").removeClass("disabled");
                 $("#moviesButton").removeClass("disabled");
@@ -96,7 +96,7 @@ define(
                 this.ViewPerson.updateModel(id);
 
                 $("#BackBoneContainer").html(self.ViewPerson.$el);
-
+                self.ViewPerson.$el.niceScroll();
                 $("#homeButton").removeClass("disabled");
                 $("#backButton").removeClass("disabled");
                 $("#moviesButton").removeClass("disabled");

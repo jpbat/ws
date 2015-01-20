@@ -215,3 +215,8 @@ a.disabled {
         top: 0;
         margin: 7px 25px 0 0;
 }
+.modelDisplay{
+        padding-bottom: 107px;
+        overflow-y: scroll;
+        height: 100%;
+}
