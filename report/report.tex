@@ -27,6 +27,14 @@ A motivaçao que nos levou a este trabalho prende-se nesse mesmo promenor. Poder
 
 Analizando primeiramente toda a arquitectura, vemos que esta é composta por três modulos principais, sendo estes o crawler, o populador da ontologia e o website.
 
+\begin{figure}[h]
+	\vspace{20pt}
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{imgs/ws.png}
+	\end{center}
+	\caption{Diagrama da arquitectura completa.}
+\end{figure}
+
 \subsection{Data Crawler}
 \indent \indent Este foi o primeiro módulo a ser desenvolvido no projecto. A partir do site do \hyperref[www.imdb.com]{"IMDb"}, foi feito o \textit{crawl} da informação que se achou ser relevante das páginas de vários filmes, séries, e pessoas participantes nos mesmos.
  
@@ -50,6 +58,14 @@ Este foi desenvolvido utilizando uma arquitectura MV*, pelo que existe inerentem
 
 \section{Ontology Description}
 \indent \indent A nossa ontologia é composta por cinco classes, sendo que uma destas contém sublcasses.
+
+\begin{figure}[h]
+	\vspace{20pt}
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{imgs/onto.png}
+	\end{center}
+	\caption{Diagrama da ontologia.}
+\end{figure}
 
 \subsection{Genre}
 \indent \indent Esta classe é apenas uma enumeração de todos os géneros que podem existir tanto em filmes como em séries.
