@@ -40,37 +40,106 @@ public class UtilManager extends Connection {
     }
 
     private String StringMatchingQuery = StrUtils.strjoinNL
-                     ( "PREFIX ns: <http://www.movierecomendation.pt/ontology/movierecomendation.owl#>"
-                     , "PREFIX text: <http://jena.apache.org/text#>"
-                     , "PREFIX owl: <http://www.w3.org/2002/07/owl#>"
-                     , "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
-                     , "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
-                     , "SELECT DISTINCT ?Uri ?name ?typeUri ?img ?classification ?launched ?end ?start ?seasons ?Birth ?BirthPlace"
-                     , "WHERE "
-                     , " { %s"
+            ( "PREFIX ns: <http://www.movierecomendation.pt/ontology/movierecomendation.owl#>"
+                    , "PREFIX text: <http://jena.apache.org/text#>"
+                    , "PREFIX owl: <http://www.w3.org/2002/07/owl#>"
+                    , "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
+                    , "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+                    , "SELECT DISTINCT ?Uri ?name ?typeUri ?img ?classification ?launched ?end ?start ?seasons ?Birth ?BirthPlace"
+                    , "WHERE "
+                    , " { %s"
 
-                     , "   OPTIONAL { ?Uri ns:hasMediaName ?name }."
-                     , "   OPTIONAL { ?Uri ns:hasPersonName ?name }."
-                     , "   OPTIONAL { ?Uri ns:hasStudioName ?name }."
+                    , "   OPTIONAL { ?Uri ns:hasMediaName ?name }."
+                    , "   OPTIONAL { ?Uri ns:hasPersonName ?name }."
+                    , "   OPTIONAL { ?Uri ns:hasStudioName ?name }."
 
-                     , "   OPTIONAL { ?Uri ns:hasMediaPoster ?img }."
-                     , "   OPTIONAL { ?Uri ns:hasPersonPicture ?img }."
+                    , "   OPTIONAL { ?Uri ns:hasMediaPoster ?img }."
+                    , "   OPTIONAL { ?Uri ns:hasPersonPicture ?img }."
 
-                     , "   OPTIONAL { ?Uri ns:hasMediaClassification ?classification }."
-                     , "   OPTIONAL { ?Uri ns:hasMediaLaunchDate ?launched }. "
-                     , "   OPTIONAL { ?Uri ns:hasSerieEnd ?end } ."
-                     , "   OPTIONAL { ?Uri ns:hasSerieStart ?start } . "
-                     , "   OPTIONAL { ?Uri ns:hasSerieSeason ?seasons } ."
+                    , "   OPTIONAL { ?Uri ns:hasMediaClassification ?classification }."
+                    , "   OPTIONAL { ?Uri ns:hasMediaLaunchDate ?launched }. "
+                    , "   OPTIONAL { ?Uri ns:hasSerieEnd ?end } ."
+                    , "   OPTIONAL { ?Uri ns:hasSerieStart ?start } . "
+                    , "   OPTIONAL { ?Uri ns:hasSerieSeason ?seasons } ."
 
-                     , "   OPTIONAL { ?Uri ns:hasPersonBirth ?Birth }."
-                     , "   OPTIONAL { ?Uri ns:hasPersonBirthPlace ?BirthPlace }."
+                    , "   OPTIONAL { ?Uri ns:hasPersonBirth ?Birth }."
+                    , "   OPTIONAL { ?Uri ns:hasPersonBirthPlace ?BirthPlace }."
 
-                     , "   OPTIONAL { ?Uri rdf:type ?typeUri. ?typeUri rdfs:subClassOf ns:Media.}."
-                     , "   OPTIONAL { ?Uri rdf:type ?typeUri.?typeUri rdf:type owl:Class.}."
-                     , "   OPTIONAL { ?Uri ns:hasGenre ?GenreUri.}."
-                     , "   OPTIONAL { ?Uri ns:hasProfession ?ProfessionUri.}."
-                     , "   %s"
-                     , " }") ;
+                    , "   OPTIONAL { ?Uri rdf:type ?typeUri. ?typeUri rdfs:subClassOf ns:Media.}."
+                    , "   OPTIONAL { ?Uri rdf:type ?typeUri.?typeUri rdf:type owl:Class.}."
+                    , "   OPTIONAL { ?Uri ns:hasGenre ?GenreUri.}."
+                    , "   OPTIONAL { ?Uri ns:hasProfession ?ProfessionUri.}."
+                    , "   %s"
+                    , " }") ;
+
+    private String RecommendQuery =StrUtils.strjoinNL
+            (         "PREFIX nsS: <http://www.movierecomendation.pt/Studio/>"
+                    , "PREFIX nsP: <http://www.movierecomendation.pt/Person/>"
+                    , "PREFIX ns:  <http://www.movierecomendation.pt/ontology/movierecomendation.owl#>"
+                    , "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+                    , "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>"
+                    , "SELECT DISTINCT ?id ?Name ?typeUri ?Poster ?duration ?launched ?description ?classification ?start ?end ?seasons"
+                    , "WHERE { ?MovieUri ns:hasMediaName ?Name; "
+                    , "ns:hasMediaId ?id; "
+                    , "rdf:type ?typeUri; "
+                    , "ns:hasMediaPoster ?Poster; "
+                    , "ns:hasMediaClassification ?classification . "
+                    , "OPTIONAL { ?MovieUri ns:hasMediaLaunchDate ?launched } ."
+                    , "OPTIONAL { ?MovieUri ns:hasDirector ?Director } ."
+                    , "OPTIONAL { ?MovieUri ns:hasActor ?Actor } ."
+                    , "OPTIONAL { ?MovieUri ns:hasGenre ?Genre } ."
+                    , "OPTIONAL { ?MovieUri ns:hasStudio ?Studio } ."
+                    , "OPTIONAL { ?MovieUri ns:hasSerieEnd ?end } ."
+                    , "OPTIONAL { ?MovieUri ns:hasSerieStart ?start } ."
+                    , "OPTIONAL { ?MovieUri ns:hasSerieSeason ?seasons } . "
+                    , "FILTER ( %s )"
+                    ,"}"
+                    , "ORDER BY DESC(?classification) LIMIT 6") ;
+
+    public JSONArray Recommend(String director,String genres, String actors, String studios,String PersonId){
+
+        String query = "(";
+
+        if(PersonId != null && PersonId.length() >0){
+            query += "nsP:" + PersonId + "= ?Director || nsP:"+ PersonId+" = ?Actor ";
+        }else {
+
+            if (director != null && director.length() > 0)
+                query += (director != "" ? " || nsP:" + director + "= ?Director" : "");
+
+
+            genres = null;
+            if (genres != null) {
+                String[] aGenres = genres.split("\\|");
+
+                for (int i = 0; i < aGenres.length; i++) {
+                    query += String.format(" || ns:%s = ?Genre", aGenres[i]);
+                }
+            }
+
+            if (actors != null) {
+                String[] aActors = actors.split("\\|");
+
+                for (int i = 0; i < aActors.length; i++) {
+                    query += String.format(" || nsP:%s = ?Actor ", aActors[i]);
+                }
+            }
+
+            if (studios != null) {
+                String[] aStudios = studios.split("\\|");
+
+                for (int i = 0; i < aStudios.length; i++) {
+                    query += String.format(" || nsS:%s = ?Studio ", aStudios[i]);
+                }
+            }
+            query = query.replaceFirst("(\\|{2})|(\\&{2})", "");
+        }
+
+        query += ") && ( ns:Movie = ?typeUri || ns:Person = ?typeUri || ns:Serie = ?typeUri)";
+
+        return this.PerformQuery(String.format(RecommendQuery, query ));
+    }
+
 
     public JSONArray StringMatching(String text){
         return AddInfo(this.PerformQuery(String.format(StringMatchingQuery, text)));

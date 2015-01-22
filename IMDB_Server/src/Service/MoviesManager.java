@@ -16,23 +16,23 @@ public class MoviesManager extends Connection{
     private String RdfNamespace="<http://www.w3.org/1999/02/22-rdf-syntax-ns#>";
     private String RdfsNamespace="<http://www.w3.org/2000/01/rdf-schema#>";
 
-    String StandardSelect = "DISTINCT ?id ?Name ?typeUri ?Poster ?duration ?launched ?description ?classification ?start ?end ?seasons ";
+    private String StandardSelect = "DISTINCT ?id ?Name ?typeUri ?Poster ?duration ?launched ?description ?classification ?start ?end ?seasons ";
 
-    String StandardWhere = "?MovieUri ns:hasMediaName ?Name; ns:hasMediaId ?id; rdf:type ?typeUri; ns:hasMediaPoster ?Poster; ns:hasMediaDuration ?duration; ns:hasMediaDescription ?description; ns:hasMediaClassification ?classification . ?typeUri rdfs:subClassOf ns:Media. OPTIONAL { ?MovieUri ns:hasMediaLaunchDate ?launched } . OPTIONAL { ?MovieUri ns:hasSerieEnd ?end } . OPTIONAL { ?MovieUri ns:hasSerieStart ?start } . OPTIONAL { ?MovieUri ns:hasSerieSeason ?seasons } .";
-    
-    String queryGetAll =
+    private String StandardWhere = "?MovieUri ns:hasMediaName ?Name; ns:hasMediaId ?id; rdf:type ?typeUri; ns:hasMediaPoster ?Poster; ns:hasMediaDuration ?duration; ns:hasMediaDescription ?description; ns:hasMediaClassification ?classification . ?typeUri rdfs:subClassOf ns:Media. OPTIONAL { ?MovieUri ns:hasMediaLaunchDate ?launched } . OPTIONAL { ?MovieUri ns:hasSerieEnd ?end } . OPTIONAL { ?MovieUri ns:hasSerieStart ?start } . OPTIONAL { ?MovieUri ns:hasSerieSeason ?seasons } .";
+
+    private String queryGetAll =
                     "PREFIX ns: "+GlobalNamespace+" "+
                     "PREFIX rdf: "+RdfNamespace+" "+
                     "PREFIX rdfs: "+RdfsNamespace+" "+
                     "SELECT "+ StandardSelect +
                     "WHERE { "+ StandardWhere +" }";
-    String queryGetById =
+    private String queryGetById =
                     "PREFIX ns: "+GlobalNamespace+" "+
                     "PREFIX rdf: "+RdfNamespace+" "+
                     "PREFIX rdfs: "+RdfsNamespace+" "+
                     "SELECT "+ StandardSelect +
                     "WHERE { " + StandardWhere + " FILTER regex(?id, \"%s\") }";
-    String queryGetMostRecent =
+    private String queryGetMostRecent =
                     "PREFIX ns: "+GlobalNamespace+" "+
                     "PREFIX rdf: "+RdfNamespace+" "+
                     "PREFIX rdfs: "+RdfsNamespace+" "+
@@ -40,16 +40,16 @@ public class MoviesManager extends Connection{
                     "WHERE { "+ StandardWhere +" } "+
                     "ORDER BY DESC(?classification) "+
                     "LIMIT 6";
-    String querySelectGenre=
+    private String querySelectGenre=
                     "PREFIX ns: "+GlobalNamespace+" "+
                     "PREFIX rdf: "+RdfNamespace+" "+
                     "PREFIX rdfs: "+RdfsNamespace+" "+
                     "SELECT "+ StandardSelect +
                     "WHERE {%s} ";
-    String queryWhereGenre=
+    private String queryWhereGenre=
             "{ ?MovieUri ns:hasGenre ns:%s . "+ StandardWhere +" }";
 
-    String queryGetKnownForByPersonId =
+    private String queryGetKnownForByPersonId =
             "PREFIX ns: "+GlobalNamespace+" "+
             "PREFIX rdf: "+RdfNamespace+" "+
             "PREFIX rdfs: "+RdfsNamespace+" "+

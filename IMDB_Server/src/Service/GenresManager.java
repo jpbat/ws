@@ -11,11 +11,11 @@ public class GenresManager extends Connection{
     private String owl = "<http://www.w3.org/2002/07/owl#>";
     private String rdf = "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>";
 
-    String queryGetGenreByMovieId =
+    private String queryGetGenreByMovieId =
             "PREFIX nsowl:"+GlobalNamespace+" "+
             "SELECT ?uri WHERE { ?MovieUri nsowl:hasMediaId ?MovieId . ?MovieUri nsowl:hasGenre ?uri . FILTER regex(?MovieId, \"%s\") }";
 
-    String queryGetAll =
+    private String queryGetAll =
             "PREFIX rdf:"+rdf+" "+
             "PREFIX owl:"+owl+" "+
             "PREFIX nsowl:"+GlobalNamespace+" "+

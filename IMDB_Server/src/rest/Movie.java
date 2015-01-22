@@ -7,8 +7,6 @@ import org.json.JSONObject;
 import javax.ws.rs.*;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
-import java.util.ArrayList;
-import java.util.List;
 
 @Path("Movies")
 public class Movie {

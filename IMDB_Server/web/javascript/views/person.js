@@ -1,6 +1,6 @@
 define(
-    ['underscore','backbone','tpl!templates/person','jquery'],
-    function(_,Backbone,template,$) {
+    ['underscore','backbone','tpl!templates/person','jquery','views/recommendations','collections/recommendations' ],
+    function(_,Backbone,template,$,subview,subCollection) {
         var View = Backbone.View.extend({
             tagName: "div",
             id: "",
@@ -14,10 +14,21 @@ define(
             },
             render: function() {
                 var Result = this.model.toJSON();
-                console.log(Result);
+
+                this.subCollection = new subCollection();
+
                 var templateHTML = this.tpl({model: Result});
                 this.$el.html(templateHTML);
 
+                this.subView = new subview({collection:this.subCollection});
+
+                this.subCollection.fetch({
+                    reset: true,
+                    type: 'GET',
+                    data: {personId:Result.id}
+                });
+
+                this.$el.find("#recomended").html(this.subView.el);
                 return this;
             },
             updateModel:function(id){
